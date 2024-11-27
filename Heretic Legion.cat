@@ -656,7 +656,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 </modifier>
               </modifiers>
             </profile>
-            <profile name="Legionnaire" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="cd87-836e-a30e-943f" noindex="true">
+            <profile name="Legionnaire" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="true" id="cd87-836e-a30e-943f" noindex="false">
               <characteristics>
                 <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
                 <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
@@ -688,32 +688,15 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Legionnairie Selection" hidden="true" id="e643-f051-a966-9e51">
+    <selectionEntry type="upgrade" import="true" name="Legionnairie Selection" hidden="false" id="e643-f051-a966-9e51">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="8264-4d4d-e63c-ba3e" targetId="705b-e23f-e9c2-58ab" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e61-4b46-ef85-1306" includeChildSelections="false"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="df2e-3ec3-3814-79ab-min" includeChildSelections="true"/>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="df2e-3ec3-3814-79ab-max" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="59f2-6d65-03d2-c268-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="59f2-6d65-03d2-c268-max" includeChildSelections="true"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="df2e-3ec3-3814-79ab-min">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f606-4316-044d-4503" shared="true" includeChildForces="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="1" field="df2e-3ec3-3814-79ab-max">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f606-4316-044d-4503" shared="true" includeChildForces="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f606-4316-044d-4503" shared="true" includeChildForces="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Ranged" hidden="false" id="1414-49ee-eb5f-ae3c" sortIndex="1" defaultAmount="1">
           <constraints>
