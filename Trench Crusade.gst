@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -302,7 +302,7 @@ Injuries are rolled with -1 DICE at long range.</characteristic>
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
       </characteristics>
     </profile>
-    <profile name="Sacrificial Knife" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="1459-550f-ed53-b276" publicationId="c658-4a10-e1fe-befc" page="115">
+    <profile name="Sacrificial Blade" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="1459-550f-ed53-b276" publicationId="c658-4a10-e1fe-befc" page="115">
       <characteristics>
         <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-handed</characteristic>
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
