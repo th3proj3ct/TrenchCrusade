@@ -116,7 +116,7 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="7ba1-f516-e8cf-3957" id="21eb-6e1f-6e38-0425" primary="false" name="Heretic"/>
-        <categoryLink targetId="3de0-192c-3ec2-51be" id="14dc-c6cb-9542-6292" primary="false" name="Elite"/>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="14dc-c6cb-9542-6292" primary="true" name="Elite"/>
         <categoryLink targetId="914f-0020-0d97-e217" id="f93f-83ba-8a93-1a2e" primary="false" name="Tough"/>
       </categoryLinks>
       <profiles>
