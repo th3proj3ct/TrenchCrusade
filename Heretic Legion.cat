@@ -610,6 +610,19 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <modifiers>
+            <modifier type="add" value="Max 1 Heavy item on Non-Strong Unit" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="selections" scope="parent" childId="70c9-988d-71a7-7654" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Errors out if 2 or more Heavy on non-</comment>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Grenades" id="da5f-63c0-0d66-cf7d" hidden="false" sortIndex="2">
           <entryLinks>
