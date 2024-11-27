@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -16,6 +16,8 @@
     <categoryEntry name="Demonic" id="420c-0871-4283-b95b" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Skirmisher" id="73cd-d90d-7e4f-8e86" hidden="false" publicationId="c658-4a10-e1fe-befc" page="13"/>
     <categoryEntry name="Troop" id="bd43-ddb1-262d-4489" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
+    <categoryEntry name="Cumbersome" id="f87d-5ea3-e505-6a9f" hidden="false"/>
+    <categoryEntry name="Heavy" id="70c9-988d-71a7-7654" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType name="Ducats" id="8d43-33fd-332d-17a6" defaultCostLimit="-1"/>
