@@ -94,7 +94,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipment" id="15fd-ddf2-156c-9ca7" hidden="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Headgear" id="dec1-b013-7486-7eb0" hidden="false">
+            <selectionEntryGroup name="Headgear" id="dec1-b013-7486-7eb0" hidden="false" sortIndex="1">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54d1-071b-06f9-a0d4" includeChildSelections="false"/>
               </constraints>
