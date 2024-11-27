@@ -464,6 +464,24 @@ with the Keyword BLAST affect the Commando as normal if it is in the radius of t
             <infoLink name="Hellblade" id="2b1b-5926-e4e9-61e8" hidden="false" type="profile" targetId="7490-f22e-68ff-79d3"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tartarus Claws" hidden="true" id="af47-33c1-b1fc-f2bd">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="0bea-138c-b3e9-b630" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Hellblade" id="69a7-509e-e8a3-2ccc" hidden="false" type="profile" targetId="7490-f22e-68ff-79d3"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="77f7-5569-472a-6e92" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Shield Combo" id="1eda-2b87-9a83-a714" hidden="false">
