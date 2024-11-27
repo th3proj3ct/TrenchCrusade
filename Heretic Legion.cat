@@ -110,11 +110,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7be-0cb3-fae2-ce26" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="increment" value="1" field="ff12-158a-dee7-c78b">
-              <repeats>
-                <repeat value="2" repeats="1" field="selections" scope="roster" childId="686d-9f6d-e7c8-ec80" shared="true" roundUp="false"/>
-              </repeats>
-            </modifier>
+            <modifier type="increment" value="1" field="ff12-158a-dee7-c78b"/>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
