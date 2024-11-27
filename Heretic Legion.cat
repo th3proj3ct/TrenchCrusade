@@ -23,16 +23,6 @@
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="3820-c254-ccb9-04e0" hidden="false" sortIndex="1" collapsible="true">
-          <constraints>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="79f8-f017-4554-481f" includeChildSelections="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Melee Weapons" hidden="false" id="999b-582a-3b8e-9cd9" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d" collapsible="false"/>
-            <entryLink import="true" name="Ranged Weapons" hidden="false" id="bb6a-a7d2-ad94-91a4" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58" sortIndex="1" collapsible="false"/>
-            <entryLink import="true" name="Utility Hand" hidden="false" id="6766-2e68-c346-e561" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90" collapsible="true"/>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="f974-b656-b697-4421" hidden="false" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Reinforced Armor" hidden="false" id="f483-09c2-6eb4-f93e" defaultAmount="1">
@@ -54,6 +44,7 @@
       <entryLinks>
         <entryLink import="true" name="Grenades" hidden="false" id="0b18-18b1-58f2-2d15" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="8267-73be-3903-8067" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="3104-500f-a1df-d5c0" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Trooper" hidden="false" id="686d-9f6d-e7c8-ec80" publicationId="c658-4a10-e1fe-befc" page="22">
@@ -77,16 +68,6 @@
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="97c6-7a43-47bf-5c6e" hidden="false" sortIndex="1" collapsible="true">
-          <constraints>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e7c3-dbdf-0fbc-0d84" includeChildSelections="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Melee Weapons" hidden="false" id="80d8-7379-1098-8172" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d" collapsible="true"/>
-            <entryLink import="true" name="Ranged Weapons" hidden="false" id="d4da-b233-8c8d-0acb" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58" sortIndex="1" collapsible="true"/>
-            <entryLink import="true" name="Utility Hand" hidden="false" id="d076-238e-896c-c716" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90" collapsible="true"/>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="cf0c-9604-c6eb-60e1" hidden="false" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="7011-510d-ceed-0758">
@@ -107,6 +88,11 @@
       <entryLinks>
         <entryLink import="true" name="Grenades" hidden="false" id="bc65-16ff-4be3-3524" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="205f-6e44-4e83-114f" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="4" collapsible="true"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="e00b-94c5-2822-18d7" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Weapons" hidden="false" id="944d-f44d-5294-3aad" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Priest" hidden="false" id="8983-6564-96c7-fd33" publicationId="c658-4a10-e1fe-befc" page="22">
@@ -131,16 +117,6 @@
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="c272-8e33-1878-d8e8" hidden="false" sortIndex="1" collapsible="true">
-          <constraints>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="33a5-94c9-66cd-3edb" includeChildSelections="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Melee Weapons" hidden="false" id="5847-245e-689a-3be6" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d" collapsible="false"/>
-            <entryLink import="true" name="Ranged Weapons" hidden="false" id="a003-4dd9-c530-7c35" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58" sortIndex="1" collapsible="false"/>
-            <entryLink import="true" name="Utility Hand" hidden="false" id="e999-ebc3-60fb-aa86" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90" collapsible="true"/>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="c363-4259-50ae-5090" hidden="false" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="ca1a-18d3-aa26-4ccf" defaultAmount="1" sortIndex="1">
@@ -176,6 +152,7 @@
       <entryLinks>
         <entryLink import="true" name="Grenades" hidden="false" id="4286-540c-2fee-9525" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="0f51-e51b-67fc-6868" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="80bd-768e-721c-a113" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
       </entryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="e878-a54e-5461-5f68-min" includeChildSelections="true"/>
@@ -878,6 +855,28 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Weapons" id="e24e-229d-3831-76f4" hidden="false" collapsible="true">
+      <constraints>
+        <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="cb66-5e8c-7ed3-53a1" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Melee Weapons" hidden="false" id="c565-00c6-2806-e1c5" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d" collapsible="true"/>
+        <entryLink import="true" name="Ranged Weapons" hidden="false" id="8f2f-2c59-b0bc-34fd" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58" sortIndex="1" collapsible="true"/>
+        <entryLink import="true" name="Utility Hand" hidden="false" id="350e-f7fb-708c-4cae" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90" collapsible="true"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="Max 1 Heavy item on Non-Strong Unit" field="error">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="1" field="selections" scope="parent" childId="70c9-988d-71a7-7654" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <forceEntries>
