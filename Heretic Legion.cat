@@ -354,26 +354,6 @@
             <infoLink name="Hellblade" id="2b1b-5926-e4e9-61e8" hidden="false" type="profile" targetId="7490-f22e-68ff-79d3"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Cumberblade" hidden="false" id="eb07-9fdd-3d4a-8f52">
-          <categoryLinks>
-            <categoryLink targetId="f87d-5ea3-e505-6a9f" id="98b8-c8ee-5ac1-d4b7" primary="false" name="Cumbersome"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="99"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="The Cumberblade" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="39c3-a299-610f-478f">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
-                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
-                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">The Cumber</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Shield Combo" id="1eda-2b87-9a83-a714" hidden="false">
@@ -535,6 +515,23 @@
             <infoLink name="Automatic Rifle" id="ae10-ab61-5190-8438" hidden="false" type="profile" targetId="c35c-a506-683d-6c3f"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cumbergun" hidden="false" id="dde9-a127-342b-6e01">
+          <categoryLinks>
+            <categoryLink targetId="2cfb-73f8-0df3-30e8" id="5161-bb0e-4589-d280" primary="false" name="New Antioch"/>
+            <categoryLink targetId="f87d-5ea3-e505-6a9f" id="4475-70ca-5d93-e1d7" primary="false" name="Cumbersome"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Cumbergun" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="629d-3447-f769-7279">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24&quot;</characteristic>
+                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Shield Combos" id="8bf4-3479-1f69-6679" hidden="false">
@@ -580,6 +577,23 @@
                 <infoLink name="Automatic Shotgun" id="81f6-3be0-4126-1976" hidden="false" type="profile" targetId="a19d-90ab-da9f-95ff"/>
               </infoLinks>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="CumberCombo" hidden="false" id="b938-5f67-0b41-8b59">
+              <categoryLinks>
+                <categoryLink name="New Antioch" hidden="false" id="70ac-99be-6108-89c2" targetId="2cfb-73f8-0df3-30e8" primary="false"/>
+                <categoryLink name="Cumbersome" hidden="false" id="45b8-ae21-95da-1456" targetId="f87d-5ea3-e505-6a9f" primary="false"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Cumbergun" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="4378-4c71-06b3-e734">
+                  <characteristics>
+                    <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+                    <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24&quot;</characteristic>
+                    <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+                    <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+                    <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -596,7 +610,6 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
                   </conditions>
                   <conditionGroups>
@@ -605,6 +618,13 @@
                         <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="4a0e-6f55-3bac-71b1" shared="true"/>
                         <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="8bf4-3479-1f69-6679" shared="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Strong is overwritten by Cumbersome</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -627,8 +647,16 @@
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="ae63-55f4-b047-9820" shared="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Strong is overwritten by Cumbersome</comment>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </conditionGroup>
