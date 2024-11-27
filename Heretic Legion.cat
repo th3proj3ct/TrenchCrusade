@@ -223,48 +223,6 @@
             <infoLink name="Anti-Material Rifle" id="4003-e071-9408-d954" hidden="false" type="profile" targetId="50ec-f075-494f-9dc5"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Sub-Machine Gun" hidden="false" id="f350-1594-69d3-e36b">
-          <costs>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
-          </costs>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Bayonet Lug" hidden="false" id="e858-611a-2c96-7850">
-              <entryLinks>
-                <entryLink import="true" name="Bayonet" hidden="false" id="5903-2a40-4fc5-d866" type="profile" targetId="aa9b-a7a1-69a4-05f4"/>
-              </entryLinks>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="2"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <infoLinks>
-            <infoLink name="Submachine Gun" id="ebd6-6656-4a8a-a565" hidden="false" type="profile" targetId="f366-4889-0ac5-375d"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="b729-c409-1ae1-3e76">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="15"/>
-          </costs>
-          <entryLinks>
-            <entryLink import="true" name="Bayonet Lug" hidden="false" id="a36a-e4dd-a26c-122c" type="selectionEntry" targetId="3348-ed1b-adf7-af00"/>
-          </entryLinks>
-          <infoLinks>
-            <infoLink name="Semi-Automatic Rifle" id="58d9-83d6-bcd8-6562" hidden="false" type="profile" targetId="1d82-fcc9-aeda-b03a"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Automatic Shotgun" hidden="false" id="f118-2787-2eed-84fd">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-          </costs>
-          <entryLinks>
-            <entryLink import="true" name="Bayonet Lug" hidden="false" id="2baf-42e9-0eee-2c23" type="selectionEntry" targetId="3348-ed1b-adf7-af00"/>
-          </entryLinks>
-          <infoLinks>
-            <infoLink name="Automatic Shotgun" id="81f6-3be0-4126-1976" hidden="false" type="profile" targetId="a19d-90ab-da9f-95ff"/>
-          </infoLinks>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="7f5a-869c-fe6b-82dd">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
@@ -328,6 +286,54 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Shield Combos" id="8bf4-3479-1f69-6679" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sub-Machine Gun" hidden="false" id="f350-1594-69d3-e36b">
+              <costs>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Bayonet Lug" hidden="false" id="e858-611a-2c96-7850">
+                  <entryLinks>
+                    <entryLink import="true" name="Bayonet" hidden="false" id="5903-2a40-4fc5-d866" type="profile" targetId="aa9b-a7a1-69a4-05f4"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="2"/>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <infoLinks>
+                <infoLink name="Submachine Gun" id="ebd6-6656-4a8a-a565" hidden="false" type="profile" targetId="f366-4889-0ac5-375d"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="b729-c409-1ae1-3e76">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="15"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Bayonet Lug" hidden="false" id="a36a-e4dd-a26c-122c" type="selectionEntry" targetId="3348-ed1b-adf7-af00"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Semi-Automatic Rifle" id="58d9-83d6-bcd8-6562" hidden="false" type="profile" targetId="1d82-fcc9-aeda-b03a"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Automatic Shotgun" hidden="false" id="f118-2787-2eed-84fd">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Bayonet Lug" hidden="false" id="2baf-42e9-0eee-2c23" type="selectionEntry" targetId="3348-ed1b-adf7-af00"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Automatic Shotgun" id="81f6-3be0-4126-1976" hidden="false" type="profile" targetId="a19d-90ab-da9f-95ff"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged Weapons" id="1eee-c39c-0ea0-4c58" hidden="false">
       <entryLinks>
