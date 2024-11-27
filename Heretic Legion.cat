@@ -65,6 +65,9 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eca-1cab-8f3e-bacf" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
