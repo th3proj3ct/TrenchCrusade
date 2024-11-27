@@ -105,21 +105,18 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="ff12-158a-dee7-c78b"/>
+          </constraints>
           <modifiers>
-            <modifier type="decrement" value="2" field="ff12-158a-dee7-c78b"/>
+            <modifier type="increment" value="1" field="ff12-158a-dee7-c78b">
+              <repeats>
+                <repeat value="2" repeats="1" field="selections" scope="parent" childId="686d-9f6d-e7c8-ec80" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <modifiers>
-        <modifier type="increment" value="1" field="ff12-158a-dee7-c78b">
-          <repeats>
-            <repeat value="2" repeats="1" field="selections" scope="parent" childId="686d-9f6d-e7c8-ec80" shared="true" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="ff12-158a-dee7-c78b"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Priest" hidden="false" id="8983-6564-96c7-fd33" publicationId="c658-4a10-e1fe-befc" page="20">
       <costs>
