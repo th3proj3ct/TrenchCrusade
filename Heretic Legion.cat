@@ -7,7 +7,8 @@
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="7ba1-f516-e8cf-3957" id="9397-0a47-82fb-b87f" primary="true" name="Heretic"/>
+        <categoryLink targetId="7ba1-f516-e8cf-3957" id="9397-0a47-82fb-b87f" primary="false" name="Heretic"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="d652-8211-d22c-c8d3" primary="true" name="Troop"/>
       </categoryLinks>
       <profiles>
         <profile name="Heretic Trooper" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="c4f9-0bca-fb4a-1a51">
@@ -71,6 +72,7 @@
         <entryLink import="true" name="Equipment" hidden="false" id="a3f4-3bdb-2ebf-4efa" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105"/>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="fe9f-2c51-e6db-9df2" subType="unit-group"/>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Universal Melee Weapons" id="d2cb-f99a-d244-0f6d" hidden="false">
@@ -551,4 +553,8 @@
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <forceEntries>
+    <forceEntry name="Elite" id="cd98-c9a2-fa34-63f4" hidden="false"/>
+    <forceEntry name="Troop" id="b0f3-ac27-4b1a-6109" hidden="false"/>
+  </forceEntries>
 </catalogue>

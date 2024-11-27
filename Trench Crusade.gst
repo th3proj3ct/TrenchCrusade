@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
-    <categoryEntry name="Default Category" id="default-category" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Black Grail" id="c5a0-e794-7661-ebb7" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -16,21 +15,8 @@
     <categoryEntry name="Fear" id="4f5c-027d-253c-ffa3" hidden="false" publicationId="c658-4a10-e1fe-befc" page="12"/>
     <categoryEntry name="Demonic" id="420c-0871-4283-b95b" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Skirmisher" id="73cd-d90d-7e4f-8e86" hidden="false" publicationId="c658-4a10-e1fe-befc" page="13"/>
+    <categoryEntry name="Troop" id="bd43-ddb1-262d-4489" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
   </categoryEntries>
-  <forceEntries>
-    <forceEntry name="Default Force" hidden="false" id="default-force">
-      <categoryLinks>
-        <categoryLink name="Default Category" hidden="false" id="default-force-category-link" targetId="default-category"/>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
-  <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Default Root Entry" hidden="false" id="default-entry">
-      <categoryLinks>
-        <categoryLink targetId="default-category" id="default-category-link" primary="true" name="Default Category" hidden="false"/>
-      </categoryLinks>
-    </selectionEntry>
-  </selectionEntries>
   <costTypes>
     <costType name="Ducats" id="8d43-33fd-332d-17a6" defaultCostLimit="-1"/>
     <costType name="Glory Points" id="f3bb-a7e6-d476-f60b" defaultCostLimit="-1"/>
@@ -77,19 +63,19 @@
       <description>CONSUMABLE: An item with this keyword can only be used once. After the battle, any items with this keyword that were used are lost.</description>
     </rule>
     <rule name="Critical" id="7c40-254f-6d33-854c" hidden="false" publicationId="c658-4a10-e1fe-befc" page="12">
-      <description>CRITICAL: When attacking with a weapon with this keyword, add +2 DICE (instead of 1) to any injury rolls the weapon causes if you roll a Critical (i.e. 12+) on the Action Success Chart. </description>
+      <description>CRITICAL: When attacking with a weapon with this keyword, add +2 DICE (instead of 1) to any injury rolls the weapon causes if you roll a Critical (i.e. 12+) on the Action Success Chart.</description>
     </rule>
     <rule name="Cumbersome" id="5613-c861-daeb-156a" hidden="false" publicationId="c658-4a10-e1fe-befc" page="12">
       <description>CUMBERSOME: Model always requires two hands to use this weapon, even if the model has the Keyword STRONG. A weapon with the Keyword CUMBERSOME ignores this restriction when benefitting from the Shield Combo rule.</description>
     </rule>
     <rule name="Gas" id="2c6e-81c8-6c20-b5b7" hidden="false" publicationId="c658-4a10-e1fe-befc" page="13">
-      <description> A model hit by a weapon with this Keyword suffers a BLOOD MARKER in addition to any other effects of the attack. The model suffers this BLOOD MARKER even if the attack has no other effects or is otherwise negated. Some equipment or abilities can negate the additional BLOOD MARKER caused by this Keyword.</description>
+      <description>A model hit by a weapon with this Keyword suffers a BLOOD MARKER in addition to any other effects of the attack. The model suffers this BLOOD MARKER even if the attack has no other effects or is otherwise negated. Some equipment or abilities can negate the additional BLOOD MARKER caused by this Keyword.</description>
     </rule>
     <rule name="Fire" id="3f12-9eb3-07f7-03bb" hidden="false" publicationId="c658-4a10-e1fe-befc" page="12-13">
-      <description> A model hit by a weapon with this Keyword suffers a BLOOD MARKER in addition to any other effects of the attack. The model suffers this BLOOD MARKER even if the attack has no other effects or is otherwise negated. Some equipment or abilities can negate the additional BLOOD MARKER caused by this Keyword.</description>
+      <description>A model hit by a weapon with this Keyword suffers a BLOOD MARKER in addition to any other effects of the attack. The model suffers this BLOOD MARKER even if the attack has no other effects or is otherwise negated. Some equipment or abilities can negate the additional BLOOD MARKER caused by this Keyword.</description>
     </rule>
     <rule name="Heavy" id="fbac-638f-ff95-d704" hidden="false" publicationId="c658-4a10-e1fe-befc" page="13">
-      <description>If carrying a weapon, armour or equipment with this Keyword, the model cannot move/dash and shoot during its Activation, and the model cannot roll D6 and add it to the Charge move. A model can only carry one item with this Keyword. </description>
+      <description>If carrying a weapon, armour or equipment with this Keyword, the model cannot move/dash and shoot during its Activation, and the model cannot roll D6 and add it to the Charge move. A model can only carry one item with this Keyword.</description>
     </rule>
   </sharedRules>
   <publications>
@@ -293,8 +279,7 @@ Injuries are rolled with -1 DICE at long range.</characteristic>
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">8&quot;</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-1D Injuries, Ignores Armor</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">FIRE</characteristic>
-        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">A Flamethrower hits one model within range automatically with its Attack ACTION.
-</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">A Flamethrower hits one model within range automatically with its Attack ACTION.</characteristic>
       </characteristics>
     </profile>
     <profile name="Heavy Flamethrower" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="2fc0-bc43-b366-5b95" publicationId="c658-4a10-e1fe-befc" page="113">
@@ -449,7 +434,7 @@ can only do this follow-up move once per Activation</characteristic>
     </profile>
     <profile name="Standard Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="6fa6-650d-4136-bc70" publicationId="c658-4a10-e1fe-befc" page="117">
       <characteristics>
-        <characteristic name="Description" typeId="4834-43a9-1c93-9062"> -1 to all Injury Chart rolls against the model. Can be combined with any shield.</characteristic>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">-1 to all Injury Chart rolls against the model. Can be combined with any shield.</characteristic>
       </characteristics>
     </profile>
     <profile name="Reinforced Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f6aa-583c-a14b-0ee9" publicationId="c658-4a10-e1fe-befc" page="117">
@@ -560,7 +545,7 @@ Keyword: CONSUMABLE.</characteristic>
     </profile>
     <profile name="Field Shrine" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="76e2-0e5b-972a-0f69" publicationId="c658-4a10-e1fe-befc" page="120">
       <characteristics>
-        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Can be placed on the battlefield in your deployment zone. Acts as three models for Morale Tests. It has a base size of 40mm. Can be destroyed if any type of attack hits it. </characteristic>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Can be placed on the battlefield in your deployment zone. Acts as three models for Morale Tests. It has a base size of 40mm. Can be destroyed if any type of attack hits it.</characteristic>
       </characteristics>
     </profile>
     <profile name="Hellbound Brand Contract" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e408-e0b1-f858-fff5" publicationId="c658-4a10-e1fe-befc" page="120">
