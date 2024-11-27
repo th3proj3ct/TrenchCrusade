@@ -190,7 +190,7 @@
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -454,7 +454,7 @@
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
