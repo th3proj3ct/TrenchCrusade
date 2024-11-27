@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry type="model" import="true" name="Heretic Trooper" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
+    <selectionEntry type="model" import="true" name="Heavy Trooper" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -9,6 +9,7 @@
       <categoryLinks>
         <categoryLink targetId="7ba1-f516-e8cf-3957" id="9397-0a47-82fb-b87f" primary="false" name="Heretic"/>
         <categoryLink targetId="bd43-ddb1-262d-4489" id="d652-8211-d22c-c8d3" primary="true" name="Troop"/>
+        <categoryLink targetId="afcc-5f24-1c7c-63c4" id="4dcc-f103-4afe-8be5" primary="false" name="Strong"/>
       </categoryLinks>
       <profiles>
         <profile name="Heretic Trooper" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="c4f9-0bca-fb4a-1a51">
@@ -78,6 +79,85 @@
       <entryLinks>
         <entryLink import="true" name="Grenades" hidden="false" id="0b18-18b1-58f2-2d15" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="a3f4-3bdb-2ebf-4efa" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="2" collapsible="true"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Heretic Trooper" hidden="false" id="686d-9f6d-e7c8-ec80" publicationId="c658-4a10-e1fe-befc" page="22">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Heretic" hidden="false" id="cf5a-8a1e-81c9-8ed3" targetId="7ba1-f516-e8cf-3957" primary="false"/>
+        <categoryLink name="Troop" hidden="false" id="1f31-bd01-19bf-2d01" targetId="bd43-ddb1-262d-4489" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Heretic Trooper" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="c247-1c38-3181-8393">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="97c6-7a43-47bf-5c6e" hidden="false" sortIndex="1" collapsible="true">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e7c3-dbdf-0fbc-0d84" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Melee Weapons" hidden="false" id="80d8-7379-1098-8172" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d" collapsible="true">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a804-de41-0939-fdf5" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="decrement" value="1" field="a804-de41-0939-fdf5">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="d2c0-0d50-1405-b805" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="decrement" value="1" field="a804-de41-0939-fdf5">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Ranged Weapons" hidden="false" id="d4da-b233-8c8d-0acb" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58" sortIndex="1" collapsible="true">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4979-7368-3524-6c99" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="decrement" value="1" field="4979-7368-3524-6c99">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="ae63-55f4-b047-9820" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="decrement" value="1" field="4979-7368-3524-6c99">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Utility Hand" hidden="false" id="d076-238e-896c-c716" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90" collapsible="true"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Grenades" hidden="false" id="bc65-16ff-4be3-3524" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="205f-6e44-4e83-114f" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="2" collapsible="true"/>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>
