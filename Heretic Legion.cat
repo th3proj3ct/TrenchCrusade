@@ -3,7 +3,7 @@
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Anointed Heavy Infantry" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
-        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="95"/>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <categoryLinks>
@@ -92,10 +92,127 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Equipment" id="15fd-ddf2-156c-9ca7" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Headgear" id="dec1-b013-7486-7eb0" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54d1-071b-06f9-a0d4" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Combat Helmet" hidden="false" id="c0e8-cb6e-862d-f90e">
+                  <infoLinks>
+                    <infoLink name="Combat Helmet" id="5c43-ca35-e092-3601" hidden="false" type="profile" targetId="f9d1-44f2-f4d7-442f"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Gas Mask" hidden="false" id="52b8-1da4-9259-7aae">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Gas Mask" id="157e-b2db-0139-9292" hidden="false" type="profile" targetId="ba17-1e71-ee46-ee0f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f57-eca9-86b4-3cf4" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Unholy Trinket" hidden="false" id="7fb3-f2e6-cf81-94ca">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Unholy Trinket" id="a9d8-b29a-688a-375a" hidden="false" type="profile" targetId="df27-d1f1-d5b9-d53b"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0757-6f44-e714-5a13" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Unholy Relic" hidden="false" id="d0ad-b773-aa75-b4cb">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Unholy Relic" id="6ff7-cb4a-9f1e-7f74" hidden="false" type="profile" targetId="b914-1197-66a6-3aae"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9576-60e9-8b2b-cc71" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Incendiary Ammunition" hidden="false" id="a1bd-83fa-9437-afb4">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2a64-0ef1-8521-eb7f" includeChildSelections="true"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Incendiary Bullets" id="99df-0dfd-43c1-bb73" hidden="false" type="profile" targetId="01b8-f846-e8f7-6d71"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shovel" hidden="false" id="98ec-1e1e-cf30-7e32">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Shovel" id="faca-1ff5-5b50-90da" hidden="false" type="profile" targetId="d829-4d67-52aa-baaf"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b872-fc74-ab65-56f2" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Infernal Brand Mark" hidden="false" id="29bb-ccca-c7f3-f585" defaultAmount="1">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Infernal Brand Mark" id="447a-4427-cabd-cb76" hidden="false" type="profile" targetId="e973-f445-e1c5-92ec"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c24b-7bd1-a5e8-8b52" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="05c4-b71f-e195-3c7e" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="96c9-2527-9a0d-f940">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="3"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="6c0c-1aab-1654-05c8" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b78-bf3d-c471-fe6d" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Mountaineer Kit" id="8ac5-bbe6-93f3-c593" hidden="false" type="profile" targetId="603a-ae82-9f91-4a29"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hellbound Brand Contract" hidden="false" id="5d04-4796-4fdc-245f">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="826c-f35c-f3c4-5d54" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5316-ff0f-ed63-d6a8" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Hellbound Brand Contract" id="8988-86da-4ada-fc57" hidden="false" type="profile" targetId="e408-e0b1-f858-fff5"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <comment> This is separate from the standard list to force Infernal Mark to be taken</comment>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Grenades" hidden="false" id="0b18-18b1-58f2-2d15" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="a3f4-3bdb-2ebf-4efa" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="4" collapsible="true"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Trooper" hidden="false" id="686d-9f6d-e7c8-ec80" publicationId="c658-4a10-e1fe-befc" page="22">
