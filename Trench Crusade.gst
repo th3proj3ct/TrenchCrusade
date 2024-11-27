@@ -18,6 +18,7 @@
     <categoryEntry name="Troop" id="bd43-ddb1-262d-4489" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Cumbersome" id="f87d-5ea3-e505-6a9f" hidden="false"/>
     <categoryEntry name="Heavy" id="70c9-988d-71a7-7654" hidden="false"/>
+    <categoryEntry name="Configuration" id="705b-e23f-e9c2-58ab" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType name="Ducats" id="8d43-33fd-332d-17a6" defaultCostLimit="-1"/>
