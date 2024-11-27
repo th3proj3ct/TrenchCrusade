@@ -690,7 +690,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Legionnairie Selection" hidden="false" id="e643-f051-a966-9e51">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="8264-4d4d-e63c-ba3e" targetId="705b-e23f-e9c2-58ab" primary="false"/>
+        <categoryLink name="Configuration" hidden="false" id="8264-4d4d-e63c-ba3e" targetId="705b-e23f-e9c2-58ab" primary="true"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e61-4b46-ef85-1306" includeChildSelections="false"/>
