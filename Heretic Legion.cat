@@ -22,12 +22,12 @@
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="3820-c254-ccb9-04e0" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Weapons" id="3820-c254-ccb9-04e0" hidden="false" sortIndex="1" collapsible="true">
           <constraints>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="79f8-f017-4554-481f" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Melee Weapons" hidden="false" id="999b-582a-3b8e-9cd9" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d">
+            <entryLink import="true" name="Melee Weapons" hidden="false" id="999b-582a-3b8e-9cd9" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d" collapsible="true">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e4c7-dbf7-4bc9-0704" includeChildSelections="false"/>
               </constraints>
@@ -49,7 +49,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Ranged Weapons" hidden="false" id="bb6a-a7d2-ad94-91a4" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58" sortIndex="1">
+            <entryLink import="true" name="Ranged Weapons" hidden="false" id="bb6a-a7d2-ad94-91a4" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58" sortIndex="1" collapsible="true">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d1f1-0f79-ea47-2c78" includeChildSelections="false"/>
               </constraints>
@@ -71,21 +71,21 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Utility Hand" hidden="false" id="6766-2e68-c346-e561" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90"/>
+            <entryLink import="true" name="Utility Hand" hidden="false" id="6766-2e68-c346-e561" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90" collapsible="true"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="0b18-18b1-58f2-2d15" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="a3f4-3bdb-2ebf-4efa" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="2"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="0b18-18b1-58f2-2d15" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="a3f4-3bdb-2ebf-4efa" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="2" collapsible="true"/>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Melee Weapons" id="d2cb-f99a-d244-0f6d" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="53eb-43ad-1a94-a4b0" type="selectionEntryGroup" targetId="2316-99d3-0e3a-3771" collective="false"/>
-        <entryLink import="true" name="Melee (Two-Handed)" hidden="false" id="8824-d240-893c-36dc" type="selectionEntryGroup" targetId="d2c0-0d50-1405-b805">
+        <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="53eb-43ad-1a94-a4b0" type="selectionEntryGroup" targetId="2316-99d3-0e3a-3771" collective="false" collapsible="true"/>
+        <entryLink import="true" name="Melee (Two-Handed)" hidden="false" id="8824-d240-893c-36dc" type="selectionEntryGroup" targetId="d2c0-0d50-1405-b805" collapsible="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0516-ba5d-c7d6-0bfe" includeChildSelections="false"/>
           </constraints>
@@ -331,7 +331,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged Weapons" id="1eee-c39c-0ea0-4c58" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Ranged (One-Handed)" hidden="false" id="3029-da1c-938d-cff3" type="selectionEntryGroup" targetId="53d7-33cb-1563-1112" collective="false"/>
+        <entryLink import="true" name="Ranged (One-Handed)" hidden="false" id="3029-da1c-938d-cff3" type="selectionEntryGroup" targetId="53d7-33cb-1563-1112" collective="false" collapsible="true"/>
         <entryLink import="true" name="Ranged (Two-Handed)" hidden="false" id="ae63-55f4-b047-9820" type="selectionEntryGroup" targetId="ebc3-4d3d-a2ce-f8ce">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2eab-1232-6cb7-2579" includeChildSelections="false"/>
