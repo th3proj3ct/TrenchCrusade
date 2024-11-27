@@ -46,6 +46,9 @@
         <entryLink import="true" name="Equipment" hidden="false" id="8267-73be-3903-8067" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
         <entryLink import="true" name="Weapons" hidden="false" id="3104-500f-a1df-d5c0" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="2daf-dded-85a2-f21a"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Trooper" hidden="false" id="686d-9f6d-e7c8-ec80" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -91,9 +94,9 @@
         <entryLink import="true" name="Weapons" hidden="false" id="e00b-94c5-2822-18d7" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Heretic Priest" hidden="false" id="8983-6564-96c7-fd33" publicationId="c658-4a10-e1fe-befc" page="22">
+    <selectionEntry type="model" import="true" name="Heretic Priest" hidden="false" id="8983-6564-96c7-fd33" publicationId="c658-4a10-e1fe-befc" page="20">
       <costs>
-        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="80"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <categoryLinks>
@@ -115,7 +118,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Armor" id="c363-4259-50ae-5090" hidden="false" sortIndex="3">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="ca1a-18d3-aa26-4ccf" defaultAmount="1" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="ca1a-18d3-aa26-4ccf" defaultAmount="" sortIndex="1">
               <infoLinks>
                 <infoLink name="Standard Armour" id="50b3-4480-159d-45de" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
               </infoLinks>
@@ -127,7 +130,7 @@
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reinforced Armor" hidden="false" id="76d9-6e50-d78c-c893" defaultAmount="1" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Reinforced Armor" hidden="false" id="76d9-6e50-d78c-c893" defaultAmount="" sortIndex="2">
               <infoLinks>
                 <infoLink name="Reinforced Armour" id="fe34-b409-7af0-5cab" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
               </infoLinks>
@@ -154,6 +157,140 @@
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="e878-a54e-5461-5f68-min" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e878-a54e-5461-5f68-max" includeChildSelections="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Death Commando" hidden="false" id="77f7-5569-472a-6e92" publicationId="c658-4a10-e1fe-befc" page="20">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="90"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7ba1-f516-e8cf-3957" id="22f4-1118-1242-ca39" primary="false" name="Heretic"/>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="ebb0-40ca-e4cd-06e6" primary="true" name="Elite"/>
+        <categoryLink targetId="9b36-57f6-1887-7bea" id="99ea-e158-4742-affd" primary="false" name="Infiltrator"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Death Commando" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="459b-6e4b-c658-2d35">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">2</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">2</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Stealth Generator" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1110-b5e7-9966-1383">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Ranged attacks against a Death Commando suffer -1 DICE to all the attack rolls.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hide" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1191-44c6-b786-d49d">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">As a RISKY ACTION with +1 DICE the Commando can hide if any
+piece of scenery the model is touching can block line of sight in any direction, even
+partially, regardless of whether an enemy currently has a clear LOS. If successful,
+enemies cannot target the Commando with ranged attacks or Charges. Weapons
+with the Keyword BLAST affect the Commando as normal if it is in the radius of the</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armor" id="dc01-0d93-d91f-7516" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="e9b0-202d-a5dd-19b1" defaultAmount="" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Standard Armour" id="b174-14d8-e4f5-079d" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8d1-571a-d3ad-110e" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Reinforced Armor" hidden="false" id="c2f0-e1f9-4c75-9869" defaultAmount="" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Reinforced Armour" id="1931-441a-eb84-dcd4" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f70-d37c-efc7-e464" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17f8-1c99-b882-3b71" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Commando Weapons" id="2db8-004d-db23-2df1" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Melee Weapons" hidden="false" id="77b7-8e6e-cf87-a487" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d"/>
+            <entryLink import="true" name="Utility Hand" hidden="false" id="5e22-7282-592c-3f4d" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f5cd-aa45-09a3-d5f7" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="Max 1 Heavy item on Non-Strong Unit" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="selections" scope="parent" childId="70c9-988d-71a7-7654" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Errors out if 2 or more Heavy on non-</comment>
+            </modifier>
+          </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Ranged Weapons" id="1320-f6ba-698a-999c" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Tormentor&apos;s Chain" hidden="false" id="4c4a-1c81-89f8-6d71">
+                  <infoLinks>
+                    <infoLink name="Tormentor Chain" id="aa57-c562-e210-939a" hidden="false" type="profile" targetId="36d4-9b55-fd0a-150f"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="3"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Silenced Pistol" hidden="false" id="4e0d-a313-6079-5bcc" type="selectionEntry" targetId="e126-07c8-283d-a9c0"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6056-b451-437a-c8c8" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="decrement" value="1" field="6056-b451-437a-c8c8">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="6056-b451-437a-c8c8">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Equipment" hidden="false" id="8178-a6cf-7ddc-d03b" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
+        <entryLink import="true" name="Gas Grenades" hidden="false" id="2c4e-d12c-555f-d0b7" type="selectionEntry" targetId="3e61-384a-10f0-3ade" sortIndex="2"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="154a-1d9d-959e-d915" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Infiltrator" id="1b2f-cf0c-cc81-1861" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>

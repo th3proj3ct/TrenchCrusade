@@ -79,6 +79,9 @@
     <rule name="Heavy" id="fbac-638f-ff95-d704" hidden="false" publicationId="c658-4a10-e1fe-befc" page="13">
       <description>If carrying a weapon, armour or equipment with this Keyword, the model cannot move/dash and shoot during its Activation, and the model cannot roll D6 and add it to the Charge move. A model can only carry one item with this Keyword.</description>
     </rule>
+    <rule name="Infiltrator" id="154d-8072-ef87-e6c1" hidden="false">
+      <description>Models with this Keyword can be deployed anywhere on the table out of line of sight of any enemies, but at least 8” away from the closest enemy. They are deployed after all other models without this Keyword. If any infiltrators cannot be deployed according to these restrictions then those models can always be placed in your deployment zone. If a scenario does not allow for infiltrators, deploy models with this Keyword during standard deployment as if they didn’t have this Keyword.</description>
+    </rule>
   </sharedRules>
   <publications>
     <publication name="Playtest Rules 1.5" id="c658-4a10-e1fe-befc" hidden="false" shortName="PT1.5" publisherUrl="https://static1.squarespace.com/static/637c0a5adafeb04f70309b99/t/6738d89f383e092b140a808f/1731778725409/Trench+Crusade+Rules+v1.5+%283%29.pdf"/>
@@ -568,6 +571,15 @@ Keyword: CONSUMABLE.</characteristic>
     <profile name="Mountaineer Kit" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="603a-ae82-9f91-4a29" publicationId="c658-4a10-e1fe-befc" page="120">
       <characteristics>
         <characteristic name="Description" typeId="4834-43a9-1c93-9062">A model with this kit adds +1 DICE to any Climbing ACTION rolls.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tormentor Chain" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="36d4-9b55-fd0a-150f">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">10&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">Special</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">SHRAPNEL</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">The tormentor chain suffers no penalties for range or for Cover and inflicts no damage except for the BLOOD MARKER it causes due to SHRAPNEL. If the wielder hits a target with this weapon, the target is moved in a straight line directly towards the wielder, ending in the legal space that puts it closest to the wielder. This typically ends with the target and the wielder in base contact and therefore in melee combat. This movement can place the target in melee combat with multiple enemy models. Additionally, no enemy models may retreat when in melee combat with the wielder.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
