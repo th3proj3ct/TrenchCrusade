@@ -238,7 +238,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <comment>Strong is overwritten by Cumbersome</comment>
                     </conditionGroup>
