@@ -53,67 +53,6 @@
         <infoLink name="Strong" id="d490-8c8c-0f7e-f806" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Heretic Trooper Test" hidden="false" id="686d-9f6d-e7c8-ec80" publicationId="c658-4a10-e1fe-befc" page="22">
-      <costs>
-        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
-        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink name="Heretic" hidden="false" id="cf5a-8a1e-81c9-8ed3" targetId="7ba1-f516-e8cf-3957" primary="false"/>
-        <categoryLink name="Troop" hidden="false" id="1f31-bd01-19bf-2d01" targetId="bd43-ddb1-262d-4489" primary="true"/>
-      </categoryLinks>
-      <profiles>
-        <profile name="Heretic Trooper" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="c247-1c38-3181-8393">
-          <characteristics>
-            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
-            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
-            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
-            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
-            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Armor" id="cf0c-9604-c6eb-60e1" hidden="false" sortIndex="3">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="7011-510d-ceed-0758">
-              <infoLinks>
-                <infoLink name="Standard Armour" id="2cf2-f3d6-1888-181b" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52a4-bfc6-69c3-835a" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="bc65-16ff-4be3-3524" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="205f-6e44-4e83-114f" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="4" collapsible="true"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="e00b-94c5-2822-18d7" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Legionaire" hidden="false" id="47bd-e38c-4985-27df">
-          <profiles>
-            <profile name="Legionaire" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f87b-fb43-a8f3-77ea">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Youre cool</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ff12-158a-dee7-c78b"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="ff12-158a-dee7-c78b"/>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Priest" hidden="false" id="8983-6564-96c7-fd33" publicationId="c658-4a10-e1fe-befc" page="20">
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="80"/>
@@ -690,6 +629,65 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
         <entryLink import="true" name="Equipment" hidden="false" id="7d4c-2b7c-b761-ef7d" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="4" collapsible="true"/>
         <entryLink import="true" name="Weapons" hidden="false" id="761d-5702-c128-83a8" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Heretic Trooper Electric Boogaloo" hidden="false" id="3844-b41c-9ecc-85b9" publicationId="c658-4a10-e1fe-befc" page="22">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Heretic" hidden="false" id="1366-c54c-d283-59de" targetId="7ba1-f516-e8cf-3957" primary="false"/>
+        <categoryLink name="Troop" hidden="false" id="809b-b6ba-7ced-1c40" targetId="bd43-ddb1-262d-4489" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Heretic Trooper" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="9654-b8d7-9c76-f5db">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armor" id="1105-9ec1-e74c-126b" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="f6da-d904-8d74-f399">
+              <infoLinks>
+                <infoLink name="Standard Armour" id="3607-8d12-70a1-fe77" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="687c-03d7-d3b7-ac8c" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Grenades" hidden="false" id="7f8c-7ce1-9287-96f2" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="76f2-185b-6af3-13a9" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="4" collapsible="true"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="2729-18d7-401d-092f" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Legionnaire" hidden="false" id="f606-4316-044d-4503">
+          <profiles>
+            <profile name="Legionnaire" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9af6-f77f-326f-98ce">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Become the coolest guy</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37bd-4d82-9aaf-c0ee" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="085a-f187-4921-4824" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -1279,7 +1277,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="686d-9f6d-e7c8-ec80" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="93e1-b2ba-a2a9-e6b9" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
