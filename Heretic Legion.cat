@@ -117,6 +117,11 @@
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
         </profile>
+        <profile name="Puppet Master" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7b33-345f-cdc7-913e">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Select a target model, friend or foe (including the Priest), within 12”. As a RISKY ACTION you can move the model D6” in any one direction, including forcing it to jump/fall down or enter into melee combat with any enemy model (as if it had Charged), or leave Combat (as if it had Retreated, including granting any enemies within range free attacks).</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armor" id="c363-4259-50ae-5090" hidden="false" sortIndex="3">
@@ -160,6 +165,9 @@
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="e878-a54e-5461-5f68-min" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e878-a54e-5461-5f68-max" includeChildSelections="true"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Tough" id="5a0c-b8ff-50d5-bb0f" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Death Commando" hidden="false" id="77f7-5569-472a-6e92" publicationId="c658-4a10-e1fe-befc" page="20">
       <costs>
@@ -521,13 +529,28 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
         <categoryLink name="Troop" hidden="false" id="916c-9d43-17b1-75a3" targetId="bd43-ddb1-262d-4489" primary="true"/>
       </categoryLinks>
       <profiles>
-        <profile name="Heretic Trooper" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="5c28-fb72-df49-7ffd">
+        <profile name="Wretched" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="5c28-fb72-df49-7ffd">
           <characteristics>
             <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
             <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">-1</characteristic>
             <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">-1</characteristic>
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dark Blessing" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2a4a-1cd3-c412-997e">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">If a Wretch is taken Out of Action in battle, one of your models with Keywords HERETIC and ELITE gains one BLESSING MARKER. </characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Law of Hell" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b470-fc56-b15f-c431">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">If a Wretch manages to take any enemy ELITE model Out of Action or performs a Glorious Deed, it gains its freedom and is immediately removed from the battle and from your warband permanently. It does not count as a casualty, but your warband’s total size for this battle is reduced by one for purposes of Morale.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chattel" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c671-421c-22ef-5503">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Wretched can be sold at any time for their full ducat value between battles. Note that their weapons, armour and equipment still only fetch half price.</characteristic>
           </characteristics>
         </profile>
       </profiles>
