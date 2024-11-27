@@ -427,7 +427,7 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="afcc-5f24-1c7c-63c4" childId="any" shared="true" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="afcc-5f24-1c7c-63c4" childId="model" shared="true" includeChildForces="false"/>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
                   </conditions>
                   <conditionGroups>
