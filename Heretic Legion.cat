@@ -53,7 +53,7 @@
         <infoLink name="Strong" id="d490-8c8c-0f7e-f806" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Heretic Trooper" hidden="false" id="686d-9f6d-e7c8-ec80" publicationId="c658-4a10-e1fe-befc" page="22">
+    <selectionEntry type="model" import="true" name="Heretic Trooper Test" hidden="false" id="686d-9f6d-e7c8-ec80" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -111,10 +111,14 @@
         </selectionEntry>
       </selectionEntries>
       <modifiers>
-        <modifier type="increment" value="1" field="ff12-158a-dee7-c78b"/>
+        <modifier type="increment" value="1" field="ff12-158a-dee7-c78b">
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="parent" childId="686d-9f6d-e7c8-ec80" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ff12-158a-dee7-c78b"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="ff12-158a-dee7-c78b"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Priest" hidden="false" id="8983-6564-96c7-fd33" publicationId="c658-4a10-e1fe-befc" page="20">
