@@ -630,6 +630,9 @@
           <infoLinks>
             <infoLink name="Grenades" id="b1c6-bcbf-3d78-d176" hidden="false" type="profile" targetId="cc34-0630-85e1-2583"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="126e-d930-e6d6-2f1a" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Gas Grenades" hidden="false" id="3e61-384a-10f0-3ade">
           <costs>
@@ -639,6 +642,9 @@
           <infoLinks>
             <infoLink name="Gas Grenades" id="0cbb-5e78-6bdf-3400" hidden="false" type="profile" targetId="d0af-88cd-1c52-2114"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08f3-4e24-842c-7741" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="9027-b0bb-72fe-b796">
           <costs>
@@ -648,6 +654,9 @@
           <infoLinks>
             <infoLink name="Incendiary Grenades" id="972c-75fb-b8ab-0add" hidden="false" type="profile" targetId="3bfd-2c1d-2d6b-a36c"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c8d-d8be-cd2c-983a" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
