@@ -49,6 +49,9 @@
       <constraints>
         <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="2daf-dded-85a2-f21a"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Strong" id="d490-8c8c-0f7e-f806" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Trooper" hidden="false" id="686d-9f6d-e7c8-ec80" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -185,11 +188,7 @@
         </profile>
         <profile name="Hide" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1191-44c6-b786-d49d">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">As a RISKY ACTION with +1 DICE the Commando can hide if any
-piece of scenery the model is touching can block line of sight in any direction, even
-partially, regardless of whether an enemy currently has a clear LOS. If successful,
-enemies cannot target the Commando with ranged attacks or Charges. Weapons
-with the Keyword BLAST affect the Commando as normal if it is in the radius of the</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">As a RISKY ACTION with +1 DICE the Commando can hide if any piece of scenery the model is touching can block line of sight in any direction, even partially, regardless of whether an enemy currently has a clear LOS. If successful, enemies cannot target the Commando with ranged attacks or Charges. Weapons with the Keyword BLAST affect the Commando as normal if it is in the radius of the</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -291,6 +290,285 @@ with the Keyword BLAST affect the Commando as normal if it is in the radius of t
       <infoLinks>
         <infoLink name="Infiltrator" id="1b2f-cf0c-cc81-1861" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chorister" hidden="false" id="fe81-08b2-7161-d4cb" publicationId="c658-4a10-e1fe-befc" page="21">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="65"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7ba1-f516-e8cf-3957" id="7bfd-40ff-98a3-e398" primary="false" name="Heretic"/>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="cec4-f2a7-3679-cc0c" primary="true" name="Elite"/>
+        <categoryLink targetId="4f5c-027d-253c-ffa3" id="9888-ee20-231f-12cc" primary="false" name="Fear"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Chorister" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="8dab-235b-d0d8-967f">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">-2</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">2</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armor" id="1694-010f-d3bc-0704" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="8118-4fef-bf10-2997" defaultAmount="" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Standard Armour" id="6dd8-68a6-5bfa-149d" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51bb-b3d3-c882-3710" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Reinforced Armor" hidden="false" id="5b7b-5991-5249-b176" defaultAmount="" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Reinforced Armour" id="4866-92b6-a0bc-ea14" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8308-3b34-bc01-36d6" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71c5-f832-22b9-6ff2" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Grenades" hidden="false" id="d698-b0ea-7831-ea45" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="6b85-2b40-edb3-e9a4" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="454e-b570-692d-acf0" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a315-a1b6-dd13-ba1c" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Fear" id="ce70-1eb4-3526-3f00" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="War Wolf Assault Beast" hidden="false" id="eab4-df0a-d8f3-302d" publicationId="c658-4a10-e1fe-befc" page="23">
+      <profiles>
+        <profile name="War Wolf" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="57ad-9a46-41b3-5414">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">N/A</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-3 </characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">50mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Loping Dash" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3cce-f0d7-ac9e-f3a6">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">A War Wolf may take its Dash ACTION with +2 DICE. The War Wolf ignores movement penalties caused by Difficult Terrain.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chainmaw" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="46aa-d5a4-2a05-9708">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Hit, +1D to Injure</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Ignores Armor. Takes no hands to wield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shredding Claws" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="212b-163e-3eb6-575d">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Two-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Injure</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">RISKY, CUMBERSOME</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Considered an Off-Hand Weapon</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shredding Claws" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="ac0c-c18a-d987-91a1">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Two-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Injure</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">RISKY, CUMBERSOME</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Considered an Off-Hand Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fear" id="c72d-781c-e31d-d28e" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+        <infoLink name="Tough" id="91bd-c95c-1b81-6801" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="105c-8780-b389-2f18" includeChildSelections="true"/>
+      </constraints>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="140"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="4180-5377-2d83-48ba" id="7abf-4121-4087-4790" primary="false" name="Artificial"/>
+        <categoryLink targetId="7ba1-f516-e8cf-3957" id="3cce-0aff-64b3-68e7" primary="false" name="Heretic"/>
+        <categoryLink targetId="914f-0020-0d97-e217" id="d43c-15d8-e34f-cf5b" primary="false" name="Tough"/>
+        <categoryLink targetId="4f5c-027d-253c-ffa3" id="c0f6-4160-1d96-486e" primary="false" name="Fear"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Artillery Witch" hidden="false" id="f2d9-0f99-61a1-fce5" publicationId="c658-4a10-e1fe-befc" page="24">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="80"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7ba1-f516-e8cf-3957" id="c45c-929e-0ae1-7804" primary="false" name="Heretic"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="5455-c5d3-a744-436d" primary="false" name="Troop"/>
+        <categoryLink targetId="4180-5377-2d83-48ba" id="4aab-3f73-6869-5eab" primary="false" name="Artificial"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Artillery Witch" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="73fc-5557-f02b-f423">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">-1</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Levitate" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="975d-e551-7d4d-1e9b">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Artillery Witch can Climb up without taking an ACTION and does not roll on the Injury Chart when falling.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Bomb" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="8755-5cd3-d0a0-1caa">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
+            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">Special</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">BLAST 3&quot;, SHRAPNEL</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Specify a 1x1mm point on the battlefield within 36” that the Witch can see and that you want to target. Next, make a Ranged Attack ACTION. If the roll fails (i.e. you roll 6 or less with the two lowest Dice), the bomb lands 1” away from its intended location, multiplied by the number representing the degree of failure (for example, if you rolled 5, the bomb lands 2” away, as 7-5=2). The direction is decided by your opponent. Roll on the Injury Chart for each model within the BLAST radius
+
+
+If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart and add the dice together! Other models hit by the bomb roll on the Injury Chart as standard. Any model hit, but not taken Out of Action, by this attack is blownD3” directly away from the point of impact (roll for each model separately), stopping if they hit other models/buildings/objects. Cover, range and higher position do not affect attacks by the Infernal Bomb. Roll injuries for models that would benefit from Cover from the perspective of the BLAST point with -1 DICE. The Activation of the Witch ends immediately after using the Infernal Bomb.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Artificial Life" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2c8d-724a-e4eb-d4cb">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Artillery Witches are not affected by FEAR. Additionally, attacks with the Keyword GAS suffer a -1 DICE penalty to injure the Witch and they do not suffer additional BLOOD MARKERS from the Keyword GAS.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armor" id="1194-ec89-39e2-6f91" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="de7e-982d-abe2-3658" defaultAmount="" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Standard Armour" id="b12f-fd12-ec2b-1a2f" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a94-5019-4ee1-44da" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Reinforced Armor" hidden="false" id="c1e8-8a5e-ccbb-16ee" defaultAmount="" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Reinforced Armour" id="3164-e16b-a2a5-1ae8" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bc7-0bdd-52ad-9f00" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0534-2808-0b87-4eb0" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons" id="7050-8ef1-0699-ced0" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Melee Weapons" hidden="false" id="19b2-3fff-cd64-345f" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d"/>
+            <entryLink import="true" name="Utility Hand" hidden="false" id="2a07-235b-ec1f-ab51" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5245-6529-411d-c65c" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Grenades" hidden="false" id="2c6a-64c3-e2f5-9613" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="347a-bdcf-fe18-3744" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ceb2-bf00-2a24-aa1d" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="ceb2-bf00-2a24-aa1d">
+          <conditions>
+            <condition type="atLeast" value="1000" field="8d43-33fd-332d-17a6" scope="roster" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Wretched" hidden="false" id="cf02-7a3e-ffbf-d7f9" publicationId="c658-4a10-e1fe-befc" page="22">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Troop" hidden="false" id="916c-9d43-17b1-75a3" targetId="bd43-ddb1-262d-4489" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Heretic Trooper" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="5c28-fb72-df49-7ffd">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">-1</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">-1</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armor" id="c626-9557-48a2-b9d8" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="5729-bdba-c679-c62d">
+              <infoLinks>
+                <infoLink name="Standard Armour" id="163d-4925-27d6-ba95" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e04-9759-169f-c2bd" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Grenades" hidden="false" id="fe69-ce79-9851-11c1" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="dc2c-a616-9aa6-be83" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="4" collapsible="true"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="e0ce-0ead-75e3-470d" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="{this} is not allowed" field="error">
+          <conditions>
+            <condition type="greaterThan" value="10" field="8d43-33fd-332d-17a6" scope="upgrade" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -472,7 +750,7 @@ with the Keyword BLAST affect the Commando as normal if it is in the radius of t
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="0bea-138c-b3e9-b630" includeChildSelections="true"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Hellblade" id="69a7-509e-e8a3-2ccc" hidden="false" type="profile" targetId="7490-f22e-68ff-79d3"/>
+            <infoLink name="Tartarus Claws" id="69a7-509e-e8a3-2ccc" hidden="false" type="profile" targetId="0999-4c6b-539f-d1b2"/>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">

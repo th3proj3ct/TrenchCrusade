@@ -82,6 +82,15 @@
     <rule name="Infiltrator" id="154d-8072-ef87-e6c1" hidden="false">
       <description>Models with this Keyword can be deployed anywhere on the table out of line of sight of any enemies, but at least 8” away from the closest enemy. They are deployed after all other models without this Keyword. If any infiltrators cannot be deployed according to these restrictions then those models can always be placed in your deployment zone. If a scenario does not allow for infiltrators, deploy models with this Keyword during standard deployment as if they didn’t have this Keyword.</description>
     </rule>
+    <rule name="Tough" id="3c75-701d-e708-1438" hidden="false">
+      <description>If a TOUGH model would be taken Out Of Action, it is knocked Down instead. After a TOUGH model has been knocked Down in this way once, it can be taken Out of Action as normal.</description>
+    </rule>
+    <rule name="Fear" id="8c95-78a1-d88d-5f8e" hidden="false">
+      <description>Enemies of models with this Keyword suffer -1 DICE in melee combat against this model. Some units are immune to this effect. Models that cause FEAR are not affected by FEAR themselves.</description>
+    </rule>
+    <rule name="Strong" id="6297-d0e0-1935-5cfd" hidden="false">
+      <description>A model with this Keyword ignores the rules for weapons/armour/equipment with Keyword HEAVY, including not being limited to carrying only one HEAVY item (though other limitations apply as normal). In addition, it may use a single two-handed Melee weapon as a one-handed weapon.</description>
+    </rule>
   </sharedRules>
   <publications>
     <publication name="Playtest Rules 1.5" id="c658-4a10-e1fe-befc" hidden="false" shortName="PT1.5" publisherUrl="https://static1.squarespace.com/static/637c0a5adafeb04f70309b99/t/6738d89f383e092b140a808f/1731778725409/Trench+Crusade+Rules+v1.5+%283%29.pdf"/>
@@ -366,11 +375,7 @@ They do not count towards the maximum melee weapons a model can carry.</characte
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
-        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Tartarus Claws always come as a pair and do not allow the use of any other melee weapons. You can make two
-Attack ACTIONS with the Claws without the usual -1 DICE for the second attack. If the opponent is taken Down or
-Out of Action with the Claws you may immediately move the model up to 3”. If the move takes you into contact with
-another enemy model, this counts as a charge and you can make a second Melee Attack ACTION with the claws. You
-can only do this follow-up move once per Activation</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Tartarus Claws always come as a pair and do not allow the use of any other melee weapons. You can make two Attack ACTIONS with the Claws without the usual -1 DICE for the second attack. If the opponent is taken Down or Out of Action with the Claws you may immediately move the model up to 3”. If the move takes you into contact with another enemy model, this counts as a charge and you can make a second Melee Attack ACTION with the claws. You can only do this follow-up move once per Activation</characteristic>
       </characteristics>
     </profile>
     <profile name="Anti-Tank Hammer" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="8df3-f372-20a0-4a59" publicationId="c658-4a10-e1fe-befc" page="115">
