@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry type="model" import="true" name="Heavy Trooper" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
+    <selectionEntry type="model" import="true" name="Anointed Heavy Infantry" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
-        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="95"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <categoryLinks>
@@ -28,7 +28,7 @@
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="79f8-f017-4554-481f" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Melee Weapons" hidden="false" id="999b-582a-3b8e-9cd9" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d" collapsible="true">
+            <entryLink import="true" name="Melee Weapons" hidden="false" id="999b-582a-3b8e-9cd9" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d" collapsible="false">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e4c7-dbf7-4bc9-0704" includeChildSelections="false"/>
               </constraints>
@@ -50,7 +50,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Ranged Weapons" hidden="false" id="bb6a-a7d2-ad94-91a4" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58" sortIndex="1" collapsible="true">
+            <entryLink import="true" name="Ranged Weapons" hidden="false" id="bb6a-a7d2-ad94-91a4" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58" sortIndex="1" collapsible="false">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d1f1-0f79-ea47-2c78" includeChildSelections="false"/>
               </constraints>
@@ -75,10 +75,27 @@
             <entryLink import="true" name="Utility Hand" hidden="false" id="6766-2e68-c346-e561" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90" collapsible="true"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Armor" id="f974-b656-b697-4421" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Reinforced Armor" hidden="false" id="f483-09c2-6eb4-f93e" defaultAmount="1">
+              <infoLinks>
+                <infoLink name="Reinforced Armour" id="9083-47b8-a642-e338" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0033-e6a9-d121-12ab" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc2d-d893-0807-2ae4" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="0b18-18b1-58f2-2d15" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="a3f4-3bdb-2ebf-4efa" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="2" collapsible="true"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="0b18-18b1-58f2-2d15" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="a3f4-3bdb-2ebf-4efa" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="4" collapsible="true"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Trooper" hidden="false" id="686d-9f6d-e7c8-ec80" publicationId="c658-4a10-e1fe-befc" page="22">
@@ -154,10 +171,26 @@
             <entryLink import="true" name="Utility Hand" hidden="false" id="d076-238e-896c-c716" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90" collapsible="true"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Armor" id="cf0c-9604-c6eb-60e1" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="7011-510d-ceed-0758">
+              <infoLinks>
+                <infoLink name="Standard Armour" id="2cf2-f3d6-1888-181b" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52a4-bfc6-69c3-835a" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="bc65-16ff-4be3-3524" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="205f-6e44-4e83-114f" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="2" collapsible="true"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="bc65-16ff-4be3-3524" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="205f-6e44-4e83-114f" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="4" collapsible="true"/>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>
@@ -416,8 +449,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="b729-c409-1ae1-3e76">
               <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="15"/>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Bayonet Lug" hidden="false" id="a36a-e4dd-a26c-122c" type="selectionEntry" targetId="3348-ed1b-adf7-af00"/>
