@@ -106,8 +106,7 @@
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="ff12-158a-dee7-c78b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7be-0cb3-fae2-ce26" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ff12-158a-dee7-c78b"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="ff12-158a-dee7-c78b"/>
