@@ -417,6 +417,7 @@
         <categoryLink targetId="7ba1-f516-e8cf-3957" id="3cce-0aff-64b3-68e7" primary="false" name="Heretic"/>
         <categoryLink targetId="914f-0020-0d97-e217" id="d43c-15d8-e34f-cf5b" primary="false" name="Tough"/>
         <categoryLink targetId="4f5c-027d-253c-ffa3" id="c0f6-4160-1d96-486e" primary="false" name="Fear"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="7057-3183-59fa-13d3" primary="true" name="Troop"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Artillery Witch" hidden="false" id="f2d9-0f99-61a1-fce5" publicationId="c658-4a10-e1fe-befc" page="24">
@@ -426,7 +427,7 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="7ba1-f516-e8cf-3957" id="c45c-929e-0ae1-7804" primary="false" name="Heretic"/>
-        <categoryLink targetId="bd43-ddb1-262d-4489" id="5455-c5d3-a744-436d" primary="false" name="Troop"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="5455-c5d3-a744-436d" primary="true" name="Troop"/>
         <categoryLink targetId="4180-5377-2d83-48ba" id="4aab-3f73-6869-5eab" primary="false" name="Artificial"/>
       </categoryLinks>
       <profiles>
@@ -565,7 +566,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
       <modifiers>
         <modifier type="add" value="{this} is not allowed" field="error">
           <conditions>
-            <condition type="greaterThan" value="10" field="8d43-33fd-332d-17a6" scope="upgrade" childId="any" shared="true"/>
+            <condition type="greaterThan" value="10" field="8d43-33fd-332d-17a6" scope="upgrade" childId="any" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
