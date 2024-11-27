@@ -554,7 +554,11 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <forceEntries>
-    <forceEntry name="Elite" id="cd98-c9a2-fa34-63f4" hidden="false"/>
-    <forceEntry name="Troop" id="b0f3-ac27-4b1a-6109" hidden="false"/>
+    <forceEntry name="Army Roster" id="3952-da7e-8ceb-60d9" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Elite" hidden="false" id="ca65-9830-167a-dcd3" targetId="3de0-192c-3ec2-51be" type="category"/>
+        <categoryLink name="Troop" hidden="false" id="62bf-5f9a-6f05-d089" targetId="bd43-ddb1-262d-4489"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
 </catalogue>
