@@ -49,7 +49,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Ranged Weapons" hidden="false" id="bb6a-a7d2-ad94-91a4" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58">
+            <entryLink import="true" name="Ranged Weapons" hidden="false" id="bb6a-a7d2-ad94-91a4" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58" sortIndex="1">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d1f1-0f79-ea47-2c78" includeChildSelections="false"/>
               </constraints>
@@ -67,11 +67,6 @@
                 <modifier type="decrement" value="1" field="d1f1-0f79-ea47-2c78">
                   <conditions>
                     <condition type="atLeast" value="2" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="d1f1-0f79-ea47-2c78">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="aa9b-a7a1-69a4-05f4" shared="true" includeChildForces="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
