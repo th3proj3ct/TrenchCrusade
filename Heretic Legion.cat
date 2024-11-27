@@ -689,7 +689,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <modifiers>
             <modifier type="increment" value="1" field="085a-f187-4921-4824">
               <repeats>
-                <repeat value="2" repeats="1" field="selections" scope="parent" childId="3844-b41c-9ecc-85b9" shared="true" roundUp="false"/>
+                <repeat value="2" repeats="1" field="selections" scope="roster" childId="3844-b41c-9ecc-85b9" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>
