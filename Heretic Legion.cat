@@ -22,52 +22,238 @@
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Hands" id="8995-6209-5bc9-60f1" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Weapons" id="3820-c254-ccb9-04e0" hidden="false">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="79f8-f017-4554-481f" includeChildSelections="false"/>
+          </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Two Combat Hands" id="f9b0-8218-56f5-4cf1" hidden="false" sortIndex="1" collapsible="true">
-              <entryLinks>
-                <entryLink import="true" name="Universal Melee Weapons" hidden="false" id="010a-afb2-6c74-83a1" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d"/>
-                <entryLink import="true" name="Universal Ranged Weapons" hidden="false" id="7d56-8932-d7d1-ab21" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58"/>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="One Combat/One Utility" id="ed23-8904-857f-e174" hidden="false" collapsible="true">
-              <entryLinks>
-                <entryLink import="true" name="Utility Hand" hidden="false" id="1c7a-58ae-e167-a8e0" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90">
+            <selectionEntryGroup name="Utility" id="fb2c-fc1f-4c76-c8af" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Shield" hidden="false" id="7998-7e0c-4176-ead6">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Shield" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fe19-0a92-398f-dcaa">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Armor improves by -1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d8a-f9e2-2bb5-bda8" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4360-b4fe-df9a-b6ad" includeChildSelections="false"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Combat Hand" id="e148-8325-d070-c84a" hidden="false">
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Instrument" hidden="false" id="cdb5-e8b4-2e57-7e7c">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                  </costs>
                   <entryLinks>
-                    <entryLink import="true" name="Universal Melee (One-Handed)" hidden="false" id="4240-d357-a3b6-b7ad" type="selectionEntryGroup" targetId="2316-99d3-0e3a-3771">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e542-974b-b850-9772"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Universal Ranged (One-Handed)" hidden="false" id="739f-5512-5555-b15d" type="selectionEntryGroup" targetId="53d7-33cb-1563-1112">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6c4-7365-7787-f7c6"/>
-                      </constraints>
-                    </entryLink>
+                    <entryLink import="true" name="Musical Instrument" hidden="false" id="fcc4-2732-a7dc-9453" type="profile" targetId="dd0c-c62d-46f1-64f8"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c31a-96bf-3fbf-f7d7" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Banner" hidden="false" id="9940-b640-555f-0741">
+                  <costs>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Banner" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="38ef-a31b-4b88-9380">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">You&apos;re cool as ice B)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cbdd-beed-5e35-35b1" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee" id="2aaf-d403-cb1a-8fce" hidden="false">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3f98-6352-9af2-2d58" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="3f98-6352-9af2-2d58">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a46d-6494-227c-9f60" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="fb2c-fc1f-4c76-c8af" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="3f98-6352-9af2-2d58">
+                  <conditions>
+                    <condition type="equalTo" value="2" field="selections" scope="parent" childId="fb2c-fc1f-4c76-c8af" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One-Handed" id="d2f3-8422-0896-bd26" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Knife" hidden="false" id="f930-2ecd-42a4-af25">
+                      <profiles>
+                        <profile name="Knife" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="c74d-f6f5-fa25-6dfc">
+                          <characteristics>
+                            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+                            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+                            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+                            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="1"/>
+                        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Sword" hidden="false" id="2dbb-5b5a-722b-0d32">
+                      <profiles>
+                        <profile name="Sword" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="1530-e874-8bad-b47b">
+                          <characteristics>
+                            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+                            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+                            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">CRITICAL</characteristic>
+                            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Two-Handed" id="a46d-6494-227c-9f60" hidden="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f42d-dbb7-5423-f2f1" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Great Sword" hidden="false" id="015d-8a1a-481c-4d8a">
+                      <costs>
+                        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink import="true" name="Great Sword/Axe" hidden="false" id="3606-8b11-9e4b-ed65" type="profile" targetId="2257-4155-dd7d-8641"/>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Best Sword" hidden="false" id="37bd-c8d6-6e92-0c91">
+                      <costs>
+                        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+                        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink import="true" name="Great Sword/Axe" hidden="false" id="017b-f497-1861-4f0d" type="profile" targetId="2257-4155-dd7d-8641"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged" id="62e5-8859-16e1-2439" hidden="false">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d258-77bc-65c4-3818" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="d258-77bc-65c4-3818">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="4197-7874-0e34-0d4b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="fb2c-fc1f-4c76-c8af" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="d258-77bc-65c4-3818">
+                  <conditions>
+                    <condition type="equalTo" value="2" field="selections" scope="parent" childId="fb2c-fc1f-4c76-c8af" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One-Handed" id="3ea0-bf1e-bdf0-40e4" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Blaster" hidden="false" id="7586-1a1b-a865-deff">
+                      <profiles>
+                        <profile name="Blaster" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="3b32-b1a6-908b-a934">
+                          <characteristics>
+                            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+                            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
+                            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+                            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+                            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="3"/>
+                        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Shooter" hidden="false" id="4bb9-c963-63d4-1aef">
+                      <profiles>
+                        <profile name="Sword" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="f3f7-e122-711f-ac74">
+                          <characteristics>
+                            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+                            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">6&quot;</characteristic>
+                            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+                            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">CRITICAL</characteristic>
+                            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Two-Handed" id="4197-7874-0e34-0d4b" hidden="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dcc-5892-18ed-b99f" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Semi Auto Smoothbore" hidden="false" id="9bce-f0fd-64d4-f519">
+                      <costs>
+                        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+                        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink import="true" name="Great Sword/Axe" hidden="false" id="07cd-bbe6-ba98-5817" type="profile" targetId="2257-4155-dd7d-8641"/>
+                      </entryLinks>
+                      <profiles>
+                        <profile name="Semi Auto Smoothbore" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="8fd6-2859-4afc-ed26">
+                          <characteristics>
+                            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
+                            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">20&quot;</characteristic>
+                            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-3D to Hit</characteristic>
+                            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+                            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">A model hit by this dies on the spot. You must then swallow the model whole.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Automatic Rifle" hidden="false" id="fd60-abbb-8977-a4c8" type="selectionEntry" targetId="3b88-7bdf-2370-d7e4"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Two Utility Hands" id="0ef7-b28d-0187-a05b" hidden="false" collapsible="true">
-              <entryLinks>
-                <entryLink import="true" name="Utility Hand" hidden="false" id="8e9a-c429-8459-a414" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90" collective="true">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="14ee-d721-1884-5158" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
           </selectionEntryGroups>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eca-1cab-8f3e-bacf" includeChildSelections="false"/>
-          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -549,7 +735,7 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="3000-ce3b-f377-3b4c">
           <entryLinks>
-            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="3cbb-0a6c-2930-4c76" type="profile" targetId="3bfd-2c1d-2d6b-a36c"/>
+            <entryLink import="true" name="Musical Instrument" hidden="false" id="3cbb-0a6c-2930-4c76" type="profile" targetId="dd0c-c62d-46f1-64f8"/>
           </entryLinks>
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
