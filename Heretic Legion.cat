@@ -607,7 +607,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="f606-4316-044d-4503" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="f606-4316-044d-4503" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -693,7 +693,8 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
         <categoryLink name="Configuration" hidden="false" id="8264-4d4d-e63c-ba3e" targetId="705b-e23f-e9c2-58ab" primary="true"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e61-4b46-ef85-1306" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e61-4b46-ef85-1306-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e61-4b46-ef85-1306-max" includeChildSelections="false"/>
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="59f2-6d65-03d2-c268-min" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="59f2-6d65-03d2-c268-max" includeChildSelections="true"/>
       </constraints>
