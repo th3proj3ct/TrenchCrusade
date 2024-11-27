@@ -181,10 +181,20 @@
             <entryLink import="true" name="Pistol" hidden="false" id="16b0-2f67-3f25-2b26" type="profile" targetId="ae18-4990-fc3c-78ce"/>
           </entryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="72ed-48bf-6540-ce6c">
+          <profiles>
+            <profile name="One Million Damage Gun" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="0253-af8b-4728-9f84">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">200&quot;</characteristic>
+                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">One million damage</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede"/>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">A model hit with an attack made by this weapon gains one million blood counters.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
-      <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c749-4992-3032-3cc2" includeChildSelections="false"/>
-      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Universal Ranged (Two-Handed)" id="ebc3-4d3d-a2ce-f8ce" hidden="false">
       <selectionEntries>
@@ -368,18 +378,16 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ed1-d836-eab1-7f0d" includeChildSelections="false"/>
-      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Universal Ranged Weapons" id="1eee-c39c-0ea0-4c58" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Universal Ranged (One-Handed)" hidden="false" id="3029-da1c-938d-cff3" type="selectionEntryGroup" targetId="53d7-33cb-1563-1112" collective="true"/>
+        <entryLink import="true" name="Universal Ranged (One-Handed)" hidden="false" id="3029-da1c-938d-cff3" type="selectionEntryGroup" targetId="53d7-33cb-1563-1112" collective="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7cee-3455-6113-6619" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Universal Ranged (Two-Handed)" hidden="false" id="ae63-55f4-b047-9820" type="selectionEntryGroup" targetId="ebc3-4d3d-a2ce-f8ce"/>
       </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c28-f402-56ec-a706" includeChildSelections="false"/>
-      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Grenades" id="daa0-54c9-7e0a-4d14" hidden="false">
       <selectionEntries>
