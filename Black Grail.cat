@@ -414,9 +414,6 @@
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
-          <entryLinks>
-            <entryLink import="true" name="Bayonet Lug" hidden="true" id="8729-1584-d90d-20eb" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4"/>
-          </entryLinks>
           <infoLinks>
             <infoLink name="Musket" id="866a-0e46-811a-71bf" hidden="false" type="profile" targetId="b5e4-35bd-ba00-55c0"/>
           </infoLinks>
@@ -456,7 +453,9 @@
                 </modifier>
                 <modifier type="decrement" value="1" field="afe2-81ea-b376-d164">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="cee7-3642-aae1-c31c" shared="true" roundUp="false" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="cee7-3642-aae1-c31c" shared="true" roundUp="false" includeChildSelections="true">
+                      <comment>this is referring to the Abomination&apos;s shotgun</comment>
+                    </repeat>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -482,7 +481,9 @@
                 </modifier>
                 <modifier type="decrement" value="1" field="8875-cb36-4618-b49c">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="daaf-90b6-cc15-7923" shared="true" roundUp="false" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="daaf-90b6-cc15-7923" shared="true" roundUp="false" includeChildSelections="true">
+                      <comment>this is referring to the normal shotgun</comment>
+                    </repeat>
                   </repeats>
                 </modifier>
               </modifiers>
