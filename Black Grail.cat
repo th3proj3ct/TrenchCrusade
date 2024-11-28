@@ -379,7 +379,7 @@
                 </modifier>
                 <modifier type="decrement" value="1" field="afe2-81ea-b376-d164">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="model" childId="cee7-3642-aae1-c31c" shared="true" roundUp="false" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="cee7-3642-aae1-c31c" shared="true" roundUp="false" includeChildSelections="true"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -405,7 +405,7 @@
                 </modifier>
                 <modifier type="decrement" value="1" field="8875-cb36-4618-b49c">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="model" childId="daaf-90b6-cc15-7923" shared="true" roundUp="false" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="daaf-90b6-cc15-7923" shared="true" roundUp="false" includeChildSelections="true"/>
                   </repeats>
                 </modifier>
               </modifiers>
