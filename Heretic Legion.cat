@@ -1173,7 +1173,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
     <selectionEntryGroup name="Ranged Weapons" id="1eee-c39c-0ea0-4c58" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Ranged (One-Handed)" hidden="false" id="3029-da1c-938d-cff3" type="selectionEntryGroup" targetId="53d7-33cb-1563-1112" collective="false" collapsible="true"/>
-        <entryLink import="true" name="Ranged (Two-Handed)" hidden="false" id="ae63-55f4-b047-9820" type="selectionEntryGroup" targetId="ebc3-4d3d-a2ce-f8ce">
+        <entryLink import="true" name="Ranged (Two-Handed)" hidden="false" id="ae63-55f4-b047-9820" type="selectionEntryGroup" targetId="ebc3-4d3d-a2ce-f8ce" collapsible="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2eab-1232-6cb7-2579" includeChildSelections="false"/>
           </constraints>
@@ -1454,7 +1454,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
       <entryLinks>
         <entryLink import="true" name="Melee Weapons" hidden="false" id="c565-00c6-2806-e1c5" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d" collapsible="false"/>
         <entryLink import="true" name="Ranged Weapons" hidden="false" id="8f2f-2c59-b0bc-34fd" type="selectionEntryGroup" targetId="1eee-c39c-0ea0-4c58" sortIndex="1" collapsible="false"/>
-        <entryLink import="true" name="Utility Hand" hidden="false" id="350e-f7fb-708c-4cae" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90" collapsible="true"/>
+        <entryLink import="true" name="Utility Hand" hidden="false" id="350e-f7fb-708c-4cae" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90" collapsible="true">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="277a-373f-e66a-7953" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <modifiers>
         <modifier type="add" value="Max 1 Heavy item on Non-Strong Unit" field="error">

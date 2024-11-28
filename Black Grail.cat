@@ -456,6 +456,9 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0c75-3ff6-3596-aa9e" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Equipment" id="4e14-77e1-ca51-7dc6" hidden="false">
       <selectionEntries>
