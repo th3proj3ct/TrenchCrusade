@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="4f10-6941-6de8-d8a6" hidden="false" collapsible="true">
       <constraints>
@@ -625,21 +625,21 @@
   <forceEntries>
     <forceEntry name="Warband" id="c331-f7cb-4f93-d861" hidden="false">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="f0b8-91e3-6b03-fbdc" targetId="705b-e23f-e9c2-58ab" type="category"/>
-        <categoryLink name="Elite" hidden="false" id="b233-bc4d-0af6-9b47" targetId="3de0-192c-3ec2-51be" type="category">
+        <categoryLink name="Configuration" hidden="false" id="f0b8-91e3-6b03-fbdc" targetId="705b-e23f-e9c2-58ab"/>
+        <categoryLink name="Elite" hidden="false" id="b233-bc4d-0af6-9b47" targetId="3de0-192c-3ec2-51be">
           <modifiers>
             <modifier type="add" value="Minimum 1 Leader" field="error">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="43b9-c7fd-4680-3e7a" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Troop" hidden="false" id="6ee3-420f-48cb-91c2" targetId="bd43-ddb1-262d-4489" type="category"/>
+        <categoryLink name="Troop" hidden="false" id="6ee3-420f-48cb-91c2" targetId="bd43-ddb1-262d-4489"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
