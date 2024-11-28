@@ -280,15 +280,7 @@
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Bayonet Lug" hidden="true" id="658d-888d-08df-93ed" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden" affects="">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="036b-eb9f-9b58-fa7e" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Bayonet Lug" hidden="true" id="658d-888d-08df-93ed" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Musket" id="204e-70ae-e836-b207" hidden="false" type="profile" targetId="b5e4-35bd-ba00-55c0"/>
@@ -379,6 +371,30 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="afe2-81ea-b376-d164" includeChildSelections="true"/>
               </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Putrid Sheeeeeeeeeotgun" hidden="true" id="cee7-3642-aae1-c31c">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Bayonet Lug" hidden="false" id="0045-5831-0e4f-7ff5" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Putrid Shotgun" id="681b-8474-d71d-e68e" hidden="false" type="profile" targetId="f342-1a5a-726e-8782"/>
+                <infoLink name="Infection Markers" id="e477-9a52-965d-bc6c" hidden="false" type="rule" targetId="884b-d2e7-31a6-f0b7"/>
+                <infoLink name="Assault" id="d57c-2793-7654-744f" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="8875-cb36-4618-b49c" includeChildSelections="true"/>
+              </constraints>
+              <comment>No Bayonet, for Abomination</comment>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden" affects="">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="036b-eb9f-9b58-fa7e" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
