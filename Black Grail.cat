@@ -566,7 +566,7 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Plague Knight" hidden="false" id="43b9-c7fd-4680-3e7a">
+    <selectionEntry type="model" import="true" name="Plague Knight" hidden="false" id="43b9-c7fd-4680-3e7a">
       <categoryLinks>
         <categoryLink targetId="3de0-192c-3ec2-51be" id="a408-9404-0cc5-29bf" primary="true" name="Elite"/>
         <categoryLink targetId="c5a0-e794-7661-ebb7" id="baf7-2124-e1bb-a176" primary="false" name="Black Grail"/>
