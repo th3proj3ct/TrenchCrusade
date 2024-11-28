@@ -96,7 +96,7 @@
       <description>If you fail your roll on the Action Success Chart when taking this ACTION, the Activation of this model ends immediately.</description>
     </rule>
     <rule name="Infection Markers" id="884b-d2e7-31a6-f0b7" hidden="false">
-      <description>Infection Markers: Some attacks by the weaponry of the Black Grail causes their opponents to suffer INFECTION MARKERS. These work exactly like BLOOD MARKERS, except if a model has one or more INFECTION MARKERS when activated, it gains + 1 INFECTION MARKER.
+      <description>Some attacks by the weaponry of the Black Grail causes their opponents to suffer INFECTION MARKERS. These work exactly like BLOOD MARKERS, except if a model has one or more INFECTION MARKERS when activated, it gains + 1 INFECTION MARKER.
 
 
 INFECTION MARKERS can be used to modify dice rolls exactly like BLOOD MARKERS. Use a different coloured dice (the more disgusting the better!) to indicate these markers and place them next to the infected model. A model may have up to six INFECTION MARKERS and six BLOOD MARKERS at the same time. If a model had any INFECTION MARKERS before, but has none when it is Activated, no new ones are added to the model – though it can still be re-infected by further attacks!</description>
@@ -662,7 +662,7 @@ Keyword: CONSUMABLE.</characteristic>
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">8&quot;</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">GAS</characteristic>
-        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">A Corruption Belcher hits one model within range automatically with its ranged attack ACTION. It ignores armour. </characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">A Corruption Belcher hits one model within range automatically with its ranged attack ACTION. It ignores armour.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
