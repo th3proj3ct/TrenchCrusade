@@ -280,11 +280,7 @@
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Bayonet Lug" hidden="false" id="658d-888d-08df-93ed" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden"/>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Bayonet Lug" hidden="false" id="658d-888d-08df-93ed" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Musket" id="204e-70ae-e836-b207" hidden="false" type="profile" targetId="b5e4-35bd-ba00-55c0"/>
@@ -301,12 +297,7 @@
             <categoryLink name="Heavy" hidden="false" id="9b6a-887b-4550-d69a" targetId="70c9-988d-71a7-7654" primary="false"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Bayonet Lug" hidden="false" id="31d7-aa0d-a13c-c605" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden"/>
-                <modifier type="set" value="true" field="hidden"/>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Bayonet Lug" hidden="false" id="31d7-aa0d-a13c-c605" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4"/>
           </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Viscera Cannon" hidden="true" id="9eea-4e25-e838-01e4" sortIndex="5">
@@ -355,11 +346,7 @@
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Bayonet Lug" hidden="false" id="9f37-0af8-eb2c-5a90" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden"/>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Bayonet Lug" hidden="false" id="9f37-0af8-eb2c-5a90" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Bolt Action Rifle" id="c7d4-94aa-92be-5cc1" hidden="false" type="profile" targetId="408d-d56e-71c4-f3c4"/>
@@ -384,9 +371,6 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="afe2-81ea-b376-d164" includeChildSelections="true"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden"/>
-              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
