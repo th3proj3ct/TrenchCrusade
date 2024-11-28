@@ -285,6 +285,13 @@
           <infoLinks>
             <infoLink name="Musket" id="204e-70ae-e836-b207" hidden="false" type="profile" targetId="b5e4-35bd-ba00-55c0"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden" affects="">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="036b-eb9f-9b58-fa7e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Infested Rifle" hidden="false" id="4a6e-43f6-f094-96cd" sortIndex="3">
           <costs>
@@ -299,6 +306,13 @@
           <entryLinks>
             <entryLink import="true" name="Bayonet Lug" hidden="false" id="31d7-aa0d-a13c-c605" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden" affects="">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="036b-eb9f-9b58-fa7e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Viscera Cannon" hidden="true" id="9eea-4e25-e838-01e4" sortIndex="5">
           <costs>
@@ -351,6 +365,69 @@
           <infoLinks>
             <infoLink name="Bolt Action Rifle" id="c7d4-94aa-92be-5cc1" hidden="false" type="profile" targetId="408d-d56e-71c4-f3c4"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden" affects="">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="036b-eb9f-9b58-fa7e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Infested Rifle" hidden="true" id="3749-e074-0f35-e3cc" sortIndex="3">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Infested Rifle" id="ea29-6c52-4d75-cdca" hidden="false" type="profile" targetId="088f-02cb-55b8-4bda"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="88e7-bf44-c275-fe48" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+          <comment>No Bayonet, for Abomination</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden" affects="">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="036b-eb9f-9b58-fa7e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bolt-Action Rifle" hidden="true" id="8ebf-be51-b03f-853f" sortIndex="2">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Bolt Action Rifle" id="ae77-149f-4300-66b8" hidden="false" type="profile" targetId="408d-d56e-71c4-f3c4"/>
+          </infoLinks>
+          <comment>No Bayonet, for Abomination</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden" affects="">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="036b-eb9f-9b58-fa7e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Musket" hidden="true" id="131b-decb-a536-97c7" sortIndex="1">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Bayonet Lug" hidden="true" id="8729-1584-d90d-20eb" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Musket" id="866a-0e46-811a-71bf" hidden="false" type="profile" targetId="b5e4-35bd-ba00-55c0"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden" affects="">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="036b-eb9f-9b58-fa7e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>No Bayonet, for Abomination</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
