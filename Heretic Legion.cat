@@ -1038,14 +1038,12 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </constraints>
           <infoLinks>
             <infoLink name="Anti-Material Rifle" id="4003-e071-9408-d954" hidden="false" type="profile" targetId="50ec-f075-494f-9dc5"/>
+            <infoLink name="Critical" id="1eec-0e08-f9cc-8829" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+            <infoLink name="Heavy" id="bf23-b588-52b1-a845" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="bdb6-1a3e-b263-0121" primary="false" name="Heavy"/>
           </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Critical" hidden="false" id="4c4a-b225-0a12-1601" type="rule" targetId="7c40-254f-6d33-854c"/>
-            <entryLink import="true" name="Heavy" hidden="false" id="e4e2-25ac-f80f-6c8e" type="rule" targetId="fbac-638f-ff95-d704"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="7f5a-869c-fe6b-82dd">
           <costs>
@@ -1057,15 +1055,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </constraints>
           <infoLinks>
             <infoLink name="Grenade Launcher" id="0ce4-534b-f0c1-0f35" hidden="false" type="profile" targetId="3113-d133-1726-05a0"/>
+            <infoLink name="Blast" id="8927-28ee-d962-296d" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
+            <infoLink name="Heavy" id="48de-5525-50ae-8769" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+            <infoLink name="Shrapnel" id="56cc-870d-b0e0-b091" hidden="false" type="rule" targetId="200f-a7a6-f8a7-8232"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="55eb-c4aa-45ab-7db6" primary="false" name="Heavy"/>
           </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Blast" hidden="false" id="6df0-a465-6da7-f3aa" type="rule" targetId="263d-6520-5629-c027"/>
-            <entryLink import="true" name="Shrapnel" hidden="false" id="be89-51ac-999a-0e14" type="rule" targetId="200f-a7a6-f8a7-8232"/>
-            <entryLink import="true" name="Heavy" hidden="false" id="e143-fcc7-da7e-1278" type="rule" targetId="fbac-638f-ff95-d704"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="5c4c-5169-0e5e-b35b">
           <costs>
@@ -1077,13 +1073,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </constraints>
           <infoLinks>
             <infoLink name="Machine Gun" id="c2ab-d898-5266-d1c5" hidden="false" type="profile" targetId="517c-652f-100e-71d6"/>
+            <infoLink name="Heavy" id="f6f4-84af-4588-3c2d" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="75b8-da92-445e-d47e" primary="false" name="Heavy"/>
           </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Heavy" hidden="false" id="30f2-f312-d987-c013" type="rule" targetId="fbac-638f-ff95-d704"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="9a7e-bfe8-e3bf-6f2e">
           <costs>
@@ -1095,10 +1089,8 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </constraints>
           <infoLinks>
             <infoLink name="Flamethrower" id="7b69-4991-432f-a6da" hidden="false" type="profile" targetId="9b21-3223-c112-c65f"/>
+            <infoLink name="Fire" id="ec5e-91f3-fcf8-7eca" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
           </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="Fire" hidden="false" id="54c1-5f66-8b4a-c3f9" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="d55a-3291-216f-bf2c">
           <costs>
@@ -1110,13 +1102,12 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </constraints>
           <infoLinks>
             <infoLink name="Heavy Flamethrower" id="dc59-1907-d587-dfd9" hidden="false" type="profile" targetId="2fc0-bc43-b366-5b95"/>
+            <infoLink name="Fire" id="b222-5417-3ec8-fcc2" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
+            <infoLink name="Heavy" id="d60c-6442-088d-a045" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="fc0a-fdcd-8250-7d7d" primary="false" name="Heavy"/>
           </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Fire" hidden="false" id="3cbc-03e2-2055-7891" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="8292-a94f-828f-955e">
           <costs>
@@ -1154,10 +1145,8 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               </selectionEntries>
               <infoLinks>
                 <infoLink name="Submachine Gun" id="ebd6-6656-4a8a-a565" hidden="false" type="profile" targetId="f366-4889-0ac5-375d"/>
+                <infoLink name="Assault" id="b310-46e3-6486-a914" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Assault" hidden="false" id="9ffb-ba9d-2155-f051" type="rule" targetId="3136-7aab-4bde-9583"/>
-              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="b729-c409-1ae1-3e76">
               <costs>
@@ -1167,7 +1156,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <entryLink import="true" name="Bayonet Lug" hidden="false" id="a36a-e4dd-a26c-122c" type="selectionEntry" targetId="3348-ed1b-adf7-af00"/>
               </entryLinks>
               <infoLinks>
-                <infoLink name="Semi-Automatic Rifle" id="58d9-83d6-bcd8-6562" hidden="false" type="profile" targetId="1d82-fcc9-aeda-b03a"/>
+                <infoLink name="Shotgun" id="58d9-83d6-bcd8-6562" hidden="false" type="profile" targetId="0924-0647-1366-9d85"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Automatic Shotgun" hidden="false" id="f118-2787-2eed-84fd">
@@ -1179,6 +1168,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               </entryLinks>
               <infoLinks>
                 <infoLink name="Automatic Shotgun" id="81f6-3be0-4126-1976" hidden="false" type="profile" targetId="a19d-90ab-da9f-95ff"/>
+                <infoLink name="Assault" id="7fce-5365-92cc-df29" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -1243,15 +1233,14 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <infoLinks>
             <infoLink name="Grenades" id="b1c6-bcbf-3d78-d176" hidden="false" type="profile" targetId="cc34-0630-85e1-2583"/>
+            <infoLink name="Shrapnel" id="96c6-08d6-a171-cd00" hidden="false" type="rule" targetId="200f-a7a6-f8a7-8232"/>
+            <infoLink name="Assault" id="e4fe-217e-0bd8-efe1" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
+            <infoLink name="Blast" id="8da3-3c90-0bc9-8903" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
+            <infoLink name="Grenade" id="13e0-9c26-68c5-ee7f" hidden="false" type="rule" targetId="1c58-0dce-e86e-b0dc"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="126e-d930-e6d6-2f1a" includeChildSelections="false"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Blast" hidden="false" id="9233-60a0-1e89-9159" type="rule" targetId="263d-6520-5629-c027"/>
-            <entryLink import="true" name="Assault" hidden="false" id="07dd-6708-939d-a576" type="rule" targetId="3136-7aab-4bde-9583"/>
-            <entryLink import="true" name="Shrapnel" hidden="false" id="a336-312f-bf32-8af7" type="rule" targetId="200f-a7a6-f8a7-8232"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Gas Grenades" hidden="false" id="3e61-384a-10f0-3ade">
           <costs>
@@ -1260,15 +1249,14 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <infoLinks>
             <infoLink name="Gas Grenades" id="0cbb-5e78-6bdf-3400" hidden="false" type="profile" targetId="d0af-88cd-1c52-2114"/>
+            <infoLink name="Assault" id="3d65-cd4e-61cf-9b2a" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
+            <infoLink name="Blast" id="bbbb-60af-aef3-57fe" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
+            <infoLink name="Gas" id="63f5-aebb-c03b-e981" hidden="false" type="rule" targetId="2c6e-81c8-6c20-b5b7"/>
+            <infoLink name="Grenade" id="33d9-2618-83c7-f3f3" hidden="false" type="rule" targetId="1c58-0dce-e86e-b0dc"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08f3-4e24-842c-7741" includeChildSelections="false"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Blast" hidden="false" id="b012-305d-22dd-b89c" type="rule" targetId="263d-6520-5629-c027"/>
-            <entryLink import="true" name="Assault" hidden="false" id="6345-ef4f-7407-24df" type="rule" targetId="3136-7aab-4bde-9583"/>
-            <entryLink import="true" name="Gas" hidden="false" id="ea56-def1-9f18-4568" type="rule" targetId="2c6e-81c8-6c20-b5b7"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="9027-b0bb-72fe-b796">
           <costs>
@@ -1277,14 +1265,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <infoLinks>
             <infoLink name="Incendiary Grenades" id="972c-75fb-b8ab-0add" hidden="false" type="profile" targetId="3bfd-2c1d-2d6b-a36c"/>
+            <infoLink name="Assault" id="f0c7-2f08-2bb3-ad0c" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
+            <infoLink name="Fire" id="4e03-e4b8-b51a-1a78" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
+            <infoLink name="Grenade" id="51b1-e69a-49ce-cb01" hidden="false" type="rule" targetId="1c58-0dce-e86e-b0dc"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c8d-d8be-cd2c-983a" includeChildSelections="false"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Fire" hidden="false" id="552a-a756-d071-a8da" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
-            <entryLink import="true" name="Assault" hidden="false" id="d27d-26dc-80b9-eb51" type="rule" targetId="3136-7aab-4bde-9583"/>
-          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -1309,13 +1296,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <infoLinks>
             <infoLink name="Unholy Trinket" id="05aa-b1e4-0afc-5835" hidden="false" type="profile" targetId="df27-d1f1-d5b9-d53b"/>
+            <infoLink name="Consumable" id="1267-f995-ab35-8a0c" hidden="false" type="rule" targetId="e98d-4bd1-3870-27b9"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e03-ba06-0d8d-e7c5" includeChildSelections="false"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Consumable" hidden="false" id="7a51-8fb0-8597-6377" type="rule" targetId="e98d-4bd1-3870-27b9"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Unholy Relic" hidden="false" id="ff32-5416-a4fa-08c7" sortIndex="4">
           <costs>
@@ -1339,11 +1324,9 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </constraints>
           <infoLinks>
             <infoLink name="Incendiary Bullets" id="0501-86c2-60c2-776e" hidden="false" type="profile" targetId="01b8-f846-e8f7-6d71"/>
+            <infoLink name="Consumable" id="62f9-5dc5-2976-0e4f" hidden="false" type="rule" targetId="e98d-4bd1-3870-27b9"/>
+            <infoLink name="Fire" id="f7f4-2ca9-1157-b2a1" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
           </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="Consumable" hidden="false" id="c88f-7013-ef57-49c0" type="rule" targetId="e98d-4bd1-3870-27b9"/>
-            <entryLink import="true" name="Fire" hidden="false" id="7f04-4498-3544-4bd5" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Shovel" hidden="false" id="fa1f-59c8-3f39-3ff0" sortIndex="6">
           <costs>
