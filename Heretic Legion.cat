@@ -1500,6 +1500,9 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
       <categoryLinks>
         <categoryLink name="Cumbersome" hidden="false" id="4528-e650-9621-70c7" targetId="f87d-5ea3-e505-6a9f" primary="false"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58c8-eea6-3702-1490" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Comically Large Rock" hidden="false" id="9888-1175-0ff7-93c5">
       <constraints>
