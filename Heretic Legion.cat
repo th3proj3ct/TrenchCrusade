@@ -831,10 +831,8 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <infoLinks>
             <infoLink name="Sword/Axe" id="2231-f9cf-d362-db8c" hidden="false" type="profile" targetId="e938-b0dc-418c-0924"/>
+            <infoLink name="Critical" id="2ca4-fcb7-0250-b747" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
           </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="Critical" hidden="false" id="5b3a-e841-a669-0ae2" type="rule" targetId="7c40-254f-6d33-854c"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Trench Club" hidden="false" id="05ba-2758-6b7a-0828" sortIndex="2" collective="false">
           <costs>
@@ -852,6 +850,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <infoLinks>
             <infoLink name="Sacrificial Blade" id="63e9-79bf-dc36-33fb" hidden="false" type="profile" targetId="1459-550f-ed53-b276"/>
+            <infoLink name="Risky" id="4835-8827-480f-df41" hidden="false" type="rule" targetId="df23-62bc-775e-fca1"/>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -860,9 +859,6 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               </conditions>
             </modifier>
           </modifiers>
-          <entryLinks>
-            <entryLink import="true" name="Risky" hidden="false" id="19d5-4802-854b-10d4" type="rule" targetId="df23-62bc-775e-fca1"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blasphemous Staff" hidden="true" id="6e18-eb53-a42f-9368" sortIndex="4" collective="false">
           <costs>
@@ -870,6 +866,8 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <infoLinks>
             <infoLink name="Blasphemous Staff" id="48dd-de82-5956-ffc1" hidden="false" type="profile" targetId="6efb-9e82-7136-f983"/>
+            <infoLink name="Critical" id="be20-dff1-1628-8f93" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+            <infoLink name="Fire" id="22b4-7442-7373-be45" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -878,10 +876,6 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               </conditions>
             </modifier>
           </modifiers>
-          <entryLinks>
-            <entryLink import="true" name="Fire" hidden="false" id="7f04-db21-ba05-3a6a" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
-            <entryLink import="true" name="Critical" hidden="false" id="3353-3f59-ad0e-b0f4" type="rule" targetId="7c40-254f-6d33-854c"/>
-          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -894,13 +888,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <infoLinks>
             <infoLink name="Double-Handed Blunt Weapon" id="df89-c80c-db1e-136c" hidden="false" type="profile" targetId="05b3-f5b2-f569-3082"/>
+            <infoLink name="Heavy" id="89c2-27fc-3d07-926b" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="da3b-7644-0d45-8cca" primary="false" name="Heavy"/>
           </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Heavy" hidden="false" id="fc98-ed7b-e7dd-defe" type="rule" targetId="fbac-638f-ff95-d704"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Great Sword/Axe" hidden="false" id="84ac-8cad-49fa-ba48">
           <costs>
@@ -909,14 +901,12 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <infoLinks>
             <infoLink name="Great Sword/Axe" id="d52a-4ac2-6864-5f49" hidden="false" type="profile" targetId="2257-4155-dd7d-8641"/>
+            <infoLink name="Critical" id="0094-b450-181f-39b0" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+            <infoLink name="Heavy" id="8ee6-e79a-3489-2f5a" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="f97e-511b-6836-45ce" primary="false" name="Heavy"/>
           </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Heavy" hidden="false" id="edc6-722f-06ef-1f4e" type="rule" targetId="fbac-638f-ff95-d704"/>
-            <entryLink import="true" name="Critical" hidden="false" id="16ed-e557-d8f7-5e1f" type="rule" targetId="7c40-254f-6d33-854c"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Hellblade" hidden="false" id="c2f4-409f-b6d1-5720">
           <costs>
@@ -927,10 +917,8 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </constraints>
           <infoLinks>
             <infoLink name="Hellblade" id="2b1b-5926-e4e9-61e8" hidden="false" type="profile" targetId="7490-f22e-68ff-79d3"/>
+            <infoLink name="Fire" id="421d-3930-56f4-4633" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
           </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="Fire" hidden="false" id="861e-e6b0-9d8a-897f" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Tartarus Claws" hidden="true" id="af47-33c1-b1fc-f2bd">
           <costs>
@@ -961,13 +949,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               </costs>
               <infoLinks>
                 <infoLink name="Trench Polearm" id="ed89-4f34-6a91-0e59" hidden="false" type="profile" targetId="50eb-2990-0b48-1a8d"/>
+                <infoLink name="Cumbersome" id="df7a-0ad5-5738-fccd" hidden="false" type="rule" targetId="5613-c861-daeb-156a"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink targetId="f87d-5ea3-e505-6a9f" id="15a0-1bd8-b18e-f22d" primary="false" name="Cumbersome"/>
               </categoryLinks>
-              <entryLinks>
-                <entryLink import="true" name="Cumbersome" hidden="false" id="4eaf-d295-9a2a-6041" type="rule" targetId="5613-c861-daeb-156a"/>
-              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
