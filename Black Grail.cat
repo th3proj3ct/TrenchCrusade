@@ -883,14 +883,57 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Ranged" id="edb4-d19e-9afb-e594" hidden="false" sortIndex="1">
               <entryLinks>
-                <entryLink import="true" name="Ranged (One-Handed)" hidden="false" id="3a64-6ed6-5b3f-a4b3" type="selectionEntryGroup" targetId="8eec-e5d4-cdfb-ea1e"/>
-                <entryLink import="true" name="Ranged (Two-Handed)" hidden="false" id="711a-2f23-fc27-4873" type="selectionEntryGroup" targetId="ee80-c780-9aa9-1e4d"/>
+                <entryLink import="true" name="Ranged (One-Handed)" hidden="false" id="3a64-6ed6-5b3f-a4b3" type="selectionEntryGroup" targetId="8eec-e5d4-cdfb-ea1e">
+                  <modifiers>
+                    <modifier type="add" value="Max 2 of each Weapon." field="error">
+                      <conditions>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="ac70-a82a-2a3d-7796" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Ranged (Two-Handed)" hidden="false" id="711a-2f23-fc27-4873" type="selectionEntryGroup" targetId="ee80-c780-9aa9-1e4d">
+                  <modifiers>
+                    <modifier type="add" value="Max 2 of each Weapon." field="error">
+                      <conditions>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="489f-b97d-57d0-0b0b" shared="true"/>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="466c-9e50-b09a-4746" shared="true"/>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="4a6e-43f6-f094-96cd" shared="true"/>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="ced4-7c9e-e615-3587" shared="true"/>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="9eea-4e25-e838-01e4" shared="true"/>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="daaf-90b6-cc15-7923" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Melee" id="fc3e-7052-be75-3ab4" hidden="false" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="2f61-c681-a5c9-8c46" type="selectionEntryGroup" targetId="35a1-08a8-3fb6-c01f"/>
-                <entryLink import="true" name="Melee (Two-Handed)" hidden="false" id="5f0e-464a-bdaf-d5bd" type="selectionEntryGroup" targetId="f4c1-28c9-773f-c192"/>
+                <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="2f61-c681-a5c9-8c46" type="selectionEntryGroup" targetId="35a1-08a8-3fb6-c01f">
+                  <modifiers>
+                    <modifier type="add" value="Max 2 of each Weapon." field="error">
+                      <conditions>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="ff4a-a07e-300d-13d8" shared="true"/>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="a071-3c30-2597-d6f0" shared="true"/>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="e7d2-831b-a94c-be67" shared="true"/>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="23c3-ce02-f625-47d4" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Melee (Two-Handed)" hidden="false" id="5f0e-464a-bdaf-d5bd" type="selectionEntryGroup" targetId="f4c1-28c9-773f-c192">
+                  <modifiers>
+                    <modifier type="add" value="Max 2 of each Weapon." field="error">
+                      <conditions>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="6a1c-a31f-4971-3429" shared="true"/>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="b7dd-78bd-9d20-ff6d" shared="true"/>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="5d56-00d0-4830-83f0" shared="true"/>
+                        <condition type="greaterThan" value="2" field="selections" scope="parent" childId="6e0e-b8a9-8093-0fb9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
