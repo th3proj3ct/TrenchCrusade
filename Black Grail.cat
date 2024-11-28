@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="4f10-6941-6de8-d8a6" hidden="false" collapsible="true">
       <constraints>
@@ -634,6 +634,154 @@
       <infoLinks>
         <infoLink name="Fear" id="20ea-96ee-230f-1e04" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
         <infoLink name="Strong" id="aab6-a319-05b7-89dd" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Hounds of the Black Grail" hidden="false" id="5df2-ef54-85ea-adfe">
+      <profiles>
+        <profile name="Hounds of the Black Grail" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="5e98-af2a-d53d-787a">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">N/A</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">30x60mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Maul" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="aa15-64a9-87eb-87c8">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Hounds do not suffer penalties for fighting unarmed.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="670f-9bed-3b5c-2b36" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Infected" hidden="false" id="670f-9bed-3b5c-2b36">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89d2-b313-5386-bb61" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Infected Maul" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="e635-2d2a-2df7-bafe">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Hounds do not suffer penalties for fighting unarmed. This weapon causes INFECTION MARKERS instead of BLOOD MARKERS.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="55"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e5df-0eb4-a3c5-8cf7" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Grail Thrall" hidden="false" id="ec39-f328-bad6-a586">
+      <profiles>
+        <profile name="Pummel" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="8037-91e3-fc56-e8d8">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Hounds do not suffer penalties for fighting unarmed.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3a3c-7f8b-4ee4-d9d7" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Overwhelming Horde" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b4a6-25a1-64e7-5dae">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">For each friendly BLACK GRAIL model within 3” of the Thrall, it gains +1 DICE to its Melee attack rolls, up to maximum +4 DICE.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Thrall Type" id="74d1-4f68-8051-b15d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Grounded" hidden="false" id="3a3c-7f8b-4ee4-d9d7">
+              <costs>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e72-36fe-21b7-986d" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Thrall" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="93f3-a076-a503-e864">
+                  <characteristics>
+                    <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">5&quot;/Infantry</characteristic>
+                    <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">N/A</characteristic>
+                    <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">-1 Dice</characteristic>
+                    <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+                    <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8cce-0a3c-fe8a-6cfa">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Grail Thrall are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with Keyword GAS. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Winged" hidden="false" id="4173-8d52-ff32-03d8">
+              <costs>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e184-8bff-3cab-0f3b" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Winged Thrall" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="2055-017b-f08e-aff4" publicationId="c658-4a10-e1fe-befc" page="80">
+                  <characteristics>
+                    <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Flying</characteristic>
+                    <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">N/A</characteristic>
+                    <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">-1 Dice</characteristic>
+                    <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+                    <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92b0-cedc-0a21-616f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92b0-cedc-0a21-616f-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="c5a0-e794-7661-ebb7" id="afc4-0926-0a45-7fc8" primary="false" name="Black Grail"/>
+        <categoryLink targetId="4f5c-027d-253c-ffa3" id="45a0-3d8f-0ef6-4311" primary="false" name="Fear"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="b9e5-0571-730b-47ab" primary="false" name="Troop"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Fear" id="164c-45bb-ed46-1d5c" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
       </infoLinks>
     </selectionEntry>
   </selectionEntries>
