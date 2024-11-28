@@ -712,18 +712,18 @@
         <categoryLink targetId="4f5c-027d-253c-ffa3" id="71d4-d4c2-527b-d282" primary="false" name="Fear"/>
       </categoryLinks>
       <profiles>
-        <profile name="Plague Knight" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="e77c-0832-65b5-2e6f" publicationId="c658-4a10-e1fe-befc" page="78">
-          <characteristics>
-            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
-            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
-            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+4 Dice</characteristic>
-            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
-            <characteristic name="Base" typeId="73ae-cc17-596e-0481">50mm</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5af2-de11-6c23-567e">
           <characteristics>
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Lord of Tumours are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Plague Knight" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="5fad-8b9c-8d6a-a2f0" publicationId="c658-4a10-e1fe-befc" page="78">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -773,6 +773,16 @@
         <infoLink name="Fear" id="20ea-96ee-230f-1e04" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
         <infoLink name="Strong" id="aab6-a319-05b7-89dd" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="1" field="f025-ee7a-4125-ce80">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="80e3-313d-1c13-05a0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="f025-ee7a-4125-ce80" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hounds of the Black Grail" hidden="false" id="5df2-ef54-85ea-adfe">
       <profiles>
@@ -1086,6 +1096,208 @@
         <infoLink name="Tough" id="c864-cb8d-9f12-d55e" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
         <infoLink name="Fear" id="215b-54cc-fa41-2437" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
       </infoLinks>
+      <profiles>
+        <profile name="Corpulent" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="25e6-11bb-8833-ff82">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">An Amalgam is a vast bulk of diseased flesh and is extraordinarily difficult to kill. All injury rolls from any source against an Amalgam suffer a -2 DICE penalty.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Toxic" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e44b-d46b-fcf2-f50f">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This model does not suffer additional BLOOD MARKERS from attacks with Keyword GAS.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unstoppable" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b2bd-73a1-5f59-aa1f">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">An amalgam can always move out of melee combat with anyenemy without the enemy having a chance to attack it. Additionally, it can moveout of melee combat as part of a standard move, charge or dash.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Trample" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c927-1f41-5473-f2f2">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Whenever the Amalgam is fighting any enemy model on a 32mm or smaller base in melee that is Down, it can make a single additional Melee Attack ACTION any time during its Activation against one Downed opponent. Resolve the attack as if the Amalgam was armed with a Trench Club. This attack Ignores armour as the Amalgam stomps their enemies into pulp.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Abomination" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="e5d5-c4bb-4b99-020d">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2"/>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200"/>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5"/>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71"/>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a898-9a6a-c027-2c75" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lord of Tumours" hidden="false" id="80e3-313d-1c13-05a0">
+      <categoryLinks>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="8d9c-7a1e-fc1e-020b" primary="true" name="Elite"/>
+        <categoryLink targetId="c5a0-e794-7661-ebb7" id="f35f-c25f-2801-80a3" primary="false" name="Black Grail"/>
+        <categoryLink targetId="4f5c-027d-253c-ffa3" id="8ddd-2922-e023-4323" primary="false" name="Fear"/>
+        <categoryLink targetId="afcc-5f24-1c7c-63c4" id="32f5-5533-16dc-53b6" primary="false" name="Strong"/>
+        <categoryLink targetId="914f-0020-0d97-e217" id="57d5-8618-0b0a-6673" primary="false" name="Tough"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lord of Tumours" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="aca1-8c2f-0a00-ee49" publicationId="c658-4a10-e1fe-befc" page="78">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+4 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">50mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="dae4-94a1-1c22-0c9a">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Lord of Tumours are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Beelzebub’s Touch" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f662-8943-c553-035f">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">As long as the Lord of Tumours has one free hand (which carries no weapons or a shield), it can make an ACTION against any non-BLACK GRAIL model it is fighting in melee combat. If successful, the target model gains +D3 INFECTION MARKERS. It can still fight with the other hand as normal.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armor" id="e3d8-e996-a11c-5c77" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e25d-c856-46b0-100c" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Armour" hidden="false" id="506d-40d6-b5d8-4b9a" sortIndex="1">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ac2-6a82-462b-a841" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Standard Armour" id="14a1-8b8c-0098-980a" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Reinforced Armour" hidden="false" id="2bff-5e25-4968-0969">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23a7-a5d8-9d52-d4bb" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Reinforced Armour" id="10c6-881f-69dc-0631" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Weapons" hidden="false" id="2e76-f13c-bb27-fb56" type="selectionEntryGroup" targetId="4f10-6941-6de8-d8a6" sortIndex="1"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="1ec1-88c0-96db-ff36" type="selectionEntryGroup" targetId="25fc-648e-83c5-0411" sortIndex="2"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="bded-d76e-f6f2-9edd" type="selectionEntryGroup" targetId="4e14-77e1-ca51-7dc6"/>
+      </entryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="130"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Tough" id="205e-e73e-3afc-02f7" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+        <infoLink name="Fear" id="1fa6-2bad-501f-2ce1" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+        <infoLink name="Strong" id="96cf-91af-2279-837e" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="14da-6cb8-f66e-7ad6" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="14da-6cb8-f66e-7ad6">
+          <conditions>
+            <condition type="atLeast" value="2" field="selections" scope="parent" childId="43b9-c7fd-4680-3e7a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Corpse Guard" hidden="false" id="7e0b-de14-f14c-8ea0">
+      <categoryLinks>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="3d60-24f4-cc59-bba4" primary="true" name="Elite"/>
+        <categoryLink targetId="c5a0-e794-7661-ebb7" id="6373-d0f8-680b-9a5c" primary="false" name="Black Grail"/>
+        <categoryLink targetId="4f5c-027d-253c-ffa3" id="9c20-17a2-28a0-2058" primary="false" name="Fear"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Corpse Guard" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="6435-cea8-b098-e528" publicationId="c658-4a10-e1fe-befc" page="78">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b3e7-566c-fefe-402d">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Lord of Tumours are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bodyguard" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="77fd-38d3-3b6c-4a77">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">If any BLACK GRAIL model within 1” of the Corpse Guard is hit by a ranged or melee weapon (excluding BLAST weapons), you can choose to redirect the hit against the Corpse Guard instead. Determine the injuries exactly as if the weapon just hit the Corpse Guard.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Parasitic Tick" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="45af-c659-4300-106e">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">If a Corpse Guard melee attack causes a BLOOD or INFECTION
+MARKER on a creature without the Keyword BLACK GRAIL in melee combat, the
+Corpse Guard can remove one of their own BLOOD or INFECTION MARKERS</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armor" id="a102-9b92-ab96-746a" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70b9-300d-77b9-cdfe" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Armour" hidden="false" id="5ef5-3d87-b8ee-c005" sortIndex="1">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be82-90a8-7a1a-c393" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Standard Armour" id="feb8-6f18-0158-5852" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Reinforced Armour" hidden="false" id="5789-b681-3e51-0c73">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ef7-eae3-1dd5-2872" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Reinforced Armour" id="8dc4-e5e3-71f8-4b52" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Weapons" hidden="false" id="fdfc-b25f-05ae-d9e2" type="selectionEntryGroup" targetId="4f10-6941-6de8-d8a6" sortIndex="1"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="ebc5-c2b4-904b-338f" type="selectionEntryGroup" targetId="25fc-648e-83c5-0411" sortIndex="2"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="e29f-df7b-8181-bffb" type="selectionEntryGroup" targetId="4e14-77e1-ca51-7dc6"/>
+      </entryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="55"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Fear" id="5fbe-25bb-47d0-f6b8" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="d823-e8a8-3761-c40e" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
