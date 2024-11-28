@@ -410,16 +410,15 @@
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b2ea-cc71-1a86-6e17" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="6" field="b2ea-cc71-1a86-6e17">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="model" childId="036b-eb9f-9b58-fa7e" shared="true"/>
-          </conditions>
-        </modifier>
         <modifier type="decrement" value="1" field="b2ea-cc71-1a86-6e17">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="parent" childId="4974-c044-9d11-53cb" shared="true" roundUp="false"/>
-            <repeat value="1" repeats="1" field="selections" scope="parent" childId="89f9-6201-e3c3-2d7d" shared="true" roundUp="false"/>
-          </repeats>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4974-c044-9d11-53cb" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="89f9-6201-e3c3-2d7d" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="decrement" value="1" field="b2ea-cc71-1a86-6e17">
           <conditions>
