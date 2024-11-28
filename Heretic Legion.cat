@@ -1155,13 +1155,6 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                         <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="8bf4-3479-1f69-6679" shared="true"/>
                       </conditions>
                     </conditionGroup>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <comment>Strong is overwritten by Cumbersome</comment>
-                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -1178,23 +1171,8 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <conditionGroup type="or">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="3676-db5e-8076-8b90" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="ae63-55f4-b047-9820" shared="true"/>
               </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ae63-55f4-b047-9820" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <comment>Strong is overwritten by Cumbersome</comment>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
