@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -100,6 +100,9 @@
 
 
 INFECTION MARKERS can be used to modify dice rolls exactly like BLOOD MARKERS. Use a different coloured dice (the more disgusting the better!) to indicate these markers and place them next to the infected model. A model may have up to six INFECTION MARKERS and six BLOOD MARKERS at the same time. If a model had any INFECTION MARKERS before, but has none when it is Activated, no new ones are added to the model – though it can still be re-infected by further attacks!</description>
+    </rule>
+    <rule name="Skirmisher" id="6ed7-68e8-34f7-393b" hidden="false" publicationId="c658-4a10-e1fe-befc" page="13">
+      <description>Heralds are fast and elusive, and thus have the Keyword SKIRMISHER. Unless engaged in melee, when an enemy model declares a charge against a Herald, it can immediately move D3” in any direction (except within 1”of any enemy). After this manoeuvre, the charging model is moved as normal. This may lead to the charger being unable to enter into Melee.</description>
     </rule>
   </sharedRules>
   <publications>
