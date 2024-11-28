@@ -696,7 +696,7 @@
       <categoryLinks>
         <categoryLink targetId="c5a0-e794-7661-ebb7" id="1071-8c7b-84a1-7df9" primary="false" name="Black Grail"/>
         <categoryLink targetId="4f5c-027d-253c-ffa3" id="3cd2-212f-58dc-447b" primary="false" name="Fear"/>
-        <categoryLink targetId="bd43-ddb1-262d-4489" id="8fdf-0f44-833e-36bf" primary="false" name="Troop"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="8fdf-0f44-833e-36bf" primary="true" name="Troop"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Grail Thrall" hidden="false" id="ec39-f328-bad6-a586">
