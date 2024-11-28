@@ -914,6 +914,16 @@
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="c76b-d186-3a22-1744" primary="true" name="Troop"/>
+        <categoryLink targetId="4f5c-027d-253c-ffa3" id="c08e-9151-8ae2-e64f" primary="false" name="Fear"/>
+        <categoryLink targetId="914f-0020-0d97-e217" id="4dad-6a77-5353-cf6f" primary="false" name="Tough"/>
+        <categoryLink targetId="c5a0-e794-7661-ebb7" id="1fbb-187a-2362-f640" primary="false" name="Black Grail"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Tough" id="c864-cb8d-9f12-d55e" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+        <infoLink name="Fear" id="215b-54cc-fa41-2437" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
