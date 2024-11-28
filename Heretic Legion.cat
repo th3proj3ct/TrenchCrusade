@@ -1169,7 +1169,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged Weapons" id="1eee-c39c-0ea0-4c58" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Ranged (One-Handed)" hidden="false" id="3029-da1c-938d-cff3" type="selectionEntryGroup" targetId="53d7-33cb-1563-1112" collective="false" collapsible="false"/>
+        <entryLink import="true" name="Ranged (One-Handed)" hidden="false" id="3029-da1c-938d-cff3" type="selectionEntryGroup" targetId="53d7-33cb-1563-1112" collective="false" collapsible="true"/>
         <entryLink import="true" name="Ranged (Two-Handed)" hidden="false" id="ae63-55f4-b047-9820" type="selectionEntryGroup" targetId="ebc3-4d3d-a2ce-f8ce">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2eab-1232-6cb7-2579" includeChildSelections="false"/>
