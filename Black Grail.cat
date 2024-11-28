@@ -1311,6 +1311,7 @@ Corpse Guard can remove one of their own BLOOD or INFECTION MARKERS</characteris
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="parent" childId="43b9-c7fd-4680-3e7a" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="80e3-313d-1c13-05a0" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
