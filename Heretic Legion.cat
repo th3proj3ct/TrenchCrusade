@@ -1396,6 +1396,10 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               <infoLinks>
                 <infoLink name="Combat Helmet" id="8efb-6c87-58b6-cd6d" hidden="false" type="profile" targetId="f9d1-44f2-f4d7-442f"/>
               </infoLinks>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
