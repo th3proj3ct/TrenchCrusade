@@ -104,6 +104,9 @@ INFECTION MARKERS can be used to modify dice rolls exactly like BLOOD MARKERS. U
     <rule name="Skirmisher" id="6ed7-68e8-34f7-393b" hidden="false" publicationId="c658-4a10-e1fe-befc" page="13">
       <description>Heralds are fast and elusive, and thus have the Keyword SKIRMISHER. Unless engaged in melee, when an enemy model declares a charge against a Herald, it can immediately move D3” in any direction (except within 1”of any enemy). After this manoeuvre, the charging model is moved as normal. This may lead to the charger being unable to enter into Melee.</description>
     </rule>
+    <rule name="Demonic" id="e1d1-9534-0d38-b1e8" hidden="false" publicationId="c658-4a10-e1fe-befc" page="12">
+      <description>Due to their infernal origins, models with the Keyword DEMONIC negate additional BLOOD MARKERS caused by the Keyword FIRE.</description>
+    </rule>
   </sharedRules>
   <publications>
     <publication name="Playtest Rules 1.5" id="c658-4a10-e1fe-befc" hidden="false" shortName="PT1.5" publisherUrl="https://static1.squarespace.com/static/637c0a5adafeb04f70309b99/t/6738d89f383e092b140a808f/1731778725409/Trench+Crusade+Rules+v1.5+%283%29.pdf"/>
@@ -500,10 +503,9 @@ They do not count towards the maximum melee weapons a model can carry.</characte
         <characteristic name="Description" typeId="4834-43a9-1c93-9062">This model starts each game with +1 BLESSING MARKER.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Armour-Piercing Bullets" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9e48-632e-20ab-14ad" publicationId="c658-4a10-e1fe-befc" page="118">
+    <profile name="Crown of Hellfire" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9e48-632e-20ab-14ad" publicationId="c658-4a10-e1fe-befc" page="91">
       <characteristics>
-        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Before the battle begins, a model may use this item to grant a rifle or pistol weapon that they are equipped with the following ability: Reduce the injury penalty from Armour and Shields by 1 until the end of the battle. 
-Keyword: CONSUMABLE.</characteristic>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this model ends its Activation, each enemy model in melee combat with it suffers a BLOOD MARKER. Any effect or ability that negates BLOOD MARKERS from the Keyword FIRE negates this BLOOD MARKER.</characteristic>
       </characteristics>
     </profile>
     <profile name="Dum-Dum Bullets" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="254b-af21-71d6-cd8e" publicationId="c658-4a10-e1fe-befc" page="119">
@@ -556,9 +558,9 @@ Keyword: CONSUMABLE.</characteristic>
         <characteristic name="Description" typeId="4834-43a9-1c93-9062">A model equipped with an Unholy relic radiates a truly malignant aura and causes FEAR.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Blessed Icon" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="38b3-22f4-f484-61dc" publicationId="c658-4a10-e1fe-befc" page="120">
+    <profile name="Infernal Iron Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="38b3-22f4-f484-61dc" publicationId="c658-4a10-e1fe-befc" page="120">
       <characteristics>
-        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When a model equipped with a Blessed Icon fails a RISKY ACTION, that model may use this item. If it does, its Activation is not ended. Can be used once per battle.</characteristic>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Injuries against this model are rolled with a flat -2 penalty. This penalty applies against injuries that ignore armour.</characteristic>
       </characteristics>
     </profile>
     <profile name="Infernal Brand Mark" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e973-f445-e1c5-92ec" publicationId="c658-4a10-e1fe-befc" page="120">
@@ -666,6 +668,80 @@ Keyword: CONSUMABLE.</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">GAS</characteristic>
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345">A Corruption Belcher hits one model within range automatically with its ranged attack ACTION. It ignores armour.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Torture Instrument" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="6f4c-3af9-620f-9988" publicationId="c658-4a10-e1fe-befc" page="116">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">When rolling on the Injury Table for this weapon, roll one D6 instead of 2D6. If you trigger Bloodbath with this weapon, roll 2D6 instead of 3D6. This weapon causes an additional BLOOD MARKER for each BLOOD MARKER it inflicts from an injury result. </characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Arquebus" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="39a3-6b2f-e1cf-8775" publicationId="c658-4a10-e1fe-befc" page="116">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345"/>
+      </characteristics>
+    </profile>
+    <profile name="Ophidian Rifle" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="d8fe-561c-9243-f9b8" publicationId="c658-4a10-e1fe-befc" page="116">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">30&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Ranged attacks with the Ophidian rifle do not suffer Long Range or Cover penalties and instead gain +1 DICE bonus to hit at long range and +1 DICE to hit against enemies in Cover.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Serpent Assault Gun" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="651a-d454-07bf-a7fa" publicationId="c658-4a10-e1fe-befc" page="89">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">GAS, HEAVY, ASSAULT</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">When this model takes this ranged attack ACTION, it can make up to two attacks with this weapon. These attacks can target separate models, but the targets must be within 6” of each other.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Blunderbuss" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="2540-a186-5024-be0a" publicationId="c658-4a10-e1fe-befc" page="116">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">10&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">SHRAPNEL</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345"/>
+      </characteristics>
+    </profile>
+    <profile name="Headtaker" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="29cd-71a7-a9f8-a828" publicationId="c658-4a10-e1fe-befc" page="116">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">This weapon rolls injuries against models that have not been activated this turn with a flat +2 bonus.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Malebranche Sword" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="f41a-17c4-1d59-abac" publicationId="c658-4a10-e1fe-befc" page="116">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">This enormous evil sword rolls 3D6 on the Injury Chart, adding the results together.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Armour-Piercing Bullets" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="90fa-0eaa-3d49-be2c" publicationId="c658-4a10-e1fe-befc" page="118">
+      <characteristics>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Before the battle begins, a model may use this item to grant a rifle or pistol weapon that they are equipped with the following ability: Reduce the injury penalty from Armour and Shields by 1 until the end of the battle. 
+Keyword: CONSUMABLE.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Blessed Icon" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ddb0-3689-bc81-7162" publicationId="c658-4a10-e1fe-befc" page="120">
+      <characteristics>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When a model equipped with a Blessed Icon fails a RISKY ACTION, that model may use this item. If it does, its Activation is not ended. Can be used once per battle.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
