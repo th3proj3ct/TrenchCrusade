@@ -22,11 +22,6 @@
           </conditionGroups>
           <comment>Errors out if 2 or more Heavy on non-</comment>
         </modifier>
-        <modifier type="set" value="6" field="739b-cfdb-2c88-b844" affects="">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="model" childId="036b-eb9f-9b58-fa7e" shared="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Grenades" id="25fc-648e-83c5-0411" hidden="false">
@@ -883,6 +878,42 @@
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="150"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="94f4-67e6-6cf8-d53d" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Ranged" id="edb4-d19e-9afb-e594" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Ranged (One-Handed)" hidden="false" id="3a64-6ed6-5b3f-a4b3" type="selectionEntryGroup" targetId="8eec-e5d4-cdfb-ea1e"/>
+                <entryLink import="true" name="Ranged (Two-Handed)" hidden="false" id="711a-2f23-fc27-4873" type="selectionEntryGroup" targetId="ee80-c780-9aa9-1e4d"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee" id="fc3e-7052-be75-3ab4" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="2f61-c681-a5c9-8c46" type="selectionEntryGroup" targetId="35a1-08a8-3fb6-c01f"/>
+                <entryLink import="true" name="Melee (Two-Handed)" hidden="false" id="5f0e-464a-bdaf-d5bd" type="selectionEntryGroup" targetId="f4c1-28c9-773f-c192"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Trench Shield" hidden="false" id="b5e5-b487-a0ee-5f28" type="selectionEntry" targetId="7fb6-d318-1757-96a6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="272f-de86-e429-0427" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="56e7-b524-24b3-c6d7" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="56e7-b524-24b3-c6d7">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="ee80-c780-9aa9-1e4d" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="5f0e-464a-bdaf-d5bd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
