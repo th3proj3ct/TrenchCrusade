@@ -285,6 +285,13 @@
           <infoLinks>
             <infoLink name="Musket" id="204e-70ae-e836-b207" hidden="false" type="profile" targetId="b5e4-35bd-ba00-55c0"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden" affects="658d-888d-08df-93ed" scope="parent">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="036b-eb9f-9b58-fa7e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Infested Rifle" hidden="false" id="4a6e-43f6-f094-96cd" sortIndex="3">
           <costs>
@@ -570,13 +577,6 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baf0-f9df-4e7c-57e4" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="model" childId="036b-eb9f-9b58-fa7e" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Comically Large Rock" hidden="false" id="ba4b-5745-82e9-fe5c">
       <constraints>
