@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Anointed Heavy Infantry" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -362,8 +362,10 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Fear" id="c72d-781c-e31d-d28e" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+        <infoLink name="Risky" id="c72d-781c-e31d-d28e" hidden="false" type="rule" targetId="df23-62bc-775e-fca1"/>
         <infoLink name="Tough" id="91bd-c95c-1b81-6801" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+        <infoLink name="Fear" id="e09c-5bf5-dc63-cf8c" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+        <infoLink name="Cumbersome" id="5714-23f4-28e3-f924" hidden="false" type="rule" targetId="5613-c861-daeb-156a"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="105c-8780-b389-2f18" includeChildSelections="true"/>
@@ -480,6 +482,10 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Shrapnel" id="fef9-d39f-752b-2a9b" hidden="false" type="rule" targetId="200f-a7a6-f8a7-8232"/>
+        <infoLink name="Blast" id="9f47-c7c5-d092-7b91" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Wretched" hidden="false" id="cf02-7a3e-ffbf-d7f9" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
