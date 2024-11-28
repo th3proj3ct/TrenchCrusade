@@ -357,7 +357,7 @@
     <selectionEntryGroup name="Ranged Weapons" id="29cb-dd9c-3c66-7188" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Ranged (One-Handed)" hidden="false" id="9b7c-f2e0-dbe6-3626" type="selectionEntryGroup" targetId="8eec-e5d4-cdfb-ea1e" collective="false" collapsible="true"/>
-        <entryLink import="true" name="Ranged (Two-Handed)" hidden="false" id="89f9-6201-e3c3-2d7d" type="selectionEntryGroup" targetId="ee80-c780-9aa9-1e4d">
+        <entryLink import="true" name="Ranged (Two-Handed)" hidden="false" id="89f9-6201-e3c3-2d7d" type="selectionEntryGroup" targetId="ee80-c780-9aa9-1e4d" collapsible="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88b0-e547-2a5a-07c6" includeChildSelections="false"/>
           </constraints>
