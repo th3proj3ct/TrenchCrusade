@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -94,6 +94,12 @@
     </rule>
     <rule name="Risky" id="df23-62bc-775e-fca1" hidden="false">
       <description>If you fail your roll on the Action Success Chart when taking this ACTION, the Activation of this model ends immediately.</description>
+    </rule>
+    <rule name="Infection Markers" id="884b-d2e7-31a6-f0b7" hidden="false">
+      <description>Infection Markers: Some attacks by the weaponry of the Black Grail causes their opponents to suffer INFECTION MARKERS. These work exactly like BLOOD MARKERS, except if a model has one or more INFECTION MARKERS when activated, it gains + 1 INFECTION MARKER.
+
+
+INFECTION MARKERS can be used to modify dice rolls exactly like BLOOD MARKERS. Use a different coloured dice (the more disgusting the better!) to indicate these markers and place them next to the infected model. A model may have up to six INFECTION MARKERS and six BLOOD MARKERS at the same time. If a model had any INFECTION MARKERS before, but has none when it is Activated, no new ones are added to the model – though it can still be re-infected by further attacks!</description>
     </rule>
   </sharedRules>
   <publications>
@@ -589,6 +595,74 @@ Keyword: CONSUMABLE.</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">Special</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">SHRAPNEL</characteristic>
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345">The tormentor chain suffers no penalties for range or for Cover and inflicts no damage except for the BLOOD MARKER it causes due to SHRAPNEL. If the wielder hits a target with this weapon, the target is moved in a straight line directly towards the wielder, ending in the legal space that puts it closest to the wielder. This typically ends with the target and the wielder in base contact and therefore in melee combat. This movement can place the target in melee combat with multiple enemy models. Additionally, no enemy models may retreat when in melee combat with the wielder.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Infested Rifle" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="088f-02cb-55b8-4bda" publicationId="c658-4a10-e1fe-befc" page="76">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Reduces the injury roll penalty from armour and shields by 1.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Putrid Shotgun" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="f342-1a5a-726e-8782" publicationId="c658-4a10-e1fe-befc" page="76">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to hit</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ASSAULT</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">This weapon causes INFECTION MARKERS instead of BLOOD MARKERS.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Beelzebub&apos;s Axe" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="6c2c-bd2c-d794-fb34" publicationId="c658-4a10-e1fe-befc" page="76">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+2D to Injury</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">This weapon causes INFECTION MARKERS instead of BLOOD MARKERS.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Viscera Cannon" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="7428-8c1b-d5a5-bae5" publicationId="c658-4a10-e1fe-befc" page="76">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+2D to hit</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">If the Viscera Cannon hits the enemy, roll to injure as standard. After rolling for injuries, you can boost the damage by up to three additional INFECTION MARKERS per hit by taking the same number of BLOOD MARKERS on the shooter itself.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Plague Blade" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="c403-778c-1c4f-ec6e" publicationId="c658-4a10-e1fe-befc" page="76">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa"/>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede"/>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">This weapon causes INFECTION MARKERS instead of BLOOD MARKERS.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Black Grail Shield" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="bfc1-5172-0c42-138f" publicationId="c658-4a10-e1fe-befc" page="77">
+      <characteristics>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Works exactly as a trench shield, including Shield Combo capability. In addition, if a model carrying a Black Grail Shield is targeted by a ranged attack, before rolling to hit it can immediately take an ACTION without an Activation. If successful, the ranged attack suffers -2 DICE to the roll determining whether the attack hits, as the power of the Black Grail disturbs the flow of reality. If the roll is a critical, the attack misses automatically.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Parasite Grenades" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="ddce-6e00-e451-7281" publicationId="c658-4a10-e1fe-befc" page="111">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">GRENADE</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">8&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ASSAULT</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">If a Parasite Grenade hits a model, the Black Grail player can move this model up 3” in any direction they wish. This can be used to move the model out of cover, to fall from a high position or even into melee with their enemies. This additional effect does not work on models with the Keyword FEAR or ones not affected by FEAR.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Corruption Belcher" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="801f-50a4-1ea2-7b92" publicationId="c658-4a10-e1fe-befc" page="113">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">8&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">GAS</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">A Corruption Belcher hits one model within range automatically with its ranged attack ACTION. It ignores armour. </characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

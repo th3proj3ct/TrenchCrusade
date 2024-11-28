@@ -865,6 +865,9 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="c3ba-a27c-b5cb-93e2" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blasphemous Staff" hidden="true" id="6e18-eb53-a42f-9368" sortIndex="4" collective="false">
           <costs>
@@ -1469,7 +1472,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <forceEntries>
-    <forceEntry name="Army Roster" id="3952-da7e-8ceb-60d9" hidden="false">
+    <forceEntry name="Warband" id="3952-da7e-8ceb-60d9" hidden="false">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="8d8e-7f30-a1cc-11bc" targetId="705b-e23f-e9c2-58ab"/>
         <categoryLink name="Elite" hidden="false" id="ca65-9830-167a-dcd3" targetId="3de0-192c-3ec2-51be"/>
