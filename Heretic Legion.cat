@@ -275,6 +275,11 @@
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
         </profile>
+        <profile name="Unholy Hymns" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="dcb0-e7e0-84df-2871">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All enemy models within 8” of the Chorister suffer an additional -1 DICE for all ACTIONS they attempt.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armor" id="1694-010f-d3bc-0704" hidden="false" sortIndex="3">
@@ -856,7 +861,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink import="true" name="Assault" hidden="false" id="19d5-4802-854b-10d4" type="rule" targetId="3136-7aab-4bde-9583"/>
+            <entryLink import="true" name="Risky" hidden="false" id="19d5-4802-854b-10d4" type="rule" targetId="df23-62bc-775e-fca1"/>
           </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blasphemous Staff" hidden="true" id="6e18-eb53-a42f-9368" sortIndex="4" collective="false">
@@ -893,6 +898,9 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="da3b-7644-0d45-8cca" primary="false" name="Heavy"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Heavy" hidden="false" id="fc98-ed7b-e7dd-defe" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Great Sword/Axe" hidden="false" id="84ac-8cad-49fa-ba48">
           <costs>
@@ -905,6 +913,10 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="f97e-511b-6836-45ce" primary="false" name="Heavy"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Heavy" hidden="false" id="edc6-722f-06ef-1f4e" type="rule" targetId="fbac-638f-ff95-d704"/>
+            <entryLink import="true" name="Critical" hidden="false" id="16ed-e557-d8f7-5e1f" type="rule" targetId="7c40-254f-6d33-854c"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Hellblade" hidden="false" id="c2f4-409f-b6d1-5720">
           <costs>
@@ -916,6 +928,9 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <infoLinks>
             <infoLink name="Hellblade" id="2b1b-5926-e4e9-61e8" hidden="false" type="profile" targetId="7490-f22e-68ff-79d3"/>
           </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Fire" hidden="false" id="861e-e6b0-9d8a-897f" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Tartarus Claws" hidden="true" id="af47-33c1-b1fc-f2bd">
           <costs>
@@ -950,6 +965,9 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               <categoryLinks>
                 <categoryLink targetId="f87d-5ea3-e505-6a9f" id="15a0-1bd8-b18e-f22d" primary="false" name="Cumbersome"/>
               </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Cumbersome" hidden="false" id="4eaf-d295-9a2a-6041" type="rule" targetId="5613-c861-daeb-156a"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1297,6 +1315,9 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e03-ba06-0d8d-e7c5" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Consumable" hidden="false" id="7a51-8fb0-8597-6377" type="rule" targetId="e98d-4bd1-3870-27b9"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Unholy Relic" hidden="false" id="ff32-5416-a4fa-08c7" sortIndex="4">
           <costs>
@@ -1321,6 +1342,10 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <infoLinks>
             <infoLink name="Incendiary Bullets" id="0501-86c2-60c2-776e" hidden="false" type="profile" targetId="01b8-f846-e8f7-6d71"/>
           </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Consumable" hidden="false" id="c88f-7013-ef57-49c0" type="rule" targetId="e98d-4bd1-3870-27b9"/>
+            <entryLink import="true" name="Fire" hidden="false" id="7f04-4498-3544-4bd5" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Shovel" hidden="false" id="fa1f-59c8-3f39-3ff0" sortIndex="6">
           <costs>
