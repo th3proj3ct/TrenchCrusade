@@ -991,6 +991,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <infoLinks>
             <infoLink name="Silenced Pistol" id="b76b-a7b9-6c65-5f8d" hidden="false" type="profile" targetId="c196-6ca8-b9d1-d407"/>
+            <infoLink name="Assault" id="d269-18f4-f861-5ff4" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -999,9 +1000,6 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               </conditions>
             </modifier>
           </modifiers>
-          <entryLinks>
-            <entryLink import="true" name="Assault" hidden="false" id="293e-e2db-80ec-1214" type="rule" targetId="3136-7aab-4bde-9583"/>
-          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
