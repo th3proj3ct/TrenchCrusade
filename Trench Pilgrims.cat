@@ -1061,7 +1061,7 @@
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="0366-54db-e0ff-9f51" hidden="false">
+        <selectionEntryGroup name="Weapons" id="0366-54db-e0ff-9f51" hidden="false" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Utility Hand" hidden="false" id="a78d-d608-21ca-0cb8" type="selectionEntryGroup" targetId="a77d-7d78-27b2-13b0" sortIndex="3"/>
             <entryLink import="true" name="Ranged (One-Handed)" hidden="false" id="42f9-3f8c-db7e-7b5a" type="selectionEntryGroup" targetId="1075-a027-6dbc-b4dd" sortIndex="1">
