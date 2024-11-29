@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="4f10-6941-6de8-d8a6" hidden="false" collapsible="true">
       <constraints>
@@ -795,7 +795,7 @@
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">30x60mm</characteristic>
           </characteristics>
         </profile>
-        <profile name="Maul" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="aa15-64a9-87eb-87c8">
+        <profile name="Pounce" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="aa15-64a9-87eb-87c8">
           <characteristics>
             <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
             <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
@@ -822,7 +822,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89d2-b313-5386-bb61" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Infected Maul" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="e635-2d2a-2df7-bafe">
+            <profile name="Infected Pounce" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="e635-2d2a-2df7-bafe">
               <characteristics>
                 <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
                 <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
@@ -855,7 +855,7 @@
             <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
             <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
             <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
-            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Hounds do not suffer penalties for fighting unarmed.</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Thralls do not suffer penalties for fighting unarmed.</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -897,7 +897,7 @@
                 </profile>
                 <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8cce-0a3c-fe8a-6cfa">
                   <characteristics>
-                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Grail Thrall are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with Keyword GAS. </characteristic>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Grail Thrall are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with Keyword GAS.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -989,7 +989,7 @@
           <profiles>
             <profile name="Maddening Buzz" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f726-9549-bfcb-51e6">
               <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062"> Every ACTION taken by a model without Keyword BLACK GRAIL within 8” of a Herald is considered a RISKY ACTION. Note: This does not affect non-ACTION rolls such as Charge distance rolls, nor does it affect ACTIONS that do not require a roll on the Action Success Chart.</characteristic>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Every ACTION taken by a model without Keyword BLACK GRAIL within 8” of a Herald is considered a RISKY ACTION. Note: This does not affect non-ACTION rolls such as Charge distance rolls, nor does it affect ACTIONS that do not require a roll on the Action Success Chart.</characteristic>
               </characteristics>
             </profile>
           </profiles>
