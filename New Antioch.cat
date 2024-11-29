@@ -756,6 +756,9 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a62-dc51-c259-9904" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedSelectionEntries>
@@ -1031,7 +1034,7 @@
             <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
             <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
             <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
-            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-2</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
         </profile>
@@ -1072,6 +1075,36 @@
       <constraints>
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="daa3-c5e8-36e2-48c5" includeChildSelections="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Combat Medic" hidden="false" id="3523-c775-3603-dbeb">
+      <profiles>
+        <profile name="Combat Medic" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="be61-1a63-4154-9a20">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-1</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="2cfb-73f8-0df3-30e8" id="8dcf-3cd9-a4d5-6c29" primary="false" name="New Antioch"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="307c-b324-c6fb-299f" primary="true" name="Troop"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="65"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="697d-8353-cd4d-2999" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Gas Mask" id="4ef0-fbb6-c122-d867" hidden="false" type="profile" targetId="ba17-1e71-ee46-ee0f"/>
+        <infoLink name="Misericordia" id="cf17-57f2-1e96-18a9" hidden="false" type="profile" targetId="d82e-4c7b-28ac-1413"/>
+        <infoLink name="Medi-kit" id="8a26-f31d-dc2c-693f" hidden="false" type="profile" targetId="aa88-1987-505a-13ca"/>
+        <infoLink name="Standard Armour" id="9c21-1596-234c-93c2" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
