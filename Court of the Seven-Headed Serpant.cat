@@ -54,6 +54,13 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d6d-2282-865a-fb02" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Unholy Relic" hidden="false" id="631b-02e0-586d-b73f" sortIndex="4">
           <costs>
@@ -66,6 +73,13 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d62-88c7-e84d-236f" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Incendiary Ammunition" hidden="false" id="1fbd-a3e3-9d76-432b" sortIndex="5">
           <costs>
@@ -81,7 +95,7 @@
             <infoLink name="Fire" id="c50a-fd06-a4a6-9cfc" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Shovel" hidden="false" id="7fbe-047b-8df5-1c4d" sortIndex="6">
+        <selectionEntry type="upgrade" import="true" name="Shovel" hidden="true" id="7fbe-047b-8df5-1c4d" sortIndex="6">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -92,57 +106,40 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6817-5134-fb99-c5b9" includeChildSelections="false"/>
           </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hellbound Brand Contract" hidden="true" id="9af3-ea86-2ef3-46ac" sortIndex="9">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="69e8-39e6-76db-9698" includeChildSelections="true"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f3c-3b5d-4a1a-2753" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Hellbound Brand Contract" id="10bf-767f-99cb-2e7c" hidden="false" type="profile" targetId="e408-e0b1-f858-fff5"/>
-          </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3844-b41c-9ecc-85b9" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="658a-8247-8e8a-8f85" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="1807-60d6-eb7e-13ec" sortIndex="8">
+        <selectionEntry type="upgrade" import="true" name="Crown of Hellfire" hidden="true" id="1234-6514-2ff2-5b93" sortIndex="6">
           <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="3"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="cfc2-e126-3f7b-ef88" includeChildSelections="true"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83ff-3362-0175-82ea" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Mountaineer Kit" id="a6a5-fab7-b285-b8ed" hidden="false" type="profile" targetId="603a-ae82-9f91-4a29"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Infernal Brand Mark" hidden="false" id="f17b-4196-60f8-be49" sortIndex="7">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Infernal Brand Mark" id="08ec-80cf-b045-806a" hidden="false" type="profile" targetId="e973-f445-e1c5-92ec"/>
+            <infoLink name="Crown of Hellfire" id="f8a8-cce1-ecf7-fbc3" hidden="false" type="profile" targetId="9e48-632e-20ab-14ad"/>
           </infoLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67e7-b0f6-6b55-b2f0" includeChildSelections="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c3a9-600f-5517-7882" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e7d-3b38-73d0-12aa" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="1" field="c3a9-600f-5517-7882">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="15bf-43f1-0650-1070" shared="true"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="a81c-9cc6-8d4c-1d5e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -199,6 +196,13 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6147-9145-4564-e6b5" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="02ab-c5ed-c802-94de" includeChildSelections="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -274,6 +278,13 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="7944-3bc6-1be0-460d" targetId="70c9-988d-71a7-7654" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Hellblade" hidden="false" id="a9d8-6219-8ac3-4ec0" sortIndex="4">
           <costs>
@@ -286,6 +297,13 @@
             <infoLink name="Hellblade" id="7af5-29a0-a11d-0627" hidden="false" type="profile" targetId="7490-f22e-68ff-79d3"/>
             <infoLink name="Fire" id="f369-7a84-8adb-cf5e" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Malebranche Sword" hidden="false" id="6677-a038-5ffb-c6c2" sortIndex="5">
           <costs>
@@ -299,6 +317,13 @@
             <infoLink name="Malebranche Sword" id="f277-4ac2-1446-4e1d" hidden="false" type="profile" targetId="f41a-17c4-1d59-abac"/>
             <infoLink name="Heavy" id="82fa-6769-a15a-6851" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Torture Instrument" hidden="false" id="3c55-a4aa-3f5f-eb38" sortIndex="1">
           <costs>
@@ -332,7 +357,15 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Melee Weapons" id="085e-a0e2-7ba3-9d9c" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="cc8b-f2ce-f9b1-dd79" type="selectionEntryGroup" targetId="02d4-0537-9a27-5baa" collective="false" collapsible="true"/>
+        <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="cc8b-f2ce-f9b1-dd79" type="selectionEntryGroup" targetId="02d4-0537-9a27-5baa" collective="false" collapsible="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Melee (Two-Handed)" hidden="false" id="d604-bc3a-680b-cbd8" type="selectionEntryGroup" targetId="4f68-d195-3b2a-2bf8" collapsible="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efea-e2ef-de8f-093e" includeChildSelections="false"/>
@@ -457,6 +490,18 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="ed77-bd36-5ddc-f6d7" targetId="70c9-988d-71a7-7654" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="658a-8247-8e8a-8f85" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="db57-7f16-6d5d-4241">
           <costs>
@@ -470,6 +515,13 @@
             <infoLink name="Flamethrower" id="d06c-3968-140b-ee3a" hidden="false" type="profile" targetId="9b21-3223-c112-c65f"/>
             <infoLink name="Fire" id="8de4-ce4b-4aaf-894c" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="ae54-0f7f-4e9a-3fd7">
           <costs>
@@ -487,6 +539,18 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="45be-cbff-fd37-33fd" targetId="70c9-988d-71a7-7654" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="658a-8247-8e8a-8f85" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Ophidian Rifle" hidden="true" id="7e7d-82f7-5f9f-d356">
           <costs>
@@ -573,14 +637,27 @@
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c66-b5c4-72e2-82ed" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="59f1-91be-455e-587a" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="658a-8247-8e8a-8f85" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
         <modifier type="decrement" value="1" field="87fc-c5b4-4161-3f83">
-          <conditions>
-            <condition type="atLeast" value="2" field="selections" scope="parent" childId="2c66-b5c4-72e2-82ed" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="parent" childId="2c66-b5c4-72e2-82ed" shared="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="658a-8247-8e8a-8f85" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3dce-3062-9abb-c1de" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -1413,6 +1490,59 @@ The Hunter can do this multiple times during its chosen move, though it has to p
       </infoLinks>
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="100"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Yoke Fiend" hidden="false" id="658a-8247-8e8a-8f85">
+      <categoryLinks>
+        <categoryLink targetId="50ae-a540-4d66-0d43" id="a9f1-f289-8106-99dc" primary="false" name="The Court"/>
+        <categoryLink targetId="420c-0871-4283-b95b" id="4153-2517-4ad4-d1c0" primary="false" name="Demonic"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="cdef-f7f1-7f3f-a832" primary="true" name="Troop"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Wretched" hidden="false" id="a957-7766-e2fa-f4b3">
+      <categoryLinks>
+        <categoryLink targetId="50ae-a540-4d66-0d43" id="ed99-218b-15bf-621c" primary="false" name="The Court"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="0763-394e-c764-34d1" primary="true" name="Troop"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Weapons" hidden="false" id="1b63-b549-c146-6b2b" type="selectionEntryGroup" targetId="a774-f5b9-3fd9-7a0b" sortIndex="1"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="f71b-b44d-e2a6-3812" type="selectionEntryGroup" targetId="3dce-3062-9abb-c1de" sortIndex="2"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="6f50-a596-751e-e3e7" type="selectionEntryGroup" targetId="1434-ae99-841b-041e"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Wretched" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="b2dd-8727-aaa1-e504">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">-1 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">-1 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Law of Hell" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2c22-2f87-93e9-7507">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">If a wretch manages to take any enemy ELITE model Out of Action or performs a Glorious Deed, it gains its freedom and is immediately removed from the battle – and from your warband – permanently. It does not count as casualty, but your warband’s total size for this battle is reduced by one for purposes of Morale.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pit Locust" hidden="false" id="a81c-9cc6-8d4c-1d5e">
+      <categoryLinks>
+        <categoryLink targetId="50ae-a540-4d66-0d43" id="fd32-f579-0280-b19c" primary="false" name="The Court"/>
+        <categoryLink targetId="420c-0871-4283-b95b" id="c63a-8f17-1c4e-3d86" primary="false" name="Demonic"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="61ca-2962-d735-7b02" primary="true" name="Troop"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="90"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
     </selectionEntry>
