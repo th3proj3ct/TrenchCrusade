@@ -744,20 +744,16 @@
         <categoryLink targetId="3de0-192c-3ec2-51be" id="0519-fed9-3818-ce48" primary="true" name="Elite"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Weapons" hidden="false" id="aa79-c71e-2a4e-823c" type="selectionEntryGroup" targetId="43b1-aa6a-2357-1613" sortIndex="1"/>
-        <entryLink import="true" name="Throwables" hidden="false" id="72b3-78f0-8a00-2baf" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="2"/>
-        <entryLink import="true" name="Armour" hidden="false" id="1980-eaa4-0a4c-c061" type="selectionEntryGroup" targetId="664d-b970-6eef-b2d5" sortIndex="3"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="eb4b-9327-0170-2768" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39" sortIndex="4"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="aa79-c71e-2a4e-823c" type="selectionEntryGroup" targetId="43b1-aa6a-2357-1613" sortIndex="2"/>
+        <entryLink import="true" name="Throwables" hidden="false" id="72b3-78f0-8a00-2baf" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="3"/>
+        <entryLink import="true" name="Armour" hidden="false" id="1980-eaa4-0a4c-c061" type="selectionEntryGroup" targetId="664d-b970-6eef-b2d5" sortIndex="4"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="eb4b-9327-0170-2768" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39" sortIndex="5"/>
       </entryLinks>
       <modifiers>
-        <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="model" childId="2fe1-9dfe-d2d6-5ecc" shared="true"/>
-          </conditions>
-        </modifier>
+        <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category"/>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="2fe1-9dfe-d2d6-5ecc">
+        <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="2fe1-9dfe-d2d6-5ecc" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7922-eeb4-f163-baa6" includeChildSelections="false"/>
           </constraints>
@@ -765,6 +761,9 @@
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Strong" id="5d26-18e9-6738-c965" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
