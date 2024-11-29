@@ -710,12 +710,12 @@
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="715d-d6a9-0948-8e79" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="715d-d6a9-0948-8e79" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Envy" id="ed52-68d5-131f-5a07" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Envy" id="ed52-68d5-131f-5a07" hidden="true" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="NOT IMPLIMENTED: Envious Eyes" hidden="true" id="4d5b-7911-9dd5-c162" sortIndex="1">
               <profiles>
@@ -801,7 +801,7 @@
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3a57-9286-5c7e-de27" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3a57-9286-5c7e-de27" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -884,7 +884,7 @@
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2fbd-2ebe-b0e5-8708" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2fbd-2ebe-b0e5-8708" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -974,7 +974,7 @@
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fc4-33b0-264c-8510" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fc4-33b0-264c-8510" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1060,7 +1060,7 @@
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="be23-ed3c-e3a7-5140" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="be23-ed3c-e3a7-5140" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
