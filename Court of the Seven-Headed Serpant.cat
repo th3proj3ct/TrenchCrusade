@@ -1576,6 +1576,11 @@ The Hunter can do this multiple times during its chosen move, though it has to p
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="420c-0871-4283-b95b" shared="true" roundUp="false" includeChildSelections="true"/>
           </repeats>
         </modifier>
+        <modifier type="set" value="0" field="f823-9f28-5302-57af">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="roster" childId="420c-0871-4283-b95b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Pit Locust" hidden="false" id="a81c-9cc6-8d4c-1d5e">
