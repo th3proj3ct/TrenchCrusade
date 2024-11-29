@@ -350,6 +350,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="70c9-988d-71a7-7654" id="5b35-4a7c-5a34-f9ad" primary="false" name="Heavy"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Torture Instrument" hidden="false" id="3c55-a4aa-3f5f-eb38" sortIndex="1">
           <costs>
