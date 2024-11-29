@@ -984,7 +984,8 @@
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="15b5-28fb-d0b3-9f5b" includeChildSelections="true"/>
+        <constraint type="min" value="2" field="selections" scope="roster" shared="true" id="15b5-28fb-d0b3-9f5b-min" includeChildSelections="true"/>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="15b5-28fb-d0b3-9f5b-max" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Shocktrooper" hidden="false" id="579e-2810-d1cf-454b">
