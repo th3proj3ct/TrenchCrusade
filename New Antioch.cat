@@ -364,7 +364,7 @@
           <modifiers>
             <modifier type="set" value="10" field="8d43-33fd-332d-17a6">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="f2c3-86d1-5924-093f" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f2c3-86d1-5924-093f" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
