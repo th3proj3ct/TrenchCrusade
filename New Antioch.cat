@@ -1222,7 +1222,8 @@
             <entryLink import="true" name="Yeoman" hidden="false" id="453b-b4ca-41be-a430" type="selectionEntry" targetId="f2c3-86d1-5924-093f" collapsible="true"/>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="766f-55a1-de29-6d07" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="766f-55a1-de29-6d07-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="766f-55a1-de29-6d07-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
