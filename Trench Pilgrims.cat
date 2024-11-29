@@ -765,6 +765,10 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Trench Pilgrim" hidden="false" id="3249-993c-9f42-06ad">
       <profiles>
@@ -811,8 +815,7 @@
         <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="6082-859c-8347-2a94" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2d8-0065-8099-4e04" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="51ea-b495-72bb-76fe-min" includeChildSelections="true"/>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="51ea-b495-72bb-76fe-max" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="51ea-b495-72bb-76fe" includeChildSelections="true"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
@@ -860,6 +863,10 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Communicant" hidden="false" id="d21f-81f7-cf6f-690e">
       <profiles>
@@ -908,6 +915,10 @@
         <infoLink name="Tough" id="c028-35ae-88a1-ee5e" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
         <infoLink name="Strong" id="2a36-d2e7-4861-6a9e" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
       </infoLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="100"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="War Prophet" hidden="false" id="3d5c-4325-5a12-5010">
       <profiles>
@@ -950,6 +961,10 @@
         <entryLink import="true" name="Armour" hidden="false" id="ad3a-9be5-0310-e278" type="selectionEntryGroup" targetId="664d-b970-6eef-b2d5"/>
         <entryLink import="true" name="Equipment" hidden="false" id="6fee-4af9-6356-fce0" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39"/>
       </entryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="80"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
