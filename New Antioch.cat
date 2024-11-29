@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="707d-5bdf-586e-f704" name="New Antioch" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Weapons" id="24ae-224b-0680-a9bd" hidden="false" collapsible="true">
+      <constraints>
+        <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8c12-2a24-bd1d-ff3d" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Melee Weapons" hidden="false" id="0be7-dfd3-4d7f-dbef" type="selectionEntryGroup" targetId="20db-0edb-9d5e-17c9" collapsible="false"/>
+        <entryLink import="true" name="Ranged Weapons" hidden="false" id="91c1-e8c2-83bb-e2c7" type="selectionEntryGroup" targetId="0587-ed9b-91ba-6d82" sortIndex="1" collapsible="false"/>
+        <entryLink import="true" name="Utility Hand" hidden="false" id="aa90-9898-c2a2-a80a" type="selectionEntryGroup" targetId="8b4c-c5f4-f53b-fe48" collapsible="true">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2e48-49cd-6cbc-ee30" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="Max 1 Heavy item on Non-Strong Unit" field="error">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="1" field="selections" scope="parent" childId="70c9-988d-71a7-7654" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Errors out if 2 or more Heavy on non-</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Equipment" id="d5c6-bf28-709b-7286" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Gas Mask" hidden="false" id="2a70-f6c6-ae5e-f371" sortIndex="2">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Gas Mask" id="9fd9-ab76-54f2-6333" hidden="false" type="profile" targetId="ba17-1e71-ee46-ee0f"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="176b-7b1e-df50-0052" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shovel" hidden="false" id="b892-9f94-5f57-7bab" sortIndex="3">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Shovel" id="e925-1e41-dbb2-d7b1" hidden="false" type="profile" targetId="d829-4d67-52aa-baaf"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf7d-f9f8-2c78-619a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="4b93-17b7-dbd2-0ca3" sortIndex="7">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="3"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="roster" shared="true" id="860e-a809-c0a1-4116" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70e0-160a-fe2a-f81b" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Mountaineer Kit" id="4e06-3fa5-af43-5d67" hidden="false" type="profile" targetId="603a-ae82-9f91-4a29"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Medi-Kit" hidden="false" id="9c28-2ab0-c602-75cf" sortIndex="4">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Medi-kit" id="7bf9-8161-2d98-01cc" hidden="false" type="profile" targetId="aa88-1987-505a-13ca"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd8d-b384-6d13-4000" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Martyrdom Pills" hidden="false" id="766a-1ae3-d5f5-26cd" sortIndex="5">
+          <costs>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="38da-57e8-c7e1-95d4" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a6c-50b9-1bec-feae" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Martyrdom Pills" id="3603-b9fa-cec0-aee8" hidden="false" type="profile" targetId="0de6-1178-a184-ddff"/>
+            <infoLink name="Consumable" id="3563-3a46-ccdc-b970" hidden="false" type="rule" targetId="e98d-4bd1-3870-27b9"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Field Shrine" hidden="false" id="eb60-1988-0256-7b3f" sortIndex="6">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="2"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c8d-284a-1a6f-e812" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Field Shrine" id="b3c2-d1b3-f81b-8eb6" hidden="false" type="profile" targetId="76e2-0e5b-972a-0f69"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Binoculars" hidden="true" id="fefd-a1de-3807-ce26" sortIndex="8">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fc7-f4e1-1eb3-6733" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Binoculars" id="dbb3-ab62-0990-0d9c" hidden="false" type="profile" targetId="242b-2dd0-41e9-77e1"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Headgear" id="33a6-4dc3-100c-52c3" hidden="false" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abb3-aaef-ebeb-4922" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Combat Helmet" hidden="false" id="2af0-008a-a7f6-f51c">
+              <infoLinks>
+                <infoLink name="Combat Helmet" id="a615-e3e4-d40f-c1f5" hidden="false" type="profile" targetId="f9d1-44f2-f4d7-442f"/>
+              </infoLinks>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Grenades" id="9c37-58de-3fa2-bfd2" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Grenades" hidden="false" id="9e42-776c-6fed-5cdc" sortIndex="1">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="7"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Grenades" id="538c-c8f3-3ec7-a4b8" hidden="false" type="profile" targetId="cc34-0630-85e1-2583"/>
+            <infoLink name="Shrapnel" id="81b7-6957-58aa-4421" hidden="false" type="rule" targetId="200f-a7a6-f8a7-8232"/>
+            <infoLink name="Assault" id="9dea-f234-c1b8-982e" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
+            <infoLink name="Blast" id="d3ff-e47c-4727-7562" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
+            <infoLink name="Grenade" id="563e-4ec8-e1da-f938" hidden="false" type="rule" targetId="1c58-0dce-e86e-b0dc"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abad-acfc-9a8e-7e7e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="f3ac-a787-de81-9bc9">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Incendiary Grenades" id="f8e1-7032-af87-8c28" hidden="false" type="profile" targetId="3bfd-2c1d-2d6b-a36c"/>
+            <infoLink name="Assault" id="e64b-08a1-9169-1a92" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
+            <infoLink name="Fire" id="8030-904d-0b00-0d93" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
+            <infoLink name="Grenade" id="c4bb-e742-33d6-29ae" hidden="false" type="rule" targetId="1c58-0dce-e86e-b0dc"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6420-b027-ee30-306b" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="42fa-5fdb-58e5-5dc6" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Satchel Charge" hidden="false" id="40b3-a445-0a86-3b58">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Satchel Charge" id="7343-5779-f015-b492" hidden="false" type="profile" targetId="744d-f4d2-f8d5-064a"/>
+            <infoLink name="Heavy" id="693f-391b-de26-9d21" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+            <infoLink name="Blast" id="4a59-d1d6-9301-ca8f" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
+            <infoLink name="Grenade" id="7575-b861-467e-1c79" hidden="false" type="rule" targetId="1c58-0dce-e86e-b0dc"/>
+            <infoLink name="Consumable" id="0049-21f8-80b3-0e3e" hidden="false" type="rule" targetId="e98d-4bd1-3870-27b9"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3451-41f7-7fa3-c449" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="29bb-27d2-20de-cdc2" includeChildSelections="true"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="70c9-988d-71a7-7654" id="c3c8-36bd-85e2-44ea" primary="false" name="Heavy"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Melee (One-Handed)" id="8118-278a-73e1-1cd0" hidden="false" collective="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Trench Knife" hidden="false" id="5cce-de7b-2214-69ac" sortIndex="1" collective="false">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="1"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Knife" id="81fa-4564-fbca-a3c7" hidden="false" type="profile" targetId="fa68-ef06-9caa-e49e"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sword/Axe" hidden="false" id="1773-d8e5-0ff7-65b8" sortIndex="3" collective="false">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="4"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Sword/Axe" id="9373-a74c-d8a7-1441" hidden="false" type="profile" targetId="e938-b0dc-418c-0924"/>
+            <infoLink name="Critical" id="3dd4-53d8-084b-7b8f" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Trench Club" hidden="false" id="ef4f-253f-f25f-49bb" sortIndex="2" collective="false">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="3"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Trench Club" id="2133-da17-ae4f-f1ad" hidden="false" type="profile" targetId="b242-1242-be3a-d232"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Melee (Two-Handed)" id="9a78-862f-67eb-f06b" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Great Hammer/Maul" hidden="false" id="37a4-91c9-df9a-c5bd">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Double-Handed Blunt Weapon" id="0fa0-9859-ed95-c628" hidden="false" type="profile" targetId="05b3-f5b2-f569-3082"/>
+            <infoLink name="Heavy" id="8a71-35c2-73c8-c57a" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="0f75-2545-3c39-fdbe" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Great Sword/Axe" hidden="false" id="db8d-f0cf-9959-273f">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="12"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Great Sword/Axe" id="8308-c44e-ca04-a887" hidden="false" type="profile" targetId="2257-4155-dd7d-8641"/>
+            <infoLink name="Critical" id="359a-7133-62f8-b4cd" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+            <infoLink name="Heavy" id="e87c-aac2-881a-b805" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="198f-5855-603c-b59e" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Shield Combo" id="bb5a-15df-dd97-52cb" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Polearm" hidden="false" id="d4fe-0dd0-bcf9-6f6e">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="7"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Trench Polearm" id="1c41-37cc-8ccc-849b" hidden="false" type="profile" targetId="50eb-2990-0b48-1a8d"/>
+                <infoLink name="Cumbersome" id="d735-356e-f056-0f25" hidden="false" type="rule" targetId="5613-c861-daeb-156a"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Cumbersome" hidden="false" id="0529-2fcf-fcc6-7a76" targetId="f87d-5ea3-e505-6a9f" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Melee Weapons" id="20db-0edb-9d5e-17c9" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="f078-5931-0a72-6dcc" type="selectionEntryGroup" targetId="8118-278a-73e1-1cd0" collective="false" collapsible="true"/>
+        <entryLink import="true" name="Melee (Two-Handed)" hidden="false" id="196d-0066-9adb-ef69" type="selectionEntryGroup" targetId="9a78-862f-67eb-f06b" collapsible="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c9c-0112-cb28-7e0e" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="1c9c-0112-cb28-7e0e">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8b4c-c5f4-f53b-fe48" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="e16d-0563-0aca-babe" shared="true"/>
+                        <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="bb5a-15df-dd97-52cb" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Strong is overwritten by Cumbersome</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1d98-dac9-12f0-e194" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="decrement" value="1" field="1d98-dac9-12f0-e194">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8b4c-c5f4-f53b-fe48" shared="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="196d-0066-9adb-ef69" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Strong is overwritten by Cumbersome</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="1" field="1d98-dac9-12f0-e194">
+          <conditions>
+            <condition type="atLeast" value="2" field="selections" scope="parent" childId="8b4c-c5f4-f53b-fe48" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ranged (One-Handed)" id="3411-73dc-01fa-1c73" hidden="false" collective="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="af78-678d-fbe7-2b39" collective="false" sortIndex="1">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="6"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Pistol" id="14a7-308f-6452-7252" hidden="false" type="profile" targetId="ae18-4990-fc3c-78ce"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="10" field="8d43-33fd-332d-17a6">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="f2c3-86d1-5924-093f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="true" id="967c-6555-a460-6957" collective="false">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Automatic Pistol" id="3f66-c106-6586-185c" hidden="false" type="profile" targetId="8ac5-3721-e679-7c6e"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="03ac-cec0-6b1f-9f07" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ranged (Two-Handed)" id="c9b2-e724-2130-02d8" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bolt Action Rifle" hidden="false" id="299c-d1ce-293a-d7d9" sortIndex="1">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Bayonet Lug" hidden="false" id="6dce-571f-38a2-52c2" type="selectionEntry" targetId="1abf-9449-4b03-2761"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Bolt Action Rifle" id="370b-881c-d07d-bb89" hidden="false" type="profile" targetId="408d-d56e-71c4-f3c4"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Semi-Automatic Rifle" hidden="false" id="723a-4dfd-90f6-1631" sortIndex="2">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Bayonet Lug" hidden="false" id="ea91-c4a2-80ce-3ebf" type="selectionEntry" targetId="1abf-9449-4b03-2761"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Semi-Automatic Rifle" id="0ca8-fe44-03a1-da98" hidden="false" type="profile" targetId="1d82-fcc9-aeda-b03a"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="9825-7fbb-f98c-4026" sortIndex="4">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="a26f-8c3d-3c85-60a5" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Grenade Launcher" id="cb36-dc0c-d055-1599" hidden="false" type="profile" targetId="3113-d133-1726-05a0"/>
+            <infoLink name="Blast" id="4d56-0edb-2888-fc92" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
+            <infoLink name="Heavy" id="2616-1e4a-1f60-ee11" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+            <infoLink name="Shrapnel" id="76fb-4483-c86e-d8d4" hidden="false" type="rule" targetId="200f-a7a6-f8a7-8232"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="c03c-d082-1a33-f450" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="f6d3-e219-d597-fb25" sortIndex="6">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="7a52-4209-49c7-e28b" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Machine Gun" id="90ce-abf6-be84-5dd5" hidden="false" type="profile" targetId="517c-652f-100e-71d6"/>
+            <infoLink name="Heavy" id="88eb-9f01-840e-664a" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="afbb-021d-d979-9c2a" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="6bf3-048f-cdb5-e16c" sortIndex="3">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="fb10-90a7-24f8-26e9" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Flamethrower" id="4e6a-99c2-019b-500f" hidden="false" type="profile" targetId="9b21-3223-c112-c65f"/>
+            <infoLink name="Fire" id="4a43-7f0b-9dcb-3e1d" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="3488-da19-6f37-3f55" sortIndex="7">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="55"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5ac3-e274-69f7-9361" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Heavy Flamethrower" id="6633-3340-0c1f-d4d3" hidden="false" type="profile" targetId="2fc0-bc43-b366-5b95"/>
+            <infoLink name="Fire" id="8f43-1936-6f86-4f83" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
+            <infoLink name="Heavy" id="6f59-ea29-d843-4329" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="0864-a70f-1468-6ec7" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="b110-7128-319d-5762" sortIndex="5">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Bayonet Lug" hidden="false" id="40dc-2d60-5a8f-8b96" type="selectionEntry" targetId="1abf-9449-4b03-2761"/>
+            <entryLink import="true" name="Assault" hidden="false" id="9018-f2f6-f746-78f0" type="rule" targetId="3136-7aab-4bde-9583"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f637-3855-63ea-598c" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Automatic Rifle" id="9d08-216b-396f-d26c" hidden="false" type="profile" targetId="c35c-a506-683d-6c3f"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="d70a-f3e2-204f-774f" sortIndex="4">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="35"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ffd6-8fdd-dd52-485b" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Sniper Rifle" id="7b54-1a94-1429-f4cf" hidden="false" type="profile" targetId="6eb2-c600-98e7-16d3"/>
+            <infoLink name="Risky" id="853b-8c54-b77a-10e2" hidden="false" type="rule" targetId="df23-62bc-775e-fca1"/>
+            <infoLink name="Critical" id="3de2-b3fa-ca0b-13a0" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="430e-e798-0e78-be85" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Shield Combos" id="dc57-4d9d-ecd7-49ff" hidden="false" sortIndex="8">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sub-Machine Gun" hidden="false" id="9e88-87bd-bff3-0778">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Submachine Gun" id="107d-25dc-0b8e-3801" hidden="false" type="profile" targetId="f366-4889-0ac5-375d"/>
+                <infoLink name="Assault" id="a07c-82ee-b40a-54fd" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Bayonet Lug" hidden="false" id="58c6-803a-f1e7-4e3d" type="selectionEntry" targetId="1abf-9449-4b03-2761"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="b355-ead4-7e5d-0927" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Shotgun" hidden="false" id="6986-2c13-6717-0f1b">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Bayonet Lug" hidden="false" id="958a-a9e3-9235-f3e4" type="selectionEntry" targetId="1abf-9449-4b03-2761"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Heavy Shotgun" id="ad64-cd0b-1a44-d987" hidden="false" type="profile" targetId="c5ac-8d24-4060-8655"/>
+                <infoLink name="Heavy" id="5291-8566-b38e-e403" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="70c9-988d-71a7-7654" id="5616-3a39-808e-eae7" primary="false" name="Heavy"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="9c46-678f-132b-c255" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Automatic Shotgun" hidden="false" id="98a4-00df-aef0-4f48">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Bayonet Lug" hidden="false" id="f775-e73b-efa8-df63" type="selectionEntry" targetId="1abf-9449-4b03-2761"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Automatic Shotgun" id="4919-4006-9065-5a8f" hidden="false" type="profile" targetId="a19d-90ab-da9f-95ff"/>
+                <infoLink name="Assault" id="f9b7-3d31-6625-4306" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="7cc9-16f0-0a5c-a098" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="ff3d-b1b4-9d3c-855c" sortIndex="1">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Bayonet Lug" hidden="false" id="5497-d745-52a1-04b1" type="selectionEntry" targetId="1abf-9449-4b03-2761"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Shotgun" id="028b-5e13-cc06-428e" hidden="false" type="profile" targetId="0924-0647-1366-9d85"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ranged Weapons" id="0587-ed9b-91ba-6d82" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Ranged (One-Handed)" hidden="false" id="dd81-2753-664d-92e1" type="selectionEntryGroup" targetId="3411-73dc-01fa-1c73" collective="false" collapsible="true"/>
+        <entryLink import="true" name="Ranged (Two-Handed)" hidden="false" id="8e07-c816-38d7-7996" type="selectionEntryGroup" targetId="c9b2-e724-2130-02d8" collapsible="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4792-faa6-713c-c113" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="4792-faa6-713c-c113">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8b4c-c5f4-f53b-fe48" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="e16d-0563-0aca-babe" shared="true"/>
+                        <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="dc57-4d9d-ecd7-49ff" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3265-f0db-dbe4-1366" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="174d-aac1-facb-3357" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="decrement" value="1" field="3265-f0db-dbe4-1366">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8b4c-c5f4-f53b-fe48" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8e07-c816-38d7-7996" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="1" field="3265-f0db-dbe4-1366">
+          <conditions>
+            <condition type="atLeast" value="2" field="selections" scope="parent" childId="8b4c-c5f4-f53b-fe48" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="174d-aac1-facb-3357">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="model" childId="f2c3-86d1-5924-093f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Utility Hand" id="8b4c-c5f4-f53b-fe48" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Trench Shield" hidden="false" id="e16d-0563-0aca-babe" sortIndex="1">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8edc-a7be-630b-d7e1" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Trench Shield" id="4227-1cb9-d154-7f56" hidden="false" type="profile" targetId="c2a5-72b6-355d-0356"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="b6ec-fe59-ac2a-5d00">
+          <costs>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7708-3dc2-f3d1-1ae3" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Troop Flag" id="e5af-7b63-3379-2786" hidden="false" type="profile" targetId="e86e-146a-65b7-09f2"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="a26c-4afe-ca98-962c">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0336-0d87-a848-bbe0" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Musical Instrument" id="539d-00b4-0ac0-6571" hidden="false" type="profile" targetId="dd0c-c62d-46f1-64f8"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Armour" id="8132-2c2e-56dc-14a6" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Standard Armour" hidden="false" id="e8e7-1db2-6be3-d1b7" sortIndex="1">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Standard Armour" id="20f0-f3e6-336a-f869" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reinforced Armour" hidden="true" id="7ab3-49d1-4294-3f83" sortIndex="2">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Reinforced Armour" id="84d9-65af-02c5-6d01" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Machine Armour" hidden="true" id="e6ac-8562-3982-4bfc" sortIndex="3">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Machine Armour" id="512c-0029-f890-db19" hidden="false" type="profile" targetId="2558-23f8-cfa8-40f4"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0eec-4c05-c257-7e1a" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Bayonet Lug" hidden="false" id="1abf-9449-4b03-2761">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="2"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Bayonet" id="eab8-7fdb-5ba9-ce39" hidden="false" type="profile" targetId="aa9b-a7a1-69a4-05f4"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Cumbersome" hidden="false" id="cab5-31e5-befb-33df" targetId="f87d-5ea3-e505-6a9f" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5d3-b115-31e8-332e" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Lieutenant" hidden="false" id="e578-1122-47cb-10ad">
+      <profiles>
+        <profile name="On my Command!" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8e11-d71b-f31f-4a42">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Once per Turn, as an ACTION the Lieutenant can instead force the opponent to activate one of their models that the Lieutenant can select from amongst the models they can see. This ends the Activation of the Lieutenant.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lieutenant" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="9e87-e971-61ba-870c">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+2 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Armour" hidden="false" id="7d69-40d2-595d-45ec" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="4b7e-f6e9-9441-07a0" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="2"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="fe98-2c76-abee-13dd" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="1"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="1c8f-6cb9-16ad-5bb7" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="4e47-9a9b-86b2-92cb" primary="true" name="Elite"/>
+        <categoryLink targetId="2cfb-73f8-0df3-30e8" id="c390-5efc-0e0c-a664" primary="false" name="New Antioch"/>
+        <categoryLink targetId="914f-0020-0d97-e217" id="7cb3-b0ce-bbb1-78df" primary="false" name="Tough"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Tough" id="7744-fa35-d11f-eaee" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+      </infoLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="70"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="7f30-2514-baef-c492-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7f30-2514-baef-c492-max" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trench Cleric" hidden="false" id="f8bc-5df8-1768-a72a">
+      <profiles>
+        <profile name="Lieutenant" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="2341-5d66-9395-bcf5">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Armour" hidden="false" id="27b6-5fa0-a382-f50d" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="8efc-dc5e-31ac-ddfa" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="3"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="4e24-4a83-e02d-90c8" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="2"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="ede5-41b4-df7a-dd60" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="6e79-070e-d330-f323" primary="true" name="Elite"/>
+        <categoryLink targetId="2cfb-73f8-0df3-30e8" id="1ef7-76a8-4ee1-6913" primary="false" name="New Antioch"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Tough" id="6cb4-2f47-c112-1572" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+      </infoLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="60"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="16e2-020d-1d3b-6a0f" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Battlefield Litany" hidden="false" id="a4a6-cb82-add8-2046" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="God is With Us!" hidden="false" id="a389-d1a8-1bfe-7bba">
+              <profiles>
+                <profile name="God is With Us!" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c092-4fd5-e30d-0060">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Select one friendly model within 6” of the Priest (including the Priest) and take a RISKY ACTION. If successful, the model immediately gains a BLESSING MARKER</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Onwards, Christian Soldiers!" hidden="false" id="bd29-0628-00be-3d6f">
+              <profiles>
+                <profile name="Onwards, Christian Soldiers!" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8d4a-bd62-2847-c98b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">All friendly models that are within 8” of the Trench Cleric at the start of their Activation are not affected by FEAR.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="c02c-02ff-58d0-6e92-min" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c02c-02ff-58d0-6e92-max" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Yeoman" hidden="false" id="f2c3-86d1-5924-093f">
+      <profiles>
+        <profile name="Yeoman" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="25dc-fcf4-2e75-a4b9">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Armour" hidden="false" id="7572-9793-fcba-2e6f" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="46e9-9264-fb37-a8e5" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="3"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="06ce-2337-5b53-ec4c" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="2"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="9bba-9a7d-3c8a-7ad9" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="a96d-a980-6bc2-9ac8" primary="true" name="Elite"/>
+        <categoryLink targetId="2cfb-73f8-0df3-30e8" id="a6e1-faa0-a034-81c5" primary="false" name="New Antioch"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ae29-d56c-f5ef-bb69" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Trench Mole" hidden="false" id="9886-5b15-fa46-8d84" sortIndex="1"/>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sniper Priests" hidden="false" id="dd59-a783-dbb5-242f">
+      <profiles>
+        <profile name="Sniper Priests" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="1edc-6a6e-cd50-f841">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+2 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">-1 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Armour" hidden="false" id="7935-04dd-9bbe-0085" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="8e05-ec93-a50b-2861" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="3"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="98ce-d7c6-0993-15d5" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="2"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="4720-b974-1bbd-1680" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="5994-7a77-128a-858e" primary="true" name="Elite"/>
+        <categoryLink targetId="2cfb-73f8-0df3-30e8" id="4fef-45a2-9e20-0911" primary="false" name="New Antioch"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Tough" id="0579-dc3b-6079-2073" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+      </infoLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="15b5-28fb-d0b3-9f5b" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
