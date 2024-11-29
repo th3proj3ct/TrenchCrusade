@@ -364,7 +364,7 @@
           <modifiers>
             <modifier type="set" value="10" field="8d43-33fd-332d-17a6">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f2c3-86d1-5924-093f" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="f2c3-86d1-5924-093f" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -743,7 +743,7 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Lieutenant" hidden="false" id="e578-1122-47cb-10ad">
+    <selectionEntry type="model" import="true" name="Lieutenant" hidden="false" id="e578-1122-47cb-10ad">
       <profiles>
         <profile name="On my Command!" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8e11-d71b-f31f-4a42">
           <characteristics>
@@ -783,7 +783,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7f30-2514-baef-c492-max" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Trench Cleric" hidden="false" id="f8bc-5df8-1768-a72a">
+    <selectionEntry type="model" import="true" name="Trench Cleric" hidden="false" id="f8bc-5df8-1768-a72a">
       <profiles>
         <profile name="Lieutenant" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="2341-5d66-9395-bcf5">
           <characteristics>
@@ -843,7 +843,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Yeoman" hidden="false" id="f2c3-86d1-5924-093f">
+    <selectionEntry type="model" import="true" name="Yeoman" hidden="false" id="f2c3-86d1-5924-093f">
       <profiles>
         <profile name="Yeoman" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="25dc-fcf4-2e75-a4b9">
           <characteristics>
@@ -895,7 +895,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sniper Priests" hidden="false" id="dd59-a783-dbb5-242f">
+    <selectionEntry type="model" import="true" name="Sniper Priests" hidden="false" id="dd59-a783-dbb5-242f">
       <profiles>
         <profile name="Sniper Priests" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="1edc-6a6e-cd50-f841">
           <characteristics>
