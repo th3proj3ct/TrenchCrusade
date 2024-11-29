@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -676,7 +676,7 @@ Keyword: CONSUMABLE.</characteristic>
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
-        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">When rolling on the Injury Table for this weapon, roll one D6 instead of 2D6. If you trigger Bloodbath with this weapon, roll 2D6 instead of 3D6. This weapon causes an additional BLOOD MARKER for each BLOOD MARKER it inflicts from an injury result. </characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">When rolling on the Injury Table for this weapon, roll one D6 instead of 2D6. If you trigger Bloodbath with this weapon, roll 2D6 instead of 3D6. This weapon causes an additional BLOOD MARKER for each BLOOD MARKER it inflicts from an injury result.</characteristic>
       </characteristics>
     </profile>
     <profile name="Arquebus" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="39a3-6b2f-e1cf-8775" publicationId="c658-4a10-e1fe-befc" page="116">
