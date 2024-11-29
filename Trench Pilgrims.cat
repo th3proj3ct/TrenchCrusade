@@ -750,7 +750,7 @@
         <entryLink import="true" name="Equipment" hidden="false" id="eb4b-9327-0170-2768" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39" sortIndex="5"/>
       </entryLinks>
       <modifiers>
-        <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category" scope="model"/>
+        <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category"/>
       </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="2fe1-9dfe-d2d6-5ecc" sortIndex="1">
