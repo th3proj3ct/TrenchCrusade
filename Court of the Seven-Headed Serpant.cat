@@ -1543,7 +1543,7 @@ The Hunter can do this multiple times during its chosen move, though it has to p
         <categoryLink targetId="bd43-ddb1-262d-4489" id="0763-394e-c764-34d1" primary="true" name="Troop"/>
       </categoryLinks>
       <costs>
-        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <entryLinks>
@@ -1567,6 +1567,16 @@ The Hunter can do this multiple times during its chosen move, though it has to p
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="f823-9f28-5302-57af" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="f823-9f28-5302-57af">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="420c-0871-4283-b95b" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Pit Locust" hidden="false" id="a81c-9cc6-8d4c-1d5e">
       <categoryLinks>
@@ -1708,6 +1718,7 @@ The Hunter can do this multiple times during its chosen move, though it has to p
         <infoLink name="Tough" id="9e02-97f9-3b9a-103a" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
         <infoLink name="Fear" id="765f-019c-408f-2f24" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
         <infoLink name="Strong" id="b1aa-b5ce-959f-6ecd" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
+        <infoLink name="Demonic" id="c06a-9c5b-a809-f92b" hidden="false" type="rule" targetId="e1d1-9534-0d38-b1e8"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="b239-d0f2-1b34-28ef" hidden="false">
@@ -1732,6 +1743,9 @@ The Hunter can do this multiple times during its chosen move, though it has to p
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9b1b-be8d-d21d-90ae" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
