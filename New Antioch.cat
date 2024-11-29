@@ -610,7 +610,7 @@
       </entryLinks>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3265-f0db-dbe4-1366" includeChildSelections="false"/>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="174d-aac1-facb-3357" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5b2-7300-b1a6-8cb9" includeChildSelections="false"/>
       </constraints>
       <modifiers>
         <modifier type="decrement" value="1" field="3265-f0db-dbe4-1366">
@@ -626,11 +626,6 @@
         <modifier type="decrement" value="1" field="3265-f0db-dbe4-1366">
           <conditions>
             <condition type="atLeast" value="2" field="selections" scope="parent" childId="8b4c-c5f4-f53b-fe48" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="1" field="174d-aac1-facb-3357">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="model" childId="f2c3-86d1-5924-093f" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
