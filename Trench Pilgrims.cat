@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Warband" id="eef8-974d-98a4-8d2e" hidden="false">
       <categoryLinks>
@@ -622,6 +622,13 @@
           <infoLinks>
             <infoLink name="Musical Instrument" id="0b02-6a40-6057-782b" hidden="false" type="profile" targetId="dd0c-c62d-46f1-64f8"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -636,7 +643,7 @@
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Holy Icon Shield" hidden="false" id="9263-1e94-1653-cfac">
+            <selectionEntry type="upgrade" import="true" name="Holy Icon Shield" hidden="true" id="9263-1e94-1653-cfac">
               <infoLinks>
                 <infoLink name="Holy Icon Shield" id="0b60-8674-f9d3-9ae1" hidden="false" type="profile" targetId="c0ec-55b6-b5ef-09c3"/>
               </infoLinks>
@@ -644,6 +651,13 @@
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -651,6 +665,35 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Armour" id="664d-b970-6eef-b2d5" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Standard Armour" hidden="false" id="ea8a-62b2-605f-6aa6">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Standard Armour" id="4fed-9ff6-f5b3-c158" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reinforced Armour" hidden="true" id="0e4c-78a2-26bf-6e0e">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Reinforced Armour" id="ca34-b0f9-7efe-6cc7" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedSelectionEntries>
@@ -670,4 +713,102 @@
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Castigator" hidden="false" id="260d-6d69-cde5-67b7">
+      <profiles>
+        <profile name="Castigator" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="c7b8-f35d-edca-e0c4">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Enforced Orthodoxy" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5de4-afa1-0837-107a">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">At any point during its Activation, a Castigator may take a RISKY ACTION with +1 DICE. If successful, all friendly models that are Down and within 8” of the Castigator may immediately stand up at no penalty or cost.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Whip of God" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3334-ac1d-eda1-a0e1">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Unlike other models, a Castigator is allowed to attack friendly models with melee attacks within 1”. They can do this without declaring a charge. Each time the Castigator takes a friendly model Out of Action with a melee attack, set a die aside in a pool as the act of piety inspires the troops. The next time your warband makes a Morale roll, add an amount of +DICE to that roll equal to the amount of dice in the pool and empty it.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b90d-c191-26bd-76df" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="afb7-d895-f4b4-73f3" id="7b52-7f54-7395-5882" primary="false" name="Pilgrim"/>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="0519-fed9-3818-ce48" primary="true" name="Elite"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapons" hidden="false" id="aa79-c71e-2a4e-823c" type="selectionEntryGroup" targetId="43b1-aa6a-2357-1613" sortIndex="1"/>
+        <entryLink import="true" name="Throwables" hidden="false" id="72b3-78f0-8a00-2baf" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="2"/>
+        <entryLink import="true" name="Armour" hidden="false" id="1980-eaa4-0a4c-c061" type="selectionEntryGroup" targetId="664d-b970-6eef-b2d5" sortIndex="3"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="eb4b-9327-0170-2768" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39" sortIndex="4"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="2fe1-9dfe-d2d6-5ecc" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="2fe1-9dfe-d2d6-5ecc">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7922-eeb4-f163-baa6" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="War Prophet" hidden="false" id="3249-993c-9f42-06ad">
+      <profiles>
+        <profile name="War Prophet" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="a1dc-6afc-2a7c-d293">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+2 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Laying on Hands" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f12f-18d0-68af-9cba">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">With a successful ACTION, you may remove D3 BLOOD MARKERs from any friendly model within 6” (including the Prophet).</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Loudspeakers" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e62d-ef69-36a5-7901">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The War Prophet blares out holy sermons and dire prophecies at 100 decibels to inspire the faithful. The Prophet can take a RISKY ACTION with +2 DICE once during each Activation. If the action is successful, all friendly models within 8” of the Prophet (including the Prophet) that are not engaged in melee can immediately move up to 3” towards any enemy model they can see by the optimal path that reduces the distance between the moving model and the enemy. This move allows them to enter combat as if they charged the enemy and are considered to have done so until the end of the turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Memento Mori" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="87c7-8ddb-b2bb-5b27">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The War Prophet is touched by a higher power and the revealed truth allows them a degree of protection against premature death. Once per battle, when the War Prophet is taken Out of Action for any reason, ignore the result as if nothing had happened.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="51ea-b495-72bb-76fe-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="51ea-b495-72bb-76fe-max" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="afb7-d895-f4b4-73f3" id="ce13-76b0-f886-2e74" primary="false" name="Pilgrim"/>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="d735-6489-2eef-af0d" primary="true" name="Elite"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapons" hidden="false" id="0c89-c431-3417-8187" type="selectionEntryGroup" targetId="43b1-aa6a-2357-1613" sortIndex="1"/>
+        <entryLink import="true" name="Throwables" hidden="false" id="b02f-cdc2-d6f3-70b1" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="2"/>
+        <entryLink import="true" name="Armour" hidden="false" id="359f-dab2-e16a-8eb2" type="selectionEntryGroup" targetId="664d-b970-6eef-b2d5"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="ddb6-08d9-4e62-ec39" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
