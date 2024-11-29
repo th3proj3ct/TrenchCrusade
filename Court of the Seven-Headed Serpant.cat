@@ -1207,8 +1207,8 @@
         <categoryLink targetId="705b-e23f-e9c2-58ab" id="7936-fa0b-37ff-d234" primary="true" name="Configuration"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="c1b8-3329-24de-4121-min" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c1b8-3329-24de-4121-max" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="c1b8-3329-24de-4121-max-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c1b8-3329-24de-4121-max-max" includeChildSelections="true"/>
         <constraint type="min" value="1" field="selections" scope="self" shared="true" id="802a-d38f-ee40-45eb-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="self" shared="true" id="802a-d38f-ee40-45eb-max" includeChildSelections="false"/>
       </constraints>
