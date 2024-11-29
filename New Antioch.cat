@@ -853,6 +853,13 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="9886-5b15-fa46-8d84" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <entryLinks>
@@ -874,6 +881,17 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="764f-d015-494e-ab99" includeChildSelections="false"/>
           </constraints>
+          <profiles>
+            <profile name="Trench Mole" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="fe73-eda8-f031-395d">
+              <characteristics>
+                <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+                <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+                <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+                <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+                <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
