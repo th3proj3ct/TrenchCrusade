@@ -265,6 +265,13 @@
           <constraints>
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="7aaa-940f-7ced-2136" includeChildSelections="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -375,15 +382,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Melee Weapons" id="085e-a0e2-7ba3-9d9c" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="cc8b-f2ce-f9b1-dd79" type="selectionEntryGroup" targetId="02d4-0537-9a27-5baa" collective="false" collapsible="true">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="cc8b-f2ce-f9b1-dd79" type="selectionEntryGroup" targetId="02d4-0537-9a27-5baa" collective="false" collapsible="true"/>
         <entryLink import="true" name="Melee (Two-Handed)" hidden="false" id="d604-bc3a-680b-cbd8" type="selectionEntryGroup" targetId="4f68-d195-3b2a-2bf8" collapsible="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efea-e2ef-de8f-093e" includeChildSelections="false"/>
