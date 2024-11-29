@@ -303,10 +303,17 @@
                     </conditionGroup>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <comment>Strong is overwritten by Cumbersome</comment>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="579e-2810-d1cf-454b" shared="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -336,14 +343,6 @@
                         <condition type="atLeast" value="1" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <comment>Strong is overwritten by Cumbersome</comment>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="579e-2810-d1cf-454b" shared="true" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -1006,6 +1005,9 @@
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="5" field="selections" scope="roster" shared="true" id="6995-3472-87b9-2803" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
