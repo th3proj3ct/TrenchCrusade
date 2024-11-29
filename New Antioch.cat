@@ -52,7 +52,15 @@
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf7d-f9f8-2c78-619a" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="23d7-57fa-1f2d-75f8" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="23d7-57fa-1f2d-75f8">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="50d8-f63e-e01d-2698" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="4b93-17b7-dbd2-0ca3" sortIndex="7">
           <costs>
@@ -195,6 +203,13 @@
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="c3c8-36bd-85e2-44ea" primary="false" name="Heavy"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="remove" value="70c9-988d-71a7-7654" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="50d8-f63e-e01d-2698" shared="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -1007,6 +1022,55 @@
       </costs>
       <constraints>
         <constraint type="max" value="5" field="selections" scope="roster" shared="true" id="6995-3472-87b9-2803" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Combat Engineer" hidden="false" id="50d8-f63e-e01d-2698">
+      <profiles>
+        <profile name="Engineer" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="7b50-3c72-1794-64bb">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="De-mine" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2aa0-f08e-8ff5-a137">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">As a RISKY ACTION the Engineer can disable any mine or trapped terrain they move in contact with. If they fail, the mine blows up as described in applicable rules.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Engineer Body Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="aa07-e476-68a0-fcf6">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Grants a -2 modifier to injury rolls made against the Combat Engineer (this is included in the Combat Engineer’s profile). All weapons with keyword SHRAPNEL suffer -1 DICE on all injury rolls against the Combat Engineer and SHRAPNEL attacks do not cause extra BLOOD MARKERS on a model wearing this suit. The effects relating to SHRAPNEL work even against attacks that ignore armour</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Battlefield Demolition" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f039-f03d-2c1c-4d58">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Engineer ignores HEAVY rules for Satchel Charges.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fortify" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2b71-61c6-9534-4129">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">During their Activation, an Engineer can take a RISKY ACTION with +1 DICE. If successful, the engineer is considered to be in Cover until the model moves. This ACTION cannot be used if the model is in Melee combat.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Grenades" hidden="false" id="a44f-a7e7-8977-bfbf" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="3"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="47e8-1638-32b4-c5b3" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="2"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="88ab-3198-1620-4be6" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="2cfb-73f8-0df3-30e8" id="38f4-e719-e0a4-4f8b" primary="false" name="New Antioch"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="2569-d7f4-df35-9c42" primary="true" name="Troop"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="75"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="daa3-c5e8-36e2-48c5" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
   </selectionEntries>
