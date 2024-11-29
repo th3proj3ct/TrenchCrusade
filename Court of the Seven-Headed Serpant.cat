@@ -1503,6 +1503,12 @@ The Hunter can do this multiple times during its chosen move, though it has to p
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Weapons" hidden="false" id="2c39-2b8e-7dc1-1bfb" type="selectionEntryGroup" targetId="a774-f5b9-3fd9-7a0b" sortIndex="1"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="9d44-5e38-8bf9-2967" type="selectionEntryGroup" targetId="3dce-3062-9abb-c1de" sortIndex="2"/>
+        <entryLink import="true" name="Armour" hidden="false" id="20ee-a72f-e2e1-65bf" type="selectionEntryGroup" targetId="a7de-6b4b-be33-277c" sortIndex="3"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="4b2e-ef91-026c-72a8" type="selectionEntryGroup" targetId="1434-ae99-841b-041e" sortIndex="4"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Wretched" hidden="false" id="a957-7766-e2fa-f4b3">
       <categoryLinks>
@@ -1515,8 +1521,8 @@ The Hunter can do this multiple times during its chosen move, though it has to p
       </costs>
       <entryLinks>
         <entryLink import="true" name="Weapons" hidden="false" id="1b63-b549-c146-6b2b" type="selectionEntryGroup" targetId="a774-f5b9-3fd9-7a0b" sortIndex="1"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="f71b-b44d-e2a6-3812" type="selectionEntryGroup" targetId="3dce-3062-9abb-c1de" sortIndex="2"/>
         <entryLink import="true" name="Equipment" hidden="false" id="6f50-a596-751e-e3e7" type="selectionEntryGroup" targetId="1434-ae99-841b-041e"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="f71b-b44d-e2a6-3812" type="selectionEntryGroup" targetId="3dce-3062-9abb-c1de" sortIndex="2"/>
       </entryLinks>
       <profiles>
         <profile name="Wretched" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="b2dd-8727-aaa1-e504">
