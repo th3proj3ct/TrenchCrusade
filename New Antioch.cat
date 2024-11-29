@@ -904,8 +904,23 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink name="Infiltrator" id="256e-3425-28c0-7549" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="9b36-57f6-1887-7bea" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="9886-5b15-fa46-8d84" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Trench Mole" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="9886-5b15-fa46-8d84" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sniper Priests" hidden="false" id="dd59-a783-dbb5-242f">
       <profiles>
