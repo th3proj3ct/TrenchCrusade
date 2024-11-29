@@ -916,4 +916,13 @@
       </constraints>
     </selectionEntry>
   </selectionEntries>
+  <forceEntries>
+    <forceEntry name="Warband" id="2e09-580e-e00b-d33d" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="4e8c-7d5c-2f67-aaf5" targetId="705b-e23f-e9c2-58ab"/>
+        <categoryLink name="Elite" hidden="false" id="6667-6c1f-123c-1a00" targetId="3de0-192c-3ec2-51be"/>
+        <categoryLink name="Troop" hidden="false" id="8dfe-ee53-be13-8531" targetId="bd43-ddb1-262d-4489"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
 </catalogue>
