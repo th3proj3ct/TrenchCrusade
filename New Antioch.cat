@@ -610,10 +610,10 @@
       </entryLinks>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3265-f0db-dbe4-1366" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7702-1238-a0c1-bd75" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7702-1238-a0c1-bd75" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="decrement" value="0" field="3265-f0db-dbe4-1366">
+        <modifier type="decrement" value="1" field="3265-f0db-dbe4-1366">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
