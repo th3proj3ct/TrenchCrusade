@@ -1115,12 +1115,44 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="697d-8353-cd4d-2999" includeChildSelections="true"/>
       </constraints>
-      <infoLinks>
-        <infoLink name="Gas Mask" id="4ef0-fbb6-c122-d867" hidden="false" type="profile" targetId="ba17-1e71-ee46-ee0f"/>
-        <infoLink name="Misericordia" id="cf17-57f2-1e96-18a9" hidden="false" type="profile" targetId="d82e-4c7b-28ac-1413"/>
-        <infoLink name="Medi-kit" id="8a26-f31d-dc2c-693f" hidden="false" type="profile" targetId="aa88-1987-505a-13ca"/>
-        <infoLink name="Standard Armour" id="9c21-1596-234c-93c2" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Gas Mask" hidden="false" id="c9d3-87ce-1370-96a6">
+          <infoLinks>
+            <infoLink name="Gas Mask" id="4ef0-fbb6-c122-d867" hidden="false" type="profile" targetId="ba17-1e71-ee46-ee0f"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97db-1205-cfe9-61e2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97db-1205-cfe9-61e2-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Medi-Kit" hidden="false" id="3037-a086-6fbd-3d42">
+          <infoLinks>
+            <infoLink name="Medi-kit" id="407e-439b-9d0f-2f25" hidden="false" type="profile" targetId="aa88-1987-505a-13ca"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b84-2ada-b676-0a1e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b84-2ada-b676-0a1e-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Misericordia" hidden="false" id="1888-c70c-7bc0-447c">
+          <infoLinks>
+            <infoLink name="Misericordia" id="cf17-57f2-1e96-18a9" hidden="false" type="profile" targetId="d82e-4c7b-28ac-1413"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="39c5-07d7-5992-10e1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39c5-07d7-5992-10e1-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Standard Armour" hidden="false" id="e4c9-f62c-0fdc-b477">
+          <infoLinks>
+            <infoLink name="Standard Armour" id="666b-5569-609b-1cf6" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5706-1446-195b-8978-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5706-1446-195b-8978-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Mechanized Heavy Infantry" hidden="false" id="3133-240a-a0cc-9cb4">
       <entryLinks>
@@ -1188,11 +1220,16 @@
       <constraints>
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="b845-3e0e-899d-4114" includeChildSelections="true"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="2cfb-73f8-0df3-30e8" id="93f4-17cd-6bf6-5499" primary="false" name="New Antioch"/>
+        <categoryLink targetId="83c8-b351-cb96-119e" id="6ea6-acce-4425-dc0f" primary="true" name="Fireteam"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
     <forceEntry name="Warband" id="2e09-580e-e00b-d33d" hidden="false">
       <categoryLinks>
+        <categoryLink name="Fireteam" hidden="false" id="7a80-8e10-28c0-c933" targetId="83c8-b351-cb96-119e" type="category"/>
         <categoryLink name="Configuration" hidden="false" id="4e8c-7d5c-2f67-aaf5" targetId="705b-e23f-e9c2-58ab"/>
         <categoryLink name="Elite" hidden="false" id="6667-6c1f-123c-1a00" targetId="3de0-192c-3ec2-51be"/>
         <categoryLink name="Troop" hidden="false" id="8dfe-ee53-be13-8531" targetId="bd43-ddb1-262d-4489"/>
