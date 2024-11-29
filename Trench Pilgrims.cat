@@ -159,34 +159,22 @@
           <infoLinks>
             <infoLink name="War Cross" id="b119-22e0-fe05-8a66" hidden="false" type="profile" targetId="2d02-94a4-2493-186f"/>
           </infoLinks>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Grenades" id="2368-4e49-14f9-6cd2" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Gas Grenades" hidden="false" id="4110-89bd-9f03-ec7e">
+            <selectionEntry type="upgrade" import="true" name="Molotov Cocktail" hidden="false" id="f963-53ec-9cee-7006" sortIndex="1">
               <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
               <infoLinks>
-                <infoLink name="Gas Grenades" id="ae02-201d-bdc7-7a8e" hidden="false" type="profile" targetId="d0af-88cd-1c52-2114"/>
-                <infoLink name="Assault" id="901a-4ad6-1243-fd4f" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
-                <infoLink name="Blast" id="6ccc-5145-e9f4-24f9" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
-                <infoLink name="Gas" id="6eba-d0d9-6739-72bd" hidden="false" type="rule" targetId="2c6e-81c8-6c20-b5b7"/>
-                <infoLink name="Grenade" id="0677-2221-1eff-fab7" hidden="false" type="rule" targetId="1c58-0dce-e86e-b0dc"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02dd-c959-649e-d0a6" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="f963-53ec-9cee-7006">
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Incendiary Grenades" id="8fce-de55-3382-2fdf" hidden="false" type="profile" targetId="3bfd-2c1d-2d6b-a36c"/>
+                <infoLink name="Molotov Cocktail" id="8fce-de55-3382-2fdf" hidden="false" type="profile" targetId="b16a-e1fa-433f-efc0"/>
                 <infoLink name="Assault" id="294a-5f52-0f0b-6142" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
                 <infoLink name="Fire" id="cd3b-9cb9-93d8-c0fd" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
                 <infoLink name="Grenade" id="99eb-cea9-a958-cf43" hidden="false" type="rule" targetId="1c58-0dce-e86e-b0dc"/>
@@ -195,7 +183,29 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba18-d35f-0507-56e2" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="e763-0631-bbed-b978">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Incendiary Grenades" id="927d-d299-4e40-4fc0" hidden="false" type="profile" targetId="3bfd-2c1d-2d6b-a36c"/>
+                <infoLink name="Assault" id="fb3e-d052-3460-c714" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
+                <infoLink name="Fire" id="0380-54d8-14d7-5c38" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
+                <infoLink name="Grenade" id="e9f8-5211-4b1a-44bf" hidden="false" type="rule" targetId="1c58-0dce-e86e-b0dc"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a71d-8f73-70fc-c10a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="caa2-22ce-1bc5-4d51" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -843,7 +853,7 @@
               <characteristics>
                 <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
                 <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
-                <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+                <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
                 <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
                 <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
               </characteristics>
