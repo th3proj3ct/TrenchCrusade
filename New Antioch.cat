@@ -874,11 +874,12 @@
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ae29-d56c-f5ef-bb69" includeChildSelections="true"/>
-      </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trench Mole" hidden="false" id="9886-5b15-fa46-8d84" sortIndex="1"/>
+        <selectionEntry type="upgrade" import="true" name="Trench Mole" hidden="false" id="9886-5b15-fa46-8d84" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="764f-d015-494e-ab99" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sniper Priests" hidden="false" id="dd59-a783-dbb5-242f">
