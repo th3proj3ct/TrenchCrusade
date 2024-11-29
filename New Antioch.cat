@@ -965,6 +965,16 @@
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
         </profile>
+        <profile name="Aim" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9abe-b135-9901-68d4">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062"> A Sniper Priest may take a RISKY ACTION to aim. If successful then the Priest may add +2 DICE to any Ranged attack rolls during this same Activation.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Absolute Faith" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="100a-86b4-5508-6fd3">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Sniper Priests do not use their eyesight to aim at their enemies. The opponent cannot apply any BLOOD MARKERs when they use a Ranged weapon. They still suffer penalties for Range and Cover as standard.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Armour" hidden="false" id="7935-04dd-9bbe-0085" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6"/>
@@ -976,9 +986,6 @@
         <categoryLink targetId="3de0-192c-3ec2-51be" id="5994-7a77-128a-858e" primary="true" name="Elite"/>
         <categoryLink targetId="2cfb-73f8-0df3-30e8" id="4fef-45a2-9e20-0911" primary="false" name="New Antioch"/>
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Tough" id="0579-dc3b-6079-2073" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
-      </infoLinks>
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
