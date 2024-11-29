@@ -1611,19 +1611,61 @@ The Hunter can do this multiple times during its chosen move, though it has to p
           <entryLinks>
             <entryLink import="true" name="Melee Weapons" hidden="false" id="ebd4-9668-a66c-d8f6" type="selectionEntryGroup" targetId="085e-a0e2-7ba3-9d9c" sortIndex="1"/>
           </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="b20a-735f-2038-b6c3" sortIndex="2">
-              <costs>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7c7a-851d-739f-21f3" includeChildSelections="true"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Troop Flag" id="1a3e-ed84-250f-4452" hidden="false" type="profile" targetId="e86e-146a-65b7-09f2"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Utility Hand" id="0a82-6f32-7e9d-19b2" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Trench Shield" hidden="false" id="175b-183b-cfef-8cd7" sortIndex="1">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01c4-27d8-75e1-16de" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Trench Shield" id="3344-4f2c-e983-9aaf" hidden="false" type="profile" targetId="c2a5-72b6-355d-0356"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="73ee-fda3-27fa-1197">
+                  <costs>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="65b7-38c9-286f-3307" includeChildSelections="true"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Troop Flag" id="13d2-ee24-903c-28e6" hidden="false" type="profile" targetId="e86e-146a-65b7-09f2"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="77dc-5cb6-ff0d-07aa">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="76b4-091b-ee2d-fce7" includeChildSelections="true"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Musical Instrument" id="08f0-3919-a521-c170" hidden="false" type="profile" targetId="dd0c-c62d-46f1-64f8"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
