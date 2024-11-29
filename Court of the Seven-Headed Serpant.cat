@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="44b9-e92b-2dc0-6820" name="Court of the Seven-Headed Serpant" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="6" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="44b9-e92b-2dc0-6820" name="Court of the Seven-Headed Serpant" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="6" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="a774-f5b9-3fd9-7a0b" hidden="false" collapsible="true">
       <constraints>
@@ -1188,6 +1188,13 @@
         <categoryLink targetId="914f-0020-0d97-e217" id="5fef-fa37-6086-a14b" primary="false" name="Tough"/>
         <categoryLink targetId="4f5c-027d-253c-ffa3" id="3d2a-e9e3-1376-be6a" primary="false" name="Fear"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapons" hidden="false" id="9ad6-c56a-eb6a-5e46" type="selectionEntryGroup" targetId="a774-f5b9-3fd9-7a0b" sortIndex="1"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="710a-0d47-3cd6-7f8c" type="selectionEntryGroup" targetId="3dce-3062-9abb-c1de" sortIndex="2"/>
+        <entryLink import="true" name="Goetic Powers" hidden="false" id="827f-2b7b-9417-fa24" type="selectionEntryGroup" targetId="a863-9b82-2217-87ee" sortIndex="3"/>
+        <entryLink import="true" name="Armour" hidden="false" id="7ef9-9b9c-c542-aef8" type="selectionEntryGroup" targetId="a7de-6b4b-be33-277c"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="003c-7fcf-a9e8-9bd9" type="selectionEntryGroup" targetId="1434-ae99-841b-041e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Seven Deadly Sins" hidden="false" id="9ad1-3c0b-ae4e-a40b">
       <categoryLinks>
