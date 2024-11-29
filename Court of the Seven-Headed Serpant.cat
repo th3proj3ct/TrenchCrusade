@@ -1271,36 +1271,42 @@
       <constraints>
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="c1b8-3329-24de-4121-max-min" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c1b8-3329-24de-4121-max-max" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="802a-d38f-ee40-45eb" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="2b54-1209-8e90-9719" includeChildSelections="false"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Wrath" hidden="false" id="2fbd-2ebe-b0e5-8708">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Warband Sin" id="2117-c114-0285-f8ec" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wrath" hidden="false" id="2fbd-2ebe-b0e5-8708">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b665-8a2d-1fd5-e580" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Envy" hidden="false" id="3a57-9286-5c7e-de27">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0612-3a93-2961-a3ba" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lust" hidden="false" id="3fc4-33b0-264c-8510">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbc9-e19c-a6a8-4afc" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pride" hidden="false" id="715d-d6a9-0948-8e79">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93c4-2af0-3344-9af9" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sloth" hidden="false" id="be23-ed3c-e3a7-5140">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d353-1cd3-419f-3bd1" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b665-8a2d-1fd5-e580" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f161-0ff4-1107-7bd2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f161-0ff4-1107-7bd2-max" includeChildSelections="false"/>
           </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Lust" hidden="false" id="3fc4-33b0-264c-8510">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbc9-e19c-a6a8-4afc" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Pride" hidden="false" id="715d-d6a9-0948-8e79">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93c4-2af0-3344-9af9" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Envy" hidden="false" id="3a57-9286-5c7e-de27">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0612-3a93-2961-a3ba" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Sloth" hidden="false" id="be23-ed3c-e3a7-5140">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d353-1cd3-419f-3bd1" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hunter of the Left-hand Path" hidden="false" id="bf89-44f3-36a0-c7b4">
       <categoryLinks>
