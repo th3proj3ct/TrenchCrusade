@@ -432,7 +432,8 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Putrid Shotgun" hidden="false" id="daaf-90b6-cc15-7923">
               <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Bayonet Lug" hidden="false" id="5b0c-461e-1bf9-8a2f" type="selectionEntry" targetId="f603-fb7b-cb6f-f1a4"/>
@@ -462,7 +463,8 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Putrid Shotgun" hidden="true" id="cee7-3642-aae1-c31c">
               <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
               <infoLinks>
                 <infoLink name="Putrid Shotgun" id="681b-8474-d71d-e68e" hidden="false" type="profile" targetId="f342-1a5a-726e-8782"/>
@@ -714,7 +716,7 @@
       <profiles>
         <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5af2-de11-6c23-567e">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Lord of Tumours are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Plague Night are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
           </characteristics>
         </profile>
         <profile name="Plague Knight" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="5fad-8b9c-8d6a-a2f0" publicationId="c658-4a10-e1fe-befc" page="78">
@@ -806,10 +808,20 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="670f-9bed-3b5c-2b36" shared="true" includeChildSelections="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="670f-9bed-3b5c-2b36" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>
+        </profile>
+        <profile name="Frightening Speed" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9494-6d28-0c24-b18d">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The hounds take Dash actions with +1 DICE. In addition, they can get up from being Down without any movement penalty.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="daee-ce18-e487-8c9c">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Hound are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <selectionEntries>
@@ -846,6 +858,9 @@
         <categoryLink targetId="4f5c-027d-253c-ffa3" id="3cd2-212f-58dc-447b" primary="false" name="Fear"/>
         <categoryLink targetId="bd43-ddb1-262d-4489" id="8fdf-0f44-833e-36bf" primary="true" name="Troop"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Fear" id="b275-58f1-6dd4-ad60" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Grail Thrall" hidden="false" id="ec39-f328-bad6-a586">
       <profiles>
@@ -1235,7 +1250,7 @@
         </profile>
         <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b3e7-566c-fefe-402d">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Lord of Tumours are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Corpse Guard are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
           </characteristics>
         </profile>
         <profile name="Bodyguard" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="77fd-38d3-3b6c-4a77">
