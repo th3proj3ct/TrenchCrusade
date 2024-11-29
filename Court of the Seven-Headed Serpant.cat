@@ -1209,6 +1209,7 @@
       <constraints>
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="c1b8-3329-24de-4121-min" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c1b8-3329-24de-4121-max" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc32-97e0-0dd3-606a" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Wrath" hidden="false" id="2fbd-2ebe-b0e5-8708">
