@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Anointed Heavy Infantry" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -596,6 +596,21 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="fdf2-72c7-8ada-82f0" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="fdf2-72c7-8ada-82f0">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="7ba1-f516-e8cf-3957" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" value="0" field="fdf2-72c7-8ada-82f0">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="roster" childId="420c-0871-4283-b95b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Trooper" hidden="false" id="3844-b41c-9ecc-85b9" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -702,6 +717,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="Legionnaure" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="f606-4316-044d-4503" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Legionnairie Selection" hidden="false" id="e643-f051-a966-9e51">
       <categoryLinks>
