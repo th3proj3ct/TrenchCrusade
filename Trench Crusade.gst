@@ -745,5 +745,16 @@ Keyword: CONSUMABLE.</characteristic>
         <characteristic name="Description" typeId="4834-43a9-1c93-9062">When a model equipped with a Blessed Icon fails a RISKY ACTION, that model may use this item. If it does, its Activation is not ended. Can be used once per battle.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Bow of Lethe" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="0dae-2ad7-bfec-82bb">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24”</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ASSAULT</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">When shooting the Bow of Lethe, choose one of the following effects:
+- Ignore the target’s armour
+- Add +2 DICE to the injury roll</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>
