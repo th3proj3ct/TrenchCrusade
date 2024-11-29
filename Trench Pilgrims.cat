@@ -725,14 +725,26 @@
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
         </profile>
-        <profile name="Enforced Orthodoxy" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5de4-afa1-0837-107a">
+        <profile name="Big Strong Guy" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="true" id="5de4-afa1-0837-107a">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">At any point during its Activation, a Castigator may take a RISKY ACTION with +1 DICE. If successful, all friendly models that are Down and within 8” of the Castigator may immediately stand up at no penalty or cost.</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Ooooh hes so big and strong, wow.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="2fe1-9dfe-d2d6-5ecc" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Whip of God" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3334-ac1d-eda1-a0e1">
           <characteristics>
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">Unlike other models, a Castigator is allowed to attack friendly models with melee attacks within 1”. They can do this without declaring a charge. Each time the Castigator takes a friendly model Out of Action with a melee attack, set a die aside in a pool as the act of piety inspires the troops. The next time your warband makes a Morale roll, add an amount of +DICE to that roll equal to the amount of dice in the pool and empty it.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Enforced Orthodoxy" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9a0d-9964-aee2-78c4">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">At any point during its Activation, a Castigator may take a RISKY ACTION with +1 DICE. If successful, all friendly models that are Down and within 8” of the Castigator may immediately stand up at no penalty or cost.</characteristic>
           </characteristics>
         </profile>
       </profiles>
