@@ -843,8 +843,7 @@
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="c02c-02ff-58d0-6e92-min" includeChildSelections="true"/>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c02c-02ff-58d0-6e92-max" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51fa-cabc-34af-97f2" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -868,8 +867,8 @@
         <entryLink import="true" name="Equipment" hidden="false" id="9bba-9a7d-3c8a-7ad9" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="3de0-192c-3ec2-51be" id="a96d-a980-6bc2-9ac8" primary="true" name="Elite"/>
         <categoryLink targetId="2cfb-73f8-0df3-30e8" id="a6e1-faa0-a034-81c5" primary="false" name="New Antioch"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="4869-bab0-3f08-4648" primary="true" name="Troop"/>
       </categoryLinks>
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
