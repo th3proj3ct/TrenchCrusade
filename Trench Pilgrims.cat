@@ -766,9 +766,152 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="War Prophet" hidden="false" id="3249-993c-9f42-06ad">
+    <selectionEntry type="model" import="true" name="Trench Pilgrim" hidden="false" id="3249-993c-9f42-06ad">
       <profiles>
-        <profile name="War Prophet" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="a1dc-6afc-2a7c-d293">
+        <profile name="Trench Pilgrim" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="a1dc-6afc-2a7c-d293">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="b32b-6d55-9163-8486" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Resurrection" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="87c7-8ddb-b2bb-5b27">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When a Trench Pilgrim dies, you may elect to re-buy them after the battle as a Martyr-Penitent resurrected by a Meta-Christ for a cost of 45 ducats. When hit, any attacks against a Martyr-Penitent add -1 DICE when rolling on the Injury Table. Their Melee bonus is increased to +1 DICE (reflected on the profile above). Martyr-Penitents retain any possessions they had before dying and being resurrected</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="b32b-6d55-9163-8486" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="afb7-d895-f4b4-73f3" id="ce13-76b0-f886-2e74" primary="false" name="Pilgrim"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="042c-e4ca-f1f8-011f" primary="true" name="Troop"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapons" hidden="false" id="0c89-c431-3417-8187" type="selectionEntryGroup" targetId="43b1-aa6a-2357-1613" sortIndex="2"/>
+        <entryLink import="true" name="Throwables" hidden="false" id="b02f-cdc2-d6f3-70b1" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="3"/>
+        <entryLink import="true" name="Armour" hidden="false" id="359f-dab2-e16a-8eb2" type="selectionEntryGroup" targetId="664d-b970-6eef-b2d5"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="ddb6-08d9-4e62-ec39" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="6082-859c-8347-2a94" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2d8-0065-8099-4e04" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="51ea-b495-72bb-76fe-min" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="51ea-b495-72bb-76fe-max" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Strong" id="1840-e768-b414-43cd" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Martyred" hidden="false" id="b32b-6d55-9163-8486" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="149a-ac2a-a9fe-6e87" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Beyond Death" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3ee5-5ddf-dfdd-b3d4">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Any attacks against a Martyr-Penitent add -1 DICE when rolling on the Injury Table.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Martyr-Penitent" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="5f97-f2af-da21-97bf">
+              <characteristics>
+                <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+                <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+                <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+                <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+                <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="6082-859c-8347-2a94" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Martyr-Penitent" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="b32b-6d55-9163-8486" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Communicant" hidden="false" id="d21f-81f7-cf6f-690e">
+      <profiles>
+        <profile name="Bodyguard" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b241-36e1-f345-a731">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">If any model with the PILGRIM Keyword within 1” of the Communicant is hit by a ranged or melee weapon (excluding BLAST weapons), you can choose to redirect the hit against the Communicant instead. Determine the injuries exactly as if the weapon just hit the Communicant.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Miracle of Regeneration" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="aff3-58e7-e3b9-a779">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">At the start of each of their Activations, the Communicant can remove one BLOOD MARKER from themselves, if they have any.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Communicant" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="53e3-a873-a192-6a91">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">-3 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">40mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Communicant Cross" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d090-0fbb-4251-618c">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">A sacred cross is nailed on the face of the Communicant. This counts as an Iron Capirote, Combat Helmet and a Gas Mask (Immune to SHRAPNEL, GAS, and FEAR).
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1aa1-9e86-d59f-f8be" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="afb7-d895-f4b4-73f3" id="87c5-d158-b7b6-4cda" primary="false" name="Pilgrim"/>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="fb18-41d5-ac7c-a24d" primary="true" name="Elite"/>
+        <categoryLink targetId="afcc-5f24-1c7c-63c4" id="1fba-7cc4-a3ec-10ae" primary="false" name="Strong"/>
+        <categoryLink targetId="914f-0020-0d97-e217" id="542d-1162-788f-1d38" primary="false" name="Tough"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapons" hidden="false" id="b83d-a3fe-92b7-a4c5" type="selectionEntryGroup" targetId="43b1-aa6a-2357-1613" sortIndex="1"/>
+        <entryLink import="true" name="Throwables" hidden="false" id="a96d-c2fc-d6e8-3521" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="2"/>
+        <entryLink import="true" name="Armour" hidden="false" id="955f-c07f-a152-5cc6" type="selectionEntryGroup" targetId="664d-b970-6eef-b2d5"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="dc0c-6183-2ce6-029f" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Tough" id="c028-35ae-88a1-ee5e" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+        <infoLink name="Strong" id="2a36-d2e7-4861-6a9e" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="War Prophet" hidden="false" id="3d5c-4325-5a12-5010">
+      <profiles>
+        <profile name="War Prophet" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="d3bd-024c-681c-eb6c">
           <characteristics>
             <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
             <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+2 Dice</characteristic>
@@ -777,35 +920,35 @@
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
         </profile>
-        <profile name="Laying on Hands" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f12f-18d0-68af-9cba">
+        <profile name="Laying on Hands" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8160-6b76-eb5c-dd34">
           <characteristics>
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">With a successful ACTION, you may remove D3 BLOOD MARKERs from any friendly model within 6” (including the Prophet).</characteristic>
           </characteristics>
         </profile>
-        <profile name="Loudspeakers" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e62d-ef69-36a5-7901">
+        <profile name="Loudspeakers" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9ec3-b93c-1646-ccec">
           <characteristics>
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">The War Prophet blares out holy sermons and dire prophecies at 100 decibels to inspire the faithful. The Prophet can take a RISKY ACTION with +2 DICE once during each Activation. If the action is successful, all friendly models within 8” of the Prophet (including the Prophet) that are not engaged in melee can immediately move up to 3” towards any enemy model they can see by the optimal path that reduces the distance between the moving model and the enemy. This move allows them to enter combat as if they charged the enemy and are considered to have done so until the end of the turn.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Memento Mori" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="87c7-8ddb-b2bb-5b27">
+        <profile name="Memento Mori" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f2b4-37b5-8a5a-ac9f">
           <characteristics>
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">The War Prophet is touched by a higher power and the revealed truth allows them a degree of protection against premature death. Once per battle, when the War Prophet is taken Out of Action for any reason, ignore the result as if nothing had happened.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="51ea-b495-72bb-76fe-min" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="51ea-b495-72bb-76fe-max" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="8964-247e-4f1c-6eff-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8964-247e-4f1c-6eff-max" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
-        <categoryLink targetId="afb7-d895-f4b4-73f3" id="ce13-76b0-f886-2e74" primary="false" name="Pilgrim"/>
-        <categoryLink targetId="3de0-192c-3ec2-51be" id="d735-6489-2eef-af0d" primary="true" name="Elite"/>
+        <categoryLink targetId="afb7-d895-f4b4-73f3" id="66ae-1619-c455-9df6" primary="false" name="Pilgrim"/>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="927f-0758-9124-3ca2" primary="true" name="Elite"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Weapons" hidden="false" id="0c89-c431-3417-8187" type="selectionEntryGroup" targetId="43b1-aa6a-2357-1613" sortIndex="1"/>
-        <entryLink import="true" name="Throwables" hidden="false" id="b02f-cdc2-d6f3-70b1" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="2"/>
-        <entryLink import="true" name="Armour" hidden="false" id="359f-dab2-e16a-8eb2" type="selectionEntryGroup" targetId="664d-b970-6eef-b2d5"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="ddb6-08d9-4e62-ec39" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="138e-80ba-06ec-298f" type="selectionEntryGroup" targetId="43b1-aa6a-2357-1613" sortIndex="1"/>
+        <entryLink import="true" name="Throwables" hidden="false" id="0b78-53d8-0dcf-a923" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="2"/>
+        <entryLink import="true" name="Armour" hidden="false" id="ad3a-9be5-0310-e278" type="selectionEntryGroup" targetId="664d-b970-6eef-b2d5"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="6fee-4af9-6356-fce0" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39"/>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>
