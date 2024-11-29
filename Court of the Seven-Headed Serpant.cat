@@ -1182,7 +1182,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sorceror" hidden="false" id="2a14-1d21-3b35-86a8">
       <categoryLinks>
-        <categoryLink targetId="3de0-192c-3ec2-51be" id="8699-893e-5dbd-2718" primary="false" name="Elite"/>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="8699-893e-5dbd-2718" primary="true" name="Elite"/>
         <categoryLink targetId="420c-0871-4283-b95b" id="3af0-eb8c-bafc-1e98" primary="false" name="Demonic"/>
         <categoryLink targetId="afcc-5f24-1c7c-63c4" id="7885-162e-ab74-e802" primary="false" name="Strong"/>
         <categoryLink targetId="914f-0020-0d97-e217" id="5fef-fa37-6086-a14b" primary="false" name="Tough"/>
@@ -1196,13 +1196,14 @@
         <entryLink import="true" name="Equipment" hidden="false" id="003c-7fcf-a9e8-9bd9" type="selectionEntryGroup" targetId="1434-ae99-841b-041e"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Seven Deadly Sins" hidden="false" id="9ad1-3c0b-ae4e-a40b">
+    <selectionEntry type="upgrade" import="true" name="Seven Deadly Sins" hidden="false" id="9ad1-3c0b-ae4e-a40b" defaultAmount="1">
       <categoryLinks>
-        <categoryLink targetId="705b-e23f-e9c2-58ab" id="7936-fa0b-37ff-d234" primary="false" name="Configuration"/>
+        <categoryLink targetId="705b-e23f-e9c2-58ab" id="7936-fa0b-37ff-d234" primary="true" name="Configuration"/>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="c1b8-3329-24de-4121-min" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c1b8-3329-24de-4121-max" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0612-3a93-2961-a3ba" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Wrath" hidden="false" id="2fbd-2ebe-b0e5-8708"/>
