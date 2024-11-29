@@ -1102,5 +1102,60 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Anchorite Shrine" hidden="false" id="f2e8-cc7b-df49-4819">
+      <profiles>
+        <profile name="Anchorite" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="3d17-425a-2ba2-daf2">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">N/A</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-3</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">60mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Broken on the Wheel" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7e43-58b3-c0c2-b854">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Before the start of the battle, one Trench Pilgrim or Ecclesiastic Prisoner may voluntarily be broken on the wheel to show their piety and devotion (permanently remove all weapons, armour and equipment from the victim and use/store them as you wish). The Anchorite Shrine will then shatter the bones of the volunteer and carry the broken victim to the battle on its Wheel. As long as the volunteer is not taken Out of Action, any Attacks against the Anchorite are redirected to the volunteer. The volunteer cannot be independently targeted by any abilities or attacks (including BLAST weapons). For all rules purposes and attack effects (such as forced movement), the two models are treated as a single model, including sharing BLOOD, INFECTION and BLESSING MARKERS. Treat Down results against the volunteer as a Minor Hit. The volunteer cannot take any ACTIONS, be Activated separately or move – for obvious reasons. At the end of the battle, even if the volunteer may have survived, the model dies and is removed from your warband.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Catherine Wheel" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="4672-453c-7e9d-a0d1">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Hit</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">RISKY, HEAVY</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Because of the enormous weight and the skill of the Anchorite Shrine in inflicting maximum pain, the Catherine Wheel rolls 3D6 on the Injury Chart, adding the results together.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bonebreaker Mace" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="981d-f6b6-849a-b225">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Injure</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">RISKY</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9509-6e8f-57f6-ac7e" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="afb7-d895-f4b4-73f3" id="ec65-a1b1-f61d-7232" primary="false" name="Pilgrim"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="8871-ad0c-6f04-ae77" primary="true" name="Troop"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="140"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Fear" id="3a2a-9b03-2b16-b397" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+        <infoLink name="Strong" id="0183-153e-c430-0db9" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
+        <infoLink name="Tough" id="7635-dccd-d817-bbfe" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+        <infoLink name="Machine Armour" id="5d48-f6eb-27a0-e910" hidden="false" type="profile" targetId="2558-23f8-cfa8-40f4"/>
+        <infoLink name="Heavy" id="9ffb-4b7a-5cef-ebea" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+        <infoLink name="Risky" id="ee6e-981b-19ef-ebd4" hidden="false" type="rule" targetId="df23-62bc-775e-fca1"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
 </catalogue>
