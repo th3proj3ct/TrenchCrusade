@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="44b9-e92b-2dc0-6820" name="Court of the Seven-Headed Serpant" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="6" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="44b9-e92b-2dc0-6820" name="Court of the Seven-Headed Serpant" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="6" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="a774-f5b9-3fd9-7a0b" hidden="false" collapsible="true">
       <constraints>
@@ -1573,6 +1573,42 @@ The Hunter can do this multiple times during its chosen move, though it has to p
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="90"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="f133-7c3f-8861-2506" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Pit Locust" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="6987-6ba4-6c22-54b8">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Flying</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+0 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-2</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">30x60mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Swarming Attack" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c55c-f6f6-7100-7fac">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When the Pit Locust makes a melee attack, it can make an additional attack with its stinger if it charged during this Activation. Pit Locusts suffer no penalties for fighting unarmed, nor do they suffer penalties or restrictions for making Off-Hand Attacks with their stingers. The first attack made by a Pit Locust has the Keyword SHRAPNEL and therefore causes an additional BLOOD MARKER. </characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ravage" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="497e-011f-1c65-c566">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Pit Locusts do not suffer penalties for fighting unarmed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Reinforced Armour" id="64b2-d015-8f25-fe8c" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
+        <infoLink name="Fear" id="a068-0b05-6baa-b3b6" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+        <infoLink name="Shrapnel" id="20f6-cae2-0807-0f60" hidden="false" type="rule" targetId="200f-a7a6-f8a7-8232"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crown of Hellfire" hidden="false" id="2ebf-d4d5-a86a-4f13" type="selectionEntry" targetId="1234-6514-2ff2-5b93"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
