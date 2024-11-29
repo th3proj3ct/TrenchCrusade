@@ -432,7 +432,11 @@
             <condition type="atLeast" value="2" field="selections" scope="parent" childId="2c66-b5c4-72e2-82ed" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="1" field="3fc7-d256-5d48-1766"/>
+        <modifier type="set" value="1" field="3fc7-d256-5d48-1766">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="model" childId="0447-09f8-8cc2-64da" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged (One-Handed)" id="cd2d-89be-32a4-afa5" hidden="false" collective="false">
