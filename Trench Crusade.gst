@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -413,11 +413,11 @@ They do not count towards the maximum melee weapons a model can carry.</characte
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Melee attacks made against this model are made with -1 DICE if the attacking model Charged this turn.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Battle Whip" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="f469-b712-2233-ac79" publicationId="c658-4a10-e1fe-befc" page="116">
+    <profile name="Flail" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="f469-b712-2233-ac79" publicationId="c658-4a10-e1fe-befc" page="116">
       <characteristics>
         <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-handed</characteristic>
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
-        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-1D to hit</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to hit</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345">The +1 DICE to Hit Rolls bonus does not apply if used as an off-hand weapon.</characteristic>
       </characteristics>
@@ -742,7 +742,8 @@ Keyword: CONSUMABLE.</characteristic>
     </profile>
     <profile name="Blessed Icon" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ddb0-3689-bc81-7162" publicationId="c658-4a10-e1fe-befc" page="120">
       <characteristics>
-        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When a model equipped with a Blessed Icon fails a RISKY ACTION, that model may use this item. If it does, its Activation is not ended. Can be used once per battle.</characteristic>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When a model equipped with a Blessed Icon fails a RISKY ACTION, that model may use this item. If it does, its Activation is not ended.
+Keyword: CONSUMABLE.</characteristic>
       </characteristics>
     </profile>
     <profile name="Bow of Lethe" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="0dae-2ad7-bfec-82bb">
@@ -754,6 +755,24 @@ Keyword: CONSUMABLE.</characteristic>
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345">When shooting the Bow of Lethe, choose one of the following effects:
 - Ignore the target’s armour
 - Add +2 DICE to the injury roll</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Punt Gun" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="77ea-665d-7ac6-58ef" publicationId="c658-4a10-e1fe-befc" page="109">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;/Melee</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to hit and to injure </characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY, SHRAPNEL</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Before a model shoots with the punt gun, you can overcharge it with a shot, giving the weapon BLAST 3” radius. If you do this, the shooting ACTION with the Punt Gun always ends the shooter’s Activation and causes one BLOOD MARKER on the shooter. A model cannot make a ranged attack with the punt gun unless it is either STRONG or another friendly model is in base contact with it.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="War Cross" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="2d02-94a4-2493-186f" publicationId="c658-4a10-e1fe-befc" page="76">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">8&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ASSAULT</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Ignores penalties for long range. A model with the weapon will not run out of them.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
