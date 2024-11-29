@@ -1043,11 +1043,6 @@
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">As a RISKY ACTION the Engineer can disable any mine or trapped terrain they move in contact with. If they fail, the mine blows up as described in applicable rules.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Engineer Body Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="aa07-e476-68a0-fcf6">
-          <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Grants a -2 modifier to injury rolls made against the Combat Engineer (this is included in the Combat Engineer’s profile). All weapons with keyword SHRAPNEL suffer -1 DICE on all injury rolls against the Combat Engineer and SHRAPNEL attacks do not cause extra BLOOD MARKERS on a model wearing this suit. The effects relating to SHRAPNEL work even against attacks that ignore armour</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Battlefield Demolition" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f039-f03d-2c1c-4d58">
           <characteristics>
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Engineer ignores HEAVY rules for Satchel Charges.</characteristic>
@@ -1075,6 +1070,21 @@
       <constraints>
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="daa3-c5e8-36e2-48c5" includeChildSelections="true"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Engineer Body Armour" hidden="false" id="7219-dd08-6feb-be36">
+          <profiles>
+            <profile name="Engineer Body Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="aa07-e476-68a0-fcf6">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Grants a -2 modifier to injury rolls made against the Combat Engineer (this is included in the Combat Engineer’s profile). All weapons with keyword SHRAPNEL suffer -1 DICE on all injury rolls against the Combat Engineer and SHRAPNEL attacks do not cause extra BLOOD MARKERS on a model wearing this suit. The effects relating to SHRAPNEL work even against attacks that ignore armour</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cddc-481e-e9a6-4948-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cddc-481e-e9a6-4948-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Combat Medic" hidden="false" id="3523-c775-3603-dbeb">
       <profiles>
@@ -1089,7 +1099,7 @@
         </profile>
         <profile name="Convent Conditioning" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="6f5f-6393-4e08-500d">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The medic is immune to FEAR.</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Medic is immune to FEAR.</characteristic>
           </characteristics>
         </profile>
         <profile name="Finish the Fallen" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="195c-d9a0-91c2-1b40">
@@ -1099,7 +1109,7 @@
         </profile>
         <profile name="Expert Medic" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="a725-489e-1a8d-8cc1">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Medic adds +1 BONUS DICE whenever they use their Medi-Kit to aid friendly models.</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Medic adds +1 BONUS DICE whenever they use their Medi-Kit to aid friendly models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1202,14 +1212,14 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Fireteam Members" id="5223-552c-d2b3-bf98" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Combat Medic" hidden="false" id="35f5-4536-4409-aa17" type="selectionEntry" targetId="3523-c775-3603-dbeb"/>
-            <entryLink import="true" name="Combat Engineer" hidden="false" id="4e53-f2a3-7163-5635" type="selectionEntry" targetId="50d8-f63e-e01d-2698"/>
-            <entryLink import="true" name="Lieutenant" hidden="false" id="9887-124b-06ad-84d7" type="selectionEntry" targetId="e578-1122-47cb-10ad"/>
-            <entryLink import="true" name="Shocktrooper" hidden="false" id="ab9f-0050-afb8-82a6" type="selectionEntry" targetId="579e-2810-d1cf-454b"/>
-            <entryLink import="true" name="Mechanized Heavy Infantry" hidden="false" id="d7de-8b90-bce0-e704" type="selectionEntry" targetId="3133-240a-a0cc-9cb4"/>
-            <entryLink import="true" name="Sniper Priests" hidden="false" id="56d6-2116-0dca-8881" type="selectionEntry" targetId="dd59-a783-dbb5-242f"/>
-            <entryLink import="true" name="Trench Cleric" hidden="false" id="3401-dc21-faf0-48d7" type="selectionEntry" targetId="f8bc-5df8-1768-a72a"/>
-            <entryLink import="true" name="Yeoman" hidden="false" id="453b-b4ca-41be-a430" type="selectionEntry" targetId="f2c3-86d1-5924-093f"/>
+            <entryLink import="true" name="Combat Medic" hidden="false" id="35f5-4536-4409-aa17" type="selectionEntry" targetId="3523-c775-3603-dbeb" collapsible="true"/>
+            <entryLink import="true" name="Combat Engineer" hidden="false" id="4e53-f2a3-7163-5635" type="selectionEntry" targetId="50d8-f63e-e01d-2698" collapsible="true"/>
+            <entryLink import="true" name="Lieutenant" hidden="false" id="9887-124b-06ad-84d7" type="selectionEntry" targetId="e578-1122-47cb-10ad" collapsible="true"/>
+            <entryLink import="true" name="Shocktrooper" hidden="false" id="ab9f-0050-afb8-82a6" type="selectionEntry" targetId="579e-2810-d1cf-454b" collapsible="true"/>
+            <entryLink import="true" name="Mechanized Heavy Infantry" hidden="false" id="d7de-8b90-bce0-e704" type="selectionEntry" targetId="3133-240a-a0cc-9cb4" collapsible="true"/>
+            <entryLink import="true" name="Sniper Priests" hidden="false" id="56d6-2116-0dca-8881" type="selectionEntry" targetId="dd59-a783-dbb5-242f" collapsible="true"/>
+            <entryLink import="true" name="Trench Cleric" hidden="false" id="3401-dc21-faf0-48d7" type="selectionEntry" targetId="f8bc-5df8-1768-a72a" collapsible="true"/>
+            <entryLink import="true" name="Yeoman" hidden="false" id="453b-b4ca-41be-a430" type="selectionEntry" targetId="f2c3-86d1-5924-093f" collapsible="true"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="766f-55a1-de29-6d07" includeChildSelections="false"/>
