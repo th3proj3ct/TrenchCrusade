@@ -521,21 +521,13 @@
               <costs>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
               </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Bayonet Lug" hidden="false" id="116e-179c-6ca6-2e75">
-                  <entryLinks>
-                    <entryLink import="true" name="Bayonet" hidden="false" id="ab5b-87c7-2d02-3b47" type="profile" targetId="aa9b-a7a1-69a4-05f4"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="2"/>
-                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <infoLinks>
                 <infoLink name="Submachine Gun" id="4413-7c6f-bd5e-438b" hidden="false" type="profile" targetId="f366-4889-0ac5-375d"/>
                 <infoLink name="Assault" id="d218-a984-73cb-0809" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
               </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Bayonet Lug" hidden="false" id="5f2a-bb56-4a74-4b04" type="selectionEntry" targetId="780a-82e9-b0f2-9caf"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="9d61-b51a-dafb-c031">
               <costs>

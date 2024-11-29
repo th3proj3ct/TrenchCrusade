@@ -1149,21 +1149,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               <costs>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
               </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Bayonet Lug" hidden="false" id="e858-611a-2c96-7850">
-                  <entryLinks>
-                    <entryLink import="true" name="Bayonet" hidden="false" id="5903-2a40-4fc5-d866" type="profile" targetId="aa9b-a7a1-69a4-05f4"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="2"/>
-                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <infoLinks>
                 <infoLink name="Submachine Gun" id="ebd6-6656-4a8a-a565" hidden="false" type="profile" targetId="f366-4889-0ac5-375d"/>
                 <infoLink name="Assault" id="b310-46e3-6486-a914" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
               </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Bayonet Lug" hidden="false" id="9154-09a9-b183-ac37" type="selectionEntry" targetId="3348-ed1b-adf7-af00"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="b729-c409-1ae1-3e76">
               <costs>
