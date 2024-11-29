@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -128,7 +128,7 @@ INFECTION MARKERS can be used to modify dice rolls exactly like BLOOD MARKERS. U
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;/Melee</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
-        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">A model armed with a pistol can use it in melee as well as ranged combat (using Ranged Characteristic), including as an off-hand weapon to execute an additional melee attack.</characteristic>
       </characteristics>
     </profile>
     <profile name="Automatic Pistol" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="8ac5-3721-e679-7c6e" publicationId="c658-4a10-e1fe-befc" page="109">
@@ -137,7 +137,7 @@ INFECTION MARKERS can be used to modify dice rolls exactly like BLOOD MARKERS. U
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;/Melee</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-1D to injury, 2 attacks</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
-        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">A model armed with an automatic pistol can use it in melee as well as ranged combat (using Ranged Characteristic), including as an off-hand weapon to execute an additional melee attack. You can make two Attack ACTIONS with the automatic pistol instead of one if used as a ranged weapon. They can be against the same target or two different ones. </characteristic>
       </characteristics>
     </profile>
     <profile name="Bolt Action Rifle" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="408d-d56e-71c4-f3c4" publicationId="c658-4a10-e1fe-befc" page="109">
@@ -220,7 +220,7 @@ Injuries are rolled with -1 DICE at long range.</characteristic>
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;/Melee</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Hit in Cover</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ASSAULT</characteristic>
-        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Add +1 DICE to hit rolls if shot from behind any terrain obstacles.</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Add +1 DICE to hit rolls if shot from behind any terrain obstacles. A model armed with a silenced pistol can use it in melee as well as ranged combat (using Ranged Characteristic), including as an off-hand weapon to execute an additional melee attack.</characteristic>
       </characteristics>
     </profile>
     <profile name="Sniper Rifle" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="6eb2-c600-98e7-16d3" publicationId="c658-4a10-e1fe-befc" page="111">
@@ -761,7 +761,7 @@ Keyword: CONSUMABLE.</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;/Melee</characteristic>
-        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to hit and to injure </characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to hit and to injure</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY, SHRAPNEL</characteristic>
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Before a model shoots with the punt gun, you can overcharge it with a shot, giving the weapon BLAST 3” radius. If you do this, the shooting ACTION with the Punt Gun always ends the shooter’s Activation and causes one BLOOD MARKER on the shooter. A model cannot make a ranged attack with the punt gun unless it is either STRONG or another friendly model is in base contact with it.</characteristic>
       </characteristics>

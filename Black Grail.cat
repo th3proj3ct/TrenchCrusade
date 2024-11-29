@@ -622,6 +622,7 @@
           </costs>
           <infoLinks>
             <infoLink name="Unholy Relic" id="5e1e-a541-7cbb-8e48" hidden="false" type="profile" targetId="b914-1197-66a6-3aae"/>
+            <infoLink name="Fear" id="8019-2ec9-dfb6-7658" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b90-7aed-1ac5-5f79" includeChildSelections="false"/>

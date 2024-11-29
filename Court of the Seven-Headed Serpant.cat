@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="44b9-e92b-2dc0-6820" name="Court of the Seven-Headed Serpant" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="6" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="44b9-e92b-2dc0-6820" name="Court of the Seven-Headed Serpant" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="6" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="a774-f5b9-3fd9-7a0b" hidden="false" collapsible="true">
       <constraints>
@@ -69,6 +69,7 @@
           </costs>
           <infoLinks>
             <infoLink name="Unholy Relic" id="c012-72d6-57e9-c520" hidden="false" type="profile" targetId="b914-1197-66a6-3aae"/>
+            <infoLink name="Fear" id="6a16-39e4-ba9d-f975" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d62-88c7-e84d-236f" includeChildSelections="false"/>
@@ -581,6 +582,7 @@
           </costs>
           <infoLinks>
             <infoLink name="Ophidian Rifle" id="4326-3fff-6f5e-792a" hidden="false" type="profile" targetId="d8fe-561c-9243-f9b8"/>
+            <infoLink name="Heavy" id="0d54-33f7-c7e5-e8ab" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="6933-6ec1-e31f-1240" targetId="70c9-988d-71a7-7654" primary="false"/>
@@ -1657,7 +1659,7 @@ The Hunter can do this multiple times during its chosen move, though it has to p
         </profile>
         <profile name="Swarming Attack" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c55c-f6f6-7100-7fac">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When the Pit Locust makes a melee attack, it can make an additional attack with its stinger if it charged during this Activation. Pit Locusts suffer no penalties for fighting unarmed, nor do they suffer penalties or restrictions for making Off-Hand Attacks with their stingers. The first attack made by a Pit Locust has the Keyword SHRAPNEL and therefore causes an additional BLOOD MARKER. </characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When the Pit Locust makes a melee attack, it can make an additional attack with its stinger if it charged during this Activation. Pit Locusts suffer no penalties for fighting unarmed, nor do they suffer penalties or restrictions for making Off-Hand Attacks with their stingers. The first attack made by a Pit Locust has the Keyword SHRAPNEL and therefore causes an additional BLOOD MARKER.</characteristic>
           </characteristics>
         </profile>
         <profile name="Ravage" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="497e-011f-1c65-c566">
@@ -1701,7 +1703,7 @@ The Hunter can do this multiple times during its chosen move, though it has to p
         </profile>
         <profile name="Aura of Sloth" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="true" id="f4c3-3158-9771-3159">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Enemy models within 8” of the Saint treat Minor Hit results as a Down result instead. This affects models that normally treat Down results as a Minor Hit result (such as models wearing Machine Armour). </characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Enemy models within 8” of the Saint treat Minor Hit results as a Down result instead. This affects models that normally treat Down results as a Minor Hit result (such as models wearing Machine Armour).</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="false" field="hidden">

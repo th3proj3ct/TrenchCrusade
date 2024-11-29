@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Anointed Heavy Infantry" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -1326,6 +1326,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <infoLinks>
             <infoLink name="Unholy Relic" id="9bdb-ea55-02e7-47a9" hidden="false" type="profile" targetId="b914-1197-66a6-3aae"/>
+            <infoLink name="Fear" id="6351-5433-9dff-e45d" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d83-5b66-de46-01af" includeChildSelections="false"/>
