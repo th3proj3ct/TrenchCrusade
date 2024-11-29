@@ -432,6 +432,7 @@
             <condition type="atLeast" value="2" field="selections" scope="parent" childId="2c66-b5c4-72e2-82ed" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="1" field="3fc7-d256-5d48-1766"/>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged (One-Handed)" id="cd2d-89be-32a4-afa5" hidden="false" collective="false">
@@ -1609,6 +1610,124 @@ The Hunter can do this multiple times during its chosen move, though it has to p
       <entryLinks>
         <entryLink import="true" name="Crown of Hellfire" hidden="false" id="2ebf-d4d5-a86a-4f13" type="selectionEntry" targetId="1234-6514-2ff2-5b93"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Desecrated Saint" hidden="false" id="0447-09f8-8cc2-64da">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="145"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Desecrated Saint" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="8402-cb2e-c367-efe5">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">N/A</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+3 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-3</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">60mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Many-Armed Monstrosity" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8de3-e9e8-dfde-a7f7">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When the Desecrated Saint makes a melee attack, it can make an attack ACTION with each arm. It does not suffer Off-Hand penalties.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Aura of Sloth" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="true" id="f4c3-3158-9771-3159">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Enemy models within 8” of the Saint treat Minor Hit results as a Down result instead. This affects models that normally treat Down results as a Minor Hit result (such as models wearing Machine Armour). </characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="be23-ed3c-e3a7-5140" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Aura of Pride" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="true" id="51b7-8b1c-2d96-1287">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When the Desecrated Saint ends its Activation, all enemy models within 8” of it suffer one BLOOD MARKER from the light of the Morningstar that the Saint emits.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="715d-d6a9-0948-8e79" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Aura of Wrath" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="true" id="91e6-c60d-e6f1-4932">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All friendly models within 8” of the Saint (including the Saint) roll melee attacks and to Dash with +1 DICE.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2fbd-2ebe-b0e5-8708" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Aura of Lust" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="true" id="e8a3-79ca-652d-5277">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Enemy models within 6” of the Desecrated Saint (unless they have the Keyword BLACK GRAIL) gain no benefit from any armour they wear, as they are naked before the Serpent Head of Lust in the Helldimension that the Saint projects all around it. This includes additional effects, such as Machine Armour’s ability to reduce Down results to Minor Hit results, but not penalties or neutral effects (such as the Charging penalty or the base size adjustment). Note: Holy Icon Shields and Armour, Infernal Iron Armour or similar armour that always grant armour save are not affected by the Aura of Lust</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fc4-33b0-264c-8510" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Aura of Envy" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="true" id="af57-dce7-c354-cfe8">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Enemy models within 12” of the Saint cannot Charge enemy models that are already engaged in melee combat with one of their allies.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3a57-9286-5c7e-de27" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="914f-0020-0d97-e217" id="31ac-f52e-cb60-2914" primary="false" name="Tough"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="df7e-5761-4e7d-53fd" primary="true" name="Troop"/>
+        <categoryLink targetId="afcc-5f24-1c7c-63c4" id="8ffa-3d73-2721-b68a" primary="false" name="Strong"/>
+        <categoryLink targetId="4f5c-027d-253c-ffa3" id="f0d7-fb1b-cb5d-d68e" primary="false" name="Fear"/>
+        <categoryLink targetId="50ae-a540-4d66-0d43" id="b887-23b2-ca97-5fa6" primary="false" name="The Court"/>
+        <categoryLink targetId="420c-0871-4283-b95b" id="885a-8d6d-ae7d-c25c" primary="false" name="Demonic"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Tough" id="9e02-97f9-3b9a-103a" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+        <infoLink name="Fear" id="765f-019c-408f-2f24" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+        <infoLink name="Strong" id="b1aa-b5ce-959f-6ecd" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="b239-d0f2-1b34-28ef" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Primary Arm" id="7e22-c009-65de-bc49" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="69e3-7648-b45e-a031" type="selectionEntryGroup" targetId="02d4-0537-9a27-5baa"/>
+                <entryLink import="true" name="Melee (Two-Handed)" hidden="false" id="4646-92ed-4625-f337" type="selectionEntryGroup" targetId="4f68-d195-3b2a-2bf8"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7311-691b-04da-0eab" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Secondary Arms" id="15e8-456c-550a-087d" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Melee (One-Handed)" hidden="false" id="9567-a2e1-6409-b08a" type="selectionEntryGroup" targetId="02d4-0537-9a27-5baa"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="adbe-8980-4228-8d3f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
