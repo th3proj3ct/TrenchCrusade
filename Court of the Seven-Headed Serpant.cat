@@ -75,9 +75,14 @@
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4f5c-027d-253c-ffa3" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -94,6 +99,19 @@
             <infoLink name="Consumable" id="5594-6b1a-bb73-9c7d" hidden="false" type="rule" targetId="e98d-4bd1-3870-27b9"/>
             <infoLink name="Fire" id="c50a-fd06-a4a6-9cfc" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="bf89-44f3-36a0-c7b4" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="2a14-1d21-3b35-86a8" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="a957-7766-e2fa-f4b3" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Shovel" hidden="true" id="7fbe-047b-8df5-1c4d" sortIndex="6">
           <costs>
@@ -1151,7 +1169,7 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Burning Inferno" hidden="true" id="42bc-f444-0c78-b0f6" sortIndex="1">
           <profiles>
-            <profile name="New Entry" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5eef-c619-168b-fec6">
+            <profile name="Burning Inferno" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5eef-c619-168b-fec6">
               <characteristics>
                 <characteristic name="Description" typeId="4834-43a9-1c93-9062">Using this GOETIC (1-3) spell the Sorcerer opens a portal to the Lake of Fire and draws forth a great screaming ball of infernal lava mixed with damned souls. Select a 1x1mm point within 36” that the Sorcerer can see. Next, take a ranged attack ACTION: this attack suffers penalties for range but not for Cover. If the roll fails (i.e. you roll 6 or less), the fireball lands 1” away from its intended location, multiplied by the number representing the degree of failure (for example, if you rolled 5, the fireball lands 2” away, as 7-5=2). The direction is decided by your opponent. For each BLOOD MARKER used, the Burning Inferno adds +1” BLAST to the attack. Additionally, if the Burning Inferno lands directly on top of a model, it ignores that model’s armour. This attack has the Keyword FIRE.</characteristic>
               </characteristics>
@@ -1309,7 +1327,6 @@
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Weapons" hidden="false" id="9ad6-c56a-eb6a-5e46" type="selectionEntryGroup" targetId="a774-f5b9-3fd9-7a0b" sortIndex="1"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="710a-0d47-3cd6-7f8c" type="selectionEntryGroup" targetId="3dce-3062-9abb-c1de" sortIndex="2"/>
         <entryLink import="true" name="Goetic Powers" hidden="false" id="827f-2b7b-9417-fa24" type="selectionEntryGroup" targetId="a863-9b82-2217-87ee" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f5cf-bb4e-a901-75ca" includeChildSelections="false"/>
@@ -1557,9 +1574,7 @@ The Hunter can do this multiple times during its chosen move, though it has to p
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Weapons" hidden="false" id="1b63-b549-c146-6b2b" type="selectionEntryGroup" targetId="a774-f5b9-3fd9-7a0b" sortIndex="1"/>
         <entryLink import="true" name="Equipment" hidden="false" id="6f50-a596-751e-e3e7" type="selectionEntryGroup" targetId="1434-ae99-841b-041e"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="f71b-b44d-e2a6-3812" type="selectionEntryGroup" targetId="3dce-3062-9abb-c1de" sortIndex="2"/>
       </entryLinks>
       <profiles>
         <profile name="Wretched" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="b2dd-8727-aaa1-e504">
@@ -1592,6 +1607,26 @@ The Hunter can do this multiple times during its chosen move, though it has to p
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="5870-3dfa-f8b8-4c0a" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Melee Weapons" hidden="false" id="ebd4-9668-a66c-d8f6" type="selectionEntryGroup" targetId="085e-a0e2-7ba3-9d9c" sortIndex="1"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="b20a-735f-2038-b6c3" sortIndex="2">
+              <costs>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7c7a-851d-739f-21f3" includeChildSelections="true"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Troop Flag" id="1a3e-ed84-250f-4452" hidden="false" type="profile" targetId="e86e-146a-65b7-09f2"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Pit Locust" hidden="false" id="a81c-9cc6-8d4c-1d5e">
       <categoryLinks>
