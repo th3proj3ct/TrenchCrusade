@@ -1049,7 +1049,7 @@
       </constraints>
       <categoryLinks>
         <categoryLink targetId="afb7-d895-f4b4-73f3" id="75dd-8f19-b4d9-2c13" primary="false" name="Pilgrim"/>
-        <categoryLink targetId="3de0-192c-3ec2-51be" id="b001-c4c9-42ee-1935" primary="true" name="Elite"/>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="240c-85cf-89ae-fa78" primary="true" name="Troop"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Throwables" hidden="false" id="7356-3ae9-ee23-022f" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="2"/>
