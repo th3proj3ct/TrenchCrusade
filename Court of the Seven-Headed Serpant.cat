@@ -1623,11 +1623,8 @@ The Hunter can do this multiple times during its chosen move, though it has to p
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="5870-3dfa-f8b8-4c0a" hidden="false" sortIndex="1">
           <entryLinks>
-            <entryLink import="true" name="Melee Weapons" hidden="false" id="ebd4-9668-a66c-d8f6" type="selectionEntryGroup" targetId="085e-a0e2-7ba3-9d9c" sortIndex="1">
-              <entryLinks>
-                <entryLink import="true" name="Utility Hand" hidden="false" id="c8d1-b684-1b31-80c2" type="selectionEntryGroup" targetId="2c66-b5c4-72e2-82ed"/>
-              </entryLinks>
-            </entryLink>
+            <entryLink import="true" name="Melee Weapons" hidden="false" id="ebd4-9668-a66c-d8f6" type="selectionEntryGroup" targetId="085e-a0e2-7ba3-9d9c" sortIndex="1"/>
+            <entryLink import="true" name="Utility Hand" hidden="false" id="c8d1-b684-1b31-80c2" type="selectionEntryGroup" targetId="2c66-b5c4-72e2-82ed"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8cc0-8cac-461e-9cc1" includeChildSelections="false"/>
