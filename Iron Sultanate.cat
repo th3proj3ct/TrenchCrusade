@@ -893,6 +893,9 @@
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf86-a8c0-7f16-d296" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Reinforced Armour" hidden="true" id="c60a-0cd3-a0a3-3b3e" sortIndex="2">
           <infoLinks>
@@ -914,6 +917,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7b8-c006-efab-099e" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Alchemist Armour" hidden="true" id="a2de-13d5-ab9c-8c93" sortIndex="3">
           <infoLinks>
@@ -1040,6 +1046,11 @@
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="85"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="0095-36ec-a5c4-03a1" primary="true" name="Elite"/>
+        <categoryLink targetId="9b36-57f6-1887-7bea" id="7192-0cde-f203-614a" primary="false" name="Infiltrator"/>
+        <categoryLink targetId="fd8d-e9e0-2540-a257" id="b2e1-6aa9-18d6-baa9" primary="false" name="Sultanate"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Yüzbaşı Captain" hidden="false" id="9c5a-601e-6b16-320d">
       <profiles>
