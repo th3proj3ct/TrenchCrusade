@@ -20,6 +20,7 @@
     <categoryEntry name="Heavy" id="70c9-988d-71a7-7654" hidden="false"/>
     <categoryEntry name="Configuration" id="705b-e23f-e9c2-58ab" hidden="false"/>
     <categoryEntry name="The Court" id="50ae-a540-4d66-0d43" hidden="false" publicationId="c658-4a10-e1fe-befc" page="13"/>
+    <categoryEntry name="Bull" id="0934-cc68-ca08-7e2b" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType name="Ducats" id="8d43-33fd-332d-17a6" defaultCostLimit="-1"/>
@@ -773,6 +774,94 @@ Keyword: CONSUMABLE.</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ASSAULT</characteristic>
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Ignores penalties for long range. A model with the weapon will not run out of them.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Assassin&apos;s Dagger" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="4549-32db-4b08-2bdf">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1 To Injury</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">CRITICAL</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">If the Assassin hits an enemy and causes at least one BLOOD MARKER, the Assassin can move away from combat during this Activation. Note that this move does not grant enemies free attacks. Assassins can use both normal and Dash move to do this, though this may not be used for charging.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Halberd-Gun" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="c403-4b36-5fd6-5c95">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee/24&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa"/>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ASSAULT, CUMBERSOME</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Enemies charging a model equipped with a Halberd-gun add -1 DICE in melee combat when rolling to hit. This only applies when a model attacks after a charge, not on subsequent rounds of melee.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="MURAD Bombard" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="556c-7009-6fc2-d658">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa"/>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY, BLAST 3&quot;</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Specify a point on the battlefield within 36” (must be in line of sight) that you want to target. Next, take a Ranged Attack ACTION. If the roll fails (i.e. you roll 6 or less), the bomb lands 1” away from its intended location, multiplied by the number representing the degree of failure (for example, if you rolled 5, the bombard shot lands 2” away, as 7-5=2). The direction is decided by your opponent. All models within 3” of the landing 1x1mm landing spot are hit as the bomb explodes – no roll to hit is needed. If the bomb lands directly on top of any model, roll with 3D6 on the Injury Chart and add the dice together to see what happens! Other models hit by the bombard suffer a Down result due the booming shockwave, but do not incur any BLOOD MARKERS or other effects from this attack.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Flame Cannon" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="ac5c-14a9-8462-8ddd">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa"/>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY, FIRE</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">When shot in ranged combat, draw a straight 12” line that is 1mm wide from the Brazen Bull. All models along the path of the line are automatically hit – roll for their injuries immediately. Armour does not protect against the Flame Cannon. Due to the Keyword FIRE, its hits cause an additional +1 BLOOD MARKER. This is applied after rolling for injuries.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Titan Zulfiqar" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="c035-9cfd-250c-73bc">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa"/>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY, FIRE</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Add +2 to the result of all injuries caused by this weapon (i.e. a roll of 7 on the Injury Chart becomes 9).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Alaybozan" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="6dbb-ba95-c903-3c8c" publicationId="c658-4a10-e1fe-befc" page="109">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa"/>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">SHRAPNEL</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Siege Jezzail" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="59d6-227d-0859-a162" publicationId="c658-4a10-e1fe-befc" page="109">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">30&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Injuries</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Alchemist Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="68e2-bde3-19a9-2980">
+      <characteristics>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Counts as Reinforced Armour and therefore grants a -2 modifier to all injury rolls made against the model wearing it. All attacks with the Keyword FIRE and/or GAS suffer a -1 DICE penalty to injure this model. Additionally, this model does not suffer additional BLOOD MARKERS caused by the Keywords FIRE and/or GAS</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Alchemical Ammunition" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c296-2021-0947-c6c7">
+      <characteristics>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Adds +1 DICE to Ranged Attack rolls on the Action Success Chart. Can only be used with Jezzails, Alaybozan, Halberd-Guns and Siege Jezzails.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cloak of Alamut" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fc84-ca32-2672-c684">
+      <characteristics>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">All ranged attacks against a model that is in cover suffer -2 DICE penalty instead of -1 DICE. All the normal rules for cover apply otherwise. </characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wind Amulet" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="cb4d-4771-6cd2-240b">
+      <characteristics>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062"> Once per battle, you may add +3” to the Movement characteristic of this model once during the activation. Declare this when the model is Activated.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Marid Shovel" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="20a6-1425-0331-7e02">
+      <characteristics>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Marid Shovel has the Keyword HEAVY which allows a Brazen Bull to use it. Otherwise it works exactly like a normal shovel</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
