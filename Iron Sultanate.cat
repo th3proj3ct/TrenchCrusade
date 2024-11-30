@@ -410,6 +410,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="f87d-5ea3-e505-6a9f" id="c87e-29c3-4cd0-0036" primary="false" name="Cumbersome"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
