@@ -825,7 +825,7 @@ Keyword: CONSUMABLE.</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
-        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa"/>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">SHRAPNEL</characteristic>
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
       </characteristics>
