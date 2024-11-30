@@ -249,6 +249,13 @@
           <infoLinks>
             <infoLink name="Knife" id="d891-e4d1-da5e-e372" hidden="false" type="profile" targetId="fa68-ef06-9caa-e49e"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="e62d-c06e-ce35-428b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sword/Axe" hidden="false" id="dfb0-7887-6d7e-d58f" sortIndex="3" collective="false">
           <costs>
@@ -259,6 +266,13 @@
             <infoLink name="Sword/Axe" id="df1d-8464-a45d-17e0" hidden="false" type="profile" targetId="e938-b0dc-418c-0924"/>
             <infoLink name="Critical" id="e14f-ceb6-f842-b605" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="e62d-c06e-ce35-428b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Trench Club" hidden="false" id="fd9f-6c6c-c4f0-508f" sortIndex="2" collective="false">
           <costs>
@@ -268,6 +282,13 @@
           <infoLinks>
             <infoLink name="Trench Club" id="beae-9974-7138-81a3" hidden="false" type="profile" targetId="b242-1242-be3a-d232"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="e62d-c06e-ce35-428b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Asssassin&apos;s Dagger" hidden="true" id="2896-2fc6-1ccd-621b" sortIndex="4" collective="false">
           <costs>
@@ -282,6 +303,11 @@
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="62d4-d89a-f7e2-7d3b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="e62d-c06e-ce35-428b" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -377,6 +403,13 @@
               </modifiers>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="e62d-c06e-ce35-428b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
