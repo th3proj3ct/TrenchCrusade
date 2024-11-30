@@ -660,7 +660,7 @@
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="954d-3d50-257d-a78a" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="954d-3d50-257d-a78a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1010,8 +1010,8 @@
     <selectionEntry type="model" import="true" name="Brazen Bull" hidden="false" id="e62d-c06e-ce35-428b"/>
     <selectionEntry type="model" import="true" name="Assassin" hidden="false" id="62d4-d89a-f7e2-7d3b">
       <entryLinks>
-        <entryLink import="true" name="Armour" hidden="false" id="b226-2cff-1864-09c1" type="selectionEntryGroup" targetId="fa38-f4fd-c529-2365" sortIndex="4"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="84de-886f-a719-e585" type="selectionEntryGroup" targetId="6fa6-9678-f5af-3bf2" sortIndex="3"/>
+        <entryLink import="true" name="Armour" hidden="false" id="b226-2cff-1864-09c1" type="selectionEntryGroup" targetId="fa38-f4fd-c529-2365" sortIndex="3"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="84de-886f-a719-e585" type="selectionEntryGroup" targetId="6fa6-9678-f5af-3bf2" sortIndex="4"/>
         <entryLink import="true" name="Grenades" hidden="false" id="1392-855a-cd63-38b7" type="selectionEntryGroup" targetId="52e3-49c7-5f3b-d5c9" sortIndex="2"/>
         <entryLink import="true" name="Weapons" hidden="false" id="6a5a-db17-ad1b-996e" type="selectionEntryGroup" targetId="66f4-68d9-e3c5-f1f2" sortIndex="1"/>
       </entryLinks>
