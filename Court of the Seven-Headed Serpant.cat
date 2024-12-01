@@ -7,7 +7,15 @@
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Melee Weapons" hidden="false" id="6354-0407-0c17-84a5" type="selectionEntryGroup" targetId="085e-a0e2-7ba3-9d9c" collapsible="false"/>
-        <entryLink import="true" name="Ranged Weapons" hidden="false" id="304f-6271-343c-ddc9" type="selectionEntryGroup" targetId="c9e2-5728-f485-e683" sortIndex="1" collapsible="false"/>
+        <entryLink import="true" name="Ranged Weapons" hidden="false" id="304f-6271-343c-ddc9" type="selectionEntryGroup" targetId="c9e2-5728-f485-e683" sortIndex="1" collapsible="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="2a14-1d21-3b35-86a8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Utility Hand" hidden="false" id="4869-272e-b534-21f6" type="selectionEntryGroup" targetId="2c66-b5c4-72e2-82ed" collapsible="true">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="036c-23e8-f06e-9539" includeChildSelections="false"/>
