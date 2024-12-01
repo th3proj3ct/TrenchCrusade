@@ -1406,6 +1406,13 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="83c8-b351-cb96-119e" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="b475-de34-e00c-b14f" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>

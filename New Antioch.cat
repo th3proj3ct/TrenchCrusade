@@ -1294,6 +1294,13 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="83c8-b351-cb96-119e" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="3f45-7074-d35b-9022" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
