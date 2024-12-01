@@ -1112,14 +1112,7 @@
         <entryLink import="true" name="Weapons" hidden="false" id="2791-4f94-bcaa-8438" type="selectionEntryGroup" targetId="66f4-68d9-e3c5-f1f2" sortIndex="1"/>
         <entryLink import="true" name="Grenades" hidden="false" id="248f-ca43-c3be-5657" type="selectionEntryGroup" targetId="52e3-49c7-5f3b-d5c9" sortIndex="2"/>
         <entryLink import="true" name="Armour" hidden="false" id="916f-39f1-a96d-3c9d" type="selectionEntryGroup" targetId="fa38-f4fd-c529-2365"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="1521-dd92-0d1c-b9fa" type="selectionEntryGroup" targetId="6fa6-9678-f5af-3bf2">
-          <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="693d-0eb0-5859-f7d8" type="selectionEntryGroup" targetId="6fa6-9678-f5af-3bf2"/>
-          </entryLinks>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden"/>
-          </modifiers>
-        </entryLink>
+        <entryLink import="true" name="Equipment" hidden="false" id="1521-dd92-0d1c-b9fa" type="selectionEntryGroup" targetId="6fa6-9678-f5af-3bf2"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="afcc-5f24-1c7c-63c4" id="0702-a029-90e8-cf43" primary="false" name="Strong"/>
