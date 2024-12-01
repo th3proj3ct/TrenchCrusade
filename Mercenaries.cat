@@ -444,6 +444,221 @@
         <categoryLink targetId="3dfb-701d-e89c-eba2" id="96a7-1a15-eb5f-467d" primary="true" name="Mercenary"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trench Dog" hidden="false" id="52e5-2006-85e1-a7c7">
+      <categoryLinks>
+        <categoryLink targetId="3dfb-701d-e89c-eba2" id="5b27-2007-3a77-372d" primary="true" name="Mercenary"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Trench Dog" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="ce78-bd08-5b44-8e38">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="6871-d12d-d7fc-bb03" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d196-34d1-a003-da6f" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4d84-784e-a2c6-53c0" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="b990-d914-9dce-66af" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Four Paws" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="eb55-7f18-ebac-da25">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Dogs may take any Dash ACTION or jump/Diving Charge ACTION with bonus +1 DICE. They cannot climb sheer surfaces.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bite" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="46b7-fdc4-77cd-5271">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Dogs do not suffer penalties for fighting unarmed.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="b990-d914-9dce-66af" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Demonic" id="4ddb-9c5f-3db9-33dd" hidden="false" type="rule" targetId="e1d1-9534-0d38-b1e8"/>
+        <infoLink name="Fear" id="62ed-99d5-0774-1783" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0b26-15c1-cebd-0077" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="Mercy Dog" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="6871-d12d-d7fc-bb03" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Martyrdom Dog" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="d196-34d1-a003-da6f" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Guard Dog" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="4d84-784e-a2c6-53c0" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Hellhound" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="b990-d914-9dce-66af" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Specialization" id="eef4-f47a-3aa7-e393" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Guard Dog" hidden="false" id="4d84-784e-a2c6-53c0">
+              <profiles>
+                <profile name="Warning Howl" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="13c9-c695-ecd5-08a5">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">No infiltrator can be placed within 12” of a Guard Dog, and you can charge any enemy within 4” of this dog even if it is out of sight.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Guard Dog" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="381b-1e9b-e962-cb6b">
+                  <characteristics>
+                    <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
+                    <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+                    <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+                    <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+                    <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Martyrdom Dog" hidden="true" id="d196-34d1-a003-da6f">
+              <profiles>
+                <profile name="Martyrdom Dog" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="a7bd-81f7-6908-8080">
+                  <characteristics>
+                    <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
+                    <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+                    <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+                    <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+                    <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Martyrdom Device" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="be32-13c2-d0f6-8eb1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">A Dog strapped with a Martyrdom Device can trigger it at any point during their Activation. This does not require an ACTION. When detonated, the explosion is treated as a BLAST 3” weapon targeting the prisoner model. Models within 1” of the dog hit by the explosion roll their injuries with +1 DICE. The dog rolls 4d6 and adds them together to determine the results of their injury roll. If the explosive goes off and the dog somehow survives the battle, you can buy them a new explosive for 1 Glory Point as normal, or simply field them without.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mercy Dog" hidden="false" id="6871-d12d-d7fc-bb03">
+              <profiles>
+                <profile name="Rescue Operation" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8965-7c21-d9eb-7a0e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Mercy dogs can also drag any model within 1” that is Down at ½ speed with them, both with normal movement or when dashing.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Mercy Dog" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="1331-ddb8-fad3-81a3">
+                  <characteristics>
+                    <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
+                    <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+                    <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+                    <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+                    <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Guardian Angel" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e280-c990-4a68-4155">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Mercy dogs carry a Medi-Kit which can be used by any friendly model on themselves within 1” of the dog</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hellhound" hidden="true" id="b990-d914-9dce-66af">
+              <profiles>
+                <profile name="Hellhound" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="35df-a599-1589-8c23">
+                  <characteristics>
+                    <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
+                    <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+                    <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
+                    <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+                    <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Flames of Hell" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2c34-6e74-d136-e68d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Hellhound is immune to any attack with the Keyword FIRE.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Infernal Bite" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="afc3-8575-429c-3c17">
+                  <characteristics>
+                    <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
+                    <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                    <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+                    <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">FIRE</characteristic>
+                    <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Dogs do not suffer penalties for fighting unarmed.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6941-ec54-3001-8288" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4d4-3f4a-f7ed-98c4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Mamluk Faris" hidden="false" id="22b8-dc59-428d-87cd">
