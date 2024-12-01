@@ -1259,7 +1259,12 @@
         <categoryLink targetId="3dfb-701d-e89c-eba2" id="3ba4-1d9e-a416-5a25" primary="true" name="Mercenary"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Mamluk Faris" hidden="false" id="09cc-f370-e3a2-7840" type="selectionEntry" targetId="22b8-dc59-428d-87cd"/>
+        <entryLink import="true" name="Mamluk Faris" hidden="false" id="09cc-f370-e3a2-7840" type="selectionEntry" targetId="22b8-dc59-428d-87cd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22da-1a23-f273-e712-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22da-1a23-f273-e712-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="414f-d9cb-0f92-955c" includeChildSelections="true"/>

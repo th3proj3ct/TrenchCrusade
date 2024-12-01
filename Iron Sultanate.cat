@@ -1377,7 +1377,12 @@
         <categoryLink name="Mercenary" hidden="false" id="b28c-fda0-603e-a5d5" targetId="3dfb-701d-e89c-eba2" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Mamluk Faris" hidden="false" id="4314-a55d-a783-18e3" type="selectionEntry" targetId="22b8-dc59-428d-87cd"/>
+        <entryLink import="true" name="Mamluk Faris" hidden="false" id="4314-a55d-a783-18e3" type="selectionEntry" targetId="22b8-dc59-428d-87cd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6971-fc15-9b36-aede-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6971-fc15-9b36-aede-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f269-de1d-d408-191f" includeChildSelections="true"/>
