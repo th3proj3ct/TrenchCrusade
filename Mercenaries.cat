@@ -44,7 +44,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="28e8-6cb9-21c3-edca" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
-        <categoryLink targetId="3dfb-701d-e89c-eba2" id="2bdf-406e-8b47-376c" primary="false" name="Mercenary"/>
+        <categoryLink targetId="3dfb-701d-e89c-eba2" id="2bdf-406e-8b47-376c" primary="true" name="Mercenary"/>
       </categoryLinks>
     </selectionEntry>
   </selectionEntries>
