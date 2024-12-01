@@ -269,8 +269,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b08b-66af-f3e1-291a" includeChildSelections="true"/>
       </constraints>
       <costs>
-        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="4"/>
-        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="4"/>
       </costs>
       <profiles>
         <profile name="Goetic Warlock" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="4a65-25f1-2268-917a">
@@ -347,8 +346,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ccfa-5d05-18db-3c76" includeChildSelections="true"/>
       </constraints>
       <costs>
-        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="6"/>
-        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="6"/>
       </costs>
       <profiles>
         <profile name="Sin Eater" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="2d21-7af1-0770-da4c">
