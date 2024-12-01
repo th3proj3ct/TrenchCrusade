@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="707d-5bdf-586e-f704" name="New Antioch" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="707d-5bdf-586e-f704" name="New Antioch" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="24ae-224b-0680-a9bd" hidden="false" collapsible="true">
       <constraints>
@@ -750,6 +750,11 @@
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="add" value="Cannot combine Machine Armor and Shield" field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0eec-4c05-c257-7e1a" includeChildSelections="true"/>
@@ -967,7 +972,7 @@
         </profile>
         <profile name="Aim" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9abe-b135-9901-68d4">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062"> A Sniper Priest may take a RISKY ACTION to aim. If successful then the Priest may add +2 DICE to any Ranged attack rolls during this same Activation.</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">A Sniper Priest may take a RISKY ACTION to aim. If successful then the Priest may add +2 DICE to any Ranged attack rolls during this same Activation.</characteristic>
           </characteristics>
         </profile>
         <profile name="Absolute Faith" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="100a-86b4-5508-6fd3">
@@ -1202,17 +1207,24 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="Cannot combine Machine Armor and Shield" field="error">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fireteam" hidden="false" id="441f-8640-cfed-8e78">
       <profiles>
         <profile name="Concerted Attack" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="997b-3cb7-7dee-c67d">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062"> If a model in the FIRETEAM makes any kind of Attack ACTION (ranged or melee) against an opponent, where the other member of their FIRETEAM has already hit it with an attack ACTION during the same activation, the cost of a Bloodbath is reduced to three BLOOD MARKERS against this opponent, whether the model is standing or Down.</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">If a model in the FIRETEAM makes any kind of Attack ACTION (ranged or melee) against an opponent, where the other member of their FIRETEAM has already hit it with an attack ACTION during the same activation, the cost of a Bloodbath is reduced to three BLOOD MARKERS against this opponent, whether the model is standing or Down.</characteristic>
           </characteristics>
         </profile>
         <profile name="Coordinated Engagement" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="34c8-dd0b-8701-b04f">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models that are part of the same FIRETEAM can be activated at the same time without the opponent getting their turn in between and can take their ACTIONS in any order they wish, switching between the two models. Note that if the Activation of either member of the FIRETEAM forcefully ends (due to a failed RISKY ACTION for example), it ends both Activations. </characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models that are part of the same FIRETEAM can be activated at the same time without the opponent getting their turn in between and can take their ACTIONS in any order they wish, switching between the two models. Note that if the Activation of either member of the FIRETEAM forcefully ends (due to a failed RISKY ACTION for example), it ends both Activations.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1246,7 +1258,7 @@
   <forceEntries>
     <forceEntry name="Warband" id="2e09-580e-e00b-d33d" hidden="false">
       <categoryLinks>
-        <categoryLink name="Fireteam" hidden="false" id="7a80-8e10-28c0-c933" targetId="83c8-b351-cb96-119e" type="category"/>
+        <categoryLink name="Fireteam" hidden="false" id="7a80-8e10-28c0-c933" targetId="83c8-b351-cb96-119e"/>
         <categoryLink name="Configuration" hidden="false" id="4e8c-7d5c-2f67-aaf5" targetId="705b-e23f-e9c2-58ab"/>
         <categoryLink name="Elite" hidden="false" id="6667-6c1f-123c-1a00" targetId="3de0-192c-3ec2-51be"/>
         <categoryLink name="Troop" hidden="false" id="8dfe-ee53-be13-8531" targetId="bd43-ddb1-262d-4489"/>
