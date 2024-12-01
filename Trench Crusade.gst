@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -138,7 +138,7 @@ INFECTION MARKERS can be used to modify dice rolls exactly like BLOOD MARKERS. U
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;/Melee</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-1D to injury, 2 attacks</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
-        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">A model armed with an automatic pistol can use it in melee as well as ranged combat (using Ranged Characteristic), including as an off-hand weapon to execute an additional melee attack. You can make two Attack ACTIONS with the automatic pistol instead of one if used as a ranged weapon. They can be against the same target or two different ones. </characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">A model armed with an automatic pistol can use it in melee as well as ranged combat (using Ranged Characteristic), including as an off-hand weapon to execute an additional melee attack. You can make two Attack ACTIONS with the automatic pistol instead of one if used as a ranged weapon. They can be against the same target or two different ones.</characteristic>
       </characteristics>
     </profile>
     <profile name="Bolt Action Rifle" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="408d-d56e-71c4-f3c4" publicationId="c658-4a10-e1fe-befc" page="109">
@@ -815,9 +815,9 @@ Keyword: CONSUMABLE.</characteristic>
     <profile name="Titan Zulfiqar" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="c035-9cfd-250c-73bc">
       <characteristics>
         <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
-        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">12&quot;</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa"/>
-        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY, FIRE</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY, CRITICAL</characteristic>
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Add +2 to the result of all injuries caused by this weapon (i.e. a roll of 7 on the Injury Chart becomes 9).</characteristic>
       </characteristics>
     </profile>
@@ -851,12 +851,12 @@ Keyword: CONSUMABLE.</characteristic>
     </profile>
     <profile name="Cloak of Alamut" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fc84-ca32-2672-c684">
       <characteristics>
-        <characteristic name="Description" typeId="4834-43a9-1c93-9062">All ranged attacks against a model that is in cover suffer -2 DICE penalty instead of -1 DICE. All the normal rules for cover apply otherwise. </characteristic>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">All ranged attacks against a model that is in cover suffer -2 DICE penalty instead of -1 DICE. All the normal rules for cover apply otherwise.</characteristic>
       </characteristics>
     </profile>
     <profile name="Wind Amulet" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="cb4d-4771-6cd2-240b">
       <characteristics>
-        <characteristic name="Description" typeId="4834-43a9-1c93-9062"> Once per battle, you may add +3” to the Movement characteristic of this model once during the activation. Declare this when the model is Activated.</characteristic>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Once per battle, you may add +3” to the Movement characteristic of this model once during the activation. Declare this when the model is Activated.</characteristic>
       </characteristics>
     </profile>
     <profile name="Marid Shovel" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="20a6-1425-0331-7e02">

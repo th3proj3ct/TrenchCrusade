@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="72ab-daa4-80ee-e9a5" name="Iron Sultanate" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="72ab-daa4-80ee-e9a5" name="Iron Sultanate" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Equipment" id="6fa6-9678-f5af-3bf2" hidden="false">
       <selectionEntries>
@@ -320,9 +320,9 @@
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
           </costs>
           <infoLinks>
-            <infoLink name="Blasphemous Staff" id="c02e-39a0-3a31-ce5d" hidden="false" type="profile" targetId="6efb-9e82-7136-f983"/>
+            <infoLink name="Titan Zulfiqar" id="c02e-39a0-3a31-ce5d" hidden="false" type="profile" targetId="c035-9cfd-250c-73bc"/>
             <infoLink name="Critical" id="22fe-a116-6ca1-e761" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
-            <infoLink name="Fire" id="5e1a-ca8c-82ad-8aab" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
+            <infoLink name="Heavy" id="5e1a-ca8c-82ad-8aab" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
