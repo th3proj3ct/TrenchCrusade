@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Warband" id="eef8-974d-98a4-8d2e" hidden="false">
       <categoryLinks>
@@ -901,8 +901,7 @@
         </profile>
         <profile name="The Communicant Cross" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d090-0fbb-4251-618c">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">A sacred cross is nailed on the face of the Communicant. This counts as an Iron Capirote, Combat Helmet and a Gas Mask (Immune to SHRAPNEL, GAS, and FEAR).
-</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">A sacred cross is nailed on the face of the Communicant. This counts as an Iron Capirote, Combat Helmet and a Gas Mask (Immune to SHRAPNEL, GAS, and FEAR).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1021,7 +1020,7 @@
             </profile>
             <profile name="Martyrdom Device" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4283-0424-9334-02b2">
               <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062"> A Prisoner strapped with a Martyrdom Device can trigger it at any point during their Activation. This does not require an ACTION. When detonated, the explosion is treated as a BLAST 3” weapon targeting the prisoner model. Models within 1” of the prisoner hit by the explosion roll their injuries with +1 DICE. The prisoner rolls 4d6 and adds them together to determine the results of their injury roll. If the explosive goes off and the prisoner somehow survives the battle, you can buy them a new explosive for 35 ducats as normal, or simply field them without.</characteristic>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">A Prisoner strapped with a Martyrdom Device can trigger it at any point during their Activation. This does not require an ACTION. When detonated, the explosion is treated as a BLAST 3” weapon targeting the prisoner model. Models within 1” of the prisoner hit by the explosion roll their injuries with +1 DICE. The prisoner rolls 4d6 and adds them together to determine the results of their injury roll. If the explosive goes off and the prisoner somehow survives the battle, you can buy them a new explosive for 35 ducats as normal, or simply field them without.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1168,4 +1167,7 @@
       </infoLinks>
     </selectionEntry>
   </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Mercenaries" id="9692-49d4-d04d-4cfb" targetId="f569-e9dd-327a-5735" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
