@@ -21,6 +21,7 @@
     <categoryEntry name="Configuration" id="705b-e23f-e9c2-58ab" hidden="false"/>
     <categoryEntry name="The Court" id="50ae-a540-4d66-0d43" hidden="false" publicationId="c658-4a10-e1fe-befc" page="13"/>
     <categoryEntry name="Bull" id="0934-cc68-ca08-7e2b" hidden="false"/>
+    <categoryEntry name="Mercenary" id="3dfb-701d-e89c-eba2" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType name="Ducats" id="8d43-33fd-332d-17a6" defaultCostLimit="-1"/>
