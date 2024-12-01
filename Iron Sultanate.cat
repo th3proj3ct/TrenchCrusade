@@ -1264,8 +1264,8 @@
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1905-92a3-4759-3875-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1905-92a3-4759-3875-max" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="1905-92a3-4759-3875-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1905-92a3-4759-3875-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Azeb" hidden="false" id="0e7e-9167-f044-9493">
