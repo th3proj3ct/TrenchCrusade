@@ -1404,6 +1404,6 @@
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Mercenaries" id="047e-1f20-4b8d-17b8" targetId="f569-e9dd-327a-5735"/>
+    <catalogueLink type="catalogue" name="Mercenaries" id="047e-1f20-4b8d-17b8" targetId="f569-e9dd-327a-5735" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

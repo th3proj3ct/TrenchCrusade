@@ -1544,6 +1544,6 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Mercenaries" id="6469-1d60-9fe0-5c22" targetId="f569-e9dd-327a-5735"/>
+    <catalogueLink type="catalogue" name="Mercenaries" id="6469-1d60-9fe0-5c22" targetId="f569-e9dd-327a-5735" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

@@ -1348,6 +1348,6 @@ Corpse Guard can remove one of their own BLOOD or INFECTION MARKERS</characteris
     </forceEntry>
   </forceEntries>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Mercenaries" id="3d00-75b6-5ee5-efe1" targetId="f569-e9dd-327a-5735"/>
+    <catalogueLink type="catalogue" name="Mercenaries" id="3d00-75b6-5ee5-efe1" targetId="f569-e9dd-327a-5735" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

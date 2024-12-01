@@ -1303,6 +1303,6 @@
     </forceEntry>
   </forceEntries>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Mercenaries" id="cbfd-f9fc-8cfb-227d" targetId="f569-e9dd-327a-5735"/>
+    <catalogueLink type="catalogue" name="Mercenaries" id="cbfd-f9fc-8cfb-227d" targetId="f569-e9dd-327a-5735" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
