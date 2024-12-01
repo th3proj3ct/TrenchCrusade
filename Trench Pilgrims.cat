@@ -1167,6 +1167,11 @@
         <infoLink name="Risky" id="ee6e-981b-19ef-ebd4" hidden="false" type="rule" targetId="df23-62bc-775e-fca1"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Johnny Merc" hidden="false" id="5f01-d745-688e-7051">
+      <categoryLinks>
+        <categoryLink targetId="3dfb-701d-e89c-eba2" id="d7af-103a-1d53-2bcd" primary="false" name="Mercenary"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Mercenaries" id="9692-49d4-d04d-4cfb" targetId="f569-e9dd-327a-5735" importRootEntries="true"/>
