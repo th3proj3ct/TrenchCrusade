@@ -1816,4 +1816,7 @@ The Hunter can do this multiple times during its chosen move, though it has to p
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Mercenaries" id="e0ad-af74-7023-7568" targetId="f569-e9dd-327a-5735"/>
+  </catalogueLinks>
 </catalogue>

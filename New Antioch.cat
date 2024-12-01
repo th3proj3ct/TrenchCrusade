@@ -1254,6 +1254,42 @@
         <categoryLink targetId="83c8-b351-cb96-119e" id="6ea6-acce-4425-dc0f" primary="true" name="Fireteam"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mamluk Faris" hidden="false" id="30f6-07a5-f70d-8794">
+      <categoryLinks>
+        <categoryLink targetId="3dfb-701d-e89c-eba2" id="3ba4-1d9e-a416-5a25" primary="true" name="Mercenary"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Mamluk Faris" hidden="false" id="09cc-f370-e3a2-7840" type="selectionEntry" targetId="22b8-dc59-428d-87cd"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="414f-d9cb-0f92-955c" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Elite Ally" id="3f45-7074-d35b-9022" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Sniper Priests" hidden="false" id="0926-2fc4-4a7a-381a" type="selectionEntry" targetId="dd59-a783-dbb5-242f"/>
+            <entryLink import="true" name="Lieutenant" hidden="false" id="2d23-f1ab-7dd9-2db1" type="selectionEntry" targetId="e578-1122-47cb-10ad"/>
+            <entryLink import="true" name="Trench Cleric" hidden="false" id="099f-e1d7-a188-fa31" type="selectionEntry" targetId="f8bc-5df8-1768-a72a"/>
+            <entryLink import="true" name="Lieutenant" hidden="false" id="9abd-0bfa-c48c-3592" type="selectionEntry" targetId="e578-1122-47cb-10ad"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Concerted Attack" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d469-8305-d8f7-a78b">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">If a model in the FIRETEAM makes any kind of Attack ACTION (ranged or melee) against an opponent, where the other member of their FIRETEAM has already hit it with an attack ACTION during the same activation, the cost of a Bloodbath is reduced to three BLOOD MARKERS against this opponent, whether the model is standing or Down.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Coordinated Engagement" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8e6c-2882-f827-e44c">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models that are part of the same FIRETEAM can be activated at the same time without the opponent getting their turn in between and can take their ACTIONS in any order they wish, switching between the two models. Note that if the Activation of either member of the FIRETEAM forcefully ends (due to a failed RISKY ACTION for example), it ends both Activations.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1bc-7dc8-0f0f-3f64" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </selectionEntries>
   <forceEntries>
     <forceEntry name="Warband" id="2e09-580e-e00b-d33d" hidden="false">
@@ -1265,4 +1301,7 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Mercenaries" id="cbfd-f9fc-8cfb-227d" targetId="f569-e9dd-327a-5735"/>
+  </catalogueLinks>
 </catalogue>
