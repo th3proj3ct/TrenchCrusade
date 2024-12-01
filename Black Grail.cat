@@ -1343,6 +1343,7 @@ Corpse Guard can remove one of their own BLOOD or INFECTION MARKERS</characteris
           </modifiers>
         </categoryLink>
         <categoryLink name="Troop" hidden="false" id="6ee3-420f-48cb-91c2" targetId="bd43-ddb1-262d-4489"/>
+        <categoryLink name="Mercenary" hidden="false" id="d202-90cd-2d6b-660a" targetId="3dfb-701d-e89c-eba2"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
