@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f569-e9dd-327a-5735" name="Mercenaries" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="11" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f569-e9dd-327a-5735" name="Mercenaries" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="11" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Combat Medic" hidden="true" id="39c2-abb6-fef0-f96e">
       <modifiers>
@@ -141,7 +141,7 @@
         </profile>
         <profile name="Miracle of Regeneration" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e067-a1da-7b23-212e">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062"> At the Start of the Activation a Communicant may remove one BLOOD MARKER from themselves if they have any</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">At the Start of the Activation a Communicant may remove one BLOOD MARKER from themselves if they have any</characteristic>
           </characteristics>
         </profile>
         <profile name="Iron Flesh" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1c64-73ae-7ad3-4bc5">
@@ -181,25 +181,6 @@
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2a7a-bfbb-4aa5-4406-min" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2a7a-bfbb-4aa5-4406-max" includeChildSelections="false"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Deadly Fists" hidden="false" id="4169-f4ff-f8d4-c9a2">
-              <profiles>
-                <profile name="Deadly Fists" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="720f-5c3a-8c26-9366">
-                  <characteristics>
-                    <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
-                    <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
-                    <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
-                    <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
-                    <characteristic name="Rules" typeId="6e95-3480-ad33-b345">The Communicant counts as being armed with two Trench clubs in Melee combat – its fists are deadly weapons in their own right.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="550f-f74e-0531-e48d-min" includeChildSelections="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="550f-f74e-0531-e48d-max" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -237,7 +218,7 @@
         </profile>
         <profile name="Ceremonial Duty" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="cf7b-4e3c-a0a0-b4f7">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Witchburner has taken vows to persecute heretics with extreme prejudice. Nothing will stop this holy task. The Witchburner is immune to FEAR. </characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Witchburner has taken vows to persecute heretics with extreme prejudice. Nothing will stop this holy task. The Witchburner is immune to FEAR.</characteristic>
           </characteristics>
         </profile>
         <profile name="Divine Judgement" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="04ac-4944-d9ff-e192">
@@ -288,7 +269,7 @@
         </profile>
         <profile name="Goetic Portal" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="90bb-2e34-4ff6-264a">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062"> As a RISKY ACTION with +1 DICE, the Warlock can Teleport up to 6” in any direction into a free space it can see, including into melee with an enemy model. The Warlock may bring a single enemy model that is in Melee Combat with it and has a base size of 32mm or smaller. There must be suitable space for the Warlock (and a possible passenger which must end the teleport in Melee Combat with the Warlock) at its target destination or this teleport automatically fails. It may not teleport out of the battlefield. It may teleport even if it is currently Down, but remains so after the teleportation.</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">As a RISKY ACTION with +1 DICE, the Warlock can Teleport up to 6” in any direction into a free space it can see, including into melee with an enemy model. The Warlock may bring a single enemy model that is in Melee Combat with it and has a base size of 32mm or smaller. There must be suitable space for the Warlock (and a possible passenger which must end the teleport in Melee Combat with the Warlock) at its target destination or this teleport automatically fails. It may not teleport out of the battlefield. It may teleport even if it is currently Down, but remains so after the teleportation.</characteristic>
           </characteristics>
         </profile>
         <profile name="Goetic Gaze" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="6fd1-affa-e7aa-8870">
@@ -316,8 +297,8 @@
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a38d-f876-e7d7-d667-min" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a38d-f876-e7d7-d667-max" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a38d-f876-e7d7-d667-min-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a38d-f876-e7d7-d667-min-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -328,7 +309,6 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6941-ec54-3001-8288" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="44b9-e92b-2dc0-6820" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0b26-15c1-cebd-0077" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
