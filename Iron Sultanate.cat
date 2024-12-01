@@ -1382,17 +1382,6 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6971-fc15-9b36-aede-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6971-fc15-9b36-aede-max" includeChildSelections="false"/>
           </constraints>
-          <profiles>
-            <profile name="Alchemical Jezzail" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="true" id="1e67-1f5e-74da-2027">
-              <characteristics>
-                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
-                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;</characteristic>
-                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Hit</characteristic>
-                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
-                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </entryLink>
       </entryLinks>
       <constraints>
