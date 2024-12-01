@@ -694,15 +694,6 @@
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">Unless the scenario prohibits use of the special deployment of INFILTRATORS, you may deploy the Mamluk on any table edge as long as they are at least 8” away from any enemy model after INFILTRATORS are deployed. Mamluks can also be deployed in your own deployment zone as standard.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Alchemical Jezzail" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="true" id="9353-c8d6-219d-55ef">
-          <characteristics>
-            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
-            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;</characteristic>
-            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Hit</characteristic>
-            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
-            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Combat Helmet" id="c9d1-d419-4d29-6a14" hidden="false" type="profile" targetId="f9d1-44f2-f4d7-442f"/>
@@ -748,6 +739,25 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Alchemical Jezzail" hidden="false" id="73f8-b37b-e1c7-6441">
+          <profiles>
+            <profile name="Alchemical Jezzail" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="true" id="9353-c8d6-219d-55ef">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;</characteristic>
+                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Hit</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8258-9542-7b70-40b1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8258-9542-7b70-40b1-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
