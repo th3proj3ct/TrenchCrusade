@@ -879,10 +879,10 @@
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="51fa-cabc-34af-97f2-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="51fa-cabc-34af-97f2-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="51fa-cabc-34af-97f2" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4efe-6a2b-421c-1f6d-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4efe-6a2b-421c-1f6d-max" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="fc35-1977-e29f-d593" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
