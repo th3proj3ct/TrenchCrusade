@@ -1208,6 +1208,9 @@
           <infoLinks>
             <infoLink name="Machine Armour" id="9779-f8ef-a81f-c792" hidden="false" type="profile" targetId="2558-23f8-cfa8-40f4"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16a8-7110-3d34-ebfe" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
