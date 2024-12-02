@@ -867,6 +867,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e92-dd0a-7532-054c" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Onwards, Christian Soldiers!" hidden="false" id="bd29-0628-00be-3d6f">
               <profiles>
@@ -876,13 +879,16 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c03a-38b1-021c-6608" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="51fa-cabc-34af-97f2" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4efe-6a2b-421c-1f6d-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4efe-6a2b-421c-1f6d-max" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="fc35-1977-e29f-d593" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="4efe-6a2b-421c-1f6d-max-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="4efe-6a2b-421c-1f6d-max-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a21-d1fd-3859-5ca3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a21-d1fd-3859-5ca3-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
