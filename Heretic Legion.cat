@@ -793,6 +793,35 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Trench Ghosts" hidden="false" id="eee9-35a4-9eda-70e9">
+          <profiles>
+            <profile name="Close Assault Weapons" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b72c-5ef3-e8a1-8570">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband can buy Submachine Guns for 25 ducats per weapon.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Unseen Advance" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b9ef-dfed-c0ea-7e62">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Up to three models without ELITE Keyword can be upgraded into INFILTRATORS at the cost of 10 ducats per Model</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Light Troops" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fd1e-a345-6501-0bbc">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The force may only include 0-1 Annointed and 0-1 Artillery Witch.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Let Sleeping Dogs Lie" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9114-91ec-d19a-e386">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may not include a War Wolf</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Fast as Lightning" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="725a-28dc-8da5-dd4a">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All Models have +1 DICE when taking their Dash ACTIONS.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Legionnairie Selection" hidden="false" id="246f-14ab-e6fe-4c26">
