@@ -792,6 +792,9 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4046-8150-770b-9adf" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Trench Ghosts" hidden="false" id="eee9-35a4-9eda-70e9">
           <profiles>
@@ -821,6 +824,9 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa01-bead-7f9f-0a42" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
