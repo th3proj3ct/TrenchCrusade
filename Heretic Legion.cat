@@ -760,7 +760,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
         <categoryLink name="Configuration" hidden="false" id="8264-4d4d-e63c-ba3e" targetId="705b-e23f-e9c2-58ab" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Heretic Naval Raiding Party" id="4d05-603e-4b5a-aed4" hidden="false">
+        <selectionEntryGroup name="eeeeeeeeeeeeeeeeeeeeeee" id="4d05-603e-4b5a-aed4" hidden="false">
           <profiles>
             <profile name="Close Assault Weapons" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9ef5-9c37-2db2-8bb9">
               <characteristics>
@@ -783,6 +783,35 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               </characteristics>
             </profile>
             <profile name="Let Sleeping Dogs Lie" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2bfc-ba39-b280-debb">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may not include a War Wolf</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Heretic Naval Raiding Party" id="8ab5-3c64-35cb-2cc0" hidden="false">
+          <profiles>
+            <profile name="Close Assault Weapons" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="63c0-7115-af47-5b3e">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband can buy Submachine Guns for 25 ducats per weapon.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Fast as Lightning" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="18e1-907c-895f-4788">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All Models have +1 DICE when taking their Dash ACTIONS.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Unseen Advance" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="bc00-e4b6-eebe-1a3a">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Up to three models without ELITE Keyword can be upgraded into INFILTRATORS at the cost of 10 ducats per Model</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Light Troops" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="343d-3bcf-6d78-5b15">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The force may only include 0-1 Annointed and 0-1 Artillery Witch.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Let Sleeping Dogs Lie" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="994e-c146-cae0-0a2e">
               <characteristics>
                 <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may not include a War Wolf</characteristic>
               </characteristics>
