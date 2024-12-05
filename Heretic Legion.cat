@@ -399,7 +399,6 @@
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="105c-8780-b389-2f18" includeChildSelections="true"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98b0-ad39-d348-1ac1"/>
       </constraints>
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="140"/>
