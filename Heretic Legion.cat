@@ -63,6 +63,11 @@
             <condition type="atLeast" value="1" field="selections" scope="self" childId="7b92-190b-f8c3-531a" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="5" field="8d43-33fd-332d-17a6">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Unseen Infiltrator" hidden="true" id="7b92-190b-f8c3-531a">
@@ -413,9 +418,14 @@
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4d05-603e-4b5a-aed4" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4d05-603e-4b5a-aed4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -505,10 +515,16 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1000" field="8d43-33fd-332d-17a6" scope="roster" childId="any" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="4d05-603e-4b5a-aed4" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0" field="ceb2-bf00-2a24-aa1d">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -794,38 +810,76 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4046-8150-770b-9adf" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Infiltrator" id="a4c7-fda3-fe57-a931" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Trench Ghosts" hidden="false" id="eee9-35a4-9eda-70e9">
           <profiles>
-            <profile name="Close Assault Weapons" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b72c-5ef3-e8a1-8570">
+            <profile name="Horror" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b72c-5ef3-e8a1-8570">
               <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband can buy Submachine Guns for 25 ducats per weapon.</characteristic>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in the Warband cause FEAR. </characteristic>
               </characteristics>
             </profile>
-            <profile name="Unseen Advance" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b9ef-dfed-c0ea-7e62">
+            <profile name="Strength Beyond the Grave" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b9ef-dfed-c0ea-7e62">
               <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Up to three models without ELITE Keyword can be upgraded into INFILTRATORS at the cost of 10 ducats per Model</characteristic>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Heretic Priest of the warband has the Keyword STRONG.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Light Troops" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fd1e-a345-6501-0bbc">
+            <profile name="Slow" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fd1e-a345-6501-0bbc">
               <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The force may only include 0-1 Annointed and 0-1 Artillery Witch.</characteristic>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in Trench Ghost warband have -1 DICE in all their Dash ACTIONS.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Let Sleeping Dogs Lie" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9114-91ec-d19a-e386">
+            <profile name="Lost Souls" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9114-91ec-d19a-e386">
               <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may not include a War Wolf</characteristic>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Since only mortals who have souls become ghosts, this warband may not have any War Wolves or Artillery Witches, since they are artificial beings. In addition, no model in the warband may have a Hellbound Soul Contract or an Infernal Brand Mark. Any model that has one of these pieces of equipment in their base profile will not have it, although its price remains the same.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Fast as Lightning" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="725a-28dc-8da5-dd4a">
+            <profile name="Semi-Corporeal" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="725a-28dc-8da5-dd4a">
               <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All Models have +1 DICE when taking their Dash ACTIONS.</characteristic>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Any attacks against all models in the Trench Ghost warband roll injuries with -1 DICE – the undead are hard to kill!</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Spectral" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="50f6-0785-3b36-7392">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in the warband ignore movement penalties caused by Difficult Terrain, though they cannot move through any objects/terrain. Dangerous terrain affects them as normal.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Undead" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c139-9280-6e25-113a">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in the Trench Ghost warband do not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa01-bead-7f9f-0a42" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Fear" id="6d70-4b74-fca1-9c10" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Battlefield Looters" id="8c80-7d04-2b96-a3d1" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8e8-20f3-0f9d-685b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8e8-20f3-0f9d-685b-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="31ef-14a4-4be6-508f"/>
+                <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="7698-8d7d-b9d0-d110"/>
+                <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="5530-8135-2df1-4b67"/>
+                <selectionEntry type="upgrade" import="true" name="Musical Instrument " hidden="false" id="0ea6-99b3-e165-9336"/>
+                <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="1c2d-14b1-1ec3-3bdb"/>
+                <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="346b-cc13-f92e-61bc"/>
+                <selectionEntry type="upgrade" import="true" name="Anti-Material Rifle" hidden="false" id="f968-d86e-691c-d8af"/>
+                <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="fc35-e469-8877-b62c"/>
+                <selectionEntry type="upgrade" import="true" name="Incendiary Ammunition" hidden="false" id="c66f-56e1-c379-0f1c"/>
+                <selectionEntry type="upgrade" import="true" name="Hellblade" hidden="false" id="5549-36f8-a639-8fc4"/>
+                <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="0422-86f1-0b4b-26b9"/>
+                <selectionEntry type="upgrade" import="true" name="Sacrificial Blade" hidden="false" id="3ff6-3412-b7f3-b0a4"/>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1486,9 +1540,14 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3844-b41c-9ecc-85b9" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3844-b41c-9ecc-85b9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -1526,8 +1585,18 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="5b74-f842-4c65-c211">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="15bf-43f1-0650-1070" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="15bf-43f1-0650-1070" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
