@@ -865,13 +865,53 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8e8-20f3-0f9d-685b-max" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="31ef-14a4-4be6-508f"/>
+                <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="31ef-14a4-4be6-508f">
+                  <profiles>
+                    <profile name="Battlefield Looters (Automatic Rifle)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="05d8-72d5-36d0-f648">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="7698-8d7d-b9d0-d110"/>
-                <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="5530-8135-2df1-4b67"/>
+                <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="5530-8135-2df1-4b67">
+                  <profiles>
+                    <profile name="Battlefield Looters (Automatic Rifle)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="314c-5a0b-cf87-d46d">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Musical Instrument " hidden="false" id="0ea6-99b3-e165-9336"/>
-                <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="1c2d-14b1-1ec3-3bdb"/>
-                <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="346b-cc13-f92e-61bc"/>
-                <selectionEntry type="upgrade" import="true" name="Anti-Material Rifle" hidden="false" id="f968-d86e-691c-d8af"/>
+                <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="1c2d-14b1-1ec3-3bdb">
+                  <profiles>
+                    <profile name="Battlefield Looters (Flamethrower)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4ab1-ea85-f390-6fb0">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="346b-cc13-f92e-61bc">
+                  <profiles>
+                    <profile name="Battlefield Looters (Automatic Rifle)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="06bf-a67e-fba4-5214">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Anti-Material Rifle" hidden="false" id="f968-d86e-691c-d8af">
+                  <profiles>
+                    <profile name="Battlefield Looters (Anti-Material Rifle)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="bca6-aeb8-da80-ca45">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="fc35-e469-8877-b62c"/>
                 <selectionEntry type="upgrade" import="true" name="Incendiary Ammunition" hidden="false" id="c66f-56e1-c379-0f1c"/>
                 <selectionEntry type="upgrade" import="true" name="Hellblade" hidden="false" id="5549-36f8-a639-8fc4"/>
@@ -1044,6 +1084,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="c3ba-a27c-b5cb-93e2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3ff6-3412-b7f3-b0a4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="c3ba-a27c-b5cb-93e2" includeChildSelections="true"/>
@@ -1108,6 +1153,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <infoLink name="Hellblade" id="2b1b-5926-e4e9-61e8" hidden="false" type="profile" targetId="7490-f22e-68ff-79d3"/>
             <infoLink name="Fire" id="421d-3930-56f4-4633" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="ae04-d3d5-cf30-f686">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5549-36f8-a639-8fc4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Tartarus Claws" hidden="true" id="af47-33c1-b1fc-f2bd">
           <costs>
@@ -1219,6 +1271,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="bdb6-1a3e-b263-0121" primary="false" name="Heavy"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="d679-6e95-5438-300a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f968-d86e-691c-d8af" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="7f5a-869c-fe6b-82dd">
           <costs>
@@ -1237,6 +1296,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="55eb-c4aa-45ab-7db6" primary="false" name="Heavy"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="cd27-b4cb-862c-a11f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5530-8135-2df1-4b67" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="5c4c-5169-0e5e-b35b">
           <costs>
@@ -1253,6 +1319,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="75b8-da92-445e-d47e" primary="false" name="Heavy"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="48bd-a19e-19b2-49bd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7698-8d7d-b9d0-d110" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="9a7e-bfe8-e3bf-6f2e">
           <costs>
@@ -1266,6 +1339,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <infoLink name="Flamethrower" id="7b69-4991-432f-a6da" hidden="false" type="profile" targetId="9b21-3223-c112-c65f"/>
             <infoLink name="Fire" id="ec5e-91f3-fcf8-7eca" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="11a6-d064-f34d-ab29">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1c2d-14b1-1ec3-3bdb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="d55a-3291-216f-bf2c">
           <costs>
@@ -1283,6 +1363,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="fc0a-fdcd-8250-7d7d" primary="false" name="Heavy"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="ddd8-1f58-fe65-4b30">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="346b-cc13-f92e-61bc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="8292-a94f-828f-955e">
           <costs>
@@ -1298,6 +1385,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <infoLinks>
             <infoLink name="Automatic Rifle" id="ae10-ab61-5190-8438" hidden="false" type="profile" targetId="c35c-a506-683d-6c3f"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="939e-912c-de97-4fcf">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="31ef-14a4-4be6-508f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1512,6 +1606,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="f2d9-0f99-61a1-fce5" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="aad2-b959-74e8-44fe">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c66f-56e1-c379-0f1c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Shovel" hidden="false" id="fa1f-59c8-3f39-3ff0" sortIndex="6">
@@ -1567,6 +1666,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="f2d9-0f99-61a1-fce5" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="5bbf-d4c0-f106-e03a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc35-e469-8877-b62c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1645,6 +1749,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <infoLinks>
             <infoLink name="Troop Flag" id="4475-5beb-9e9d-0c5e" hidden="false" type="profile" targetId="e86e-146a-65b7-09f2"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="1a5b-1f57-733e-f61a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0422-86f1-0b4b-26b9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="3000-ce3b-f377-3b4c">
           <costs>
@@ -1657,6 +1768,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <infoLinks>
             <infoLink name="Musical Instrument" id="67d2-e4f3-33e6-bb1a" hidden="false" type="profile" targetId="dd0c-c62d-46f1-64f8"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="29ca-1e9d-0e08-eb8f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0ea6-99b3-e165-9336" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
