@@ -773,12 +773,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
       <modifiers>
         <modifier type="set" value="Legionnaire" field="name">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="self" childId="f606-4316-044d-4503" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="Too Poor- must cost 80+ Ducats" field="error">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+            <condition type="lessThan" value="50" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
