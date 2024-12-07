@@ -764,9 +764,14 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </conditions>
         </modifier>
         <modifier type="add" value="Mammon Forbids this Cheapskate." field="error">
-          <conditions>
-            <condition type="lessThan" value="80" field="8d43-33fd-332d-17a6" scope="model" childId="any" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="10" field="8d43-33fd-332d-17a6" scope="model" childId="any" shared="true" includeChildSelections="true" percentValue="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
