@@ -63,11 +63,6 @@
             <condition type="atLeast" value="1" field="selections" scope="self" childId="7b92-190b-f8c3-531a" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="increment" value="5" field="8d43-33fd-332d-17a6">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Unseen Infiltrator" hidden="true" id="7b92-190b-f8c3-531a">
