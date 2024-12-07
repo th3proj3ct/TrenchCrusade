@@ -700,12 +700,24 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
       <entryLinks>
         <entryLink import="true" name="Grenades" hidden="false" id="7f8c-7ce1-9287-96f2" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true">
           <modifiers>
-            <modifier type="add" value="{this} is not allowed" field="error">
+            <modifier type="add" value="Too Poor" field="error">
               <conditions>
-                <condition type="atMost" value="8" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true"/>
+                <condition type="atMost" value="8" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="New Group" id="2955-bdb7-aa8c-d315" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Money" hidden="false" id="7f9f-5b7f-e140-339a">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </entryLink>
         <entryLink import="true" name="Equipment" hidden="false" id="76f2-185b-6af3-13a9" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="4" collapsible="true"/>
         <entryLink import="true" name="Weapons" hidden="false" id="2729-18d7-401d-092f" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
