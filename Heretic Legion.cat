@@ -1704,11 +1704,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="15bf-43f1-0650-1070" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="15bf-43f1-0650-1070" shared="true"/>
+              </conditions>
             </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -1781,7 +1783,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <infoLink name="Musical Instrument" id="67d2-e4f3-33e6-bb1a" hidden="false" type="profile" targetId="dd0c-c62d-46f1-64f8"/>
           </infoLinks>
           <modifiers>
-            <modifier type="set" value="2" field="29ca-1e9d-0e08-eb8f">
+            <modifier type="increment" value="1" field="29ca-1e9d-0e08-eb8f">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="0ea6-99b3-e165-9336" shared="true" includeChildSelections="true"/>
               </conditions>
