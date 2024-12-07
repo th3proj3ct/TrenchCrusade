@@ -763,7 +763,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <condition type="atLeast" value="1" field="selections" scope="self" childId="f606-4316-044d-4503" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="add" value="Model must cost 10+ Ducats" field="error">
+        <modifier type="add" value="aaaa" field="error">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
