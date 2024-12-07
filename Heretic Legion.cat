@@ -776,8 +776,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="59f2-6d65-03d2-c268-max" includeChildSelections="true"/>
-        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="4c5d-b530-06ab-f42f-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="4c5d-b530-06ab-f42f-max" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="4c5d-b530-06ab-f42f" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Heretic Naval Raiding Party" hidden="false" id="4d05-603e-4b5a-aed4">
