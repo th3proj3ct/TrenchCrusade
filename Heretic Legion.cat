@@ -698,7 +698,15 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="7f8c-7ce1-9287-96f2" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="7f8c-7ce1-9287-96f2" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true">
+          <modifiers>
+            <modifier type="add" value="{this} is not allowed" field="error">
+              <conditions>
+                <condition type="atMost" value="7" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Equipment" hidden="false" id="76f2-185b-6af3-13a9" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="4" collapsible="true"/>
         <entryLink import="true" name="Weapons" hidden="false" id="2729-18d7-401d-092f" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
       </entryLinks>
