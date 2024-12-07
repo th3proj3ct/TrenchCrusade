@@ -702,7 +702,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <modifiers>
             <modifier type="add" value="{this} is not allowed" field="error">
               <conditions>
-                <condition type="atMost" value="7" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true"/>
+                <condition type="atMost" value="8" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
