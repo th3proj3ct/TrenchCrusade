@@ -1705,12 +1705,10 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="15bf-43f1-0650-1070" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="15bf-43f1-0650-1070" shared="true"/>
-              </conditions>
             </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditions>
