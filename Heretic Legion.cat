@@ -699,13 +699,6 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Grenades" hidden="false" id="7f8c-7ce1-9287-96f2" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true">
-          <modifiers>
-            <modifier type="add" value="Too Poor" field="error">
-              <conditions>
-                <condition type="lessThan" value="50" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <selectionEntryGroups>
             <selectionEntryGroup name="New Group" id="2955-bdb7-aa8c-d315" hidden="false">
               <selectionEntries>
@@ -781,6 +774,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
         <modifier type="set" value="Legionnaire" field="name">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="self" childId="f606-4316-044d-4503" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="Too Poor" field="error">
+          <conditions>
+            <condition type="lessThan" value="50" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
