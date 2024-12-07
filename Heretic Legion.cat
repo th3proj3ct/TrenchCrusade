@@ -777,14 +777,9 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </conditions>
         </modifier>
         <modifier type="add" value="Too Poor- must cost 80+ Ducats" field="error">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="lessThan" value="50" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
