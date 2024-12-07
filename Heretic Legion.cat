@@ -768,7 +768,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
-                <condition type="lessThan" value="10" field="8d43-33fd-332d-17a6" scope="model" childId="model" shared="true" includeChildSelections="false" percentValue="false"/>
+                <condition type="lessThan" value="10" field="8d43-33fd-332d-17a6" scope="model" childId="upgrade" shared="true" includeChildSelections="true" percentValue="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
