@@ -6,7 +6,7 @@
         <categoryLink name="Configuration" hidden="false" id="a1ec-c1a7-67f1-3c3d" targetId="705b-e23f-e9c2-58ab"/>
         <categoryLink name="Elite" hidden="false" id="d674-9dad-3a52-6f42" targetId="3de0-192c-3ec2-51be"/>
         <categoryLink name="Troop" hidden="false" id="8ece-5350-0612-123a" targetId="bd43-ddb1-262d-4489"/>
-        <categoryLink name="Mercenary" hidden="false" id="a7d4-1035-32a8-15c4" targetId="3dfb-701d-e89c-eba2" type="category"/>
+        <categoryLink name="Mercenary" hidden="false" id="a7d4-1035-32a8-15c4" targetId="3dfb-701d-e89c-eba2"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -149,6 +149,13 @@
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="7"/>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -307,9 +314,14 @@
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -470,6 +482,13 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="ca66-5dc3-e336-7c86" targetId="70c9-988d-71a7-7654" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0d88-774c-22af-e2fc" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="1a75-5edf-0fc9-a1b6" sortIndex="5">
           <costs>
@@ -659,9 +678,14 @@
               </costs>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -674,7 +698,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Armour" id="664d-b970-6eef-b2d5" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Standard Armour" hidden="false" id="ea8a-62b2-605f-6aa6">
+        <selectionEntry type="upgrade" import="true" name="Standard Armour" hidden="false" id="ea8a-62b2-605f-6aa6" sortIndex="1">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -683,7 +707,7 @@
             <infoLink name="Standard Armour" id="4fed-9ff6-f5b3-c158" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Reinforced Armour" hidden="true" id="0e4c-78a2-26bf-6e0e">
+        <selectionEntry type="upgrade" import="true" name="Reinforced Armour" hidden="true" id="0e4c-78a2-26bf-6e0e" sortIndex="3">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -695,6 +719,26 @@
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Holy Icon Armour" hidden="true" id="5d80-7b84-5e97-9b76" sortIndex="2">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Holy Icon Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="04f7-979a-e1cc-9270">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This suit of armour is made of blessed icons and scripture scrolls written with the blood of saints. This armour confers a -1 modifier to any injury rolls. This modifier applies even against attacks that ignore Armour. Can be combined with a shield, including Holy Icon Shield.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -716,6 +760,40 @@
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="971d-63ba-6d96-ef4d" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wrath of God" hidden="true" id="1a8c-d998-b42b-9e8b">
+      <profiles>
+        <profile name="Vengeful Fury" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="cdfe-5f3e-eefe-e3e1">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This model is immune to FEAR and disregards any BLOOD MARKERS from any source, but cannot use armour or ranged weapons.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="add" value="Cannot use armour or ranged weapon" field="error">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="664d-b970-6eef-b2d5" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="70c8-b7ed-f20b-8bd6" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="9f81-46c2-a825-43cf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5848-42c4-be38-e038" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -750,10 +828,11 @@
         <categoryLink targetId="3de0-192c-3ec2-51be" id="0519-fed9-3818-ce48" primary="true" name="Elite"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Weapons" hidden="false" id="aa79-c71e-2a4e-823c" type="selectionEntryGroup" targetId="43b1-aa6a-2357-1613" sortIndex="2"/>
-        <entryLink import="true" name="Throwables" hidden="false" id="72b3-78f0-8a00-2baf" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="3"/>
-        <entryLink import="true" name="Armour" hidden="false" id="1980-eaa4-0a4c-c061" type="selectionEntryGroup" targetId="664d-b970-6eef-b2d5" sortIndex="4"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="eb4b-9327-0170-2768" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39" sortIndex="5"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="aa79-c71e-2a4e-823c" type="selectionEntryGroup" targetId="43b1-aa6a-2357-1613" sortIndex="3"/>
+        <entryLink import="true" name="Throwables" hidden="false" id="72b3-78f0-8a00-2baf" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="4"/>
+        <entryLink import="true" name="Armour" hidden="false" id="1980-eaa4-0a4c-c061" type="selectionEntryGroup" targetId="664d-b970-6eef-b2d5" sortIndex="5"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="eb4b-9327-0170-2768" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39" sortIndex="6"/>
+        <entryLink import="true" name="Wrath of God" hidden="false" id="627c-fa09-52be-988b" type="selectionEntry" targetId="1a8c-d998-b42b-9e8b" sortIndex="1"/>
       </entryLinks>
       <modifiers>
         <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category">
@@ -763,7 +842,7 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="2fe1-9dfe-d2d6-5ecc" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="2fe1-9dfe-d2d6-5ecc" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7922-eeb4-f163-baa6" includeChildSelections="false"/>
           </constraints>
@@ -817,13 +896,14 @@
         <categoryLink targetId="bd43-ddb1-262d-4489" id="042c-e4ca-f1f8-011f" primary="true" name="Troop"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Weapons" hidden="false" id="0c89-c431-3417-8187" type="selectionEntryGroup" targetId="43b1-aa6a-2357-1613" sortIndex="2"/>
-        <entryLink import="true" name="Throwables" hidden="false" id="b02f-cdc2-d6f3-70b1" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="3"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="0c89-c431-3417-8187" type="selectionEntryGroup" targetId="43b1-aa6a-2357-1613" sortIndex="4"/>
+        <entryLink import="true" name="Throwables" hidden="false" id="b02f-cdc2-d6f3-70b1" type="selectionEntryGroup" targetId="70c8-b7ed-f20b-8bd6" sortIndex="5"/>
         <entryLink import="true" name="Armour" hidden="false" id="359f-dab2-e16a-8eb2" type="selectionEntryGroup" targetId="664d-b970-6eef-b2d5"/>
         <entryLink import="true" name="Equipment" hidden="false" id="ddb6-08d9-4e62-ec39" type="selectionEntryGroup" targetId="8a14-be13-d97b-2a39"/>
+        <entryLink import="true" name="Wrath of God" hidden="false" id="c84b-02db-94df-7406" type="selectionEntry" targetId="1a8c-d998-b42b-9e8b" sortIndex="1"/>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="6082-859c-8347-2a94" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="6082-859c-8347-2a94" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2d8-0065-8099-4e04" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="51ea-b495-72bb-76fe" includeChildSelections="true"/>
@@ -835,8 +915,15 @@
           <infoLinks>
             <infoLink name="Strong" id="1840-e768-b414-43cd" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="3" field="51ea-b495-72bb-76fe">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Martyred" hidden="false" id="b32b-6d55-9163-8486" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Martyred" hidden="false" id="b32b-6d55-9163-8486" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="149a-ac2a-a9fe-6e87" includeChildSelections="false"/>
           </constraints>
@@ -1031,6 +1118,17 @@
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Iron Capirote" id="9e0a-455b-486b-52c6" hidden="false" type="profile" targetId="4813-2d95-702d-d646">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Stigmatic Nun" hidden="false" id="caa2-22ce-1bc5-4d51">
       <profiles>
@@ -1166,6 +1264,60 @@
         <infoLink name="Heavy" id="9ffb-4b7a-5cef-ebea" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
         <infoLink name="Risky" id="ee6e-981b-19ef-ebd4" hidden="false" type="rule" targetId="df23-62bc-775e-fca1"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Variant" hidden="false" id="8e94-2a41-fd86-1f0b">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90c5-c1f9-da35-e53f" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Variant Selection" id="0423-080c-cfe8-0341" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3827-6b97-fd55-4e11-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3827-6b97-fd55-4e11-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Procession of the Sacred Affliction" hidden="false" id="0d88-774c-22af-e2fc">
+              <profiles>
+                <profile name="Face Thy Fears" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="bcd9-4d7d-fd27-9fc5">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">No model in the Procession of the Sacred Affliction can wear Iron Capirotes. Those troops with Capirotes in their base profile will not have them, though their cost remains the same.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Hammer and the Anvil" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="094b-0da3-d4d8-1979">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Anti-tank Hammers of this warband are not limited to ELITE</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Reliquary Armoury" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5f54-da18-cb78-f4ee">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models of this warband (save for the Anchorite) can buy Holy Icon Shields for 20 ducats, not just ELITE models. In addition, warband models with the ELITE Keyword may acquire Holy Icon Armour (see below).</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Punishing Millstones" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="aaa4-243f-d998-d366">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in the Procession of the Sacred Affliction (except Ecclesiastic Prisoners who are not worthy) add extra +1 DICE to injury rolls in melee against models that are Down.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Melee-Focused" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="a231-5d63-e5ee-e551">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">This warband may not have any Machine Guns.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Zealot Strength" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4353-c510-5d4e-63d1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Up to three Trench Pilgrims may purchase the Zealot Strength upgrade.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Wrath of God" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="86fd-13bd-28d2-a251">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">One Trench Pilgrim or Castigator in this warband can be gripped by the vengeful fury of the Lord. This model is immune to FEAR and disregards any BLOOD MARKERS from any source. This model may never wear armour, though they can carry a Trench Shield or Holy Icon Shield. Add +15 ducats to the cost of this model. This model may not carry any ranged weapons.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
