@@ -27,6 +27,7 @@
         <entryLink import="true" name="Equipment" hidden="false" id="8267-73be-3903-8067" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true" sortIndex="5"/>
         <entryLink import="true" name="Weapons" hidden="false" id="3104-500f-a1df-d5c0" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="2"/>
         <entryLink import="true" name="Armour" hidden="false" id="21ef-af58-7853-3915" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a" sortIndex="4"/>
+        <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="8024-508c-cad2-74e3" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="1"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="2daf-dded-85a2-f21a"/>
@@ -46,24 +47,6 @@
           </conditions>
         </modifier>
       </modifiers>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Unseen Infiltrator" hidden="true" id="7b92-190b-f8c3-531a" sortIndex="1">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Infiltrator" id="0130-8790-e02a-2784" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
-          </infoLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4d05-603e-4b5a-aed4" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Priest" hidden="false" id="8983-6564-96c7-fd33" publicationId="c658-4a10-e1fe-befc" page="20">
       <costs>
@@ -437,7 +420,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="7050-8ef1-0699-ced0" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Weapons" id="7050-8ef1-0699-ced0" hidden="false" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Melee Weapons" hidden="false" id="19b2-3fff-cd64-345f" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d"/>
             <entryLink import="true" name="Utility Hand" hidden="false" id="2a07-235b-ec1f-ab51" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90">
@@ -451,6 +434,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
       <entryLinks>
         <entryLink import="true" name="Equipment" hidden="false" id="347a-bdcf-fe18-3744" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
         <entryLink import="true" name="Armour" hidden="false" id="0ed8-7eee-2ab4-05fb" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
+        <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="c8c6-a4c5-b20a-84be" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="1"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ceb2-bf00-2a24-aa1d" includeChildSelections="true"/>
@@ -530,7 +514,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="d790-768c-fc52-8b1b" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Weapons" id="d790-768c-fc52-8b1b" hidden="false" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Troop Flag" hidden="false" id="7472-20fc-dfdf-a42d" type="selectionEntry" targetId="1e8d-e5ce-d1e5-4ab0" sortIndex="2"/>
           </entryLinks>
@@ -588,7 +572,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Grenades" id="da5f-63c0-0d66-cf7d" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Grenades" id="da5f-63c0-0d66-cf7d" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Grenades" hidden="false" id="1e4d-094d-70c4-a931" type="selectionEntry" targetId="fb15-88c1-763c-81a1" sortIndex="1"/>
             <entryLink import="true" name="Gas Grenades" hidden="false" id="1ad6-8afa-b13e-d97f" type="selectionEntry" targetId="3e61-384a-10f0-3ade"/>
@@ -619,6 +603,9 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="6261-b217-6eba-7048" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="1"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Trooper" hidden="false" id="3844-b41c-9ecc-85b9" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -648,13 +635,14 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="7f8c-7ce1-9287-96f2" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="76f2-185b-6af3-13a9" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="5" collapsible="true"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="2729-18d7-401d-092f" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="2"/>
-        <entryLink import="true" name="Armour" hidden="false" id="1eeb-ff0b-2b86-7667" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a" sortIndex="4"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="7f8c-7ce1-9287-96f2" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="4" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="76f2-185b-6af3-13a9" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="6" collapsible="true"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="2729-18d7-401d-092f" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="3"/>
+        <entryLink import="true" name="Armour" hidden="false" id="1eeb-ff0b-2b86-7667" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a" sortIndex="5"/>
+        <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="2353-8642-8dde-809d" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="1"/>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Legionnaire" hidden="false" id="f606-4316-044d-4503" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Legionnaire" hidden="false" id="f606-4316-044d-4503" sortIndex="2">
           <profiles>
             <profile name="Legionnaire" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="9af6-f77f-326f-98ce">
               <characteristics>
@@ -1528,6 +1516,36 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           <categoryLinks>
             <categoryLink name="Cumbersome" hidden="false" id="f678-51a7-e3ec-eaf4" targetId="f87d-5ea3-e505-6a9f" primary="false"/>
           </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Coin Hammer" hidden="true" id="cd7e-904f-67b2-2d24" sortIndex="4">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Heavy" id="a701-7545-656f-1f61" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="41ea-0e5d-eebb-a8dc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Cumbersome" hidden="false" id="778a-06b1-879b-2382" targetId="f87d-5ea3-e505-6a9f" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Coin Hammer" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="4e92-442c-e2fc-4583">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Injure</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY</characteristic>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">When you inflict a BLOOD MARKER in melee with this weapon, the model wielding the hammer gains one BLESSING MARKER</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -2475,6 +2493,35 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             </modifier>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Golden Calf Altar" hidden="true" id="c9ba-7a03-eaae-1c00">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Standard of Mammon" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="77d6-2ff5-90cb-b1a8">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The area within 3” of the altar is Difficult Terrain for all models in the opposing Warband. This affects even models that can Fly. The model carrying the altar may drop it at any point during their Activation. Once placed down, the Golden Calf Altar cannot be picked up again. It has a 25mm base.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18e9-2443-d3f8-b027" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="4fae-21ed-15e6-5c17" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Headgear" id="0ff3-f218-8676-1288" hidden="false" sortIndex="1">
@@ -2497,7 +2544,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
     </selectionEntryGroup>
     <selectionEntryGroup name="Utility Hand" id="3676-db5e-8076-8b90" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="1e8d-e5ce-d1e5-4ab0">
+        <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="1e8d-e5ce-d1e5-4ab0" sortIndex="3">
           <costs>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
           </costs>
@@ -2516,7 +2563,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="3000-ce3b-f377-3b4c">
+        <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="3000-ce3b-f377-3b4c" sortIndex="2">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2533,6 +2580,35 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="0ea6-99b3-e165-9336" shared="true" includeChildSelections="true"/>
               </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Standard of Mammon" hidden="true" id="d703-b13e-c546-327c" sortIndex="4">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Standard of Mammon" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="debb-b1ea-a645-92dd">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Grants +1 DICE for all Morale tests as long as the model with the Flag is not Down or Out of Action. Requires one hand to use as if it was a weapon, both in ranged and melee combat. Any enemy entering melee combat with the model carrying this banner must make a successful ACTION or the model goes Down and cannot get up as long as they are in melee combat with the bearer of the standard.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b869-9752-f959-c278" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7544-b56f-4420-6801" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -2588,7 +2664,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
     </selectionEntryGroup>
     <selectionEntryGroup name="Armour" id="d8da-8812-463a-5a3a" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Machine Armour" hidden="true" id="f468-49af-8d3b-7c7b" sortIndex="4">
+        <selectionEntry type="upgrade" import="true" name="Machine Armour" hidden="true" id="f468-49af-8d3b-7c7b" sortIndex="5">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2659,7 +2735,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Alchemist Armour" hidden="true" id="6f0b-f2e8-3e60-f596" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Alchemist Armour" hidden="true" id="6f0b-f2e8-3e60-f596" sortIndex="4">
           <infoLinks>
             <infoLink name="Alchemist Armour" id="5cef-c9fa-b991-f49e" hidden="false" type="profile" targetId="68e2-bde3-19a9-2980"/>
           </infoLinks>
@@ -2682,6 +2758,126 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0f19-a6d8-119b-e747" includeChildSelections="true"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tarnished Armour" hidden="true" id="a6fb-9aa2-1030-b5bf" sortIndex="3">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Tarnished Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b2e8-94d9-2ff1-7cdd">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The suit counts as Reinforced Armour, a helmet and a gas mask. When an enemy declares a charge, they must charge the model wearing this armour if it is visible, not in cover and within 12” of the wearer. The charging model must be able to reach this model without climbing, leaping or crossing dangerous terrain. If the wearer of the armour is already in melee combat, this power has no effect</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6aec-93b5-7b58-674f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6e3c-32f6-4f8d-7f49" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Tarnished Armour" hidden="false" id="a629-5c79-ef60-19fa">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Tarnished Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4a70-92c1-610b-4d52">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The suit counts as Reinforced Armour, a helmet and a gas mask. When an enemy declares a charge, they must charge the model wearing this armour if it is visible, not in cover and within 12” of the wearer. The charging model must be able to reach this model without climbing, leaping or crossing dangerous terrain. If the wearer of the armour is already in melee combat, this power has no effect</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b35-b9a2-eb1e-630c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d01b-9560-b0ea-fdc5" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tarnished Armour" hidden="true" id="1998-b0b1-f86c-22f0" sortIndex="3">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Tarnished Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="eb5c-d8eb-af69-d3f9">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The suit counts as Reinforced Armour, a helmet and a gas mask. When an enemy declares a charge, they must charge the model wearing this armour if it is visible, not in cover and within 12” of the wearer. The charging model must be able to reach this model without climbing, leaping or crossing dangerous terrain. If the wearer of the armour is already in melee combat, this power has no effect</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0935-3a29-2fa0-36c1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bd58-2cc1-3d51-c5c2" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Tarnished Armour" hidden="false" id="17cd-1ee0-2053-f1dd">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Tarnished Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e196-ed2c-96ed-47a6">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The suit counts as Reinforced Armour, a helmet and a gas mask. When an enemy declares a charge, they must charge the model wearing this armour if it is visible, not in cover and within 12” of the wearer. The charging model must be able to reach this model without climbing, leaping or crossing dangerous terrain. If the wearer of the armour is already in melee combat, this power has no effect</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e914-c296-a49f-0734" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="80d9-e15c-3508-3d92" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -2740,6 +2936,25 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Unseen Infiltrator" hidden="true" id="7b92-190b-f8c3-531a">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Infiltrator" id="0130-8790-e02a-2784" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4d05-603e-4b5a-aed4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="bf3a-1583-bf9b-c960" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
