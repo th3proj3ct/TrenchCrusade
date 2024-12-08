@@ -2598,7 +2598,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             </modifier>
             <modifier type="set" value="1" field="bd0e-acde-9a85-85ae">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="15bf-43f1-0650-1070" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="15bf-43f1-0650-1070" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
