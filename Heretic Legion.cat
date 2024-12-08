@@ -355,6 +355,13 @@
       <infoLinks>
         <infoLink name="Fear" id="ce70-1eb4-3526-3f00" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="add" value="Mammon demands 80+ Ducats" field="error">
+          <conditions>
+            <condition type="lessThan" value="15" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="War Wolf Assault Beast" hidden="false" id="eab4-df0a-d8f3-302d" publicationId="c658-4a10-e1fe-befc" page="23">
       <profiles>
@@ -680,7 +687,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armor" id="1105-9ec1-e74c-126b" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Armor" id="1105-9ec1-e74c-126b" hidden="false" sortIndex="4">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="f6da-d904-8d74-f399">
               <infoLinks>
@@ -698,25 +705,12 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="7f8c-7ce1-9287-96f2" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="New Group" id="2955-bdb7-aa8c-d315" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Money" hidden="false" id="7f9f-5b7f-e140-339a">
-                  <costs>
-                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
-                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </entryLink>
-        <entryLink import="true" name="Equipment" hidden="false" id="76f2-185b-6af3-13a9" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="4" collapsible="true"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="2729-18d7-401d-092f" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="7f8c-7ce1-9287-96f2" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="76f2-185b-6af3-13a9" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="5" collapsible="true"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="2729-18d7-401d-092f" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="2"/>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Legionnaire" hidden="false" id="f606-4316-044d-4503">
+        <selectionEntry type="upgrade" import="true" name="Legionnaire" hidden="false" id="f606-4316-044d-4503" sortIndex="1">
           <profiles>
             <profile name="Legionnaire" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="9af6-f77f-326f-98ce">
               <characteristics>
@@ -776,7 +770,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <condition type="atLeast" value="1" field="selections" scope="self" childId="f606-4316-044d-4503" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
-        <modifier type="add" value="Too Poor" field="error">
+        <modifier type="add" value="Mammon demands 80+ Ducats" field="error">
           <conditions>
             <condition type="lessThan" value="50" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -939,9 +933,24 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67c0-b576-58c1-2e71" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Mammon&apos;s Chosen" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ae56-99bc-3b7c-45b9">
+            <profile name="Preserve the Loot" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ae56-99bc-3b7c-45b9">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Knights of Avarice greatly dislike using weapons that could damage the amount of wealth that can be extracted from the fallen. No weapon with the Keyword FIRE or SHRAPNEL can be used by any model in this warband. In addition, the Artillery Witches of this warband use Gas Bombs: They have the Keyword GAS instead of SHRAPNEL and they ignore armour. Injuries caused by a direct hit are rolled with 2D6 and models within a 3” blast radius are rolled with -1 DICE. In a similar vein, their Grenade Launchers have the GAS keyword instead of the SHRAPNEL keyword, have a -1 D to injury rolls and ignore armour</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Mammon&apos;s Chosen" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="180e-1439-e50b-14c9">
               <characteristics>
                 <characteristic name="Description" typeId="4834-43a9-1c93-9062">Knights of Avarice allow only the wealthiest and the best-equipped candidates to join their ranks. Your force may have no models that cost less than 80 ducats (including their equipment).</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Goetic Warlock" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="22eb-b1b7-5f02-f1c8">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Goetic Warlocks are creations of Mammon. This warband may include one for the price of 110 ducats. This Warlock is still a mercenary and obeys all of the rules associated with being a mercenary (such as having fixed equipment and not being able to be promoted to an ELITE throughout the course of a campaign).</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Infernal Rivalry" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c9e1-515b-4fad-dbba">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Mammon is a rival of Beruth, the great devil of wrath and murder, who is the Patron of Death Commandos. Knights of Avarice may include no Death Commandos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1327,6 +1336,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="5530-8135-2df1-4b67" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="5c4c-5169-0e5e-b35b">
@@ -1414,6 +1428,36 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <modifier type="increment" value="1" field="939e-912c-de97-4fcf">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="31ef-14a4-4be6-508f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gas Grenade Launcher" hidden="false" id="e154-975e-589d-4d19">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="b23f-86c6-233b-5452" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Gas Grenade Launcher" id="736f-2412-ec6e-1909" hidden="false" type="profile" targetId="3113-d133-1726-05a0"/>
+            <infoLink name="Blast" id="a846-6445-11c9-8f9b" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
+            <infoLink name="Heavy" id="ade3-2257-7b9d-89fa" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+            <infoLink name="Gas" id="886b-46f2-1d63-d27c" hidden="false" type="rule" targetId="2c6e-81c8-6c20-b5b7"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="70c9-988d-71a7-7654" id="be2b-9ff1-27fb-a454" primary="false" name="Heavy"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="b23f-86c6-233b-5452">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5530-8135-2df1-4b67" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1538,6 +1582,13 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="126e-d930-e6d6-2f1a" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Gas Grenades" hidden="false" id="3e61-384a-10f0-3ade">
           <costs>

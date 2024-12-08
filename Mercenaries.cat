@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f569-e9dd-327a-5735" name="Mercenaries" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="11" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f569-e9dd-327a-5735" name="Mercenaries" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="11" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Combat Medic" hidden="true" id="39c2-abb6-fef0-f96e">
       <modifiers>
@@ -312,6 +312,16 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="110" field="8d43-33fd-332d-17a6">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="f3bb-a7e6-d476-f60b">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
