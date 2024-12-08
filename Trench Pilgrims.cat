@@ -1431,6 +1431,9 @@ Keywords: CONSUMABLE</characteristic>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="705b-e23f-e9c2-58ab" id="a8be-d789-c0b8-cbad" primary="true" name="Configuration"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
