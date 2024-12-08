@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="4f10-6941-6de8-d8a6" hidden="false" collapsible="true">
       <constraints>
@@ -103,6 +103,11 @@
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="258d-bdbe-189e-18a0">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="258d-bdbe-189e-18a0" includeChildSelections="true"/>
@@ -154,9 +159,14 @@
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <categoryLinks>
@@ -260,6 +270,11 @@
             <condition type="atLeast" value="2" field="selections" scope="parent" childId="4974-c044-9d11-53cb" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="model" childId="ec39-f328-bad6-a586" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged (One-Handed)" id="8eec-e5d4-cdfb-ea1e" hidden="false" collective="false">
@@ -335,8 +350,18 @@
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="9f83-fd6a-7331-7444">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -461,6 +486,11 @@
                       <comment>this is referring to the Abomination&apos;s shotgun</comment>
                     </repeat>
                   </repeats>
+                </modifier>
+                <modifier type="set" value="1" field="afe2-81ea-b376-d164">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -592,11 +622,25 @@
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d97-1d54-ce49-cb9d" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="ec39-f328-bad6-a586" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -736,6 +780,13 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -770,10 +821,70 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Role" id="8024-8d21-6dec-fac0" hidden="true" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2b0-2e5d-5661-49ab-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2b0-2e5d-5661-49ab-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Executor" hidden="false" id="b044-cbf6-a7c5-e2b3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="b481-9b46-ac83-42e5-min" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b481-9b46-ac83-42e5-max" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Executor" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="3685-626b-60e1-bab2" publicationId="c658-4a10-e1fe-befc" page="78">
+                  <characteristics>
+                    <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+                    <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
+                    <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
+                    <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+                    <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Tough" id="459f-7da9-e4f6-fbbd" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+              </infoLinks>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Lamenters" hidden="false" id="dc04-f8df-606f-f06c">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="f25d-f1cc-96c2-159d" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2560-c158-103b-afe1" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Lamenter" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="cde7-8080-ccc6-e72a" publicationId="c658-4a10-e1fe-befc" page="78">
+                  <characteristics>
+                    <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+                    <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+                    <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
+                    <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+                    <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Weapons" hidden="false" id="c047-141f-afb7-ba34" type="selectionEntryGroup" targetId="4f10-6941-6de8-d8a6" sortIndex="1"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="6788-0e06-f9fb-fd4c" type="selectionEntryGroup" targetId="25fc-648e-83c5-0411" sortIndex="2"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="c047-141f-afb7-ba34" type="selectionEntryGroup" targetId="4f10-6941-6de8-d8a6" sortIndex="2"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="6788-0e06-f9fb-fd4c" type="selectionEntryGroup" targetId="25fc-648e-83c5-0411" sortIndex="3"/>
         <entryLink import="true" name="Equipment" hidden="false" id="ccc3-dc53-ab03-1abd" type="selectionEntryGroup" targetId="4e14-77e1-ca51-7dc6"/>
       </entryLinks>
       <costs>
@@ -790,6 +901,21 @@
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="80e3-313d-1c13-05a0" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="3" field="f025-ee7a-4125-ce80">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="The Lamentor" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="dc04-f8df-606f-f06c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="The Executor" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="b044-cbf6-a7c5-e2b3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="f025-ee7a-4125-ce80" includeChildSelections="true"/>
@@ -797,7 +923,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hounds of the Black Grail" hidden="false" id="5df2-ef54-85ea-adfe">
       <profiles>
-        <profile name="Hounds of the Black Grail" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="5e98-af2a-d53d-787a">
+        <profile name="Wailer" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="true" id="5e98-af2a-d53d-787a">
           <characteristics>
             <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
             <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">N/A</characteristic>
@@ -805,6 +931,13 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">30x60mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Pounce" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="aa15-64a9-87eb-87c8">
           <characteristics>
@@ -831,6 +964,22 @@
           <characteristics>
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Hound are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
           </characteristics>
+        </profile>
+        <profile name="Hounds of the Black Grail" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="8fc4-805a-2894-01ad">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">N/A</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">30x60mm</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <selectionEntries>
@@ -870,6 +1019,18 @@
       <infoLinks>
         <infoLink name="Fear" id="b275-58f1-6dd4-ad60" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="Wailers" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="2" field="e5df-0eb4-a3c5-8cf7">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Grail Thrall" hidden="false" id="ec39-f328-bad6-a586">
       <profiles>
@@ -918,6 +1079,13 @@
                     <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
                     <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="Bereaved" field="name">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
                 <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8cce-0a3c-fe8a-6cfa">
                   <characteristics>
@@ -942,6 +1110,13 @@
                     <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
                     <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="Winged Bereaved" field="name">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -960,6 +1135,34 @@
       <infoLinks>
         <infoLink name="Fear" id="164c-45bb-ed46-1d5c" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="35" field="8d43-33fd-332d-17a6">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Bereaved" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Weapons" hidden="true" id="71b1-c9c7-290b-e7f0" type="selectionEntryGroup" targetId="4f10-6941-6de8-d8a6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="3a3c-7f8b-4ee4-d9d7" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heralds of Beelzebub" hidden="false" id="8f23-4665-3322-ca92">
       <profiles>
@@ -985,6 +1188,29 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">40mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Weeper" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="true" id="b14e-22d9-8b23-7c1c">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">10&quot;/Flying</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">40mm</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -1018,6 +1244,117 @@
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hounds of the Black Grail" hidden="false" id="49eb-b0ee-5344-ac4a">
+          <profiles>
+            <profile name="Wailer" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="true" id="34e5-cf9a-6358-8cd6">
+              <characteristics>
+                <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
+                <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">N/A</characteristic>
+                <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
+                <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+                <characteristic name="Base" typeId="73ae-cc17-596e-0481">30x60mm</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Pounce" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="5bee-85de-78b3-a42f">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Hounds do not suffer penalties for fighting unarmed.</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="07e3-914d-99d7-5135" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Frightening Speed" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="26c6-5c6f-574f-32d9">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The hounds take Dash actions with +1 DICE. In addition, they can get up from being Down without any movement penalty.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="861c-c8c6-0b65-3cd4">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All injury rolls against the Hound are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Hounds of the Black Grail" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="2e0b-dffe-d785-219f">
+              <characteristics>
+                <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
+                <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">N/A</characteristic>
+                <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
+                <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+                <characteristic name="Base" typeId="73ae-cc17-596e-0481">30x60mm</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Infected" hidden="false" id="07e3-914d-99d7-5135">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5de-c0ed-702f-806d" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Infected Pounce" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="5657-9528-397f-6690">
+                  <characteristics>
+                    <characteristic name="Type" typeId="f90e-171a-4ca6-3845">Special</characteristic>
+                    <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                    <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
+                    <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
+                    <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Hounds do not suffer penalties for fighting unarmed. This weapon causes INFECTION MARKERS instead of BLOOD MARKERS.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="55"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="0f9b-88cd-d12d-1a45" includeChildSelections="true"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Black Grail" hidden="false" id="99eb-cb1f-45a9-dee5" targetId="c5a0-e794-7661-ebb7" primary="false"/>
+            <categoryLink name="Fear" hidden="false" id="90fc-c784-9ce1-6261" targetId="4f5c-027d-253c-ffa3" primary="false"/>
+            <categoryLink name="Troop" hidden="false" id="caf1-4836-f529-fe42" targetId="bd43-ddb1-262d-4489" primary="true"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Fear" id="0a71-4db1-3c2d-a98c" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="Wailers" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="0f9b-88cd-d12d-1a45">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Ranged Weapons" hidden="false" id="3a5f-1da1-63eb-2c5f" type="selectionEntryGroup" targetId="29cb-dd9c-3c66-7188"/>
@@ -1025,8 +1362,20 @@
       <constraints>
         <constraint type="max" value="4" field="selections" scope="roster" shared="true" id="904b-6f39-0451-bd48" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="Weepers" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="2" field="904b-6f39-0451-bd48">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Abomination" hidden="false" id="036b-eb9f-9b58-fa7e">
+    <selectionEntry type="model" import="true" name="Amalgam" hidden="false" id="036b-eb9f-9b58-fa7e">
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="150"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1141,19 +1490,26 @@
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">Whenever the Amalgam is fighting any enemy model on a 32mm or smaller base in melee that is Down, it can make a single additional Melee Attack ACTION any time during its Activation against one Downed opponent. Resolve the attack as if the Amalgam was armed with a Trench Club. This attack Ignores armour as the Amalgam stomps their enemies into pulp.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Abomination" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="e5d5-c4bb-4b99-020d">
+        <profile name="Amalgam" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="e5d5-c4bb-4b99-020d">
           <characteristics>
-            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2"/>
-            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200"/>
-            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5"/>
-            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71"/>
-            <characteristic name="Base" typeId="73ae-cc17-596e-0481"/>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">60mm</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a898-9a6a-c027-2c75" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lord of Tumours" hidden="false" id="80e3-313d-1c13-05a0">
       <categoryLinks>
@@ -1239,6 +1595,11 @@
             <condition type="atLeast" value="2" field="selections" scope="parent" childId="43b9-c7fd-4680-3e7a" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Corpse Guard" hidden="false" id="7e0b-de14-f14c-8ea0">
@@ -1321,6 +1682,52 @@ Corpse Guard can remove one of their own BLOOD or INFECTION MARKERS</characteris
       </infoLinks>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="d823-e8a8-3761-c40e" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Variant" hidden="false" id="8f8d-e167-36d5-dcdf">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dirge of the Great Hegemon" hidden="false" id="0f19-7c79-420e-13bf">
+          <profiles>
+            <profile name="The Executor" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ee4b-d2a9-19df-0026">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband must include an Executor (use Plague Knight Stats), who has the Keyword TOUGH and Ranged characteristic of +1 DICE. The Executor costs 80 ducats.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Fallen" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f461-049d-d362-8929">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband cannot include a Lord of Tumours or Amalgam, for all were slain a long time ago.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Lost" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5265-38b8-566b-cd15">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may only have a maximum of two Hounds (known as Wailers) and a maximum of two Heralds of Beelzebub (called Weepers).</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Hegemon&apos;s Last Blessing" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="828f-c411-d07d-fe7b">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This warband has Plague Blade LIMIT:3, Putrid Shotgun LIMIT:3 and Viscera Cannon LIMIT:2. Non-ELITE models can be equipped with Viscera Cannons.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Lamenters" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e300-f965-fba4-bd16">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband can have up to two Plague Knights known as the Lamenters.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Dishonoured" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="72af-18b7-4ba8-1440">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">No model in the warband may carry the Black Grail Shield or Beelzebub’s Axe. The Lord of the Flies does not suffer failed knights to carry his device.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="febe-df93-fa9c-a07d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="4c2f-5af2-df07-f5d3-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="4c2f-5af2-df07-f5d3-max" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b93-a8aa-5853-94b5" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </selectionEntries>
