@@ -874,5 +874,14 @@ Keyword: CONSUMABLE.</characteristic>
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345">If the Witchburner hits an enemy with the Gavel of Justice, the target of the attack automatically sustains Divine Judgement as explained in the Witchburner’s Abilities, even if the attack did no damage otherwise. This does not count as the Witchburner having used the Divine Judgement ACTION. Thus the Witchburner can potentially cause multiple Divine Judgements during a single Activation.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Gas Grenade Launcher" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="fb1b-45a3-5dd0-bba1" publicationId="c658-4a10-e1fe-befc" page="27">
+      <characteristics>
+        <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
+        <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-1D to Injure, Ignore Cover, Ignore Armour</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">GAS, HEAVY, BLAST 3&quot;</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>
