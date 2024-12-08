@@ -829,8 +829,8 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="The Executor" hidden="false" id="b044-cbf6-a7c5-e2b3">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="b481-9b46-ac83-42e5-min" includeChildSelections="true"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b481-9b46-ac83-42e5-max" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6db3-d95f-9901-2048" includeChildSelections="true"/>
+                <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="7183-a597-40be-7e13" includeChildSelections="true"/>
               </constraints>
               <profiles>
                 <profile name="Executor" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="3685-626b-60e1-bab2" publicationId="c658-4a10-e1fe-befc" page="78">
@@ -850,6 +850,13 @@
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="1" field="7183-a597-40be-7e13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="The Lamenters" hidden="false" id="dc04-f8df-606f-f06c">
               <constraints>
