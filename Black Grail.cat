@@ -1692,50 +1692,56 @@ Corpse Guard can remove one of their own BLOOD or INFECTION MARKERS</characteris
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warband Variant" hidden="false" id="8f8d-e167-36d5-dcdf">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Dirge of the Great Hegemon" hidden="false" id="0f19-7c79-420e-13bf">
-          <profiles>
-            <profile name="The Executor" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ee4b-d2a9-19df-0026">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband must include an Executor (use Plague Knight Stats), who has the Keyword TOUGH and Ranged characteristic of +1 DICE. The Executor costs 80 ducats.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="The Fallen" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f461-049d-d362-8929">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband cannot include a Lord of Tumours or Amalgam, for all were slain a long time ago.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="The Lost" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5265-38b8-566b-cd15">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may only have a maximum of two Hounds (known as Wailers) and a maximum of two Heralds of Beelzebub (called Weepers).</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Hegemon&apos;s Last Blessing" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="828f-c411-d07d-fe7b">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This warband has Plague Blade LIMIT:3, Putrid Shotgun LIMIT:3 and Viscera Cannon LIMIT:2. Non-ELITE models can be equipped with Viscera Cannons.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="The Lamenters" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e300-f965-fba4-bd16">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband can have up to two Plague Knights known as the Lamenters.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Dishonoured" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="72af-18b7-4ba8-1440">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">No model in the warband may carry the Black Grail Shield or Beelzebub’s Axe. The Lord of the Flies does not suffer failed knights to carry his device.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="febe-df93-fa9c-a07d" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="4c2f-5af2-df07-f5d3-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="4c2f-5af2-df07-f5d3-max" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b93-a8aa-5853-94b5" includeChildSelections="false"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Variant Selection" id="7d49-e7b2-97a8-dbff" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dirge of the Great Hegemon" hidden="false" id="0f19-7c79-420e-13bf">
+              <profiles>
+                <profile name="The Executor" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d4fd-5041-ccff-6543">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband must include an Executor (use Plague Knight Stats), who has the Keyword TOUGH and Ranged characteristic of +1 DICE. The Executor costs 80 ducats.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="The Fallen" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="aa2c-299f-030f-62a3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband cannot include a Lord of Tumours or Amalgam, for all were slain a long time ago.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="The Lost" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="81c0-5739-c144-7205">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may only have a maximum of two Hounds (known as Wailers) and a maximum of two Heralds of Beelzebub (called Weepers).</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Hegemon&apos;s Last Blessing" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c6e8-3705-c05c-ed5d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">This warband has Plague Blade LIMIT:3, Putrid Shotgun LIMIT:3 and Viscera Cannon LIMIT:2. Non-ELITE models can be equipped with Viscera Cannons.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="The Lamenters" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="83c6-8b6b-a6d3-7d11">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband can have up to two Plague Knights known as the Lamenters.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Dishonoured" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="174b-4b95-aed0-2823">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">No model in the warband may carry the Black Grail Shield or Beelzebub’s Axe. The Lord of the Flies does not suffer failed knights to carry his device.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbee-018d-3c7f-3687" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="4c2f-5af2-df07-f5d3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="4c2f-5af2-df07-f5d3-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
