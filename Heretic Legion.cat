@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Anointed Heavy Infantry" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -1504,7 +1504,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="60d5-9085-4f61-2b32" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="41ea-0e5d-eebb-a8dc" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1575,7 +1575,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="1bfc-1f1e-6b4d-5917" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4525-5074-aa24-9783" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1814,7 +1814,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fe6a-8136-af8c-4136" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5d6e-91f8-4cfd-b79d" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1830,7 +1830,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e35b-5246-7b3f-7b30" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f7cf-1fb3-686c-b38d" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1845,7 +1845,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf8-e26d-626f-943e" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-ef9e-dd8b-0568" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1865,7 +1865,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2ed8-d75e-a55a-fe8c" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="59c9-2964-96f1-9b9a" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1889,12 +1889,13 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b81b-1dd1-b643-e47d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="8228-b935-f1dc-59d6" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
+          <comment>sultan version</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1967,7 +1968,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="44ca-8123-4f1e-2abc" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="8be5-7527-c6fa-2bf7" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2115,7 +2116,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             </modifier>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="bcf0-d0ba-178b-2589" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="767d-1b1d-79b4-5765" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2306,8 +2307,8 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="1e9e-8877-8cc0-b61d" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="afde-091d-84fa-a919" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="aabe-d640-df70-d15d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="ac8d-db2f-016d-741d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2332,7 +2333,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d2df-9b6f-c8fd-b924" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="5d93-6350-6692-271c" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
                   </conditions>
                 </conditionGroup>
@@ -2361,8 +2362,8 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="edf6-738d-b30f-c72d" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dc7f-9cda-23b1-6864" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2a16-0288-2ac6-0630" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8856-efbf-4e29-8ecb" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2384,7 +2385,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="a454-4d33-0525-ed58" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="352f-0577-5939-c99e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2406,7 +2407,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="669b-7235-56ed-cbe5" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d7ac-fbc2-1d31-d5ab" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
                   </conditions>
                 </conditionGroup>
@@ -2428,7 +2429,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8924-50c9-4a68-b5b3" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9f83-64bd-c857-0e35" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2448,7 +2449,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="5b8f-54dd-a2c9-e607" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cc48-3a28-c443-ef76" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
                   </conditions>
                 </conditionGroup>
@@ -2580,7 +2581,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="da2b-acb8-ce2a-20c2" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7bdb-1be6-5174-fdf6" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
                   </conditions>
                 </conditionGroup>
@@ -2651,7 +2652,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="1ebf-e221-0e9b-708b" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3277-be84-f735-f64e" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
                   </conditions>
                 </conditionGroup>
