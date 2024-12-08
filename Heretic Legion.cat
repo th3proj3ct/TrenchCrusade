@@ -2187,6 +2187,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="aad2-b959-74e8-44fe" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d71b-d00a-6b05-9db8" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Incendiary Bullets" id="0501-86c2-60c2-776e" hidden="false" type="profile" targetId="01b8-f846-e8f7-6d71"/>
@@ -2502,6 +2503,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1a5b-1f57-733e-f61a" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2bc-1da1-fa6c-4769" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Troop Flag" id="4475-5beb-9e9d-0c5e" hidden="false" type="profile" targetId="e86e-146a-65b7-09f2"/>
@@ -2521,6 +2523,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="29ca-1e9d-0e08-eb8f" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e02e-8144-cdd3-e38d" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Musical Instrument" id="67d2-e4f3-33e6-bb1a" hidden="false" type="profile" targetId="dd0c-c62d-46f1-64f8"/>
