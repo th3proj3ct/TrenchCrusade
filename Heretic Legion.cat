@@ -1214,6 +1214,10 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bdcd-a46f-e5ed-d577-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdcd-a46f-e5ed-d577-max" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
