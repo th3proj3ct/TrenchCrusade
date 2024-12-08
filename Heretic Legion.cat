@@ -119,7 +119,7 @@
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="parent" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
