@@ -804,11 +804,18 @@ Keywords: CONSUMABLE</characteristic>
       <modifiers>
         <modifier type="add" value="Cannot use armour or ranged weapon" field="error">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="664d-b970-6eef-b2d5" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="70c8-b7ed-f20b-8bd6" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="9f81-46c2-a825-43cf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="664d-b970-6eef-b2d5" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="70c8-b7ed-f20b-8bd6" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="9f81-46c2-a825-43cf" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1a8c-d998-b42b-9e8b" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
