@@ -359,7 +359,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="1" field="9f83-fd6a-7331-7444">
+            <modifier type="increment" value="1" field="9f83-fd6a-7331-7444">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
               </conditions>
@@ -487,7 +487,7 @@
                     </repeat>
                   </repeats>
                 </modifier>
-                <modifier type="set" value="1" field="afe2-81ea-b376-d164">
+                <modifier type="increment" value="1" field="afe2-81ea-b376-d164">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
                   </conditions>
