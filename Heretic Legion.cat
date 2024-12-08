@@ -714,493 +714,166 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
         <categoryLink name="Configuration" hidden="false" id="8264-4d4d-e63c-ba3e" targetId="705b-e23f-e9c2-58ab" primary="true"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="9d95-f2a8-0e61-dd99-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9d95-f2a8-0e61-dd99-max" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c78a-f179-55a3-bbbd" includeChildSelections="true"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Heretic Naval Raiding Party" hidden="false" id="4d05-603e-4b5a-aed4">
-          <profiles>
-            <profile name="Close Assault Weapons" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9ef5-9c37-2db2-8bb9">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband can buy Submachine Guns for 25 ducats per weapon.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Unseen Advance" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="be89-20dd-8e06-9309">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Up to three models without ELITE Keyword can be upgraded into INFILTRATORS at the cost of 10 ducats per Model</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Light Troops" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4e2e-e5c2-c100-0a16">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The force may only include 0-1 Annointed and 0-1 Artillery Witch.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Let Sleeping Dogs Lie" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2bfc-ba39-b280-debb">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may not include a War Wolf</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Fast as Lightning" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="84f7-b619-cba1-b824">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All Models have +1 DICE when taking their Dash ACTIONS.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4046-8150-770b-9adf" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Infiltrator" id="a4c7-fda3-fe57-a931" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trench Ghosts" hidden="false" id="eee9-35a4-9eda-70e9">
-          <profiles>
-            <profile name="Horror" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b72c-5ef3-e8a1-8570">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in the Warband cause FEAR.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Strength Beyond the Grave" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b9ef-dfed-c0ea-7e62">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Heretic Priest of the warband has the Keyword STRONG.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Slow" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fd1e-a345-6501-0bbc">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in Trench Ghost warband have -1 DICE in all their Dash ACTIONS.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Lost Souls" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9114-91ec-d19a-e386">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Since only mortals who have souls become ghosts, this warband may not have any War Wolves or Artillery Witches, since they are artificial beings. In addition, no model in the warband may have a Hellbound Soul Contract or an Infernal Brand Mark. Any model that has one of these pieces of equipment in their base profile will not have it, although its price remains the same.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Semi-Corporeal" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="725a-28dc-8da5-dd4a">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Any attacks against all models in the Trench Ghost warband roll injuries with -1 DICE – the undead are hard to kill!</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Spectral" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="50f6-0785-3b36-7392">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in the warband ignore movement penalties caused by Difficult Terrain, though they cannot move through any objects/terrain. Dangerous terrain affects them as normal.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Undead" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c139-9280-6e25-113a">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in the Trench Ghost warband do not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa01-bead-7f9f-0a42" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Fear" id="6d70-4b74-fca1-9c10" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Battlefield Looters" id="8c80-7d04-2b96-a3d1" hidden="false">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8e8-20f3-0f9d-685b-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8e8-20f3-0f9d-685b-max" includeChildSelections="false"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="31ef-14a4-4be6-508f">
-                  <profiles>
-                    <profile name="Battlefield Looters (Automatic Rifle)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="05d8-72d5-36d0-f648">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="7698-8d7d-b9d0-d110">
-                  <profiles>
-                    <profile name="Battlefield Looters (Machine Gun)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="cab4-0571-19c0-eaf2">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="5530-8135-2df1-4b67">
-                  <profiles>
-                    <profile name="Battlefield Looters (Grenade Launcher)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="314c-5a0b-cf87-d46d">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Musical Instrument " hidden="false" id="0ea6-99b3-e165-9336">
-                  <profiles>
-                    <profile name="Battlefield Looters (Musical Instrument)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="a73b-6d6d-37aa-fd3f">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="1c2d-14b1-1ec3-3bdb">
-                  <profiles>
-                    <profile name="Battlefield Looters (Flamethrower)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4ab1-ea85-f390-6fb0">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="346b-cc13-f92e-61bc">
-                  <profiles>
-                    <profile name="Battlefield Looters (Heavy Flamethrower)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="06bf-a67e-fba4-5214">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Anti-Material Rifle" hidden="false" id="f968-d86e-691c-d8af">
-                  <profiles>
-                    <profile name="Battlefield Looters (Anti-Material Rifle)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="bca6-aeb8-da80-ca45">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="fc35-e469-8877-b62c">
-                  <profiles>
-                    <profile name="Battlefield Looters (Mountaineer Kit)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e8cf-8a0c-d0cc-756d">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Incendiary Ammunition" hidden="false" id="c66f-56e1-c379-0f1c">
-                  <profiles>
-                    <profile name="Battlefield Looters (Incendiary Ammunition)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4951-f794-ad38-ad03">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Hellblade" hidden="false" id="5549-36f8-a639-8fc4">
-                  <profiles>
-                    <profile name="Battlefield Looters (Hellblade)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="290e-b9f3-e527-d0f5">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="0422-86f1-0b4b-26b9">
-                  <profiles>
-                    <profile name="Battlefield Looters (Troop Flag)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="cc71-f6a8-5519-bcf3">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Sacrificial Blade" hidden="false" id="3ff6-3412-b7f3-b0a4">
-                  <profiles>
-                    <profile name="Battlefield Looters (Sacrificial Blade)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3362-0f7e-b412-ce4d">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Knights of Avarice" hidden="false" id="c323-0c33-e628-56f0">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67c0-b576-58c1-2e71" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Debtors to Mammon" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ae56-99bc-3b7c-45b9">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Wretched of the warband are not tied by Mammon’s Chosen rule.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Mammon&apos;s Chosen" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="180e-1439-e50b-14c9">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Knights of Avarice allow only the wealthiest and the best-equipped candidates to join their ranks. Your force may have no models that cost less than 80 ducats (including their equipment).</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Goetic Warlock" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="22eb-b1b7-5f02-f1c8">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Goetic Warlocks are creations of Mammon. This warband may include one for the price of 110 ducats. This Warlock is still a mercenary and obeys all of the rules associated with being a mercenary (such as having fixed equipment and not being able to be promoted to an ELITE throughout the course of a campaign).</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Infernal Rivalry" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c9e1-515b-4fad-dbba">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Mammon is a rival of Beruth, the great devil of wrath and murder, who is the Patron of Death Commandos. Knights of Avarice may include no Death Commandos.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Preserve the Loot" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b580-e03d-84b6-16d3">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Knights of Avarice greatly dislike using weapons that could damage the amount of wealth that can be extracted from the fallen. No weapon with the Keyword FIRE or SHRAPNEL can be used by any model in this warband. In addition, the Artillery Witches of this warband use Gas Bombs: They have the Keyword GAS instead of SHRAPNEL and they ignore armour. Injuries caused by a direct hit are rolled with 2D6 and models within a 3” blast radius are rolled with -1 DICE. In a similar vein, their Grenade Launchers have the GAS keyword instead of the SHRAPNEL keyword, have a -1 D to injury rolls and ignore armour</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Variant Selection" id="5f8d-afe6-961e-245c" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Corrupt Merchants" hidden="false" id="c7c4-26be-c921-e423">
+            <selectionEntry type="upgrade" import="true" name="Trench Ghosts" hidden="false" id="eee9-35a4-9eda-70e9">
+              <profiles>
+                <profile name="Horror" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b72c-5ef3-e8a1-8570">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in the Warband cause FEAR.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Strength Beyond the Grave" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b9ef-dfed-c0ea-7e62">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Heretic Priest of the warband has the Keyword STRONG.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Slow" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fd1e-a345-6501-0bbc">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in Trench Ghost warband have -1 DICE in all their Dash ACTIONS.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Lost Souls" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9114-91ec-d19a-e386">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Since only mortals who have souls become ghosts, this warband may not have any War Wolves or Artillery Witches, since they are artificial beings. In addition, no model in the warband may have a Hellbound Soul Contract or an Infernal Brand Mark. Any model that has one of these pieces of equipment in their base profile will not have it, although its price remains the same.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Semi-Corporeal" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="725a-28dc-8da5-dd4a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Any attacks against all models in the Trench Ghost warband roll injuries with -1 DICE – the undead are hard to kill!</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Spectral" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="50f6-0785-3b36-7392">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in the warband ignore movement penalties caused by Difficult Terrain, though they cannot move through any objects/terrain. Dangerous terrain affects them as normal.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Undead" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c139-9280-6e25-113a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in the Trench Ghost warband do not suffer additional BLOOD MARKERS from attacks with the Keyword GAS.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa01-bead-7f9f-0a42" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Fear" id="6d70-4b74-fca1-9c10" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+              </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="New Antioch" id="d176-7188-0494-ff41" hidden="false">
+                <selectionEntryGroup name="Battlefield Looters" id="8c80-7d04-2b96-a3d1" hidden="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="095b-3e61-4adf-5f94-max-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="095b-3e61-4adf-5f94-max-max" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8e8-20f3-0f9d-685b-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8e8-20f3-0f9d-685b-max" includeChildSelections="false"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="false" id="1bfc-1f1e-6b4d-5917">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="097b-cf20-f937-a24a" includeChildSelections="false"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="31ef-14a4-4be6-508f">
                       <profiles>
-                        <profile name="Stolen: Automatic Pistol" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="09c0-39f0-576e-fb04">
+                        <profile name="Battlefield Looters (Automatic Rifle)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="05d8-72d5-36d0-f648">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Automatic Pistols as though they were from New Antioch</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Heavy Shotgun" hidden="false" id="44ca-8123-4f1e-2abc">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2474-e9b3-2ca5-98b5" includeChildSelections="false"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="7698-8d7d-b9d0-d110">
                       <profiles>
-                        <profile name="Stolen: Heavy Shotgun" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="40f5-79de-0b33-91c5">
+                        <profile name="Battlefield Looters (Machine Gun)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="cab4-0571-19c0-eaf2">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Heavy Shotguns as though they were from New Antioch</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="fe6a-8136-af8c-4136">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fee8-3c74-18a3-50c4" includeChildSelections="false"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="5530-8135-2df1-4b67">
                       <profiles>
-                        <profile name="Stolen: Sniper Rifle" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="616a-88d9-c9fb-eb95">
+                        <profile name="Battlefield Looters (Grenade Launcher)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="314c-5a0b-cf87-d46d">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Sniper Rifles as though they were from New Antioch</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Satchel Charge" hidden="false" id="bcf0-d0ba-178b-2589">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0762-191a-df5c-9314" includeChildSelections="false"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Musical Instrument " hidden="false" id="0ea6-99b3-e165-9336">
                       <profiles>
-                        <profile name="Stolen: Satchel Charge" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2321-9f66-fc67-89a8">
+                        <profile name="Battlefield Looters (Musical Instrument)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="a73b-6d6d-37aa-fd3f">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Satchel Charges as though they were from New Antioch</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Machine Armour" hidden="false" id="da2b-acb8-ce2a-20c2">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb0e-07fc-16ed-fd12" includeChildSelections="false"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="1c2d-14b1-1ec3-3bdb">
                       <profiles>
-                        <profile name="Stolen: Machine Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e80e-0fba-dad2-e72c">
+                        <profile name="Battlefield Looters (Flamethrower)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4ab1-ea85-f390-6fb0">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Machine Armours as though they were from New Antioch</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Medi-Kit" hidden="false" id="afde-091d-84fa-a919">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c42d-64b6-3173-bee5" includeChildSelections="false"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="346b-cc13-f92e-61bc">
                       <profiles>
-                        <profile name="Stolen: Medi-Kit" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5b63-e331-1ee8-c85e">
+                        <profile name="Battlefield Looters (Heavy Flamethrower)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="06bf-a67e-fba4-5214">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Medi-Kits as though they were from New Antioch</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Martyrdom Pills" hidden="false" id="d2df-9b6f-c8fd-b924">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93c2-438b-2cb3-8197" includeChildSelections="false"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Anti-Material Rifle" hidden="false" id="f968-d86e-691c-d8af">
                       <profiles>
-                        <profile name="Stolen: Martyrdom Pills" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="34a6-9165-6b38-8f2c">
+                        <profile name="Battlefield Looters (Anti-Material Rifle)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="bca6-aeb8-da80-ca45">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Martyrdom Pills as though they were from New Antioch</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Field Shrine" hidden="false" id="a454-4d33-0525-ed58">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e5a-f044-bd4b-e907" includeChildSelections="false"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="fc35-e469-8877-b62c">
                       <profiles>
-                        <profile name="Stolen: Field Shrine" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2c32-5ffa-2290-3bf9">
+                        <profile name="Battlefield Looters (Mountaineer Kit)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e8cf-8a0c-d0cc-756d">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Field Shrines as though they were from New Antioch</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Binoculars" hidden="false" id="dc7f-9cda-23b1-6864">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eaa-f6f0-866c-e67e" includeChildSelections="false"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Incendiary Ammunition" hidden="false" id="c66f-56e1-c379-0f1c">
                       <profiles>
-                        <profile name="Stolen: Binoculars" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2ac2-5cbe-9520-5019">
+                        <profile name="Battlefield Looters (Incendiary Ammunition)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4951-f794-ad38-ad03">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Binoculars as though they were from New Antioch</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Iron Sultanate" id="fd2d-a88a-b7bd-6636" hidden="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f48-90b4-0b4d-855c-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f48-90b4-0b4d-855c-max" includeChildSelections="false"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Jezzail" hidden="false" id="dcf8-e26d-626f-943e">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="915e-ce6d-2d91-60b3" includeChildSelections="false"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Hellblade" hidden="false" id="5549-36f8-a639-8fc4">
                       <profiles>
-                        <profile name="Pilfered: Jezzail" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="18cc-b984-3955-10fa">
+                        <profile name="Battlefield Looters (Hellblade)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="290e-b9f3-e527-d0f5">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Jezzails as though they were from Iron Sultanate</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Siege Jezzail" hidden="false" id="2ed8-d75e-a55a-fe8c">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f97-fc6c-854b-1260" includeChildSelections="false"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="0422-86f1-0b4b-26b9">
                       <profiles>
-                        <profile name="Pilfered: Siege Jezzail" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4a52-ad28-0a81-c49a">
+                        <profile name="Battlefield Looters (Troop Flag)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="cc71-f6a8-5519-bcf3">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Siege Jezzails as though they were from Iron Sultanate</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Musket" hidden="false" id="e35b-5246-7b3f-7b30">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1597-a447-a110-1741" includeChildSelections="false"/>
-                      </constraints>
+                    <selectionEntry type="upgrade" import="true" name="Sacrificial Blade" hidden="false" id="3ff6-3412-b7f3-b0a4">
                       <profiles>
-                        <profile name="Pilfered: Musket" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="0645-b441-a824-fee8">
+                        <profile name="Battlefield Looters (Sacrificial Blade)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3362-0f7e-b412-ce4d">
                           <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Muskets as though they were from Iron Sultanate</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Halberd-Gun" hidden="false" id="60d5-9085-4f61-2b32">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a8-f7da-1f06-3ba1" includeChildSelections="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Pilfered: Halberd-Gun" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7d5f-b952-54d6-b204">
-                          <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Halberd-Guns as though they were from Iron Sultanate</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="b81b-1dd1-b643-e47d">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ec4-7598-e4e1-8898" includeChildSelections="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Pilfered: Sniper Rifle" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d201-a304-8a80-76f9">
-                          <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Sniper Rifles as though they were from Iron Sultanate</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Alchemist Armour" hidden="false" id="1ebf-e221-0e9b-708b">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="083d-017e-9eb3-c4a2" includeChildSelections="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Pilfered: Alchemist Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4d55-aa0e-1730-20ea">
-                          <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Alchemist Armour as though they were from Iron Sultanate</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Cloak of Alamut" hidden="false" id="5b8f-54dd-a2c9-e607">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="891b-2d8f-f616-d55c" includeChildSelections="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Pilfered: Cloak of Alamut" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2fc0-28ac-f621-57a2">
-                          <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Cloak of Alamuts as though they were from Iron Sultanate</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Wind Amulet" hidden="false" id="8924-50c9-4a68-b5b3">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8d9-85ab-bbe0-a0e3" includeChildSelections="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Pilfered: Wind Amulet" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="edae-5096-9cdc-2cc8">
-                          <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Wind Amulets as though they were from Iron Sultanate</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Holy Relic" hidden="false" id="669b-7235-56ed-cbe5">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10da-e91d-7f85-6e3a" includeChildSelections="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Pilfered: Holy Relic" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5edb-7d89-b8fa-3c65">
-                          <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Holy Relics as though they were from Iron Sultanate</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Binoculars" hidden="false" id="edf6-738d-b30f-c72d">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9849-f966-8029-1697" includeChildSelections="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Pilfered: Musket" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="03dd-6b09-1895-1f59">
-                          <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Muskets as though they were from Iron Sultanate</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Medi-Kit" hidden="false" id="1e9e-8877-8cc0-b61d">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94d8-7b49-aa3c-7e44" includeChildSelections="false"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Pilfered: Musket" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="a8dd-8cfe-885c-8fe6">
-                          <characteristics>
-                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Muskets as though they were from Iron Sultanate</characteristic>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -1208,21 +881,354 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heretic Naval Raiding Party" hidden="false" id="4d05-603e-4b5a-aed4">
               <profiles>
-                <profile name="Corrupt Merchants" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="591a-3e91-e21e-903c">
+                <profile name="Close Assault Weapons" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9ef5-9c37-2db2-8bb9">
                   <characteristics>
-                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Many merchants, traders and moneylenders within the Faithful nations are followers of Mammon and secretly supply the Knights of Avarice with their wares. When creating the warband, select one weapon, suit of armour or other piece of equipment from the New Antioch Armoury and one such item from the Iron Sultanate Armoury. You can acquire this gear exactly as the warband they come from. Any of these items in question must not be already available to the Heretic Warband. All the same limitations of the original lists apply, so there is little point in taking an Assassin’s Dagger (for example) since it can be only used by Assassins. These two selected additions are available to your warband throughout the campaign</characteristic>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband can buy Submachine Guns for 25 ducats per weapon.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Unseen Advance" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="be89-20dd-8e06-9309">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Up to three models without ELITE Keyword can be upgraded into INFILTRATORS at the cost of 10 ducats per Model</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Light Troops" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4e2e-e5c2-c100-0a16">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The force may only include 0-1 Annointed and 0-1 Artillery Witch.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Let Sleeping Dogs Lie" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2bfc-ba39-b280-debb">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may not include a War Wolf</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Fast as Lightning" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="84f7-b619-cba1-b824">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">All Models have +1 DICE when taking their Dash ACTIONS.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bdcd-a46f-e5ed-d577-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdcd-a46f-e5ed-d577-max" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4046-8150-770b-9adf" includeChildSelections="false"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Infiltrator" id="a4c7-fda3-fe57-a931" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Knights of Avarice" hidden="false" id="c323-0c33-e628-56f0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38f6-437b-f3f3-e4d3" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Debtors to Mammon" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4b0d-65aa-4b45-bacb">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Wretched of the warband are not tied by Mammon’s Chosen rule.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Mammon&apos;s Chosen" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="0388-f845-438e-c865">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Knights of Avarice allow only the wealthiest and the best-equipped candidates to join their ranks. Your force may have no models that cost less than 80 ducats (including their equipment).</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Goetic Warlock" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="11ef-3d53-6389-6d76">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Goetic Warlocks are creations of Mammon. This warband may include one for the price of 110 ducats. This Warlock is still a mercenary and obeys all of the rules associated with being a mercenary (such as having fixed equipment and not being able to be promoted to an ELITE throughout the course of a campaign).</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Infernal Rivalry" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3a61-fd62-4f66-e489">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Mammon is a rival of Beruth, the great devil of wrath and murder, who is the Patron of Death Commandos. Knights of Avarice may include no Death Commandos.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Preserve the Loot" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="260b-e416-8459-c504">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Knights of Avarice greatly dislike using weapons that could damage the amount of wealth that can be extracted from the fallen. No weapon with the Keyword FIRE or SHRAPNEL can be used by any model in this warband. In addition, the Artillery Witches of this warband use Gas Bombs: They have the Keyword GAS instead of SHRAPNEL and they ignore armour. Injuries caused by a direct hit are rolled with 2D6 and models within a 3” blast radius are rolled with -1 DICE. In a similar vein, their Grenade Launchers have the GAS keyword instead of the SHRAPNEL keyword, have a -1 D to injury rolls and ignore armour</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Corrupt Merchants" hidden="false" id="57e9-7ecf-2938-1634">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="New Antioch" id="0c65-38e3-c8d6-29ab" hidden="false">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fe5-9fcc-ae38-ca54" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2832-b36c-2c15-53aa" includeChildSelections="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="false" id="4525-5074-aa24-9783">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adc7-87f2-85bc-1aa2" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Stolen: Automatic Pistol" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4964-07b9-b8a1-f35b">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Automatic Pistols as though they were from New Antioch</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Shotgun" hidden="false" id="8be5-7527-c6fa-2bf7">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b47e-579e-2f2e-fa3b" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Stolen: Heavy Shotgun" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8a1d-ae05-5597-07e2">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Heavy Shotguns as though they were from New Antioch</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="5d6e-91f8-4cfd-b79d">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb25-018a-ce9d-21b0" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Stolen: Sniper Rifle" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9626-3796-60f5-9170">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Sniper Rifles as though they were from New Antioch</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Satchel Charge" hidden="false" id="767d-1b1d-79b4-5765">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cf8-daad-2987-4182" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Stolen: Satchel Charge" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="6ce7-e339-f8ab-ac68">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Satchel Charges as though they were from New Antioch</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Machine Armour" hidden="false" id="7bdb-1be6-5174-fdf6">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d395-8e03-6b31-3a1c" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Stolen: Machine Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="83f0-876a-3cc7-3564">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Machine Armours as though they were from New Antioch</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Medi-Kit" hidden="false" id="aabe-d640-df70-d15d">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="306a-8b17-7c3c-9651" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Stolen: Medi-Kit" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f4ce-75a0-6a5e-7f5f">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Medi-Kits as though they were from New Antioch</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Martyrdom Pills" hidden="false" id="5d93-6350-6692-271c">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ca4-3cd5-dfb0-817b" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Stolen: Martyrdom Pills" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3ee7-3e7e-d239-1c94">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Martyrdom Pills as though they were from New Antioch</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Field Shrine" hidden="false" id="352f-0577-5939-c99e">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8177-94cd-674b-1a54" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Stolen: Field Shrine" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5b33-f856-132e-7c89">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Field Shrines as though they were from New Antioch</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Binoculars" hidden="false" id="2a16-0288-2ac6-0630">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="875c-2c31-295c-d4bf" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Stolen: Binoculars" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d65c-996d-9bd5-be6b">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Binoculars as though they were from New Antioch</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Iron Sultanate" id="feeb-a7f5-ab25-9859" hidden="false">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="84f7-c18a-5c6c-fa12" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cdf-1735-9111-1021" includeChildSelections="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Jezzail" hidden="false" id="8f70-ef9e-dd8b-0568">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f89d-cb72-748d-0f1d" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Pilfered: Jezzail" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="6df6-b367-67b3-0a82">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Jezzails as though they were from Iron Sultanate</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Siege Jezzail" hidden="false" id="59c9-2964-96f1-9b9a">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abc3-0d08-3052-04eb" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Pilfered: Siege Jezzail" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9687-b24e-bf63-d228">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Siege Jezzails as though they were from Iron Sultanate</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Musket" hidden="false" id="f7cf-1fb3-686c-b38d">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf1c-2d89-a985-b27e" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Pilfered: Musket" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="24a0-e75f-fda6-3a63">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Muskets as though they were from Iron Sultanate</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Halberd-Gun" hidden="false" id="41ea-0e5d-eebb-a8dc">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f6f-0e11-c754-2213" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Pilfered: Halberd-Gun" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b8e7-a29c-9ca9-24b6">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Halberd-Guns as though they were from Iron Sultanate</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="8228-b935-f1dc-59d6">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbd6-97d5-4958-71e1" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Pilfered: Sniper Rifle" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2a14-9d00-49fb-86df">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Sniper Rifles as though they were from Iron Sultanate</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Alchemist Armour" hidden="false" id="3277-be84-f735-f64e">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d20b-39b2-56fe-32f0" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Pilfered: Alchemist Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1181-0635-aa21-d9bb">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Alchemist Armour as though they were from Iron Sultanate</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Cloak of Alamut" hidden="false" id="cc48-3a28-c443-ef76">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f051-26cc-42f9-3e55" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Pilfered: Cloak of Alamut" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8e79-67ff-8442-44b2">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Cloak of Alamuts as though they were from Iron Sultanate</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Wind Amulet" hidden="false" id="9f83-64bd-c857-0e35">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e761-7f79-a9d8-1f4f" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Pilfered: Wind Amulet" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7840-b59b-373f-9fc2">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Wind Amulets as though they were from Iron Sultanate</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Holy Relic" hidden="false" id="d7ac-fbc2-1d31-d5ab">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f58-0c00-c1f1-d626" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Pilfered: Holy Relic" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="6dcf-8eba-6204-b814">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Holy Relics as though they were from Iron Sultanate</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Binoculars" hidden="false" id="8856-efbf-4e29-8ecb">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f31d-cd39-7ca6-5f1f" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Pilfered: Musket" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="412d-d440-11fc-f415">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Muskets as though they were from Iron Sultanate</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Medi-Kit" hidden="false" id="ac8d-db2f-016d-741d">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="857c-758b-aa00-2cf6" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Pilfered: Musket" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="da4c-40b8-a166-dc7c">
+                              <characteristics>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Muskets as though they were from Iron Sultanate</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <profiles>
+                    <profile name="Corrupt Merchants" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e4ed-2af9-d2cf-a93a">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Many merchants, traders and moneylenders within the Faithful nations are followers of Mammon and secretly supply the Knights of Avarice with their wares. When creating the warband, select one weapon, suit of armour or other piece of equipment from the New Antioch Armoury and one such item from the Iron Sultanate Armoury. You can acquire this gear exactly as the warband they come from. Any of these items in question must not be already available to the Heretic Warband. All the same limitations of the original lists apply, so there is little point in taking an Assassin’s Dagger (for example) since it can be only used by Assassins. These two selected additions are available to your warband throughout the campaign</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8bdc-63fb-a0e3-2ff3-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bdc-63fb-a0e3-2ff3-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntry>
-      </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cff7-3865-c324-dd0c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cff7-3865-c324-dd0c-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Legionnairie Selection" hidden="false" id="246f-14ab-e6fe-4c26">
       <categoryLinks>
