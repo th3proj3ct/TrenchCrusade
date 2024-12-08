@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Anointed Heavy Infantry" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -22,29 +22,11 @@
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Armor" id="f974-b656-b697-4421" hidden="false" sortIndex="3">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Reinforced Armor" hidden="false" id="f483-09c2-6eb4-f93e" defaultAmount="1">
-              <infoLinks>
-                <infoLink name="Reinforced Armour" id="9083-47b8-a642-e338" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0033-e6a9-d121-12ab" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc2d-d893-0807-2ae4" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="0b18-18b1-58f2-2d15" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="8267-73be-3903-8067" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="3104-500f-a1df-d5c0" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="0b18-18b1-58f2-2d15" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="8267-73be-3903-8067" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true" sortIndex="5"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="3104-500f-a1df-d5c0" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="2"/>
+        <entryLink import="true" name="Armour" hidden="false" id="21ef-af58-7853-3915" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a" sortIndex="4"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="2daf-dded-85a2-f21a"/>
@@ -65,7 +47,7 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Unseen Infiltrator" hidden="true" id="7b92-190b-f8c3-531a">
+        <selectionEntry type="upgrade" import="true" name="Unseen Infiltrator" hidden="true" id="7b92-190b-f8c3-531a" sortIndex="1">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -103,49 +85,53 @@
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
         </profile>
-        <profile name="Puppet Master" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7b33-345f-cdc7-913e">
-          <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Select a target model, friend or foe (including the Priest), within 12”. As a RISKY ACTION you can move the model D6” in any one direction, including forcing it to jump/fall down or enter into melee combat with any enemy model (as if it had Charged), or leave Combat (as if it had Retreated, including granting any enemies within range free attacks).</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armor" id="c363-4259-50ae-5090" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Goetic Power" id="313a-7f25-cc7e-920c" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9281-8de2-011b-10b3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9281-8de2-011b-10b3-max" includeChildSelections="false"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="ca1a-18d3-aa26-4ccf" defaultAmount="" sortIndex="1">
-              <infoLinks>
-                <infoLink name="Standard Armour" id="50b3-4480-159d-45de" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
-              </infoLinks>
+            <selectionEntry type="upgrade" import="true" name="Puppet Master" hidden="false" id="da8a-c360-e7e1-47df">
+              <profiles>
+                <profile name="Puppet Master" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7b33-345f-cdc7-913e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Select a target model, friend or foe (including the Priest), within 12”. As a RISKY ACTION you can move the model D6” in any one direction, including forcing it to jump/fall down or enter into melee combat with any enemy model (as if it had Charged), or leave Combat (as if it had Retreated, including granting any enemies within range free attacks).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="845d-3074-8a8b-2cae" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6dd-64ff-4da4-ade1" includeChildSelections="false"/>
               </constraints>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reinforced Armor" hidden="false" id="76d9-6e50-d78c-c893" defaultAmount="" sortIndex="2">
-              <infoLinks>
-                <infoLink name="Reinforced Armour" id="fe34-b409-7af0-5cab" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
-              </infoLinks>
+            <selectionEntry type="upgrade" import="true" name="The Price of Greed" hidden="false" id="1cb9-408c-58c2-68a9">
+              <profiles>
+                <profile name="The Price of Greed" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c458-b32e-be25-c274">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Worldly wealth belonging to the target model of this curse starts crushing them under its weight. Choose any model the Priest sees within 12” and take a RISKY ACTION. If successful, roll immediately on the Injury Chart for that model and add +1 DICE to the injury roll for each -1 Armour modifier the model has (for example if the model has a Trench Shield and standard armour, add +2 DICE to the injury rolls).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d29f-3f7d-26d7-f901" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d41b-148f-cbfe-c4f2" includeChildSelections="false"/>
               </constraints>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="0" field="selections" scope="parent" childId="c323-0c33-e628-56f0" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d6f-1491-3d45-5455" includeChildSelections="false"/>
-          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Grenades" hidden="false" id="4286-540c-2fee-9525" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="0f51-e51b-67fc-6868" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
         <entryLink import="true" name="Weapons" hidden="false" id="80bd-768e-721c-a113" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
+        <entryLink import="true" name="Armour" hidden="false" id="7a5b-e868-bc9c-ea71" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
       </entryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="e878-a54e-5461-5f68-min" includeChildSelections="true"/>
@@ -187,37 +173,6 @@
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armor" id="dc01-0d93-d91f-7516" hidden="false" sortIndex="3">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="e9b0-202d-a5dd-19b1" defaultAmount="" sortIndex="1">
-              <infoLinks>
-                <infoLink name="Standard Armour" id="b174-14d8-e4f5-079d" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8d1-571a-d3ad-110e" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reinforced Armor" hidden="false" id="c2f0-e1f9-4c75-9869" defaultAmount="" sortIndex="2">
-              <infoLinks>
-                <infoLink name="Reinforced Armour" id="1931-441a-eb84-dcd4" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f70-d37c-efc7-e464" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17f8-1c99-b882-3b71" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Commando Weapons" id="2db8-004d-db23-2df1" hidden="false" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Melee Weapons" hidden="false" id="77b7-8e6e-cf87-a487" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d"/>
@@ -277,6 +232,7 @@
       <entryLinks>
         <entryLink import="true" name="Equipment" hidden="false" id="8178-a6cf-7ddc-d03b" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
         <entryLink import="true" name="Gas Grenades" hidden="false" id="2c4e-d12c-555f-d0b7" type="selectionEntry" targetId="3e61-384a-10f0-3ade" sortIndex="2"/>
+        <entryLink import="true" name="Armour" hidden="false" id="c743-5acb-1e2d-8c53" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="154a-1d9d-959e-d915" includeChildSelections="true"/>
@@ -311,43 +267,11 @@
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Armor" id="1694-010f-d3bc-0704" hidden="false" sortIndex="3">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="8118-4fef-bf10-2997" defaultAmount="" sortIndex="1">
-              <infoLinks>
-                <infoLink name="Standard Armour" id="6dd8-68a6-5bfa-149d" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51bb-b3d3-c882-3710" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reinforced Armor" hidden="false" id="5b7b-5991-5249-b176" defaultAmount="" sortIndex="2">
-              <infoLinks>
-                <infoLink name="Reinforced Armour" id="4866-92b6-a0bc-ea14" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8308-3b34-bc01-36d6" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71c5-f832-22b9-6ff2" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Grenades" hidden="false" id="d698-b0ea-7831-ea45" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="6b85-2b40-edb3-e9a4" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
         <entryLink import="true" name="Weapons" hidden="false" id="454e-b570-692d-acf0" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
+        <entryLink import="true" name="Armour" hidden="false" id="9392-df8d-73c0-c5f7" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a315-a1b6-dd13-ba1c" includeChildSelections="true"/>
@@ -467,33 +391,40 @@
 
 If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart and add the dice together! Other models hit by the bomb roll on the Injury Chart as standard. Any model hit, but not taken Out of Action, by this attack is blown D3” directly away from the point of impact (roll for each model separately), stopping if they hit other models/buildings/objects. Cover, range and higher position do not affect attacks by the Infernal Bomb. Roll injuries for models that would benefit from Cover from the perspective of the BLAST point with -1 DICE. The Activation of the Witch ends immediately after using the Infernal Bomb.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Artificial Life" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2c8d-724a-e4eb-d4cb">
           <characteristics>
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">Artillery Witches are not affected by FEAR. Additionally, attacks with the Keyword GAS suffer a -1 DICE penalty to injure the Witch and they do not suffer additional BLOOD MARKERS from the Keyword GAS.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Chemical Bomb" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="6d5e-3299-c138-e478">
+          <characteristics>
+            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
+            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">Special</characteristic>
+            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">BLAST 3&quot;, GAS</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Specify a 1x1mm point on the battlefield within 36” that the Witch can see and that you want to target. Next, make a Ranged Attack ACTION. If the roll fails (i.e. you roll 6 or less with the two lowest Dice), the bomb lands 1” away from its intended location, multiplied by the number representing the degree of failure (for example, if you rolled 5, the bomb lands 2” away, as 7-5=2). The direction is decided by your opponent. Roll on the Injury Chart for each model within the BLAST radius
+
+
+If the bomb lands exactly on top of any model, roll on the Injury Chart as standard. Other models hit by the bomb roll on the Injury Chart with -1 DICE. Any model hit, but not taken Out of Action, by this attack is blown D3” directly away from the point of impact (roll for each model separately), stopping if they hit other models/buildings/objects. Cover, range and higher position do not affect attacks by the Chemical Bomb. Roll injuries for models that would benefit from Cover from the perspective of the BLAST point with -1 DICE. The Activation of the Witch ends immediately after using the Chemical Bomb.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Armor" id="1194-ec89-39e2-6f91" hidden="false" sortIndex="3">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="de7e-982d-abe2-3658" defaultAmount="" sortIndex="1">
-              <infoLinks>
-                <infoLink name="Standard Armour" id="b12f-fd12-ec2b-1a2f" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a94-5019-4ee1-44da" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0534-2808-0b87-4eb0" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Weapons" id="7050-8ef1-0699-ced0" hidden="false" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Melee Weapons" hidden="false" id="19b2-3fff-cd64-345f" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d"/>
@@ -507,6 +438,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Equipment" hidden="false" id="347a-bdcf-fe18-3744" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
+        <entryLink import="true" name="Armour" hidden="false" id="0ed8-7eee-2ab4-05fb" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ceb2-bf00-2a24-aa1d" includeChildSelections="true"/>
@@ -530,8 +462,25 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Shrapnel" id="fef9-d39f-752b-2a9b" hidden="false" type="rule" targetId="200f-a7a6-f8a7-8232"/>
-        <infoLink name="Blast" id="9f47-c7c5-d092-7b91" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
+        <infoLink name="Gas" id="9f47-c7c5-d092-7b91" hidden="false" type="rule" targetId="2c6e-81c8-6c20-b5b7">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shrapnel" id="0a58-09ea-f02e-12ef" hidden="false" type="rule" targetId="200f-a7a6-f8a7-8232">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blast" id="e373-f7f8-97e9-d98c" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Wretched" hidden="false" id="cf02-7a3e-ffbf-d7f9" publicationId="c658-4a10-e1fe-befc" page="22">
@@ -686,28 +635,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </modifiers>
         </profile>
       </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Armor" id="1105-9ec1-e74c-126b" hidden="false" sortIndex="4">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="f6da-d904-8d74-f399">
-              <infoLinks>
-                <infoLink name="Standard Armour" id="3607-8d12-70a1-fe77" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="687c-03d7-d3b7-ac8c" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Grenades" hidden="false" id="7f8c-7ce1-9287-96f2" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="76f2-185b-6af3-13a9" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="5" collapsible="true"/>
         <entryLink import="true" name="Weapons" hidden="false" id="2729-18d7-401d-092f" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="2"/>
+        <entryLink import="true" name="Armour" hidden="false" id="1eeb-ff0b-2b86-7667" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a" sortIndex="4"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Legionnaire" hidden="false" id="f606-4316-044d-4503" sortIndex="1">
@@ -881,17 +813,33 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                     </profile>
                   </profiles>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="7698-8d7d-b9d0-d110"/>
-                <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="5530-8135-2df1-4b67">
+                <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="7698-8d7d-b9d0-d110">
                   <profiles>
-                    <profile name="Battlefield Looters (Automatic Rifle)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="314c-5a0b-cf87-d46d">
+                    <profile name="Battlefield Looters (Machine Gun)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="cab4-0571-19c0-eaf2">
                       <characteristics>
                         <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Musical Instrument " hidden="false" id="0ea6-99b3-e165-9336"/>
+                <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="5530-8135-2df1-4b67">
+                  <profiles>
+                    <profile name="Battlefield Looters (Grenade Launcher)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="314c-5a0b-cf87-d46d">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Musical Instrument " hidden="false" id="0ea6-99b3-e165-9336">
+                  <profiles>
+                    <profile name="Battlefield Looters (Musical Instrument)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="a73b-6d6d-37aa-fd3f">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="1c2d-14b1-1ec3-3bdb">
                   <profiles>
                     <profile name="Battlefield Looters (Flamethrower)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4ab1-ea85-f390-6fb0">
@@ -903,7 +851,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="346b-cc13-f92e-61bc">
                   <profiles>
-                    <profile name="Battlefield Looters (Automatic Rifle)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="06bf-a67e-fba4-5214">
+                    <profile name="Battlefield Looters (Heavy Flamethrower)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="06bf-a67e-fba4-5214">
                       <characteristics>
                         <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
                       </characteristics>
@@ -919,11 +867,51 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                     </profile>
                   </profiles>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="fc35-e469-8877-b62c"/>
-                <selectionEntry type="upgrade" import="true" name="Incendiary Ammunition" hidden="false" id="c66f-56e1-c379-0f1c"/>
-                <selectionEntry type="upgrade" import="true" name="Hellblade" hidden="false" id="5549-36f8-a639-8fc4"/>
-                <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="0422-86f1-0b4b-26b9"/>
-                <selectionEntry type="upgrade" import="true" name="Sacrificial Blade" hidden="false" id="3ff6-3412-b7f3-b0a4"/>
+                <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="fc35-e469-8877-b62c">
+                  <profiles>
+                    <profile name="Battlefield Looters (Mountaineer Kit)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e8cf-8a0c-d0cc-756d">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Incendiary Ammunition" hidden="false" id="c66f-56e1-c379-0f1c">
+                  <profiles>
+                    <profile name="Battlefield Looters (Incendiary Ammunition)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4951-f794-ad38-ad03">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hellblade" hidden="false" id="5549-36f8-a639-8fc4">
+                  <profiles>
+                    <profile name="Battlefield Looters (Hellblade)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="290e-b9f3-e527-d0f5">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="0422-86f1-0b4b-26b9">
+                  <profiles>
+                    <profile name="Battlefield Looters (Troop Flag)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="cc71-f6a8-5519-bcf3">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sacrificial Blade" hidden="false" id="3ff6-3412-b7f3-b0a4">
+                  <profiles>
+                    <profile name="Battlefield Looters (Sacrificial Blade)" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3362-0f7e-b412-ce4d">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -933,9 +921,9 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67c0-b576-58c1-2e71" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Preserve the Loot" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ae56-99bc-3b7c-45b9">
+            <profile name="Debtors to Mammon" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ae56-99bc-3b7c-45b9">
               <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Knights of Avarice greatly dislike using weapons that could damage the amount of wealth that can be extracted from the fallen. No weapon with the Keyword FIRE or SHRAPNEL can be used by any model in this warband. In addition, the Artillery Witches of this warband use Gas Bombs: They have the Keyword GAS instead of SHRAPNEL and they ignore armour. Injuries caused by a direct hit are rolled with 2D6 and models within a 3” blast radius are rolled with -1 DICE. In a similar vein, their Grenade Launchers have the GAS keyword instead of the SHRAPNEL keyword, have a -1 D to injury rolls and ignore armour</characteristic>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Wretched of the warband are not tied by Mammon’s Chosen rule.</characteristic>
               </characteristics>
             </profile>
             <profile name="Mammon&apos;s Chosen" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="180e-1439-e50b-14c9">
@@ -953,7 +941,281 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <characteristic name="Description" typeId="4834-43a9-1c93-9062">Mammon is a rival of Beruth, the great devil of wrath and murder, who is the Patron of Death Commandos. Knights of Avarice may include no Death Commandos.</characteristic>
               </characteristics>
             </profile>
+            <profile name="Preserve the Loot" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b580-e03d-84b6-16d3">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Knights of Avarice greatly dislike using weapons that could damage the amount of wealth that can be extracted from the fallen. No weapon with the Keyword FIRE or SHRAPNEL can be used by any model in this warband. In addition, the Artillery Witches of this warband use Gas Bombs: They have the Keyword GAS instead of SHRAPNEL and they ignore armour. Injuries caused by a direct hit are rolled with 2D6 and models within a 3” blast radius are rolled with -1 DICE. In a similar vein, their Grenade Launchers have the GAS keyword instead of the SHRAPNEL keyword, have a -1 D to injury rolls and ignore armour</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Corrupt Merchants" hidden="false" id="c7c4-26be-c921-e423">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="New Antioch" id="d176-7188-0494-ff41" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="095b-3e61-4adf-5f94-max-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="095b-3e61-4adf-5f94-max-max" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="false" id="1bfc-1f1e-6b4d-5917">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="097b-cf20-f937-a24a" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Stolen: Automatic Pistol" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="09c0-39f0-576e-fb04">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Automatic Pistols as though they were from New Antioch</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Heavy Shotgun" hidden="false" id="44ca-8123-4f1e-2abc">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2474-e9b3-2ca5-98b5" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Stolen: Heavy Shotgun" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="40f5-79de-0b33-91c5">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Heavy Shotguns as though they were from New Antioch</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="fe6a-8136-af8c-4136">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fee8-3c74-18a3-50c4" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Stolen: Sniper Rifle" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="616a-88d9-c9fb-eb95">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Sniper Rifles as though they were from New Antioch</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Satchel Charge" hidden="false" id="bcf0-d0ba-178b-2589">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0762-191a-df5c-9314" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Stolen: Satchel Charge" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2321-9f66-fc67-89a8">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Satchel Charges as though they were from New Antioch</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Machine Armour" hidden="false" id="da2b-acb8-ce2a-20c2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb0e-07fc-16ed-fd12" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Stolen: Machine Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e80e-0fba-dad2-e72c">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Machine Armours as though they were from New Antioch</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Medi-Kit" hidden="false" id="afde-091d-84fa-a919">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c42d-64b6-3173-bee5" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Stolen: Medi-Kit" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5b63-e331-1ee8-c85e">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Medi-Kits as though they were from New Antioch</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Martyrdom Pills" hidden="false" id="d2df-9b6f-c8fd-b924">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93c2-438b-2cb3-8197" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Stolen: Martyrdom Pills" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="34a6-9165-6b38-8f2c">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Martyrdom Pills as though they were from New Antioch</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Field Shrine" hidden="false" id="a454-4d33-0525-ed58">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e5a-f044-bd4b-e907" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Stolen: Field Shrine" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2c32-5ffa-2290-3bf9">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Field Shrines as though they were from New Antioch</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Binoculars" hidden="false" id="dc7f-9cda-23b1-6864">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eaa-f6f0-866c-e67e" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Stolen: Binoculars" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2ac2-5cbe-9520-5019">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Binoculars as though they were from New Antioch</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Iron Sultanate" id="fd2d-a88a-b7bd-6636" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f48-90b4-0b4d-855c-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f48-90b4-0b4d-855c-max" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Jezzail" hidden="false" id="dcf8-e26d-626f-943e">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="915e-ce6d-2d91-60b3" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Pilfered: Jezzail" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="18cc-b984-3955-10fa">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Jezzails as though they were from Iron Sultanate</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Siege Jezzail" hidden="false" id="2ed8-d75e-a55a-fe8c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f97-fc6c-854b-1260" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Pilfered: Siege Jezzail" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4a52-ad28-0a81-c49a">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Siege Jezzails as though they were from Iron Sultanate</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Musket" hidden="false" id="e35b-5246-7b3f-7b30">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1597-a447-a110-1741" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Pilfered: Musket" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="0645-b441-a824-fee8">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Muskets as though they were from Iron Sultanate</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Halberd-Gun" hidden="false" id="60d5-9085-4f61-2b32">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9a8-f7da-1f06-3ba1" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Pilfered: Halberd-Gun" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7d5f-b952-54d6-b204">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Halberd-Guns as though they were from Iron Sultanate</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="b81b-1dd1-b643-e47d">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ec4-7598-e4e1-8898" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Pilfered: Sniper Rifle" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d201-a304-8a80-76f9">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Sniper Rifles as though they were from Iron Sultanate</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Alchemist Armour" hidden="false" id="1ebf-e221-0e9b-708b">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="083d-017e-9eb3-c4a2" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Pilfered: Alchemist Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4d55-aa0e-1730-20ea">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Alchemist Armour as though they were from Iron Sultanate</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Cloak of Alamut" hidden="false" id="5b8f-54dd-a2c9-e607">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="891b-2d8f-f616-d55c" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Pilfered: Cloak of Alamut" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2fc0-28ac-f621-57a2">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Cloak of Alamuts as though they were from Iron Sultanate</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Wind Amulet" hidden="false" id="8924-50c9-4a68-b5b3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8d9-85ab-bbe0-a0e3" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Pilfered: Wind Amulet" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="edae-5096-9cdc-2cc8">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Wind Amulets as though they were from Iron Sultanate</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Holy Relic" hidden="false" id="669b-7235-56ed-cbe5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10da-e91d-7f85-6e3a" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Pilfered: Holy Relic" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5edb-7d89-b8fa-3c65">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Holy Relics as though they were from Iron Sultanate</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Binoculars" hidden="false" id="edf6-738d-b30f-c72d">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9849-f966-8029-1697" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Pilfered: Musket" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="03dd-6b09-1895-1f59">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Muskets as though they were from Iron Sultanate</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Medi-Kit" hidden="false" id="1e9e-8877-8cc0-b61d">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94d8-7b49-aa3c-7e44" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Pilfered: Musket" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="a8dd-8cfe-885c-8fe6">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Warband can use Muskets as though they were from Iron Sultanate</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Corrupt Merchants" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="591a-3e91-e21e-903c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Many merchants, traders and moneylenders within the Faithful nations are followers of Mammon and secretly supply the Knights of Avarice with their wares. When creating the warband, select one weapon, suit of armour or other piece of equipment from the New Antioch Armoury and one such item from the Iron Sultanate Armoury. You can acquire this gear exactly as the warband they come from. Any of these items in question must not be already available to the Heretic Warband. All the same limitations of the original lists apply, so there is little point in taking an Assassin’s Dagger (for example) since it can be only used by Assassins. These two selected additions are available to your warband throughout the campaign</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1143,6 +1405,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -1193,6 +1460,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="5549-36f8-a639-8fc4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Tartarus Claws" hidden="true" id="af47-33c1-b1fc-f2bd">
@@ -1236,7 +1508,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged (One-Handed)" id="53d7-33cb-1563-1112" hidden="false" collective="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="ad38-8f81-37fb-3e0e" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="ad38-8f81-37fb-3e0e" collective="false" sortIndex="1">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="6"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1245,7 +1517,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <infoLink name="Pistol" id="e2fe-cd09-4a28-5be3" hidden="false" type="profile" targetId="ae18-4990-fc3c-78ce"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Silenced Pistol" hidden="true" id="e126-07c8-283d-a9c0" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Silenced Pistol" hidden="true" id="e126-07c8-283d-a9c0" collective="false" sortIndex="2">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1262,11 +1534,35 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             </modifier>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="true" id="b7bf-8ec7-b267-ac60" collective="false" sortIndex="3">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Automatic Pistol" id="46c4-537a-b759-e46b" hidden="false" type="profile" targetId="8ac5-3721-e679-7c6e"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="1bfc-1f1e-6b4d-5917" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="1497-b565-d05b-4b4c" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Ranged (Two-Handed)" id="ebc3-4d3d-a2ce-f8ce" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bolt Action Rifle" hidden="false" id="3395-b3e7-e89b-6bea">
+        <selectionEntry type="upgrade" import="true" name="Bolt Action Rifle" hidden="false" id="3395-b3e7-e89b-6bea" sortIndex="3">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1278,7 +1574,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <infoLink name="Bolt Action Rifle" id="5c71-7786-a6cd-a3b2" hidden="false" type="profile" targetId="408d-d56e-71c4-f3c4"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Semi-Automatic Rifle" hidden="false" id="aa40-8ddf-b94d-fe96">
+        <selectionEntry type="upgrade" import="true" name="Semi-Automatic Rifle" hidden="false" id="aa40-8ddf-b94d-fe96" sortIndex="4">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1290,7 +1586,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <infoLink name="Semi-Automatic Rifle" id="4211-41f3-a59f-1d1d" hidden="false" type="profile" targetId="1d82-fcc9-aeda-b03a"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Anti-Material Rifle" hidden="false" id="3b88-7bdf-2370-d7e4">
+        <selectionEntry type="upgrade" import="true" name="Anti-Material Rifle" hidden="false" id="3b88-7bdf-2370-d7e4" sortIndex="13">
           <costs>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="3"/>
           </costs>
@@ -1313,7 +1609,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="7f5a-869c-fe6b-82dd">
+        <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="7f5a-869c-fe6b-82dd" sortIndex="6">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1343,7 +1639,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="5c4c-5169-0e5e-b35b">
+        <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="5c4c-5169-0e5e-b35b" sortIndex="11">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1366,7 +1662,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="9a7e-bfe8-e3bf-6f2e">
+        <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="9a7e-bfe8-e3bf-6f2e" sortIndex="5">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1384,9 +1680,14 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="1c2d-14b1-1ec3-3bdb" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="d55a-3291-216f-bf2c">
+        <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="d55a-3291-216f-bf2c" sortIndex="12">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="55"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1408,9 +1709,14 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="346b-cc13-f92e-61bc" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="8292-a94f-828f-955e">
+        <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="8292-a94f-828f-955e" sortIndex="14">
           <costs>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="3"/>
           </costs>
@@ -1432,7 +1738,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Gas Grenade Launcher" hidden="false" id="e154-975e-589d-4d19">
+        <selectionEntry type="upgrade" import="true" name="Gas Grenade Launcher" hidden="false" id="e154-975e-589d-4d19" sortIndex="7">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1441,7 +1747,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="b23f-86c6-233b-5452" includeChildSelections="true"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Gas Grenade Launcher" id="736f-2412-ec6e-1909" hidden="false" type="profile" targetId="3113-d133-1726-05a0"/>
+            <infoLink name="Gas Grenade Launcher" id="736f-2412-ec6e-1909" hidden="false" type="profile" targetId="fb1b-45a3-5dd0-bba1"/>
             <infoLink name="Blast" id="a846-6445-11c9-8f9b" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
             <infoLink name="Heavy" id="ade3-2257-7b9d-89fa" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
             <infoLink name="Gas" id="886b-46f2-1d63-d27c" hidden="false" type="rule" targetId="2c6e-81c8-6c20-b5b7"/>
@@ -1462,11 +1768,112 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             </modifier>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="true" id="e5a6-8f21-f476-cc75" sortIndex="10">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="35"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="24ef-14b4-af3f-70fe" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Sniper Rifle" id="aa72-0796-8527-b3c8" hidden="false" type="profile" targetId="6eb2-c600-98e7-16d3"/>
+            <infoLink name="Risky" id="9be8-4e74-ce3e-862d" hidden="false" type="rule" targetId="df23-62bc-775e-fca1"/>
+            <infoLink name="Critical" id="26de-062a-0236-3445" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="e8a4-ab0b-dedb-015b" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fe6a-8136-af8c-4136" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Musket" hidden="true" id="4dbb-8d84-16cf-9605" sortIndex="1">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Musket" id="17c7-c2d1-fe73-0472" hidden="false" type="profile" targetId="b5e4-35bd-ba00-55c0"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e35b-5246-7b3f-7b30" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Jezzail" hidden="true" id="ad74-e8b9-57f5-c0d1" sortIndex="2">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="7"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Jezzail" id="70f9-3420-c6da-23dd" hidden="false" type="profile" targetId="6d28-673b-5fe7-849e"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf8-e26d-626f-943e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Siege Jezzail" hidden="true" id="7ab6-280f-5116-f532" sortIndex="8">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Siege Jezzail" id="88de-1c93-30ed-a7e3" hidden="false" type="profile" targetId="59d6-227d-0859-a162"/>
+            <infoLink name="Heavy" id="de1d-a133-9a1a-60fb" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="0dfe-0a1a-ca52-dd35" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2ed8-d75e-a55a-fe8c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="true" id="1b22-3636-d509-ff19" sortIndex="9">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="35"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="c5ad-e5f5-762f-925e" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Sniper Rifle" id="1c59-9ccf-96df-e8b0" hidden="false" type="profile" targetId="6eb2-c600-98e7-16d3"/>
+            <infoLink name="Critical" id="d1c2-0f47-dd44-6317" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+            <infoLink name="Risky" id="2acf-e223-2bec-c5e6" hidden="false" type="rule" targetId="df23-62bc-775e-fca1"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b81b-1dd1-b643-e47d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Shield Combos" id="8bf4-3479-1f69-6679" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Sub-Machine Gun" hidden="false" id="f350-1594-69d3-e36b">
+            <selectionEntry type="upgrade" import="true" name="Sub-Machine Gun" hidden="false" id="f350-1594-69d3-e36b" sortIndex="4">
               <costs>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
               </costs>
@@ -1489,7 +1896,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 </modifierGroup>
               </modifierGroups>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="b729-c409-1ae1-3e76">
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="b729-c409-1ae1-3e76" sortIndex="1">
               <costs>
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
               </costs>
@@ -1500,7 +1907,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <infoLink name="Shotgun" id="58d9-83d6-bcd8-6562" hidden="false" type="profile" targetId="0924-0647-1366-9d85"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Automatic Shotgun" hidden="false" id="f118-2787-2eed-84fd">
+            <selectionEntry type="upgrade" import="true" name="Automatic Shotgun" hidden="false" id="f118-2787-2eed-84fd" sortIndex="2">
               <costs>
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
               </costs>
@@ -1511,6 +1918,32 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <infoLink name="Automatic Shotgun" id="81f6-3be0-4126-1976" hidden="false" type="profile" targetId="a19d-90ab-da9f-95ff"/>
                 <infoLink name="Assault" id="7fce-5365-92cc-df29" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
               </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Shotgun" hidden="true" id="669d-4a56-7875-17ed" sortIndex="3">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Bayonet Lug" hidden="false" id="1af0-4c9d-4f4b-1830" type="selectionEntry" targetId="3348-ed1b-adf7-af00"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Heavy Shotgun" id="83a4-adef-e745-cd80" hidden="false" type="profile" targetId="c5ac-8d24-4060-8655"/>
+                <infoLink name="Heavy" id="a4c6-1969-db88-a1df" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Heavy" hidden="false" id="c413-b523-ed80-3bbd" targetId="70c9-988d-71a7-7654" primary="false"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="6bc9-407d-f151-88b3" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="44ca-8123-4f1e-2abc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1620,6 +2053,45 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c8d-d8be-cd2c-983a" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Satchel Charge" hidden="true" id="1938-e49a-2a89-e72a">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Satchel Charge" id="7078-4cbc-2abf-912d" hidden="false" type="profile" targetId="744d-f4d2-f8d5-064a"/>
+            <infoLink name="Heavy" id="c7b6-6ca0-a1c8-9d26" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+            <infoLink name="Blast" id="37a8-f1f0-5e88-4a7b" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
+            <infoLink name="Grenade" id="e492-be6b-36ec-04f9" hidden="false" type="rule" targetId="1c58-0dce-e86e-b0dc"/>
+            <infoLink name="Consumable" id="b486-4269-e4a2-9544" hidden="false" type="rule" targetId="e98d-4bd1-3870-27b9"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d52-e640-a103-dd07" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ef37-2c5a-5c06-7a54" includeChildSelections="true"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="6a8b-85b6-c065-2631" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="remove" value="70c9-988d-71a7-7654" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="50d8-f63e-e01d-2698" shared="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="bcf0-d0ba-178b-2589" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -1687,6 +2159,11 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="c66f-56e1-c379-0f1c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Shovel" hidden="false" id="fa1f-59c8-3f39-3ff0" sortIndex="6">
@@ -1701,7 +2178,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51fe-888d-77d2-0e51" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hellbound Brand Contract" hidden="true" id="095e-7a3d-0538-1d4a" sortIndex="9">
+        <selectionEntry type="upgrade" import="true" name="Hellbound Brand Contract" hidden="true" id="095e-7a3d-0538-1d4a" sortIndex="10">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1726,7 +2203,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="b611-946c-0c0f-dbfc" sortIndex="8">
+        <selectionEntry type="upgrade" import="true" name="Mountaineer Kit" hidden="false" id="b611-946c-0c0f-dbfc" sortIndex="9">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="3"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1786,6 +2263,172 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             </modifier>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Medi-Kit" hidden="true" id="5f28-57da-5cdf-6323" sortIndex="8">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Medi-kit" id="01d2-0e07-211a-f40b" hidden="false" type="profile" targetId="aa88-1987-505a-13ca"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdfb-2f26-908c-4b6c" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1e9e-8877-8cc0-b61d" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="afde-091d-84fa-a919" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Martyrdom Pills" hidden="true" id="eb3f-ac83-9f60-6fe1" sortIndex="8">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Martyrdom Pills" id="b589-ea09-7546-ca5a" hidden="false" type="profile" targetId="0de6-1178-a184-ddff"/>
+            <infoLink name="Consumable" id="0075-433b-7a91-30eb" hidden="false" type="rule" targetId="e98d-4bd1-3870-27b9"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23c8-e5ce-6a56-6633" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="1a46-80b5-b0bd-8fb4" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d2df-9b6f-c8fd-b924" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Binoculars" hidden="true" id="928a-9b8d-f725-79cf" sortIndex="9">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e96-1e61-b3bb-8c3c" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Binoculars" id="edae-bc49-e328-55cd" hidden="false" type="profile" targetId="242b-2dd0-41e9-77e1"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="edf6-738d-b30f-c72d" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="dc7f-9cda-23b1-6864" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Field Shrine" hidden="true" id="b59b-8601-bbe5-e216" sortIndex="9">
+          <costs>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd2c-abb5-7c59-8369" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Field Shrine" id="d37c-837e-692c-66a9" hidden="false" type="profile" targetId="76e2-0e5b-972a-0f69"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="a454-4d33-0525-ed58" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Holy Relic" hidden="true" id="1594-678f-a5d2-5b87" sortIndex="8">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Holy Relic" id="9ca5-4b67-20f3-0dd1" hidden="false" type="profile" targetId="f7dd-c304-609f-c9d1"/>
+            <infoLink name="Consumable" id="5779-e777-cd63-31a3" hidden="false" type="rule" targetId="e98d-4bd1-3870-27b9"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87ec-a806-8bbb-a782" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="669b-7235-56ed-cbe5" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wind Amulet" hidden="true" id="568b-286b-99cd-574a" sortIndex="8">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Wind Amulet" id="117a-ae5f-1520-9dfa" hidden="false" type="profile" targetId="cb4d-4771-6cd2-240b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="236e-4006-6f4f-4030" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="39cb-9411-b440-cd0e" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8924-50c9-4a68-b5b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cloak of Alamut" hidden="true" id="53b0-204c-024e-acc6" sortIndex="8">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Cloak of Alamut" id="e9f2-0882-c4f9-2f6b" hidden="false" type="profile" targetId="fc84-ca32-2672-c684"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3b27-f507-ac5b-288c" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5b8f-54dd-a2c9-e607" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Headgear" id="0ff3-f218-8676-1288" hidden="false" sortIndex="1">
@@ -1808,18 +2451,6 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
     </selectionEntryGroup>
     <selectionEntryGroup name="Utility Hand" id="3676-db5e-8076-8b90" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trench Shield" hidden="false" id="4a0e-6f55-3bac-71b1" sortIndex="1">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51b4-1f58-7c64-6d97" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Trench Shield" id="34b1-c3b3-99df-adf0" hidden="false" type="profile" targetId="c2a5-72b6-355d-0356"/>
-          </infoLinks>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="1e8d-e5ce-d1e5-4ab0">
           <costs>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
@@ -1858,6 +2489,27 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Shields" id="4a0e-6f55-3bac-71b1" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Trench Shield" hidden="false" id="631f-4791-138b-a5f1">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51b4-1f58-7c64-6d97" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Trench Shield" id="34b1-c3b3-99df-adf0" hidden="false" type="profile" targetId="c2a5-72b6-355d-0356"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37b6-a377-5f71-ef7b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Weapons" id="e24e-229d-3831-76f4" hidden="false" collapsible="true">
       <constraints>
@@ -1885,6 +2537,108 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           <comment>Errors out if 2 or more Heavy on non-</comment>
         </modifier>
       </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Armour" id="d8da-8812-463a-5a3a" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Machine Armour" hidden="true" id="f468-49af-8d3b-7c7b" sortIndex="4">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Machine Armour" id="9ac9-d4eb-147e-9c63" hidden="false" type="profile" targetId="2558-23f8-cfa8-40f4"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="da2b-acb8-ce2a-20c2" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Cannot combine Machine Armor and Shield" field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="4a0e-6f55-3bac-71b1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cce4-c826-ee03-0148" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reinforced Armor" hidden="true" id="7070-bb46-c76d-9c48" defaultAmount="" sortIndex="2">
+          <infoLinks>
+            <infoLink name="Reinforced Armour" id="b61c-376c-4230-e711" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a27d-1bfb-fe96-597c" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bd0e-acde-9a85-85ae" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="15bf-43f1-0650-1070" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="bd0e-acde-9a85-85ae">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="15bf-43f1-0650-1070" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Standard Armor" hidden="false" id="05b8-022c-d235-e358" defaultAmount="" sortIndex="1">
+          <infoLinks>
+            <infoLink name="Standard Armour" id="37aa-fcfa-de48-6501" hidden="false" type="profile" targetId="6fa6-650d-4136-bc70"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06df-1350-7755-e964" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Alchemist Armour" hidden="true" id="6f0b-f2e8-3e60-f596" sortIndex="3">
+          <infoLinks>
+            <infoLink name="Alchemist Armour" id="5cef-c9fa-b991-f49e" hidden="false" type="profile" targetId="68e2-bde3-19a9-2980"/>
+          </infoLinks>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="1ebf-e221-0e9b-708b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0f19-a6d8-119b-e747" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b24d-6016-dae3-c9f0" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <forceEntries>
