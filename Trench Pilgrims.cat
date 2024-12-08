@@ -1359,8 +1359,8 @@ Keywords: CONSUMABLE</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup name="Variant Selection" id="0423-080c-cfe8-0341" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3827-6b97-fd55-4e11-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3827-6b97-fd55-4e11-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="3827-6b97-fd55-4e11-max-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="3827-6b97-fd55-4e11-max-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Procession of the Sacred Affliction" hidden="false" id="0d88-774c-22af-e2fc">
