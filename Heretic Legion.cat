@@ -87,7 +87,7 @@
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Goetic Power" id="313a-7f25-cc7e-920c" hidden="false">
+        <selectionEntryGroup name="Goetic Power" id="313a-7f25-cc7e-920c" hidden="false" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9281-8de2-011b-10b3-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9281-8de2-011b-10b3-max" includeChildSelections="false"/>
@@ -128,9 +128,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="4286-540c-2fee-9525" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2" collapsible="true"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="4286-540c-2fee-9525" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="0f51-e51b-67fc-6868" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="80bd-768e-721c-a113" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="80bd-768e-721c-a113" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="2"/>
         <entryLink import="true" name="Armour" hidden="false" id="7a5b-e868-bc9c-ea71" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
       </entryLinks>
       <constraints>
