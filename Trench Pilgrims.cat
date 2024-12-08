@@ -51,6 +51,13 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69c8-1aef-0ea9-5e42" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="d21f-81f7-cf6f-690e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blessed Icon" hidden="false" id="7fe2-1e98-21d4-5575" sortIndex="3">
           <costs>
@@ -178,9 +185,14 @@ Keywords: CONSUMABLE</characteristic>
               </costs>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="d21f-81f7-cf6f-690e" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
