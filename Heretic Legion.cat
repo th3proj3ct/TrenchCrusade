@@ -2573,7 +2573,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="da2b-acb8-ce2a-20c2" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="da2b-acb8-ce2a-20c2" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
                   </conditions>
                 </conditionGroup>
