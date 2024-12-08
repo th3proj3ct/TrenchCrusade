@@ -240,6 +240,13 @@
       <infoLinks>
         <infoLink name="Infiltrator" id="1b2f-cf0c-cc81-1861" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chorister" hidden="false" id="fe81-08b2-7161-d4cb" publicationId="c658-4a10-e1fe-befc" page="21">
       <costs>
@@ -281,9 +288,14 @@
       </infoLinks>
       <modifiers>
         <modifier type="add" value="Mammon demands 80+ Ducats" field="error">
-          <conditions>
-            <condition type="lessThan" value="15" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="15" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -703,9 +715,14 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           </conditions>
         </modifier>
         <modifier type="add" value="Mammon demands 80+ Ducats" field="error">
-          <conditions>
-            <condition type="lessThan" value="50" field="8d43-33fd-332d-17a6" scope="self" childId="any" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="50" field="8d43-33fd-332d-17a6" scope="parent" childId="any" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
