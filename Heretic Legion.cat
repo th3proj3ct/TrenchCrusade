@@ -714,8 +714,9 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
         <categoryLink name="Configuration" hidden="false" id="8264-4d4d-e63c-ba3e" targetId="705b-e23f-e9c2-58ab" primary="true"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="59f2-6d65-03d2-c268-max" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="4c5d-b530-06ab-f42f" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="9d95-f2a8-0e61-dd99-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9d95-f2a8-0e61-dd99-max" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c78a-f179-55a3-bbbd" includeChildSelections="true"/>
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Heretic Naval Raiding Party" hidden="false" id="4d05-603e-4b5a-aed4">
