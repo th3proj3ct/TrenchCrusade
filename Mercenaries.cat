@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f569-e9dd-327a-5735" name="Mercenaries" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="11" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f569-e9dd-327a-5735" name="Mercenaries" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="11" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Combat Medic" hidden="true" id="39c2-abb6-fef0-f96e">
       <modifiers>
@@ -292,7 +292,7 @@
                 <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
                 <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
                 <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">CRITICAL</characteristic>
-                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">The Warlock counts as being armed with two Swords clubs in Melee combat – its arms are deadly weapons in their own right.</characteristic>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">The Warlock counts as being armed with two Swords in Melee combat – its arms are deadly weapons in their own right.</characteristic>
               </characteristics>
             </profile>
           </profiles>
