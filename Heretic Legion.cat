@@ -1420,7 +1420,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
     </selectionEntryGroup>
     <selectionEntryGroup name="Melee (Two-Handed)" id="d2c0-0d50-1405-b805" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Great Hammer/Maul" hidden="false" id="c1ca-cefe-c074-ed85">
+        <selectionEntry type="upgrade" import="true" name="Great Hammer/Maul" hidden="false" id="c1ca-cefe-c074-ed85" sortIndex="1">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1433,7 +1433,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             <categoryLink targetId="70c9-988d-71a7-7654" id="da3b-7644-0d45-8cca" primary="false" name="Heavy"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Great Sword/Axe" hidden="false" id="84ac-8cad-49fa-ba48">
+        <selectionEntry type="upgrade" import="true" name="Great Sword/Axe" hidden="false" id="84ac-8cad-49fa-ba48" sortIndex="2">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="12"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1447,7 +1447,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             <categoryLink targetId="70c9-988d-71a7-7654" id="f97e-511b-6836-45ce" primary="false" name="Heavy"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hellblade" hidden="false" id="c2f4-409f-b6d1-5720">
+        <selectionEntry type="upgrade" import="true" name="Hellblade" hidden="false" id="c2f4-409f-b6d1-5720" sortIndex="3">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
           </costs>
@@ -1466,7 +1466,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tartarus Claws" hidden="true" id="af47-33c1-b1fc-f2bd">
+        <selectionEntry type="upgrade" import="true" name="Tartarus Claws" hidden="true" id="af47-33c1-b1fc-f2bd" sortIndex="5">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
           </costs>
@@ -1484,7 +1484,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Halberd-Gun" hidden="true" id="a6cc-f2e2-5c16-0990">
+        <selectionEntry type="upgrade" import="true" name="Halberd-Gun" hidden="true" id="a6cc-f2e2-5c16-0990" sortIndex="4">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1507,7 +1507,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Shield Combo" id="1eda-2b87-9a83-a714" hidden="false">
+        <selectionEntryGroup name="Shield Combo" id="1eda-2b87-9a83-a714" hidden="false" sortIndex="6">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Polearm" hidden="false" id="78a5-a1a4-5e3d-251e">
               <costs>
