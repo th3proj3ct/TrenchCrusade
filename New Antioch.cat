@@ -343,7 +343,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c9c-0112-cb28-7e0e" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="1" field="1c9c-0112-cb28-7e0e">
+            <modifier type="decrement" value="1" field="1c9c-0112-cb28-7e0e">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
