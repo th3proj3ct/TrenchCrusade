@@ -1141,6 +1141,19 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chewa" hidden="false" id="f5cc-8e5a-445d-bc09">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Warrior-Elite" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2627-14e3-3667-de20">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This  models gain +1 DICE against enemies that are in melee combat with a model other than the Chewa. If this enemy is in melee with 2+ other models, this bonus is increased to +2 DICE.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Lieutenant" hidden="false" id="e578-1122-47cb-10ad">
@@ -1220,6 +1233,7 @@
           <entryLinks>
             <entryLink import="true" name="Supreme Blessing" hidden="false" id="6056-46ad-95f6-3c73" type="selectionEntry" targetId="856b-ba44-04c5-fdf5"/>
             <entryLink import="true" name="Berserker" hidden="false" id="18fb-c0e5-9fb3-d51e" type="selectionEntry" targetId="92b0-1321-7484-08c0"/>
+            <entryLink import="true" name="Chewa" hidden="false" id="16d4-7475-ec4b-2b6d" type="selectionEntry" targetId="f5cc-8e5a-445d-bc09"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Rapid Assault" hidden="true" id="3aa6-aa73-5787-6ce9">
@@ -1251,7 +1265,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Trench Cleric" hidden="false" id="f8bc-5df8-1768-a72a">
       <profiles>
-        <profile name="Lieutenant" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="2341-5d66-9395-bcf5">
+        <profile name="Trench Cleric" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="2341-5d66-9395-bcf5">
           <characteristics>
             <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
             <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
@@ -1259,6 +1273,13 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Holy Warrior" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <entryLinks>
@@ -1289,8 +1310,18 @@
           </conditions>
         </modifier>
         <modifier type="set" value="2" field="16e2-020d-1d3b-6a0f">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="Holy Warrior" field="name">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1359,6 +1390,44 @@
                 </modifier>
               </modifiers>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessed Psalm" hidden="true" id="6455-1574-6176-1373">
+              <profiles>
+                <profile name="Blessed Psalm" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e228-9c26-576d-3720">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">As an ACTION, the Warrior removes one BLESSING MARKER it has and adds it to any other member of the warband. This ACTION succeeds automatically.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7af-62d7-c6f9-97fa" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="God&apos;s Mercy" hidden="true" id="c25b-a4dd-dde5-8910">
+              <profiles>
+                <profile name="God&apos;s Mercy" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c62f-0e4a-4ace-ad57">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Select one friendly model within 3” of the warrior and take an ACTION. If successful, the target immediately stands if Down and loses up to one BLOOD MARKER or INFECTION MARKER (your choice) it has.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dcb-9d0d-d4e1-45d5" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="self" shared="true" id="c6d1-3907-fc10-2929-min" includeChildSelections="false"/>
@@ -1368,6 +1437,7 @@
         <selectionEntryGroup name="Upgrades" id="4be9-648e-638f-3c62" hidden="false" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Supreme Blessing" hidden="false" id="01ea-d172-1705-618f" type="selectionEntry" targetId="856b-ba44-04c5-fdf5"/>
+            <entryLink import="true" name="Chewa" hidden="false" id="b1d7-b973-c226-bdd0" type="selectionEntry" targetId="f5cc-8e5a-445d-bc09"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1453,8 +1523,9 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="7dda-8f8f-2120-65de" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1464,6 +1535,22 @@
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Vanguard" hidden="false" id="013a-7a38-4f50-bd44">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="roster" shared="true" id="e957-f457-dde6-1cee" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Vanguard" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c471-8d45-daea-6514">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Unless the scenario prohibits use of the special deployment of INFILTRATORS, you may deploy the Vanguard on any table edge as long as they are at least 8” away from any enemy model after INFILTRATORS are deployed. Vanguard can also be deployed in your own deployment zone as standard.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1521,6 +1608,11 @@
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Shocktrooper" hidden="false" id="579e-2810-d1cf-454b">
@@ -1576,6 +1668,7 @@
             <entryLink import="true" name="Swiss Guard" hidden="false" id="3fff-0242-d7a2-a1dc" type="selectionEntry" targetId="c35e-c172-3e6b-1bda"/>
             <entryLink import="true" name="Fianna" hidden="false" id="b5cf-65af-297b-59b2" type="selectionEntry" targetId="9928-b9f7-857a-a849"/>
             <entryLink import="true" name="Supreme Blessing" hidden="false" id="adc1-7446-57a2-cc7f" type="selectionEntry" targetId="856b-ba44-04c5-fdf5"/>
+            <entryLink import="true" name="Chewa" hidden="false" id="280d-49a6-085a-5eca" type="selectionEntry" targetId="f5cc-8e5a-445d-bc09"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Forward Positions" hidden="true" id="c619-967d-d6fb-fbf7">
@@ -1789,6 +1882,13 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="2" field="697d-8353-cd4d-2999">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Mechanized Heavy Infantry" hidden="false" id="3133-240a-a0cc-9cb4">
       <entryLinks>
@@ -1852,6 +1952,12 @@
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -2154,6 +2260,50 @@
                 <profile name="Troop Selections" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7005-4d4e-ab80-c1b6">
                   <characteristics>
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband must have at least two shocktroopers and can have up to eight. the warband can have only one mechanised heavy infantry, one sniper priest and no trench moles</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Expeditionary Forces of Abyssinia" hidden="false" id="9b8f-4361-5f23-2e20">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4425-1d31-9f06-8861" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Chewa" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="6da0-ff38-8eed-a28b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Any shocktroopers or ELITE models in an Abyssinian warband can be made a member of Chewa, the traditional warrior-elite. This costs +5 ducats per model and can be done after the model has been recruited. These models gain +1 DICE against enemies that are in melee combat with a model other than the Chewa. If this enemy is in melee with 2+ other models, this bonus is increased to +2 DICE.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Holy Warriors" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4caf-5f67-4e82-cc84">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may include up to two Holy Warriors (use Trench Cleric characteristics) and they can each choose to replace their “Onwards, Christian Soldiers!” ability with one from the Abyssinian Holy Warrior abilities list.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Faith of Ethiopia" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="cf86-c95e-a355-5be8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The sect of the Sniper Priests does not operate in the Solomonic Dynasty, so your warband cannot contain any Sniper Priests.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Short-Range Marksmanship" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5965-73d7-8c30-4fdf">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Yeomen, Vanguard and the Lieutenant in this warband gain +1 DICE to all hit rolls if they are using their ranged weapons at short range (i.e. half or less of their maximum range). This bonus does not apply to GRENADES or weapons with the Keyword HEAVY.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Chieftain Panoply" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="508d-e121-32d7-36ab">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Mechanized Infantry
+of the warband cannot be upgraded to use Machine
+Armour. </characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Flanking Forces" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4ad7-982b-e2d1-2bf2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband cannot have Trench Moles, but instead you can upgrade up to four Yeomen to Vanguards at the cost of +5 ducats each. They have the following special rules: Unless the scenario prohibits use of the special deployment of INFILTRATORS, you may deploy the Vanguard on any table edge as long as they are at least 8” away from any enemy model after INFILTRATORS are deployed. Vanguard can also be deployed in your own deployment zone as standard.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Abyssinian Healers" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="0b5a-5aa3-7ed5-a176">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Your warband can have up to two Combat Medics.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
