@@ -770,7 +770,7 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
-                <condition type="greaterThan" value="3" field="selections" scope="self" childId="70c9-988d-71a7-7654" shared="true" includeChildSelections="false"/>
+                <condition type="greaterThan" value="0" field="selections" scope="self" childId="70c9-988d-71a7-7654" shared="true" includeChildSelections="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
