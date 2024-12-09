@@ -909,21 +909,19 @@
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="e578-1122-47cb-10ad" shared="true"/>
                         <condition type="lessThan" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -945,21 +943,19 @@
             </modifier>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="e578-1122-47cb-10ad" shared="true"/>
                         <condition type="lessThan" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -1454,6 +1450,13 @@
           <characteristics>
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">Shocktroopers ignore the effects of Keyword HEAVY on Melee weapons. The Shocktrooper can still only carry a single HEAVY item, unless they are STRONG.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <entryLinks>
@@ -1933,6 +1936,15 @@
                 <profile name="Bagpipes" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d5bb-99c8-85ef-adae">
                   <characteristics>
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">Your warband can purchase special bagpipes instead of a generic musical instrument. These bagpipes are identical to a musical instrument (including their equipment restrictions and LIMIT), but friendly models within 4” of the model carrying them are immune to FEAR.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Stoßtruppen of the Free State of Prussia" hidden="false" id="440a-e3aa-60d7-7d9c">
+              <profiles>
+                <profile name="Light Melee" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="aedd-a29f-d5e6-41d2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Prussian shocktroopers lose the Assault Drill ability</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
