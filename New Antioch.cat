@@ -1546,6 +1546,7 @@
               </costs>
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="roster" shared="true" id="e957-f457-dde6-1cee" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92d2-63db-c81b-e441" includeChildSelections="false"/>
               </constraints>
               <profiles>
                 <profile name="Vanguard" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c471-8d45-daea-6514">
