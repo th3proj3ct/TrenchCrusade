@@ -818,16 +818,6 @@
             <condition type="instanceOf" value="1" field="selections" scope="model" childId="f2c3-86d1-5924-093f" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="add" value="Mobile Warfare: Too Many Heavy Weapons" field="error">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9b8f-4361-5f23-2e20" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="0587-ed9b-91ba-6d82" childId="70c9-988d-71a7-7654" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Utility Hand" id="8b4c-c5f4-f53b-fe48" hidden="false">
@@ -2346,6 +2336,18 @@
         <categoryLink name="Troop" hidden="false" id="8dfe-ee53-be13-8531" targetId="bd43-ddb1-262d-4489"/>
         <categoryLink name="Mercenary" hidden="false" id="ecfa-1df1-0803-7071" targetId="3dfb-701d-e89c-eba2"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="Mobile Warfare: Too Many Heavy Ranged Weapons" field="error">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="70c9-988d-71a7-7654" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <catalogueLinks>
