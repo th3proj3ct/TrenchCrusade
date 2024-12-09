@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="13" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -552,7 +552,7 @@ Keywords: CONSUMABLE</characteristic>
     </profile>
     <profile name="Unholy Trinket" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="df27-d1f1-d5b9-d53b" publicationId="c658-4a10-e1fe-befc" page="119">
       <characteristics>
-        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When a model equipped with an Unholy Trinket fails a RISKY ACTION, that model may use this item. If it does, its Activation is not ended. 
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">When a model equipped with an Unholy Trinket fails a RISKY ACTION, that model may use this item. If it does, its Activation is not ended.
 Keyword: CONSUMABLE.</characteristic>
       </characteristics>
     </profile>
