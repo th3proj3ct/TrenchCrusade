@@ -908,6 +908,7 @@
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="e578-1122-47cb-10ad" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -946,6 +947,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="e578-1122-47cb-10ad" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
                         <condition type="lessThan" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
