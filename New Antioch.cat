@@ -473,10 +473,11 @@
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Assault" hidden="false" id="0f1c-db87-bdde-569b" type="rule" targetId="3136-7aab-4bde-9583"/>
+            <entryLink import="true" name="Bayonet Lug" hidden="false" id="ea91-c4a2-80ce-3ebf" type="selectionEntry" targetId="1abf-9449-4b03-2761"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Semi-Automatic Rifle" id="0ca8-fe44-03a1-da98" hidden="false" type="profile" targetId="1d82-fcc9-aeda-b03a"/>
+            <infoLink name="Assault" id="e626-7c30-7a5e-e597" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="9825-7fbb-f98c-4026" sortIndex="4">
@@ -585,13 +586,13 @@
           </costs>
           <entryLinks>
             <entryLink import="true" name="Bayonet Lug" hidden="false" id="40dc-2d60-5a8f-8b96" type="selectionEntry" targetId="1abf-9449-4b03-2761"/>
-            <entryLink import="true" name="Assault" hidden="false" id="9018-f2f6-f746-78f0" type="rule" targetId="3136-7aab-4bde-9583"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f637-3855-63ea-598c" includeChildSelections="true"/>
           </constraints>
           <infoLinks>
             <infoLink name="Automatic Rifle" id="9d08-216b-396f-d26c" hidden="false" type="profile" targetId="c35c-a506-683d-6c3f"/>
+            <infoLink name="Assault" id="8758-2cc6-923e-10ae" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="d70a-f3e2-204f-774f" sortIndex="4">
