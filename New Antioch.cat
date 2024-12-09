@@ -969,6 +969,7 @@
         </modifier>
         <modifier type="add" value="9b36-57f6-1887-7bea" field="category" scope="model"/>
         <modifier type="add" value="73cd-d90d-7e4f-8e86" field="category" scope="model"/>
+        <modifier type="set" value="Fianna" field="name" scope="model"/>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Berserker" hidden="true" id="92b0-1321-7484-08c0">
@@ -1021,11 +1022,12 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Armour" hidden="false" id="7d69-40d2-595d-45ec" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="4b7e-f6e9-9441-07a0" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="3"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="fe98-2c76-abee-13dd" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="2"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="1c8f-6cb9-16ad-5bb7" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+        <entryLink import="true" name="Armour" hidden="false" id="7d69-40d2-595d-45ec" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6" sortIndex="5"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="4b7e-f6e9-9441-07a0" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="4"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="fe98-2c76-abee-13dd" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="3"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="1c8f-6cb9-16ad-5bb7" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286" sortIndex="6"/>
         <entryLink import="true" name="Supreme Blessing" hidden="false" id="6056-46ad-95f6-3c73" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
+        <entryLink import="true" name="Berserker" hidden="false" id="18fb-c0e5-9fb3-d51e" type="selectionEntry" targetId="92b0-1321-7484-08c0" sortIndex="2"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="3de0-192c-3ec2-51be" id="4e47-9a9b-86b2-92cb" primary="true" name="Elite"/>
@@ -1335,11 +1337,12 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Armour" hidden="false" id="74a0-195e-033d-0452" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="036b-a0d2-cf57-157e" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="4"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="fc7d-b654-0bcc-4099" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="3"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="036b-a0d2-cf57-157e" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="5"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="fc7d-b654-0bcc-4099" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="4"/>
         <entryLink import="true" name="Equipment" hidden="false" id="907f-1417-2e9d-36b6" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
-        <entryLink import="true" name="Swiss Guard" hidden="false" id="b444-aabb-66b1-05cb" type="selectionEntry" targetId="c35e-c172-3e6b-1bda" sortIndex="2"/>
-        <entryLink import="true" name="Supreme Blessing" hidden="false" id="fe2e-caa9-37f5-1272" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
+        <entryLink import="true" name="Swiss Guard" hidden="false" id="b444-aabb-66b1-05cb" type="selectionEntry" targetId="c35e-c172-3e6b-1bda" sortIndex="3"/>
+        <entryLink import="true" name="Supreme Blessing" hidden="false" id="fe2e-caa9-37f5-1272" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="2"/>
+        <entryLink import="true" name="Fianna" hidden="false" id="7c90-17c7-8399-b58d" type="selectionEntry" targetId="9928-b9f7-857a-a849" sortIndex="1"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="2cfb-73f8-0df3-30e8" id="0bb4-c4a2-4738-99c5" primary="false" name="New Antioch"/>
