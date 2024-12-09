@@ -1394,7 +1394,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Envy" id="ed52-68d5-131f-5a07" hidden="true" sortIndex="3">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="NOT IMPLIMENTED: Envious Eyes" hidden="true" id="4d5b-7911-9dd5-c162" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Envious Eyes" hidden="true" id="4d5b-7911-9dd5-c162" sortIndex="1">
               <profiles>
                 <profile name="Envious Eyes" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="a88f-3312-e953-2b75">
                   <characteristics>
@@ -1599,7 +1599,7 @@
                     </selectionEntryGroup>
                     <selectionEntryGroup name="Iron Sultanate" id="256f-f101-93a3-2469" hidden="false">
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="eGrenade" hidden="false" id="4767-42a9-91af-7104">
+                        <selectionEntry type="upgrade" import="true" name="Grenade" hidden="false" id="4767-42a9-91af-7104">
                           <profiles>
                             <profile name="Claimed: Grenades" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="793b-d5d8-1024-63c3">
                               <characteristics>
@@ -1611,7 +1611,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ae4-eb5f-9e6d-b2e1" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="eSniper Rifle" hidden="false" id="cde7-97c2-3420-f771">
+                        <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="cde7-97c2-3420-f771">
                           <profiles>
                             <profile name="Claimed: Sniper Rifle" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3ece-5b15-88af-1394">
                               <characteristics>
@@ -1623,7 +1623,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71bc-f7ad-f09c-074a" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="eAlchemist Armour" hidden="false" id="887a-fb7c-9db9-830d">
+                        <selectionEntry type="upgrade" import="true" name="Alchemist Armour" hidden="false" id="887a-fb7c-9db9-830d">
                           <profiles>
                             <profile name="Claimed: Alchemist Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="95b4-ff42-9834-b1a5">
                               <characteristics>
@@ -1635,7 +1635,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bcd-b155-844d-1f91" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="eJezzail" hidden="false" id="b953-42b1-dbcb-b6a2">
+                        <selectionEntry type="upgrade" import="true" name="Jezzail" hidden="false" id="b953-42b1-dbcb-b6a2">
                           <profiles>
                             <profile name="Claimed: Jezzail" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="6f0f-5f09-f414-afd7">
                               <characteristics>
@@ -1647,7 +1647,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f40-cad9-1018-2d5e" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="eSiege Jezzail" hidden="false" id="d1ae-d464-68d1-f88e">
+                        <selectionEntry type="upgrade" import="true" name="Siege Jezzail" hidden="false" id="d1ae-d464-68d1-f88e">
                           <profiles>
                             <profile name="Claimed: Siege Jezzail" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7d86-96fb-1462-14ba">
                               <characteristics>
@@ -1659,7 +1659,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fe4-8dcb-cb2e-3bc8" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="eMusket" hidden="false" id="6bf8-8c5b-91cc-9fe5">
+                        <selectionEntry type="upgrade" import="true" name="Musket" hidden="false" id="6bf8-8c5b-91cc-9fe5">
                           <profiles>
                             <profile name="Claimed: Musket" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f4ba-5a86-9106-9497">
                               <characteristics>
@@ -1671,7 +1671,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd64-5443-06b6-63ca" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="eHalberd-Gun" hidden="false" id="d550-a32c-a400-046f">
+                        <selectionEntry type="upgrade" import="true" name="Halberd-Gun" hidden="false" id="d550-a32c-a400-046f">
                           <profiles>
                             <profile name="Claimed: Halberd-Gun" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="af2e-d32b-d37b-8626">
                               <characteristics>
@@ -1683,7 +1683,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d538-6a78-1020-4fc4" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="eMachine Gun" hidden="false" id="06e6-12a3-6697-73ec">
+                        <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="06e6-12a3-6697-73ec">
                           <profiles>
                             <profile name="Claimed: Machine Gun" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="85ee-683c-63c5-e708">
                               <characteristics>
