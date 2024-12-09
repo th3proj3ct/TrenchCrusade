@@ -2339,7 +2339,7 @@
       <modifiers>
         <modifier type="add" value="{this} is not allowed" field="error">
           <conditions>
-            <condition type="atLeast" value="2" field="selections" scope="parent" childId="70c9-988d-71a7-7654" shared="true"/>
+            <condition type="atLeast" value="2" field="selections" scope="parent" childId="70c9-988d-71a7-7654" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
