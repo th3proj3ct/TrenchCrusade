@@ -2175,7 +2175,6 @@
             <selectionEntry type="upgrade" import="true" name="Kingdom of Alba Assault Detachment" hidden="false" id="c92f-74bc-9acb-69b4">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd07-d2db-4c69-edc6" includeChildSelections="false"/>
-                <constraint type="max" value="4" field="selections" scope="roster" shared="true" id="cad2-8fe6-c119-9cde" includeChildSelections="true"/>
               </constraints>
               <profiles>
                 <profile name="Highland Strength" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8b76-b65f-6a20-618f">
@@ -2224,16 +2223,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <modifiers>
-                <modifier type="decrement" value="1" field="cad2-8fe6-c119-9cde">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="6986-2c13-6717-0f1b" shared="true" roundUp="false" includeChildSelections="true"/>
-                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="9825-7fbb-f98c-4026" shared="true" roundUp="false" includeChildSelections="true"/>
-                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="f6d3-e219-d597-fb25" shared="true" roundUp="false" includeChildSelections="true"/>
-                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="3488-da19-6f37-3f55" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Stoßtruppen of the Free State of Prussia" hidden="false" id="440a-e3aa-60d7-7d9c">
               <profiles>
@@ -2347,6 +2336,13 @@
         <categoryLink name="Troop" hidden="false" id="8dfe-ee53-be13-8531" targetId="bd43-ddb1-262d-4489"/>
         <categoryLink name="Mercenary" hidden="false" id="ecfa-1df1-0803-7071" targetId="3dfb-701d-e89c-eba2"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="{this} is not allowed" field="error">
+          <conditions>
+            <condition type="atLeast" value="2" field="selections" scope="parent" childId="70c9-988d-71a7-7654" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <catalogueLinks>
