@@ -1141,7 +1141,7 @@
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Thrall Type" id="74d1-4f68-8051-b15d" hidden="false">
+        <selectionEntryGroup name="Thrall Type" id="74d1-4f68-8051-b15d" hidden="false" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Grounded" hidden="false" id="3a3c-7f8b-4ee4-d9d7">
               <costs>
@@ -1228,7 +1228,21 @@
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Weapons" hidden="true" id="71b1-c9c7-290b-e7f0" type="selectionEntryGroup" targetId="4f10-6941-6de8-d8a6">
+        <entryLink import="true" name="Weapons" hidden="true" id="71b1-c9c7-290b-e7f0" type="selectionEntryGroup" targetId="4f10-6941-6de8-d8a6" sortIndex="2">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="3a3c-7f8b-4ee4-d9d7" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Grenades" hidden="true" id="eb7c-c96e-3334-7588" type="selectionEntryGroup" targetId="25fc-648e-83c5-0411" sortIndex="3">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
