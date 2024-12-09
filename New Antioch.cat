@@ -209,6 +209,17 @@
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="50d8-f63e-e01d-2698" shared="true" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="3133-240a-a0cc-9cb4" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="50d8-f63e-e01d-2698" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -259,6 +270,18 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="0f75-2545-3c39-fdbe" targetId="70c9-988d-71a7-7654" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="3133-240a-a0cc-9cb4" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Great Sword/Axe" hidden="false" id="db8d-f0cf-9959-273f">
           <costs>
@@ -273,6 +296,18 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="198f-5855-603c-b59e" targetId="70c9-988d-71a7-7654" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="3133-240a-a0cc-9cb4" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -461,6 +496,18 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="c03c-d082-1a33-f450" targetId="70c9-988d-71a7-7654" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="3133-240a-a0cc-9cb4" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="f6d3-e219-d597-fb25" sortIndex="6">
           <costs>
@@ -477,6 +524,18 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="afbb-021d-d979-9c2a" targetId="70c9-988d-71a7-7654" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="3133-240a-a0cc-9cb4" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="6bf3-048f-cdb5-e16c" sortIndex="3">
           <costs>
@@ -507,6 +566,18 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="0864-a70f-1468-6ec7" targetId="70c9-988d-71a7-7654" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="3133-240a-a0cc-9cb4" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="b110-7128-319d-5762" sortIndex="5">
           <costs>
@@ -577,6 +648,18 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="9c46-678f-132b-c255" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="3133-240a-a0cc-9cb4" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Automatic Shotgun" hidden="false" id="98a4-00df-aef0-4f48">
               <costs>
@@ -701,11 +784,42 @@
           </infoLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Carnyx " hidden="true" id="2b13-5e5c-b810-c791">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="448d-1c46-ffe1-2586" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Carnyx " typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="bf4f-e324-29c3-1527">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This model causes FEAR. Any friendly models within 4” of the musician who is not Down can add +1 DICE to their Dash ACTIONS. Carnyces take one hand to use at all times as if it were a weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fear" id="6e65-5f02-af1f-bbb4" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -764,6 +878,13 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a62-dc51-c259-9904" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="92b0-1321-7484-08c0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedSelectionEntries>
@@ -825,6 +946,54 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fianna" hidden="true" id="9928-b9f7-857a-a849">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c284-21d2-5463-c2b1" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Skirmisher" id="3306-1594-f563-0e12" hidden="false" type="rule" targetId="6ed7-68e8-34f7-393b"/>
+        <infoLink name="Infiltrator" id="d85d-c152-6860-8111" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Berserker" hidden="false" id="f316-b1aa-76f3-cd92" type="selectionEntry" targetId="92b0-1321-7484-08c0"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9b36-57f6-1887-7bea" field="category" scope="model"/>
+        <modifier type="add" value="73cd-d90d-7e4f-8e86" field="category" scope="model"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Berserker" hidden="true" id="92b0-1321-7484-08c0">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="604f-daf1-9e04-80b7" includeChildSelections="true"/>
+      </constraints>
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Berserker" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f634-bf69-b747-a78c">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This model is immune to FEAR and disregards any BLOOD MARKERS from any source. Berserkers never wear armour, though they can carry a Trench Shield. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Lieutenant" hidden="false" id="e578-1122-47cb-10ad">
@@ -833,6 +1002,13 @@
           <characteristics>
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">Once per Turn, as an ACTION the Lieutenant can instead force the opponent to activate one of their models that the Lieutenant can select from amongst the models they can see. This ends the Activation of the Lieutenant.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Lieutenant" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="9e87-e971-61ba-870c">
           <characteristics>
@@ -857,7 +1033,16 @@
         <categoryLink targetId="914f-0020-0d97-e217" id="7cb3-b0ce-bbb1-78df" primary="false" name="Tough"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Tough" id="7744-fa35-d11f-eaee" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+        <infoLink name="Skirmisher" id="7744-fa35-d11f-eaee" hidden="true" type="rule" targetId="6ed7-68e8-34f7-393b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Tough" id="29bc-ca42-b304-0549" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
       </infoLinks>
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="70"/>
@@ -868,7 +1053,16 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7f30-2514-baef-c492-max" includeChildSelections="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="0" field="7f30-2514-baef-c492-min"/>
+        <modifier type="set" value="0" field="7f30-2514-baef-c492-min">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7dda-8f8f-2120-65de" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="73cd-d90d-7e4f-8e86" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Trench Cleric" hidden="false" id="f8bc-5df8-1768-a72a">
@@ -885,8 +1079,8 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Armour" hidden="false" id="27b6-5fa0-a382-f50d" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="8efc-dc5e-31ac-ddfa" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="4"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="4e24-4a83-e02d-90c8" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="3"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="8efc-dc5e-31ac-ddfa" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="5"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="4e24-4a83-e02d-90c8" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="4"/>
         <entryLink import="true" name="Equipment" hidden="false" id="ede5-41b4-df7a-dd60" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
         <entryLink import="true" name="Supreme Blessing" hidden="false" id="dc52-be49-e19a-5cdd" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
       </entryLinks>
@@ -905,21 +1099,21 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="16e2-020d-1d3b-6a0f" includeChildSelections="true"/>
         <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="7c0b-bfc0-e9af-4650" includeChildSelections="true"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Battlefield Litany" hidden="false" id="a4a6-cb82-add8-2046" sortIndex="2">
+      <modifiers>
+        <modifier type="set" value="1" field="7c0b-bfc0-e9af-4650">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7dda-8f8f-2120-65de" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="2" field="16e2-020d-1d3b-6a0f">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Battlefield Litany" id="bf95-df95-850c-dab9" hidden="false" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="God is With Us!" hidden="false" id="a389-d1a8-1bfe-7bba">
-              <profiles>
-                <profile name="God is With Us!" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c092-4fd5-e30d-0060">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Select one friendly model within 6” of the Priest (including the Priest) and take a RISKY ACTION. If successful, the model immediately gains a BLESSING MARKER</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e92-dd0a-7532-054c" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Onwards, Christian Soldiers!" hidden="false" id="bd29-0628-00be-3d6f">
               <profiles>
                 <profile name="Onwards, Christian Soldiers!" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8d4a-bd62-2847-c98b">
@@ -932,22 +1126,63 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c03a-38b1-021c-6608" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="God is With Us!" hidden="false" id="a389-d1a8-1bfe-7bba">
+              <profiles>
+                <profile name="God is With Us!" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c092-4fd5-e30d-0060">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Select one friendly model within 6” of the Priest (including the Priest) and take a RISKY ACTION. If successful, the model immediately gains a BLESSING MARKER</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e92-dd0a-7532-054c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Away, Serpents!" hidden="true" id="c372-7677-43fb-bbc3">
+              <profiles>
+                <profile name="Away, Serpents!" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5c3a-8564-bfc9-a979">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Select any enemy within 12” of the Priest and take a RISKY ACTION (targeting models on 40mm or larger bases incur -1 DICE penalty to this roll). If successful, the enemy model goes Down immediately, slithering on its belly like a snake.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc43-8dbe-6082-c2d6" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Arise and be Healed!" hidden="true" id="ddcb-0890-fe88-d925">
+              <profiles>
+                <profile name="Arise and be Healed!" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="19e6-b3af-9141-c949">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Select one friendly model within 3” of the Priest and take a RISKY ACTION. If successful, the warrior immediately stands up if Down, and loses up to D3 BLOOD MARKERS or INFECTION MARKERS (or any combination) of your choice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aef3-0182-48d6-5bf9" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="4efe-6a2b-421c-1f6d-max-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="4efe-6a2b-421c-1f6d-max-max" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a21-d1fd-3859-5ca3-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a21-d1fd-3859-5ca3-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="c6d1-3907-fc10-2929-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="c6d1-3907-fc10-2929-max" includeChildSelections="false"/>
           </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <modifiers>
-        <modifier type="set" value="1" field="7c0b-bfc0-e9af-4650">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7dda-8f8f-2120-65de" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Yeoman" hidden="false" id="f2c3-86d1-5924-093f">
       <profiles>
@@ -973,7 +1208,7 @@
         <entryLink import="true" name="Grenades" hidden="false" id="46e9-9264-fb37-a8e5" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="5"/>
         <entryLink import="true" name="Weapons" hidden="false" id="06ce-2337-5b53-ec4c" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="4"/>
         <entryLink import="true" name="Equipment" hidden="false" id="9bba-9a7d-3c8a-7ad9" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
-        <entryLink import="true" name="Swiss Guard" hidden="false" id="6dde-9bcc-7c33-803f" type="selectionEntry" targetId="c35e-c172-3e6b-1bda" sortIndex="3"/>
+        <entryLink import="true" name="Swiss Guard" hidden="false" id="6dde-9bcc-7c33-803f" type="selectionEntry" targetId="c35e-c172-3e6b-1bda" sortIndex="2"/>
         <entryLink import="true" name="Supreme Blessing" hidden="false" id="79fd-a0da-8e10-a52a" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
       </entryLinks>
       <categoryLinks>
@@ -985,7 +1220,7 @@
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trench Mole" hidden="false" id="9886-5b15-fa46-8d84" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Trench Mole" hidden="false" id="9886-5b15-fa46-8d84" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="764f-d015-494e-ab99" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="c9d7-477f-d64d-c542" includeChildSelections="true"/>
@@ -1303,6 +1538,11 @@
             <condition type="atLeast" value="1" field="selections" scope="model" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="1" field="80cb-0666-30a3-5540">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fireteam" hidden="false" id="441f-8640-cfed-8e78">
@@ -1342,6 +1582,13 @@
         <categoryLink targetId="2cfb-73f8-0df3-30e8" id="93f4-17cd-6bf6-5499" primary="false" name="New Antioch"/>
         <categoryLink targetId="83c8-b351-cb96-119e" id="6ea6-acce-4425-dc0f" primary="true" name="Fireteam"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="1" field="b845-3e0e-899d-4114">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mamluk Faris" hidden="false" id="30f6-07a5-f70d-8794">
       <categoryLinks>
@@ -1416,6 +1663,56 @@
                 <profile name="Supreme Blessing" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f293-f1e8-ec8b-f9a1">
                   <characteristics>
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">One model in the warband may carry the crucifix given by the Supreme Pontiff. This model can take further ACTIONS if it fails in an attempted RISKY ACTION. Note that the action fails, but you are allowed to try any other ACTIONS on your profile without losing the Activation.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="721b-1b43-bb3b-e885" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Eire Rangers" hidden="false" id="6aa4-b38b-5146-4106">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ed5-de4a-b7b9-1fea" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Berserker" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="98a6-cd84-26a9-cfce">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Either your Lieutenant or one of the Fianna can be a Berserker. This model is immune to FEAR and disregards any BLOOD MARKERS from any source. Berserkers never wear armour, though they can carry a Trench Shield. Add +15 Ducats to the cost of this model</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Followers of St. Patrick" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="369e-cfea-3774-2a65">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">If playing a Campaign, the patron of the warband is automatically Saint Patrick.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Carnyx" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ea0b-8b94-35f8-318a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Your army can purchase a special Carnyx instead of a generic musical instrument. This horn is identical to a musical instrument (including equipment restrictions and LIMIT), except it can be carried by an ELITE model and the model carrying it causes FEAR.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Hit-and-run Tactics" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4045-4821-7c11-647a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">If a model of this warband uses the Retreat ACTION to move away from Combat, enemies have a -1 DICE penalty to hit rolls with their free attack.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Loose Organization" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9d1b-0e96-253c-6925">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Your warband may only have up to one FIRETEAM from the New Antioch Fireteams feature. Additionally, your Lieutenant loses the On my command! ability and gains the Keyword SKIRMISHER.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Strong in Faith" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="00bc-436c-70ff-ad74">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Eire is a bastion of the Church, with many famed warrior-priests who travel to war. The warband may have up to two Trench Clerics and they can each choose to replace their Onwards, Christian Soldiers! ability with one from the list below</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Light Infantry" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9012-fe5f-5f78-89c6">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband is allowed to field only one Mechanized Heavy Infantry trooper. No model (save for the single Mechanized Heavy Infantry) may carry a HEAVY weapon or wear Heavy or Machine Armour. This does not apply to Combat Engineers’ Satchel Charges.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Fianna" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="154f-8115-36a2-f61a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Any Shocktroopers in an Eire Warband can be made a member of Fianna, the famed warrior-hunters. They cost +10 ducats each and have the Keywords SKIRMISHER and INFILTRATOR.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
