@@ -844,9 +844,14 @@
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -859,15 +864,20 @@
             <infoLink name="Machine Armour" id="512c-0029-f890-db19" hidden="false" type="profile" targetId="2558-23f8-cfa8-40f4"/>
           </infoLinks>
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-              </conditions>
-            </modifier>
             <modifier type="add" value="Cannot combine Machine Armor and Shield" field="error">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="model" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
