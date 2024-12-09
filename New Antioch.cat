@@ -1153,6 +1153,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="462d-b249-7299-6b09" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
