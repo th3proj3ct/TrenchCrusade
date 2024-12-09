@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="707d-5bdf-586e-f704" name="New Antioch" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="707d-5bdf-586e-f704" name="New Antioch" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="24ae-224b-0680-a9bd" hidden="false" collapsible="true">
       <constraints>
@@ -782,6 +782,49 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5d3-b115-31e8-332e" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Swiss Guard" hidden="true" id="c35e-c172-3e6b-1bda">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Papal Courage" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c278-1c7e-9e11-e7ae">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This model is immune to FEAR.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d9d-4acc-326a-6a3c" includeChildSelections="false"/>
+        <constraint type="max" value="4" field="selections" scope="roster" shared="true" id="2d0d-e220-773a-50f1" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7dda-8f8f-2120-65de" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Supreme Blessing" hidden="true" id="856b-ba44-04c5-fdf5">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7dda-8f8f-2120-65de" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ba95-b27b-63db-241a" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Blessing of the Pontiff" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7b83-acba-914a-38c8">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">This model can take further ACTIONS if it fails in an attempted RISKY ACTION. Note that the action fails, but you are allowed to try any other ACTIONS on your profile without losing the Activation.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Lieutenant" hidden="false" id="e578-1122-47cb-10ad">
@@ -803,9 +846,10 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Armour" hidden="false" id="7d69-40d2-595d-45ec" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="4b7e-f6e9-9441-07a0" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="2"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="fe98-2c76-abee-13dd" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="1"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="4b7e-f6e9-9441-07a0" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="3"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="fe98-2c76-abee-13dd" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="2"/>
         <entryLink import="true" name="Equipment" hidden="false" id="1c8f-6cb9-16ad-5bb7" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+        <entryLink import="true" name="Supreme Blessing" hidden="false" id="6056-46ad-95f6-3c73" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="3de0-192c-3ec2-51be" id="4e47-9a9b-86b2-92cb" primary="true" name="Elite"/>
@@ -823,6 +867,9 @@
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="7f30-2514-baef-c492-min" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7f30-2514-baef-c492-max" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="7f30-2514-baef-c492-min"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Trench Cleric" hidden="false" id="f8bc-5df8-1768-a72a">
       <profiles>
@@ -838,9 +885,10 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Armour" hidden="false" id="27b6-5fa0-a382-f50d" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="8efc-dc5e-31ac-ddfa" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="3"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="4e24-4a83-e02d-90c8" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="2"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="8efc-dc5e-31ac-ddfa" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="4"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="4e24-4a83-e02d-90c8" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="3"/>
         <entryLink import="true" name="Equipment" hidden="false" id="ede5-41b4-df7a-dd60" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+        <entryLink import="true" name="Supreme Blessing" hidden="false" id="dc52-be49-e19a-5cdd" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="3de0-192c-3ec2-51be" id="6e79-070e-d330-f323" primary="true" name="Elite"/>
@@ -855,9 +903,10 @@
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="16e2-020d-1d3b-6a0f" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="7c0b-bfc0-e9af-4650" includeChildSelections="true"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Battlefield Litany" hidden="false" id="a4a6-cb82-add8-2046" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Battlefield Litany" hidden="false" id="a4a6-cb82-add8-2046" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="God is With Us!" hidden="false" id="a389-d1a8-1bfe-7bba">
               <profiles>
@@ -892,6 +941,13 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="1" field="7c0b-bfc0-e9af-4650">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7dda-8f8f-2120-65de" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Yeoman" hidden="false" id="f2c3-86d1-5924-093f">
       <profiles>
@@ -914,9 +970,11 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Armour" hidden="false" id="7572-9793-fcba-2e6f" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="46e9-9264-fb37-a8e5" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="3"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="06ce-2337-5b53-ec4c" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="2"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="46e9-9264-fb37-a8e5" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="5"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="06ce-2337-5b53-ec4c" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="4"/>
         <entryLink import="true" name="Equipment" hidden="false" id="9bba-9a7d-3c8a-7ad9" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+        <entryLink import="true" name="Swiss Guard" hidden="false" id="6dde-9bcc-7c33-803f" type="selectionEntry" targetId="c35e-c172-3e6b-1bda" sortIndex="3"/>
+        <entryLink import="true" name="Supreme Blessing" hidden="false" id="79fd-a0da-8e10-a52a" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="2cfb-73f8-0df3-30e8" id="a6e1-faa0-a034-81c5" primary="false" name="New Antioch"/>
@@ -927,7 +985,7 @@
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trench Mole" hidden="false" id="9886-5b15-fa46-8d84" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Trench Mole" hidden="false" id="9886-5b15-fa46-8d84" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="764f-d015-494e-ab99" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="c9d7-477f-d64d-c542" includeChildSelections="true"/>
@@ -950,6 +1008,11 @@
             <modifier type="set" value="3" field="c9d7-477f-d64d-c542">
               <conditions>
                 <condition type="atLeast" value="1000" field="8d43-33fd-332d-17a6" scope="roster" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7dda-8f8f-2120-65de" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -999,6 +1062,7 @@
         <entryLink import="true" name="Grenades" hidden="false" id="8e05-ec93-a50b-2861" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="3"/>
         <entryLink import="true" name="Weapons" hidden="false" id="98ce-d7c6-0993-15d5" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="2"/>
         <entryLink import="true" name="Equipment" hidden="false" id="4720-b974-1bbd-1680" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+        <entryLink import="true" name="Supreme Blessing" hidden="false" id="490b-8379-1859-db35" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="3de0-192c-3ec2-51be" id="5994-7a77-128a-858e" primary="true" name="Elite"/>
@@ -1036,9 +1100,11 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Armour" hidden="false" id="74a0-195e-033d-0452" type="selectionEntryGroup" targetId="8132-2c2e-56dc-14a6"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="036b-a0d2-cf57-157e" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="3"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="fc7d-b654-0bcc-4099" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="2"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="036b-a0d2-cf57-157e" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="4"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="fc7d-b654-0bcc-4099" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="3"/>
         <entryLink import="true" name="Equipment" hidden="false" id="907f-1417-2e9d-36b6" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+        <entryLink import="true" name="Swiss Guard" hidden="false" id="b444-aabb-66b1-05cb" type="selectionEntry" targetId="c35e-c172-3e6b-1bda" sortIndex="2"/>
+        <entryLink import="true" name="Supreme Blessing" hidden="false" id="fe2e-caa9-37f5-1272" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="2cfb-73f8-0df3-30e8" id="0bb4-c4a2-4738-99c5" primary="false" name="New Antioch"/>
@@ -1083,6 +1149,8 @@
         <entryLink import="true" name="Grenades" hidden="false" id="a44f-a7e7-8977-bfbf" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="3"/>
         <entryLink import="true" name="Weapons" hidden="false" id="47e8-1638-32b4-c5b3" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="2"/>
         <entryLink import="true" name="Equipment" hidden="false" id="88ab-3198-1620-4be6" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+        <entryLink import="true" name="Swiss Guard" hidden="false" id="b6f6-f254-20c2-3a87" type="selectionEntry" targetId="c35e-c172-3e6b-1bda" sortIndex="1"/>
+        <entryLink import="true" name="Supreme Blessing" hidden="false" id="6265-5705-d68c-5e70" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="2cfb-73f8-0df3-30e8" id="38f4-e719-e0a4-4f8b" primary="false" name="New Antioch"/>
@@ -1187,12 +1255,18 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Swiss Guard" hidden="false" id="c6c6-01de-71ee-390b" type="selectionEntry" targetId="c35e-c172-3e6b-1bda" sortIndex="2"/>
+        <entryLink import="true" name="Supreme Blessing" hidden="false" id="5de5-4df3-caed-168a" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Mechanized Heavy Infantry" hidden="false" id="3133-240a-a0cc-9cb4">
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="aaa2-c72a-afd1-76c4" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="3"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="5cb9-84c9-ac4a-e42c" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="2"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="aaa2-c72a-afd1-76c4" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="4"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="5cb9-84c9-ac4a-e42c" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="3"/>
         <entryLink import="true" name="Equipment" hidden="false" id="5d62-27c4-ee31-e3d0" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
+        <entryLink import="true" name="Swiss Guard" hidden="false" id="5df0-1a93-5c12-595a" type="selectionEntry" targetId="c35e-c172-3e6b-1bda" sortIndex="2"/>
+        <entryLink import="true" name="Supreme Blessing" hidden="false" id="495b-7b85-44d6-1348" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="2cfb-73f8-0df3-30e8" id="a6e6-8bb0-cf69-fba0" primary="false" name="New Antioch"/>
@@ -1315,6 +1389,47 @@
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Variant" hidden="false" id="c62e-27aa-a33d-9327">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Variant Selection" id="09ba-00fb-c973-209e" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Papal States Intervention Force" hidden="false" id="7dda-8f8f-2120-65de">
+              <profiles>
+                <profile name="Vatican’s Representative" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fdac-9fd9-f409-f0ed">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Papal States Warband must include a Trench Cleric but does not have to include a Lieutenant.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Specialist Force" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="867a-dbfe-62da-2e28">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062"> A Papal States Intervention Force is recruited with 500 ducats and 11 Glory Points when creating a warband for a campaign. When recruiting a warband for a one-off battle, we recommend using 700 ducats and 15 Glory Points.
+
+(Note- Cost Limits can be adjusted via List Options -&gt; List Configuration)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Far from Home" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ff9f-e15d-1fe7-38d0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Papal Intervention Force may have no Trench Moles</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Supreme Blessing" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f293-f1e8-ec8b-f9a1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">One model in the warband may carry the crucifix given by the Supreme Pontiff. This model can take further ACTIONS if it fails in an attempted RISKY ACTION. Note that the action fails, but you are allowed to try any other ACTIONS on your profile without losing the Activation.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="71df-c644-2dd0-276c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="71df-c644-2dd0-276c-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c35-2678-0ff9-0b03" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
