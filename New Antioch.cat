@@ -818,6 +818,16 @@
             <condition type="instanceOf" value="1" field="selections" scope="model" childId="f2c3-86d1-5924-093f" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="Mobile Warfare: Too Many Heavy Weapons" field="error">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9b8f-4361-5f23-2e20" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="0587-ed9b-91ba-6d82" childId="70c9-988d-71a7-7654" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Utility Hand" id="8b4c-c5f4-f53b-fe48" hidden="false">
@@ -2293,11 +2303,9 @@
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">Yeomen, Vanguard and the Lieutenant in this warband gain +1 DICE to all hit rolls if they are using their ranged weapons at short range (i.e. half or less of their maximum range). This bonus does not apply to GRENADES or weapons with the Keyword HEAVY.</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Chieftain Panoply" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="508d-e121-32d7-36ab">
+                <profile name="Weapons of Mobile Warfare" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="508d-e121-32d7-36ab">
                   <characteristics>
-                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Mechanized Infantry
-of the warband cannot be upgraded to use Machine
-Armour. </characteristic>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Your warband can have a maximum of three ranged weapons with the Keyword HEAVY. This limitation does not include satchel charges.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Flanking Forces" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4ad7-982b-e2d1-2bf2">
@@ -2308,6 +2316,11 @@ Armour. </characteristic>
                 <profile name="Abyssinian Healers" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="0b5a-5aa3-7ed5-a176">
                   <characteristics>
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">Your warband can have up to two Combat Medics.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Chieftain Panoply" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5e30-1611-ee61-521f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Mechanized Infantry of the warband cannot be upgraded to use Machine Armour. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
