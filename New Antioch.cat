@@ -134,7 +134,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Headgear" id="33a6-4dc3-100c-52c3" hidden="false" sortIndex="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="abb3-aaef-ebeb-4922" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abb3-aaef-ebeb-4922" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Combat Helmet" hidden="false" id="2af0-008a-a7f6-f51c">
