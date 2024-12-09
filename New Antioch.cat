@@ -134,7 +134,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Headgear" id="33a6-4dc3-100c-52c3" hidden="false" sortIndex="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abb3-aaef-ebeb-4922" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="abb3-aaef-ebeb-4922" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Combat Helmet" hidden="false" id="2af0-008a-a7f6-f51c">
@@ -146,6 +146,7 @@
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="0bbf-0f8a-df4f-2f45"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -277,6 +278,38 @@
           <infoLinks>
             <infoLink name="Trench Club" id="2133-da17-ae4f-f1ad" hidden="false" type="profile" targetId="b242-1242-be3a-d232"/>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shotel" hidden="true" id="ae50-9c6f-a718-8767" sortIndex="4" collective="false">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Critical" id="3905-9270-d55c-b468" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Shotel" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="d678-de0f-c92b-f9ea">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">Ignore Shield</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">CRITICAL</characteristic>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">The Shotel is specifically designed to overcome enemy shields. It ignores the target’s penalty to injury rolls from its shield, if any. The Holy Icon Shield and similar effects still apply. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="9b8f-4361-5f23-2e20" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -2319,7 +2352,7 @@
                 </profile>
               </profiles>
               <modifiers>
-                <modifier type="add" value="Mobile Warfare: Too Immobile!" field="error">
+                <modifier type="add" value="Mobile Warfare: Too many Heavy Ranged Weapons!" field="error">
                   <conditions>
                     <condition type="greaterThan" value="3" field="selections" scope="roster" childId="18c9-01d7-6be9-0859" shared="true" includeChildSelections="true"/>
                   </conditions>
