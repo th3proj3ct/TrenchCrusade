@@ -457,9 +457,14 @@
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -535,6 +540,11 @@
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="f6d3-e219-d597-fb25" sortIndex="6">
@@ -564,9 +574,14 @@
               </conditionGroups>
             </modifier>
             <modifier type="set" value="1" field="7a52-4209-49c7-e28b">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -673,6 +688,11 @@
                 <modifier type="set" value="1" field="b355-ead4-7e5d-0927">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="4" field="b355-ead4-7e5d-0927">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1201,6 +1221,31 @@
             <entryLink import="true" name="Supreme Blessing" hidden="false" id="6056-46ad-95f6-3c73" type="selectionEntry" targetId="856b-ba44-04c5-fdf5"/>
             <entryLink import="true" name="Berserker" hidden="false" id="18fb-c0e5-9fb3-d51e" type="selectionEntry" targetId="92b0-1321-7484-08c0"/>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rapid Assault" hidden="true" id="3aa6-aa73-5787-6ce9">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6db9-c705-1d3b-4163" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Blitz" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="51e6-6eb4-e8bd-8783">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">This model may add +1 DICE to all their Dash ACTIONS.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -1519,6 +1564,52 @@
             <entryLink import="true" name="Fianna" hidden="false" id="b5cf-65af-297b-59b2" type="selectionEntry" targetId="9928-b9f7-857a-a849"/>
             <entryLink import="true" name="Supreme Blessing" hidden="false" id="adc1-7446-57a2-cc7f" type="selectionEntry" targetId="856b-ba44-04c5-fdf5"/>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Forward Positions" hidden="true" id="c619-967d-d6fb-fbf7">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="a6a3-fce8-6245-ce05" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4a6-ec50-7ee4-855b" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="add" value="9b36-57f6-1887-7bea" field="category" scope="model"/>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Infiltrator" id="0c0d-197c-e55c-ccf7" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rapid Assault" hidden="true" id="ee11-12c5-7320-c600">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c23a-6bce-0981-2fb6" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Blitz" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2822-421a-3fd6-2e6a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">This model may add +1 DICE to all their Dash ACTIONS.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -2010,9 +2101,24 @@
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">Prussian shocktroopers lose the Assault Drill ability</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Masters of the Grenade" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="72d4-10ad-8eb7-a8f1">
+                <profile name="Specialised Equipment" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="72d4-10ad-8eb7-a8f1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">This warband has LIMIT:4 for Submachine guns. Automatic Shotguns and Automatic Pistols are not limited to ELITE. The warband may have no Grenade Launchers and only one Machine Gun.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Masters of the Grenade" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1708-d9eb-00c1-f415">
                   <characteristics>
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">Models of the Stoßtruppen Warband add 4” range to all of their GRENADE weapons.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Rapid Assault" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="60fa-5a76-8da3-9317">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">At the cost of +5 ducats per model, any Shocktroopers and Lieutenants may add +1 DICE to all their Dash ACTIONS.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Forward Positions" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4f3f-c000-8e12-3278">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062"> Up to two Shocktroops can have the Keyword INFILTRATOR at the cost of +10 ducats per model.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
