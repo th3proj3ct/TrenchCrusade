@@ -523,6 +523,7 @@
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="c03c-d082-1a33-f450" targetId="70c9-988d-71a7-7654" primary="false"/>
+            <categoryLink targetId="18c9-01d7-6be9-0859" id="3eff-1054-1069-75a5" primary="false" name="Immobile"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -561,6 +562,7 @@
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="afbb-021d-d979-9c2a" targetId="70c9-988d-71a7-7654" primary="false"/>
+            <categoryLink targetId="18c9-01d7-6be9-0859" id="89c3-fe25-fc31-fcf8" primary="false" name="Immobile"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -613,6 +615,7 @@
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="0864-a70f-1468-6ec7" targetId="70c9-988d-71a7-7654" primary="false"/>
+            <categoryLink targetId="18c9-01d7-6be9-0859" id="ec3d-497c-f343-d208" primary="false" name="Immobile"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -711,6 +714,7 @@
               </infoLinks>
               <categoryLinks>
                 <categoryLink targetId="70c9-988d-71a7-7654" id="5616-3a39-808e-eae7" primary="false" name="Heavy"/>
+                <categoryLink targetId="18c9-01d7-6be9-0859" id="41b1-c46f-a840-1ea3" primary="false" name="Immobile"/>
               </categoryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="9c46-678f-132b-c255" includeChildSelections="true"/>
@@ -2317,7 +2321,7 @@
               <modifiers>
                 <modifier type="add" value="Mobile Warfare: Too Immobile!" field="error">
                   <conditions>
-                    <condition type="atLeast" value="2" field="selections" scope="roster" childId="70c9-988d-71a7-7654" shared="true" includeChildSelections="true"/>
+                    <condition type="greaterThan" value="3" field="selections" scope="roster" childId="18c9-01d7-6be9-0859" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2348,4 +2352,7 @@
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Mercenaries" id="cbfd-f9fc-8cfb-227d" targetId="f569-e9dd-327a-5735" importRootEntries="true"/>
   </catalogueLinks>
+  <categoryEntries>
+    <categoryEntry name="Immobile" id="18c9-01d7-6be9-0859" hidden="true"/>
+  </categoryEntries>
 </catalogue>
