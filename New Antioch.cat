@@ -158,7 +158,15 @@
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Grenades" id="538c-c8f3-3ec7-a4b8" hidden="false" type="profile" targetId="cc34-0630-85e1-2583"/>
+            <infoLink name="Grenades" id="538c-c8f3-3ec7-a4b8" hidden="false" type="profile" targetId="cc34-0630-85e1-2583">
+              <modifiers>
+                <modifier type="increment" value="4" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink name="Shrapnel" id="81b7-6957-58aa-4421" hidden="false" type="rule" targetId="200f-a7a6-f8a7-8232"/>
             <infoLink name="Assault" id="9dea-f234-c1b8-982e" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
             <infoLink name="Blast" id="d3ff-e47c-4727-7562" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
@@ -174,7 +182,15 @@
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Incendiary Grenades" id="f8e1-7032-af87-8c28" hidden="false" type="profile" targetId="3bfd-2c1d-2d6b-a36c"/>
+            <infoLink name="Incendiary Grenades" id="f8e1-7032-af87-8c28" hidden="false" type="profile" targetId="3bfd-2c1d-2d6b-a36c">
+              <modifiers>
+                <modifier type="increment" value="4" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink name="Assault" id="e64b-08a1-9169-1a92" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
             <infoLink name="Fire" id="8030-904d-0b00-0d93" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
             <infoLink name="Grenade" id="c4bb-e742-33d6-29ae" hidden="false" type="rule" targetId="1c58-0dce-e86e-b0dc"/>
@@ -190,7 +206,15 @@
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Satchel Charge" id="7343-5779-f015-b492" hidden="false" type="profile" targetId="744d-f4d2-f8d5-064a"/>
+            <infoLink name="Satchel Charge" id="7343-5779-f015-b492" hidden="false" type="profile" targetId="744d-f4d2-f8d5-064a">
+              <modifiers>
+                <modifier type="increment" value="4" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink name="Heavy" id="693f-391b-de26-9d21" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
             <infoLink name="Blast" id="4a59-d1d6-9301-ca8f" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
             <infoLink name="Grenade" id="7575-b861-467e-1c79" hidden="false" type="rule" targetId="1c58-0dce-e86e-b0dc"/>
@@ -1783,6 +1807,11 @@
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="3" field="b845-3e0e-899d-4114">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mamluk Faris" hidden="false" id="30f6-07a5-f70d-8794">
@@ -1966,9 +1995,24 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Stoßtruppen of the Free State of Prussia" hidden="false" id="440a-e3aa-60d7-7d9c">
               <profiles>
-                <profile name="Light Melee" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="aedd-a29f-d5e6-41d2">
+                <profile name="Lightly-Armoured" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="aedd-a29f-d5e6-41d2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062"> Apart from mechanised heavy infantry and the lieutenant, no model in the warband can be equipped with reinforced or machine armour</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Expert Fireteams" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3c4e-ba16-aefb-606f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">You may have up to three FIRETEAMS from the New Antioch Fireteams feature.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Light Melee" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="08bb-d310-7f89-f059">
                   <characteristics>
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">Prussian shocktroopers lose the Assault Drill ability</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Masters of the Grenade" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="72d4-10ad-8eb7-a8f1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Models of the Stoßtruppen Warband add 4” range to all of their GRENADE weapons.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
