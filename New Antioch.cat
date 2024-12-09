@@ -473,7 +473,6 @@
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Bayonet Lug" hidden="false" id="ea91-c4a2-80ce-3ebf" type="selectionEntry" targetId="1abf-9449-4b03-2761"/>
             <entryLink import="true" name="Assault" hidden="false" id="0f1c-db87-bdde-569b" type="rule" targetId="3136-7aab-4bde-9583"/>
           </entryLinks>
           <infoLinks>
