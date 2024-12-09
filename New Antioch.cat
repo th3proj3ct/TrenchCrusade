@@ -508,6 +508,11 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="1" field="a26f-8c3d-3c85-60a5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="f6d3-e219-d597-fb25" sortIndex="6">
@@ -535,6 +540,11 @@
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="7a52-4209-49c7-e28b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -611,6 +621,13 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="430e-e798-0e78-be85" targetId="70c9-988d-71a7-7654" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="ffd6-8fdd-dd52-485b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -630,6 +647,13 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="b355-ead4-7e5d-0927" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="b355-ead4-7e5d-0927">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Heavy Shotgun" hidden="false" id="6986-2c13-6717-0f1b">
               <costs>
@@ -676,6 +700,13 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="7cc9-16f0-0a5c-a098" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="7cc9-16f0-0a5c-a098">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="ff3d-b1b4-9d3c-855c" sortIndex="1">
               <costs>
@@ -790,6 +821,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -820,6 +852,32 @@
           </profiles>
           <infoLinks>
             <infoLink name="Fear" id="6e65-5f02-af1f-bbb4" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bagpipes" hidden="true" id="831d-0f3f-be36-9b1d">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="48ff-24b3-dea9-60e8" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Carnyx " typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d777-d95f-f173-9c07">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Any friendly models within 4” of the musician are immune to fear, and those who are not Down can add +1 DICE to their Dash ACTIONS. Bagpipes take one hand to use at all times as if it were a weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fear" id="ae73-8108-76a3-b082" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1074,6 +1132,11 @@
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Upgrades" id="0f8f-f9db-a584-0cd6" hidden="false" sortIndex="1">
@@ -1309,6 +1372,9 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="1a4f-d2cd-c405-6200"/>
+          </modifiers>
         </profile>
         <profile name="Aim" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9abe-b135-9901-68d4">
           <characteristics>
@@ -1602,6 +1668,28 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <profiles>
+        <profile name="Heavy Infantry" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="aeaa-7023-3585-4664">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-2</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">32/40mm</characteristic>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="1a4f-d2cd-c405-6200"/>
+                <modifier type="set" value="+1 Dice" field="12e8-ff8c-c933-9eb5"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fireteam" hidden="false" id="441f-8640-cfed-8e78">
       <profiles>
@@ -1771,6 +1859,43 @@
                 <profile name="Fianna" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="154f-8115-36a2-f61a">
                   <characteristics>
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">Any Shocktroopers in an Eire Warband can be made a member of Fianna, the famed warrior-hunters. They cost +10 ducats each and have the Keywords SKIRMISHER and INFILTRATOR.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Kingdom of Alba Assault Detachment" hidden="false" id="c92f-74bc-9acb-69b4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd07-d2db-4c69-edc6" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Highland Strength" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8b76-b65f-6a20-618f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Lieutenant of the warband has the Keyword STRONG</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Rampant Charge" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="307d-830b-4eab-5ed2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models in this warband ignore the penalty for Defended Obstacles.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Melee-Focused" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4aed-10a6-26e6-3861">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Mechanized Heavy Infantry of this warband have +1 DICE in melee instead of Ranged Attacks.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Brave" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3e73-fdd8-8f60-4ede">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband adds +1 DICE to all Morale Tests. </characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Highland Machine Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="073d-ef2a-1546-b690">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Models in this warband equipped with machine armour ignore the penalty to charging imposed by the armour.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Strained Supply" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="06f8-2c98-360b-bf9d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">This warband has LIMIT:1 for Grenade Launchers, Submachine Guns, Machine Guns, Automatic Shotguns and Sniper Rifles.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
