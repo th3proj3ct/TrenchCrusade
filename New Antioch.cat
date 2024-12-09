@@ -1683,6 +1683,18 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16a8-7110-3d34-ebfe" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="add" value="Cannot combine Machine Armor and Shield" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6b8a-68e7-f795-ffe7" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
