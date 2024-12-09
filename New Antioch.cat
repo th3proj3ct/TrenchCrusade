@@ -930,9 +930,14 @@
           </infoLinks>
           <modifiers>
             <modifier type="add" value="Cannot combine Machine Armor and Shield" field="error">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="e6ac-8562-3982-4bfc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
