@@ -343,7 +343,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c9c-0112-cb28-7e0e" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="decrement" value="1" field="1c9c-0112-cb28-7e0e">
+            <modifier type="set" value="1" field="1c9c-0112-cb28-7e0e">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -358,17 +358,10 @@
                     </conditionGroup>
                     <conditionGroup type="or">
                       <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <comment>Strong is overwritten by Cumbersome</comment>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="579e-2810-d1cf-454b" shared="true" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
