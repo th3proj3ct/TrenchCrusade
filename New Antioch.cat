@@ -2314,6 +2314,13 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="add" value="Mobile Warfare: Too Immobile!" field="error">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="roster" childId="70c9-988d-71a7-7654" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -2336,13 +2343,6 @@
         <categoryLink name="Troop" hidden="false" id="8dfe-ee53-be13-8531" targetId="bd43-ddb1-262d-4489"/>
         <categoryLink name="Mercenary" hidden="false" id="ecfa-1df1-0803-7071" targetId="3dfb-701d-e89c-eba2"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="add" value="{this} is not allowed" field="error">
-          <conditions>
-            <condition type="atLeast" value="2" field="selections" scope="parent" childId="70c9-988d-71a7-7654" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </forceEntry>
   </forceEntries>
   <catalogueLinks>
