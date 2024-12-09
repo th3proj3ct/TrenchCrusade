@@ -474,6 +474,7 @@
           </costs>
           <entryLinks>
             <entryLink import="true" name="Bayonet Lug" hidden="false" id="ea91-c4a2-80ce-3ebf" type="selectionEntry" targetId="1abf-9449-4b03-2761"/>
+            <entryLink import="true" name="Assault" hidden="false" id="0f1c-db87-bdde-569b" type="rule" targetId="3136-7aab-4bde-9583"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Semi-Automatic Rifle" id="0ca8-fe44-03a1-da98" hidden="false" type="profile" targetId="1d82-fcc9-aeda-b03a"/>
@@ -1510,11 +1511,11 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Mechanized Heavy Infantry" hidden="false" id="3133-240a-a0cc-9cb4">
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="aaa2-c72a-afd1-76c4" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="4"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="5cb9-84c9-ac4a-e42c" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="3"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="aaa2-c72a-afd1-76c4" type="selectionEntryGroup" targetId="9c37-58de-3fa2-bfd2" sortIndex="5"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="5cb9-84c9-ac4a-e42c" type="selectionEntryGroup" targetId="24ae-224b-0680-a9bd" sortIndex="4"/>
         <entryLink import="true" name="Equipment" hidden="false" id="5d62-27c4-ee31-e3d0" type="selectionEntryGroup" targetId="d5c6-bf28-709b-7286"/>
-        <entryLink import="true" name="Swiss Guard" hidden="false" id="5df0-1a93-5c12-595a" type="selectionEntry" targetId="c35e-c172-3e6b-1bda" sortIndex="2"/>
-        <entryLink import="true" name="Supreme Blessing" hidden="false" id="495b-7b85-44d6-1348" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="1"/>
+        <entryLink import="true" name="Swiss Guard" hidden="false" id="5df0-1a93-5c12-595a" type="selectionEntry" targetId="c35e-c172-3e6b-1bda" sortIndex="3"/>
+        <entryLink import="true" name="Supreme Blessing" hidden="false" id="495b-7b85-44d6-1348" type="selectionEntry" targetId="856b-ba44-04c5-fdf5" sortIndex="2"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="2cfb-73f8-0df3-30e8" id="a6e6-8bb0-cf69-fba0" primary="false" name="New Antioch"/>
@@ -1532,7 +1533,7 @@
         <infoLink name="Strong" id="bb9b-2957-ce5f-21e9" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name=" Machine Armour" hidden="false" id="6b8a-68e7-f795-ffe7">
+        <selectionEntry type="upgrade" import="true" name=" Machine Armour" hidden="false" id="6b8a-68e7-f795-ffe7" sortIndex="1">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
