@@ -1450,9 +1450,14 @@
                   </conditions>
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7dda-8f8f-2120-65de" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7dda-8f8f-2120-65de" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <costs>
@@ -1510,6 +1515,13 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="1" field="15b5-28fb-d0b3-9f5b">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Shocktrooper" hidden="false" id="579e-2810-d1cf-454b">
       <profiles>
@@ -1556,6 +1568,7 @@
       </costs>
       <constraints>
         <constraint type="max" value="5" field="selections" scope="roster" shared="true" id="6995-3472-87b9-2803" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="9547-b0f4-2926-29fe" includeChildSelections="true"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup name="Upgrades" id="bd08-6051-7212-acce" hidden="false" sortIndex="1">
@@ -1612,6 +1625,18 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="2" field="9547-b0f4-2926-29fe">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="8" field="6995-3472-87b9-2803">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Combat Engineer" hidden="false" id="50d8-f63e-e01d-2698">
       <profiles>
@@ -1793,9 +1818,14 @@
           </conditions>
         </modifier>
         <modifier type="set" value="1" field="80cb-0666-30a3-5540">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="6aa4-b38b-5146-4106" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="440a-e3aa-60d7-7d9c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <selectionEntryGroups>
@@ -2119,6 +2149,11 @@
                 <profile name="Forward Positions" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4f3f-c000-8e12-3278">
                   <characteristics>
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062"> Up to two Shocktroops can have the Keyword INFILTRATOR at the cost of +10 ducats per model.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Troop Selections" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7005-4d4e-ab80-c1b6">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband must have at least two shocktroopers and can have up to eight. the warband can have only one mechanised heavy infantry, one sniper priest and no trench moles</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
