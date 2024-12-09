@@ -307,6 +307,11 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="7" field="8d43-33fd-332d-17a6">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -1905,14 +1910,29 @@
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband adds +1 DICE to all Morale Tests. </characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Highland Machine Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="073d-ef2a-1546-b690">
+                <profile name="Lightly Armoured" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="073d-ef2a-1546-b690">
                   <characteristics>
-                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Models in this warband equipped with machine armour ignore the penalty to charging imposed by the armour.</characteristic>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Apart from mechanized heavy infantry and the lieutenant, no model in the warband can be equipped with reinforced or machine armour.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Strained Supply" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="06f8-2c98-360b-bf9d">
                   <characteristics>
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">This warband has LIMIT:1 for Grenade Launchers, Submachine Guns, Machine Guns, Automatic Shotguns and Sniper Rifles.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Highland Machine Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e863-b9a0-ec7c-7a61">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Models in this warband equipped with machine armour ignore the penalty to charging imposed by the armour.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Claymore Smiths" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d1ab-3612-a27f-4d18">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">An Alba Warband can buy Great Swords for 7 ducats instead of usual 12 ducats</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Bagpipes" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="d5bb-99c8-85ef-adae">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Your warband can purchase special bagpipes instead of a generic musical instrument. These bagpipes are identical to a musical instrument (including their equipment restrictions and LIMIT), but friendly models within 4” of the model carrying them are immune to FEAR.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
