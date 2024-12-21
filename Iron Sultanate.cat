@@ -1251,10 +1251,10 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Assassin" hidden="false" id="62d4-d89a-f7e2-7d3b">
       <entryLinks>
-        <entryLink import="true" name="Armour" hidden="false" id="b226-2cff-1864-09c1" type="selectionEntryGroup" targetId="fa38-f4fd-c529-2365" sortIndex="3"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="84de-886f-a719-e585" type="selectionEntryGroup" targetId="6fa6-9678-f5af-3bf2" sortIndex="4"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="1392-855a-cd63-38b7" type="selectionEntryGroup" targetId="52e3-49c7-5f3b-d5c9" sortIndex="2"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="6a5a-db17-ad1b-996e" type="selectionEntryGroup" targetId="66f4-68d9-e3c5-f1f2" sortIndex="1"/>
+        <entryLink import="true" name="Armour" hidden="false" id="b226-2cff-1864-09c1" type="selectionEntryGroup" targetId="fa38-f4fd-c529-2365" sortIndex="4"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="84de-886f-a719-e585" type="selectionEntryGroup" targetId="6fa6-9678-f5af-3bf2" sortIndex="5"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="1392-855a-cd63-38b7" type="selectionEntryGroup" targetId="52e3-49c7-5f3b-d5c9" sortIndex="3"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="6a5a-db17-ad1b-996e" type="selectionEntryGroup" targetId="66f4-68d9-e3c5-f1f2" sortIndex="2"/>
       </entryLinks>
       <profiles>
         <profile name="Assassin" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="2e2a-409a-cf05-c437">
@@ -1265,6 +1265,13 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Master Assassin" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="411a-f356-8c9d-7224" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Temporal Assassin" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fd33-0f29-cf19-2244">
           <characteristics>
@@ -1281,15 +1288,6 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a7ba-73fe-fc91-ca18" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Tough" id="5e1b-d1f7-1f75-6c76" hidden="false" type="rule" targetId="3c75-701d-e708-1438">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="411a-f356-8c9d-7224" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink name="Infiltrator" id="013a-2092-dbc9-6589" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
       </infoLinks>
       <costs>
@@ -1307,9 +1305,14 @@
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="Master Assassin" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="411a-f356-8c9d-7224" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Master Assassin" hidden="true" id="411a-f356-8c9d-7224">
+        <selectionEntry type="upgrade" import="true" name="Master Assassin" hidden="true" id="411a-f356-8c9d-7224" sortIndex="1">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1319,7 +1322,7 @@
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="762c-7221-ac65-5edd-max" includeChildSelections="true"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Critical" id="8f82-8904-bfc8-c940" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+            <infoLink name="Tough" id="5e1b-d1f7-1f75-6c76" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
