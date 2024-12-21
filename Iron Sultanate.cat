@@ -205,6 +205,10 @@ Keywords: CONSUMABLE.</characteristic>
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79d1-fe65-a0cd-1593" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="roster" shared="true" id="015d-4cb5-9047-ea3f" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
