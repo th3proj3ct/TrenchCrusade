@@ -1307,7 +1307,7 @@
         </modifier>
         <modifier type="set" value="Master Assassin" field="name">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="model" childId="411a-f356-8c9d-7224" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="411a-f356-8c9d-7224" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
