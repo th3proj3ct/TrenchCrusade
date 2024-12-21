@@ -164,6 +164,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79a7-3229-dbcb-ff60" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Medi-Kit" hidden="false" id="a9e5-7741-1546-d5ba" sortIndex="6">
           <costs>
