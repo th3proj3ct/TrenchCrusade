@@ -1377,7 +1377,6 @@ Starting in the second turn, you may activate these models. When you do, set up
             <modifier type="set" value="2" field="a33e-7153-a9b3-e446"/>
             <modifier type="add" value="3de0-192c-3ec2-51be" field="category"/>
             <modifier type="set-primary" value="3de0-192c-3ec2-51be" field="category"/>
-            <modifier type="unset-primary" value="bd43-ddb1-262d-4489" field="category"/>
             <modifier type="remove" value="bd43-ddb1-262d-4489" field="category"/>
             <modifier type="set" value="Fāris" field="name"/>
           </modifiers>
