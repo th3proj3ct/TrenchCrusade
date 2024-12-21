@@ -992,6 +992,14 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0a8-6894-1d1f-2992" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Arts of Assassination" id="10c9-aab8-b0a9-1ec8" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="7838-a950-3e01-4649"/>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedSelectionEntries>
@@ -1569,7 +1577,30 @@
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9528-c018-7ddf-d0f7-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Fida’i of Alamut – The Cabal of Assassins" hidden="false" id="cd91-f171-98d6-423e"/>
+            <selectionEntry type="upgrade" import="true" name="Fida’i of Alamut – The Cabal of Assassins" hidden="false" id="cd91-f171-98d6-423e">
+              <profiles>
+                <profile name="Alamut Alone" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f7fb-9634-5fbf-9db0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may not include Yüzbaşı, Alchemist, Janissaries, Lions of Jabir or Brazen Bulls.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Flock of Assassins" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fc49-9fc2-b684-8838">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Fida’i of Alamut can have up to three Assassins. The warband must include a Master Assassin that counts as one of the three.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Master Assassin" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e9d0-412c-1276-e7b5">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">A Master Assassin has the Keyword TOUGH. The Master Assassin costs 95 ducats.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Assassin Acolytes" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8d06-3787-ce56-20a5">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Up to three Azebs of the warband can have the Keyword INFILTRATOR at the cost of +10 ducats per model.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
