@@ -1497,6 +1497,11 @@ Starting in the second turn, you may activate these models. When you do, set up
             <condition type="atLeast" value="1" field="selections" scope="self" childId="411a-f356-8c9d-7224" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="fdd0-11e7-0db6-acb2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Master Assassin" hidden="true" id="411a-f356-8c9d-7224" sortIndex="1">
