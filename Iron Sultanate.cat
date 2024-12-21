@@ -1398,11 +1398,6 @@
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="bcd1-1771-9c7f-413c" shared="true"/>
-              </conditions>
-            </modifier>
             <modifier type="set" value="Skirmisher Azeb" field="name">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="bcd1-1771-9c7f-413c" shared="true"/>
