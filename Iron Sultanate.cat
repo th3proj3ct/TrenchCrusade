@@ -1462,7 +1462,7 @@ Starting in the second turn, you may activate these models. When you do, set up
             </modifier>
             <modifier type="increment" value="2" field="b725-e0a4-16ae-8df2">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="7838-a950-3e01-4649" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="7838-a950-3e01-4649" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
