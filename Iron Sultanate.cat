@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="72ab-daa4-80ee-e9a5" name="Iron Sultanate" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="72ab-daa4-80ee-e9a5" name="Iron Sultanate" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Equipment" id="6fa6-9678-f5af-3bf2" hidden="false">
       <selectionEntries>
@@ -1152,6 +1152,15 @@
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">Once during its Activation, the Brazen Bull may make an extra Melee Attack ACTION against a Downed enemy model on a 32mm or smaller base. Resolve the attack as if the Brazen Bull was armed with a Trench Club. This attack ignores armour as the Brazen Bull stomps their enemies into a pulp.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Brazen Bull" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="0a4b-397f-ded9-8e79">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">60mm</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Tough" id="bad9-234e-eacb-83fe" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
@@ -1267,6 +1276,13 @@
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="1905-92a3-4759-3875-min" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1905-92a3-4759-3875-max" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Azeb" hidden="false" id="0e7e-9167-f044-9493">
       <entryLinks>
@@ -1446,6 +1462,22 @@
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Variant" hidden="false" id="77b1-d63a-af1c-c99a">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9920-e809-dd5a-fa2f" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Variant Selection" id="9225-ce39-b65a-f836" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="9528-c018-7ddf-d0f7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9528-c018-7ddf-d0f7-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Fida’i of Alamut – The Cabal of Assassins" hidden="false" id="cd91-f171-98d6-423e"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
