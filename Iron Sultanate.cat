@@ -1282,6 +1282,7 @@ Starting in the second turn, you may activate these models. When you do, set up
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f3ed-4f4b-c773-61a7" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="30d3-7307-2ec8-6263" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="3de0-192c-3ec2-51be" id="e5dc-3e4a-88ac-94b2" primary="true" name="Elite"/>
@@ -1291,6 +1292,16 @@ Starting in the second turn, you may activate these models. When you do, set up
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="f3ed-4f4b-c773-61a7">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="30d3-7307-2ec8-6263">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1354,22 +1365,38 @@ Starting in the second turn, you may activate these models. When you do, set up
         </profile>
       </profiles>
       <modifiers>
-        <modifier type="set" value="Dervishes" field="name">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="remove" value="afcc-5f24-1c7c-63c4" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="4" field="a33e-7153-a9b3-e446">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="2" field="a33e-7153-a9b3-e446"/>
+            <modifier type="add" value="3de0-192c-3ec2-51be" field="category"/>
+            <modifier type="set-primary" value="3de0-192c-3ec2-51be" field="category"/>
+            <modifier type="unset-primary" value="bd43-ddb1-262d-4489" field="category"/>
+            <modifier type="remove" value="bd43-ddb1-262d-4489" field="category"/>
+            <modifier type="set" value="Fāris" field="name"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>House of Wisdom</comment>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="Dervishes" field="name"/>
+            <modifier type="remove" value="afcc-5f24-1c7c-63c4" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Cabal of Assassins</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Brazen Bull" hidden="false" id="e62d-c06e-ce35-428b">
       <profiles>
@@ -1509,6 +1536,11 @@ Starting in the second turn, you may activate these models. When you do, set up
             <condition type="atLeast" value="1" field="selections" scope="self" childId="fdd0-11e7-0db6-acb2" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Master Assassin" hidden="true" id="411a-f356-8c9d-7224" sortIndex="1">
@@ -1574,9 +1606,14 @@ Starting in the second turn, you may activate these models. When you do, set up
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -1770,9 +1807,9 @@ Starting in the second turn, you may activate these models. When you do, set up
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Fida’i of Alamut – The Cabal of Assassins" hidden="false" id="cd91-f171-98d6-423e">
               <profiles>
-                <profile name="Alamut Alone" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f7fb-9634-5fbf-9db0">
+                <profile name="Dervishes" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f7fb-9634-5fbf-9db0">
                   <characteristics>
-                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may not include Yüzbaşı, Alchemist, Janissaries, Lions of Jabir or Brazen Bulls.</characteristic>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may include up to four Dervishes (use Janissary statistics including Armoury selection, but they cannot use Reinforced Armour). These troops have the Whirling Dervishes special rule instead of the Keyword STRONG.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Flock of Assassins" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fc49-9fc2-b684-8838">
@@ -1790,8 +1827,19 @@ Starting in the second turn, you may activate these models. When you do, set up
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">Up to three Azebs of the warband can have the Keyword INFILTRATOR at the cost of +10 ducats per model.</characteristic>
                   </characteristics>
                 </profile>
+                <profile name="Alamut Alone" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f639-b0d0-e70b-4290">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may not include Yüzbaşı, Alchemist, Janissaries, Lions of Jabir or Brazen Bulls.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Killing Squad" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="63a2-cb15-a536-dd95">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Your warband may have a single Fireteam. These Fireteams may consist of any two models from your warband. Models in Fireteams gain the Keyword FIRETEAM</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The House of Wisdom" hidden="false" id="c2b1-d49e-937b-2f87"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
