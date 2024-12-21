@@ -1281,7 +1281,16 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a7ba-73fe-fc91-ca18" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Infiltrator" id="5e1b-d1f7-1f75-6c76" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
+        <infoLink name="Tough" id="5e1b-d1f7-1f75-6c76" hidden="false" type="rule" targetId="3c75-701d-e708-1438">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="411a-f356-8c9d-7224" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Infiltrator" id="013a-2092-dbc9-6589" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
       </infoLinks>
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="85"/>
@@ -1292,6 +1301,35 @@
         <categoryLink targetId="9b36-57f6-1887-7bea" id="7192-0cde-f203-614a" primary="false" name="Infiltrator"/>
         <categoryLink targetId="fd8d-e9e0-2540-a257" id="b2e1-6aa9-18d6-baa9" primary="false" name="Sultanate"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="3" field="a7ba-73fe-fc91-ca18">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Master Assassin" hidden="true" id="411a-f356-8c9d-7224">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="762c-7221-ac65-5edd-min" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="762c-7221-ac65-5edd-max" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Critical" id="8f82-8904-bfc8-c940" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Yüzbaşı Captain" hidden="false" id="9c5a-601e-6b16-320d">
       <profiles>
@@ -1541,8 +1579,11 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="705b-e23f-e9c2-58ab" id="22dc-1771-9ebb-5e41" primary="true" name="Configuration"/>
+      </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Fireteam" hidden="false" id="51fb-61a3-88be-2382">
+    <selectionEntry type="unit" import="true" name="Fireteam" hidden="true" id="51fb-61a3-88be-2382">
       <profiles>
         <profile name="Coordinated Engagement" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8c9f-356f-41c9-1f8b">
           <characteristics>
@@ -1559,8 +1600,8 @@
             <entryLink import="true" name="Janissaries" hidden="false" id="549f-58d3-8111-e87c" type="selectionEntry" targetId="58c8-0815-71a7-27fb" collapsible="true"/>
             <entryLink import="true" name="Brazen Bull" hidden="false" id="38e4-e4c7-631c-8e04" type="selectionEntry" targetId="e62d-c06e-ce35-428b" collapsible="true"/>
             <entryLink import="true" name="Lion of Jabir" hidden="false" id="a004-991e-a031-0824" type="selectionEntry" targetId="f63f-ac9a-639b-b7ba" collapsible="true"/>
-            <entryLink import="true" name="Trench Cleric" hidden="false" id="6122-805a-7ae0-4960" type="selectionEntry" targetId="f8bc-5df8-1768-a72a" collapsible="true"/>
-            <entryLink import="true" name="Yeoman" hidden="false" id="0c99-0d7b-55fe-3201" type="selectionEntry" targetId="f2c3-86d1-5924-093f" collapsible="true"/>
+            <entryLink import="true" name="Sapper" hidden="false" id="6122-805a-7ae0-4960" type="selectionEntry" targetId="e874-ea2b-96ed-0f9a" collapsible="true"/>
+            <entryLink import="true" name="Yüzbaşı Captain" hidden="false" id="0c99-0d7b-55fe-3201" type="selectionEntry" targetId="9c5a-601e-6b16-320d" collapsible="true"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="66a0-ecad-870d-edbc" includeChildSelections="false"/>
@@ -1571,9 +1612,16 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1e4f-0c8c-db2b-4cfb" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
-        <categoryLink name="New Antioch" hidden="false" id="26a9-6a5d-8ff4-4e1d" targetId="2cfb-73f8-0df3-30e8" primary="false"/>
         <categoryLink name="Fireteam" hidden="false" id="c825-5884-41a8-ff0a" targetId="83c8-b351-cb96-119e" primary="true"/>
+        <categoryLink targetId="fd8d-e9e0-2540-a257" id="d8bd-d1be-381d-a23a" primary="false" name="Sultanate"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
