@@ -1506,7 +1506,7 @@ Starting in the second turn, you may activate these models. When you do, set up
         </modifier>
         <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="model" childId="fdd0-11e7-0db6-acb2" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="fdd0-11e7-0db6-acb2" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
