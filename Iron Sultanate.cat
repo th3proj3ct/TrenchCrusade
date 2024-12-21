@@ -954,9 +954,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="58c8-0815-71a7-27fb" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="58c8-0815-71a7-27fb" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -1103,7 +1110,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1128,13 +1135,28 @@
         <categoryLink targetId="bd43-ddb1-262d-4489" id="e486-0b0f-cf02-44cb" primary="true" name="Troop"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Strong" id="72a6-28f0-f358-fa9b" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
+        <infoLink name="Strong" id="72a6-28f0-f358-fa9b" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
-        <profile name="Counter-Charge" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="aba6-8b49-af2b-e4fd">
+        <profile name="Whirling Dervishes" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="true" id="aba6-8b49-af2b-e4fd">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">If the first ACTION a Janissary makes during their Activation is a Charge, they can add +1 DICE to their subsequent Melee Attack ACTIONS during this Activation</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">The ritual Dance of the Dervishes is hypnotic to witness, and it is as graceful as it is deadly. All Ranged attacks against Dervishes suffer -1 DICE penalty. Dervishes do not suffer the normal -1 DICE to hit for fighting with an Off-Hand weapon.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Janissaries" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="16b9-d9fd-6c2d-68f9">
           <characteristics>
@@ -1145,9 +1167,24 @@
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
         </profile>
+        <profile name="Counter-Charge" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1061-0baf-c232-c9a3">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">If the first ACTION a Janissary makes during their Activation is a Charge, they can add +1 DICE to their subsequent Melee Attack ACTIONS during this Activation</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="Dervishes" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="afcc-5f24-1c7c-63c4" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="4" field="a33e-7153-a9b3-e446">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -1200,7 +1237,7 @@
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1504,6 +1541,39 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fireteam" hidden="false" id="51fb-61a3-88be-2382">
+      <profiles>
+        <profile name="Coordinated Engagement" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8c9f-356f-41c9-1f8b">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">All models that are part of the same FIRETEAM can be activated at the same time without the opponent getting their turn in between and can take their ACTIONS in any order they wish, switching between the two models. Note that if the Activation of either member of the FIRETEAM forcefully ends (due to a failed RISKY ACTION for example), it ends both Activations.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Fireteam Members" id="73c5-0953-6a97-4a07" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Assassin" hidden="false" id="013b-2ad6-2e9c-e6b4" type="selectionEntry" targetId="62d4-d89a-f7e2-7d3b" collapsible="true"/>
+            <entryLink import="true" name="Alchemist" hidden="false" id="f80b-d1a7-57bf-9a32" type="selectionEntry" targetId="7c17-5f75-6fd9-73cf" collapsible="true"/>
+            <entryLink import="true" name="Azeb" hidden="false" id="0433-ebca-4132-f4c3" type="selectionEntry" targetId="0e7e-9167-f044-9493" collapsible="true"/>
+            <entryLink import="true" name="Janissaries" hidden="false" id="549f-58d3-8111-e87c" type="selectionEntry" targetId="58c8-0815-71a7-27fb" collapsible="true"/>
+            <entryLink import="true" name="Brazen Bull" hidden="false" id="38e4-e4c7-631c-8e04" type="selectionEntry" targetId="e62d-c06e-ce35-428b" collapsible="true"/>
+            <entryLink import="true" name="Lion of Jabir" hidden="false" id="a004-991e-a031-0824" type="selectionEntry" targetId="f63f-ac9a-639b-b7ba" collapsible="true"/>
+            <entryLink import="true" name="Trench Cleric" hidden="false" id="6122-805a-7ae0-4960" type="selectionEntry" targetId="f8bc-5df8-1768-a72a" collapsible="true"/>
+            <entryLink import="true" name="Yeoman" hidden="false" id="0c99-0d7b-55fe-3201" type="selectionEntry" targetId="f2c3-86d1-5924-093f" collapsible="true"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="66a0-ecad-870d-edbc" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1e4f-0c8c-db2b-4cfb" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="New Antioch" hidden="false" id="26a9-6a5d-8ff4-4e1d" targetId="2cfb-73f8-0df3-30e8" primary="false"/>
+        <categoryLink name="Fireteam" hidden="false" id="c825-5884-41a8-ff0a" targetId="83c8-b351-cb96-119e" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
