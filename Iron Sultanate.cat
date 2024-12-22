@@ -691,10 +691,29 @@ Keywords: CONSUMABLE.</characteristic>
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
                         <condition type="lessThan" value="1" field="selections" scope="model" childId="27f4-a543-3c73-b3f1" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <comment>Strong is overwritten by Cumbersome</comment>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="1" field="selections" scope="parent" childId="11cb-8485-6def-6c6f" shared="true"/>
+                              </conditions>
+                              <comment>one 2 handed, none can be cumbersome</comment>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="lessThan" value="2" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="2" field="selections" scope="parent" childId="11cb-8485-6def-6c6f" shared="true"/>
+                              </conditions>
+                              <comment>two 2 handed, one can be cumbersome</comment>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
