@@ -1190,7 +1190,7 @@ Starting in the second turn, you may activate these models. When you do, set up
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0c0-37eb-8932-9b30" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Medicine" hidden="false" id="df13-797c-9e94-0df3">
+        <selectionEntry type="upgrade" import="true" name="Medicine" hidden="false" id="df13-797c-9e94-0df3" sortIndex="1">
           <profiles>
             <profile name="Secrets of Medicine" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="0966-6f0e-5300-4284">
               <characteristics>
@@ -1203,6 +1203,73 @@ Starting in the second turn, you may activate these models. When you do, set up
           </constraints>
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cartography &amp; Geometry" hidden="false" id="74b6-87eb-d383-ea59" sortIndex="2">
+          <profiles>
+            <profile name="Secrets of Cartography &amp; Geometry" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4e71-6ded-f58e-8ffe">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Alchemist has studied long and hard the sciences of cartography and geometry. At the beginning of each battle, immediately before any models are deployed, up to two models in your warband gain the Keyword INFILTRATOR, This ability cannot affect an Alchemist or a model with a base larger than 32mm. In addition, the warband may reroll one Exploration dice in the Exploration phase if you wish. The second result stands.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="66d3-08bd-67f2-a932" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Chemistry &amp; Alchemy" hidden="false" id="5731-aea3-61d2-206c" sortIndex="4">
+          <profiles>
+            <profile name="Secrets of Chemistry &amp; Alchemy" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="77a1-74cd-f781-efb5">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Before the battle starts, but after all models (including INFILTRATORS) are deployed, you may place a rectangular
+elemental obstacle 2” wide and 6” long. It counts both as Difficult Terrain and Dangerous Terrain, and damage it
+causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed). It cannot be placed within
+6” of any model or on top of any other Terrain.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c265-f1c3-f85f-b2c4" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Secrets of Takwin" hidden="false" id="1549-4fe1-f55f-fd26" sortIndex="3">
+          <profiles>
+            <profile name="Secrets of Takwin" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4285-e047-b265-bc62">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Alchemist has bound their Takwin creature to themselves with unbreakable bonds. If the Alchemist is hit by an attack while within 1” of their Homunculus, you may redirect the hit to the Homunculi instead. Determine the injuries and additional effects exactly as if the weapon just hit the Homunculi.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6718-74c4-4c07-9e34" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Philosophy, Poetry and Theology" hidden="false" id="8dc7-e406-a9c5-2215" sortIndex="4">
+          <profiles>
+            <profile name="Secrets of Philosophy, Poetry and Theology" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1397-70c7-2653-9820">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Alchemist is well-versed in the hidden truths of the universe and of the Divine, and has a calm and clear mind. The warband gains +1 DICE to all Morale Rolls, cannot become Shaken and the Alchemist plus another model of your choice is immune to the effects of the Keyword FEAR.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6144-2684-1405-6571" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
         </selectionEntry>
@@ -1948,7 +2015,153 @@ Starting in the second turn, you may activate these models. When you do, set up
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="The House of Wisdom" hidden="false" id="c2b1-d49e-937b-2f87"/>
+            <selectionEntry type="upgrade" import="true" name="The House of Wisdom" hidden="false" id="c2b1-d49e-937b-2f87">
+              <profiles>
+                <profile name="Noble Guardians" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="62b1-edec-6703-a22a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may include up to two Fāris – noble warriors sworn to protect the House of Wisdom. They use the Janissary stats but have the Keywords ELITE and STRONG.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Kavass" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8f25-9424-f306-ac1c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">Kavass are sworn guardians of the House of Wisdom. They use Azebs stats but cannot buy the Keyword SKIRMISHER. Instead, up to three Kavass can increase their Melee Characteristic by +1 DICE (to +0D) at the cost of +5 ducats per model.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Alchemists" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8d8b-8eed-1e97-87a7">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The House of Wisdom warband may have up to two Alchemists and must include at least one. This warband treats Alchemist Armour as if they had a LIMIT of 2.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Private Venture" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8a74-cc4f-5810-4ed0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may not include any Azebs, Janissaries, Yüzbaşi or Assassins.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Pride of Jabir" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="013e-51e6-efe6-8b74">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband may include up to three Lions of Jabir</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Weapon Collections" hidden="false" id="fe07-03fa-d0a7-7bd4">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="New Antioch" id="e33e-63e6-0055-a04a" hidden="false">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Bolt Action Rifle" hidden="false" id="83ae-44d5-f5de-37d5">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bd1-ef6b-8593-f5a1" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Semi-automatic Rifle" hidden="false" id="762a-0e1c-f438-770c">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16c4-6b90-a233-817d" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Automatic Shotgun" hidden="false" id="3777-3608-567f-838c">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0944-d71e-1a41-475a" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Submachine Gun" hidden="false" id="ffa4-9926-fc70-ad04">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6030-7cbc-417c-30c5" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="false" id="08f7-546d-1546-b8a1">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2897-e401-d02b-173b" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Satchel Charge" hidden="false" id="3640-3eab-6681-5647">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70ed-fa9f-e2f9-1d1c" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="1f51-1d26-a301-a909">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6bb-d6d9-ee34-7d88" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Shotgun" hidden="false" id="6465-d66d-e8f0-eaf3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ee1-19b6-f8bb-09b2" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="97a1-eb16-fd6e-d136">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2838-c882-58e9-75c7" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="bc44-3250-85c0-7051">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1e7-326a-d44e-d474" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Trench Pilgrims" id="9b38-99df-3ad5-e88c" hidden="false">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Bolt Action Rifle" hidden="false" id="f3d9-f178-0dae-c7f0">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a616-fcd2-2379-0aed" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Semi-automatic Rifle" hidden="false" id="8036-27b9-25b6-ee4c">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8c4-cc2b-30b3-e606" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Warcross" hidden="false" id="9904-9a26-ea70-030d">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f072-e192-aa09-3181" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Molotov Cocktail" hidden="false" id="9ddd-d351-59c6-eca2">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5ee-8821-7cfa-636f" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Submachine Gun" hidden="false" id="55dd-35cf-9449-e13d">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a1b-0240-83aa-0bdf" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Misericordia" hidden="false" id="6752-6a2d-cd2f-f4d7">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df18-94c1-7c29-98e7" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Punt Gun" hidden="false" id="6bf2-0e57-79b4-a786">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="625b-c089-afa9-a890" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Flail/Scourge" hidden="false" id="fd4d-fa27-87b8-2f34">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aa9-3fb4-f55c-5bfa" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Anti-Tank Hammer" hidden="false" id="c93d-5975-38a3-dc1b">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6835-0454-802e-7609" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="false" id="1339-6356-325a-d9bf">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a8d-de24-1561-d8af" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="self" shared="true" id="2fad-6036-3316-6145-min" includeChildSelections="true"/>
+                    <constraint type="max" value="2" field="selections" scope="self" shared="true" id="2fad-6036-3316-6145-max" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
