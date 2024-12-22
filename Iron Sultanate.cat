@@ -3007,25 +3007,6 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a3f-e14c-a0db-5628" includeChildSelections="false"/>
                       </constraints>
-                      <modifiers>
-                        <modifier type="decrement" value="1" field="9a3f-e14c-a0db-5628">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="41a5-7586-9820-990b" shared="true"/>
-                              </conditions>
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditions>
-                                    <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="99ce-8e70-94c9-35c4" shared="true"/>
-                                    <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="7587-db79-b55f-f5d2" shared="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -3045,6 +3026,16 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="model" childId="27f4-a543-3c73-b3f1" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="41f3-38b4-a829-ca40">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="99ce-8e70-94c9-35c4" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7587-db79-b55f-f5d2" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
