@@ -2745,7 +2745,6 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
-            <categoryLink targetId="bd43-ddb1-262d-4489" id="3e7e-f138-3827-5ec5" primary="true" name="Troop"/>
             <categoryLink targetId="fd8d-e9e0-2540-a257" id="cfd4-0a1e-18dc-d422" primary="false" name="Sultanate"/>
           </categoryLinks>
           <costs>
