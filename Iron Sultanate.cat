@@ -2610,16 +2610,9 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Takwin Homonculus" hidden="false" id="e630-83ec-432c-7137">
+    <selectionEntry type="unit" import="true" name="Takwin Homonculus" hidden="true" id="e630-83ec-432c-7137">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Takwin Homunculus" hidden="true" id="3e52-8dce-5f07-6c93">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        <selectionEntry type="model" import="true" name="Takwin Homunculus" hidden="false" id="3e52-8dce-5f07-6c93">
           <profiles>
             <profile name="Homunculus" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="8cbe-5362-971a-63dd">
               <characteristics>
@@ -2786,8 +2779,22 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4470-e73c-10df-34cc" includeChildSelections="false"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="83c8-b351-cb96-119e" id="4ca3-5943-d691-30a0" primary="false" name="Fireteam"/>
+          </categoryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="f07b-d921-b03b-29c7" primary="true" name="Troop"/>
+        <categoryLink targetId="fd8d-e9e0-2540-a257" id="c48d-5134-cd48-bf9a" primary="false" name="Sultanate"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
