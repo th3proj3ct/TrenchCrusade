@@ -2714,7 +2714,7 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Takwin Homonculus" hidden="true" id="e630-83ec-432c-7137">
+    <selectionEntry type="unit" import="true" name="Takwin Homunculus" hidden="true" id="e630-83ec-432c-7137">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Takwin Homunculus" hidden="false" id="3e52-8dce-5f07-6c93">
           <modifiers>
