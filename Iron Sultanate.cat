@@ -2065,7 +2065,7 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Weapon Collections" hidden="false" id="fe07-03fa-d0a7-7bd4">
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="Submachine Gun" id="bcec-3310-ae45-b1ab" hidden="false">
+                    <selectionEntryGroup name="Submachine Gun" id="bcec-3310-ae45-b1ab" hidden="false" sortIndex="15">
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="Antioch (30 Ducats)" hidden="false" id="bb49-2122-7171-aecf"/>
                         <selectionEntry type="upgrade" import="true" name="Pilgrims (2 Glory)" hidden="false" id="6ae8-6ec6-27cf-f0dd"/>
@@ -2082,77 +2082,77 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b873-8c6f-073e-5f38-max" includeChildSelections="false"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="false" id="08f7-546d-1546-b8a1">
+                    <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="false" id="08f7-546d-1546-b8a1" sortIndex="2">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2897-e401-d02b-173b" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="1f51-1d26-a301-a909">
+                    <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="false" id="1f51-1d26-a301-a909" sortIndex="3">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6bb-d6d9-ee34-7d88" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Automatic Shotgun" hidden="false" id="3777-3608-567f-838c">
+                    <selectionEntry type="upgrade" import="true" name="Automatic Shotgun" hidden="false" id="3777-3608-567f-838c" sortIndex="4">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0944-d71e-1a41-475a" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Bolt Action Rifle" hidden="false" id="83ae-44d5-f5de-37d5">
+                    <selectionEntry type="upgrade" import="true" name="Bolt Action Rifle" hidden="false" id="83ae-44d5-f5de-37d5" sortIndex="5">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bd1-ef6b-8593-f5a1" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="97a1-eb16-fd6e-d136">
+                    <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="97a1-eb16-fd6e-d136" sortIndex="7">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2838-c882-58e9-75c7" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="bc44-3250-85c0-7051">
+                    <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="bc44-3250-85c0-7051" sortIndex="8">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1e7-326a-d44e-d474" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Heavy Shotgun" hidden="false" id="6465-d66d-e8f0-eaf3">
+                    <selectionEntry type="upgrade" import="true" name="Heavy Shotgun" hidden="false" id="6465-d66d-e8f0-eaf3" sortIndex="9">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ee1-19b6-f8bb-09b2" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Satchel Charge" hidden="false" id="3640-3eab-6681-5647">
+                    <selectionEntry type="upgrade" import="true" name="Satchel Charge" hidden="false" id="3640-3eab-6681-5647" sortIndex="13">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70ed-fa9f-e2f9-1d1c" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Semi-automatic Rifle" hidden="false" id="762a-0e1c-f438-770c">
+                    <selectionEntry type="upgrade" import="true" name="Semi-automatic Rifle" hidden="false" id="762a-0e1c-f438-770c" sortIndex="14">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16c4-6b90-a233-817d" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Anti-Tank Hammer" hidden="false" id="c93d-5975-38a3-dc1b">
+                    <selectionEntry type="upgrade" import="true" name="Anti-Tank Hammer" hidden="false" id="c93d-5975-38a3-dc1b" sortIndex="1">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6835-0454-802e-7609" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Flail/Scourge" hidden="false" id="fd4d-fa27-87b8-2f34">
+                    <selectionEntry type="upgrade" import="true" name="Flail/Scourge" hidden="false" id="fd4d-fa27-87b8-2f34" sortIndex="6">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aa9-3fb4-f55c-5bfa" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Misericordia" hidden="false" id="6752-6a2d-cd2f-f4d7">
+                    <selectionEntry type="upgrade" import="true" name="Misericordia" hidden="false" id="6752-6a2d-cd2f-f4d7" sortIndex="10">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df18-94c1-7c29-98e7" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Molotov Cocktail" hidden="false" id="9ddd-d351-59c6-eca2">
+                    <selectionEntry type="upgrade" import="true" name="Molotov Cocktail" hidden="false" id="9ddd-d351-59c6-eca2" sortIndex="11">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5ee-8821-7cfa-636f" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Punt Gun" hidden="false" id="6bf2-0e57-79b4-a786">
+                    <selectionEntry type="upgrade" import="true" name="Punt Gun" hidden="false" id="6bf2-0e57-79b4-a786" sortIndex="12">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="625b-c089-afa9-a890" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Warcross" hidden="false" id="9904-9a26-ea70-030d">
+                    <selectionEntry type="upgrade" import="true" name="Warcross" hidden="false" id="9904-9a26-ea70-030d" sortIndex="16">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f072-e192-aa09-3181" includeChildSelections="false"/>
                       </constraints>
