@@ -1318,7 +1318,7 @@ Keywords: CONSUMABLE.</characteristic>
                     <modifier type="set" value="0" field="8d43-33fd-332d-17a6"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6ae8-6ec6-27cf-f0dd" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ae8-6ec6-27cf-f0dd" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <comment>Change Cost Type</comment>
                 </modifierGroup>
@@ -2469,8 +2469,8 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Submachine Gun" id="bcec-3310-ae45-b1ab" hidden="false" sortIndex="15" collapsible="true">
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Antioch (30 Ducats)" hidden="false" id="bb49-2122-7171-aecf"/>
-                        <selectionEntry type="upgrade" import="true" name="Pilgrims (2 Glory)" hidden="false" id="6ae8-6ec6-27cf-f0dd"/>
+                        <selectionEntry type="upgrade" import="true" name="SMG Antioch (30 Ducats)" hidden="false" id="bb49-2122-7171-aecf"/>
+                        <selectionEntry type="upgrade" import="true" name="SMG Pilgrims (2 Glory)" hidden="false" id="6ae8-6ec6-27cf-f0dd"/>
                       </selectionEntries>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="self" shared="true" id="5d9b-50dd-0645-96ad" includeChildSelections="false"/>
