@@ -2063,9 +2063,9 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
                 </profile>
               </profiles>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Weapon Collections" hidden="false" id="fe07-03fa-d0a7-7bd4">
+                <selectionEntry type="upgrade" import="true" name="Weapon Collections" hidden="false" id="fe07-03fa-d0a7-7bd4" flatten="true" collapsible="true">
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="Submachine Gun" id="bcec-3310-ae45-b1ab" hidden="false" sortIndex="15">
+                    <selectionEntryGroup name="Submachine Gun" id="bcec-3310-ae45-b1ab" hidden="false" sortIndex="15" collapsible="true">
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="Antioch (30 Ducats)" hidden="false" id="bb49-2122-7171-aecf"/>
                         <selectionEntry type="upgrade" import="true" name="Pilgrims (2 Glory)" hidden="false" id="6ae8-6ec6-27cf-f0dd"/>
