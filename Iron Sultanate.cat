@@ -2632,12 +2632,12 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
           <modifiers>
             <modifier type="add" value="914f-0020-0d97-e217" field="category">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="a38c-00c9-3fde-aa20" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="a38c-00c9-3fde-aa20" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="a7b1-73fb-8355-653c" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="a7b1-73fb-8355-653c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2653,17 +2653,17 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
               <modifiers>
                 <modifier type="set" value="8&quot;/Flying" field="b725-e0a4-16ae-8df2">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="b983-bccb-5099-4afa" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="b983-bccb-5099-4afa" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="32mm" field="73ae-cc17-596e-0481">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="a7b1-73fb-8355-653c" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="a7b1-73fb-8355-653c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="50mm" field="73ae-cc17-596e-0481">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="a38c-00c9-3fde-aa20" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="a38c-00c9-3fde-aa20" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="+1 Dice" field="12e8-ff8c-c933-9eb5">
