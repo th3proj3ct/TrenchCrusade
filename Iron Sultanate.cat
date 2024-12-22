@@ -2158,6 +2158,7 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
                   <constraints>
                     <constraint type="min" value="2" field="selections" scope="self" shared="true" id="2fad-6036-3316-6145-min" includeChildSelections="true"/>
                     <constraint type="max" value="2" field="selections" scope="self" shared="true" id="2fad-6036-3316-6145-max" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b873-8c6f-073e-5f38" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
