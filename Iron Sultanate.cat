@@ -187,7 +187,7 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hashinshin Leaf" hidden="false" id="fdd0-11e7-0db6-acb2" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Hashinshin Leaf" hidden="true" id="fdd0-11e7-0db6-acb2" sortIndex="2">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
