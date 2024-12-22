@@ -1386,18 +1386,6 @@ Keywords: CONSUMABLE.</characteristic>
     </selectionEntryGroup>
     <selectionEntryGroup name="Utility Hand" id="41a5-7586-9820-990b" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trench Shield" hidden="false" id="99ce-8e70-94c9-35c4" sortIndex="1">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f895-ac68-4424-915e" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Trench Shield" id="2216-0c02-cf87-573c" hidden="false" type="profile" targetId="c2a5-72b6-355d-0356"/>
-          </infoLinks>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="52d2-a54b-9fb2-8507">
           <costs>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
@@ -1408,6 +1396,13 @@ Keywords: CONSUMABLE.</characteristic>
           <infoLinks>
             <infoLink name="Troop Flag" id="23a9-a599-14eb-7bae" hidden="false" type="profile" targetId="e86e-146a-65b7-09f2"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3e52-8dce-5f07-6c93" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="40c5-2166-6694-86a0">
           <costs>
@@ -1422,13 +1417,36 @@ Keywords: CONSUMABLE.</characteristic>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3e52-8dce-5f07-6c93" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Shields" id="99ce-8e70-94c9-35c4" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Trench Shield" hidden="false" id="e370-2887-f54b-16ee">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f895-ac68-4424-915e" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Trench Shield" id="2216-0c02-cf87-573c" hidden="false" type="profile" targetId="c2a5-72b6-355d-0356"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Weapons" id="66f4-68d9-e3c5-f1f2" hidden="false" collapsible="true">
       <constraints>
@@ -2611,6 +2629,18 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
     <selectionEntry type="unit" import="true" name="Takwin Homonculus" hidden="true" id="e630-83ec-432c-7137">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Takwin Homunculus" hidden="false" id="3e52-8dce-5f07-6c93">
+          <modifiers>
+            <modifier type="add" value="914f-0020-0d97-e217" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="a38c-00c9-3fde-aa20" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="a7b1-73fb-8355-653c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <profiles>
             <profile name="Homunculus" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="8cbe-5362-971a-63dd">
               <characteristics>
@@ -2621,7 +2651,26 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
                 <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="8&quot;/Flying" field="b725-e0a4-16ae-8df2"/>
+                <modifier type="set" value="8&quot;/Flying" field="b725-e0a4-16ae-8df2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="b983-bccb-5099-4afa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="32mm" field="73ae-cc17-596e-0481">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="a7b1-73fb-8355-653c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="50mm" field="73ae-cc17-596e-0481">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="a38c-00c9-3fde-aa20" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="+1 Dice" field="12e8-ff8c-c933-9eb5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="a38c-00c9-3fde-aa20" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </profile>
             <profile name="Artificial Body" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b75e-869c-cb90-8207">
@@ -2730,6 +2779,37 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
                   </profiles>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca44-a74a-ef3a-9704" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b983-bccb-5099-4afa" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="add" value="914f-0020-0d97-e217" field="category">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="a38c-00c9-3fde-aa20" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink name="Tough" id="e344-8b59-36b0-c71a" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Inhuman Strength" hidden="false" id="a7b1-73fb-8355-653c" sortIndex="5">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Inhuman Strength" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="227a-878e-8873-491e">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">The musculature of the Homunculus is reinforced, replaced and strengthened. It now has a base size of 32mm (or 50mm if it also has Massive size). The Homunculus gains +1 DICE to its Melee characteristic and the Keyword STRONG.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ebd-9de2-304e-272e" includeChildSelections="false"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
