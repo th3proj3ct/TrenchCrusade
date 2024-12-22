@@ -2662,7 +2662,7 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
                   <profiles>
                     <profile name="Elemental Resistance" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="f191-9943-b27c-a6e1">
                       <characteristics>
-                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Attacks made against the Homunculus that have the Keywords FIRE and/or GAS suffer a -1 DICE penalty to injure it. Also the Homunculus does not suffer additional BLOOD MARKERS from attacks with Keywords FIRE and/or GAS.</characteristic>
+                        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Attacks made against the Homunculus that have the Keywords FIRE and/or GAS suffer a -1 DICE penalty to injure it. Also, the Homunculus does not suffer additional BLOOD MARKERS from attacks with Keywords FIRE and/or GAS.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -2753,6 +2753,17 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6c7-6827-0752-fdde-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6c7-6827-0752-fdde-max" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Weapons" hidden="true" id="8123-eb9b-2090-2bf5" type="selectionEntryGroup" targetId="66f4-68d9-e3c5-f1f2">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="b850-bfba-cb4c-a846" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
