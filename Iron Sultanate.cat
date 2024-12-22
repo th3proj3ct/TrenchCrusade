@@ -680,6 +680,7 @@ Keywords: CONSUMABLE.</characteristic>
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="41a5-7586-9820-990b" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="model" childId="27f4-a543-3c73-b3f1" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -691,7 +692,6 @@ Keywords: CONSUMABLE.</characteristic>
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="afcc-5f24-1c7c-63c4" shared="true" includeChildForces="false"/>
-                        <condition type="lessThan" value="1" field="selections" scope="model" childId="27f4-a543-3c73-b3f1" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <comment>Strong is overwritten by Cumbersome</comment>
                       <conditionGroups>
