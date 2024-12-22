@@ -699,14 +699,14 @@ Keywords: CONSUMABLE.</characteristic>
                           <conditionGroups>
                             <conditionGroup type="and">
                               <conditions>
-                                <condition type="lessThan" value="1" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                                <condition type="greaterThan" value="0" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
                                 <condition type="equalTo" value="1" field="selections" scope="parent" childId="11cb-8485-6def-6c6f" shared="true"/>
                               </conditions>
                               <comment>one 2 handed, none can be cumbersome</comment>
                             </conditionGroup>
                             <conditionGroup type="and">
                               <conditions>
-                                <condition type="lessThan" value="2" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
+                                <condition type="greaterThan" value="1" field="selections" scope="self" childId="f87d-5ea3-e505-6a9f" shared="true" includeChildSelections="true"/>
                                 <condition type="equalTo" value="2" field="selections" scope="parent" childId="11cb-8485-6def-6c6f" shared="true"/>
                               </conditions>
                               <comment>two 2 handed, one can be cumbersome</comment>
