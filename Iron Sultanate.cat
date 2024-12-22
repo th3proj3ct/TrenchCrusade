@@ -741,6 +741,12 @@ Keywords: CONSUMABLE.</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </conditionGroup>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="99ce-8e70-94c9-35c4" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9b27-e362-ed9f-0d18" shared="true"/>
+              </conditions>
+            </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
