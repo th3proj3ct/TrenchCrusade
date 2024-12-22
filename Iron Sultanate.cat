@@ -2299,7 +2299,11 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="0" field="12e8-ff8c-c933-9eb5"/>
+            <modifier type="set" value="0" field="12e8-ff8c-c933-9eb5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2bad-28de-8cb2-398d" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </profile>
       </profiles>
