@@ -753,6 +753,9 @@ Keywords: CONSUMABLE</characteristic>
             <categoryLink targetId="70c9-988d-71a7-7654" id="735f-f325-196c-e2d5" primary="false" name="Heavy"/>
             <categoryLink targetId="0934-cc68-ca08-7e2b" id="27fa-c684-7869-c557" primary="false" name="Bull"/>
           </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="31b6-7d34-f24d-25f1" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flame Cannon" hidden="true" id="f2de-aa0a-6254-2e20" collective="false">
           <costs>
@@ -780,6 +783,9 @@ Keywords: CONSUMABLE</characteristic>
             <categoryLink targetId="70c9-988d-71a7-7654" id="caa8-6c39-fe71-f607" primary="false" name="Heavy"/>
             <categoryLink targetId="0934-cc68-ca08-7e2b" id="659a-f260-f334-7d65" primary="false" name="Bull"/>
           </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2c77-f595-07e4-3ee5" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="true" id="045d-2073-b36d-5ac6" collective="false" sortIndex="2">
           <costs>
