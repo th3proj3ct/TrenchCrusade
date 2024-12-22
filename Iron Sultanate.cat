@@ -1089,6 +1089,11 @@ Keywords: CONSUMABLE.</characteristic>
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="d8dd-a5b7-721e-039a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d8dd-a5b7-721e-039a" includeChildSelections="true"/>
@@ -1294,11 +1299,7 @@ Starting in the second turn, you may activate these models. When you do, set up
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="1" field="f3ed-4f4b-c773-61a7">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
+        <modifier type="set" value="1" field="f3ed-4f4b-c773-61a7"/>
         <modifier type="increment" value="1" field="30d3-7307-2ec8-6263">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
@@ -1357,6 +1358,18 @@ Starting in the second turn, you may activate these models. When you do, set up
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Dervishes" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Fāris" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Counter-Charge" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1061-0baf-c232-c9a3">
           <characteristics>
@@ -1747,6 +1760,11 @@ Starting in the second turn, you may activate these models. When you do, set up
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd91-f171-98d6-423e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="c80f-b5eb-7a75-4bae">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
