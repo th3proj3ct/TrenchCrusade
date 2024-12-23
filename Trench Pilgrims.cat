@@ -672,7 +672,7 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="91dc-ea2f-969b-bd93" includeChildSelections="false"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Warband Variant" id="b0dc-a06c-3dfc-c202" hidden="false">
+        <selectionEntryGroup name="Warband Variant" id="b0dc-a06c-3dfc-c202" hidden="false" defaultSelectionEntryId="2781-f84b-5b85-f3e5">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Cavalcade of the Tenth Plague" hidden="false" id="b946-d515-a456-1748">
               <constraints>
