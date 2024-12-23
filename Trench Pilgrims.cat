@@ -265,6 +265,7 @@
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b1e0-f644-ef4f-4d98" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb2e-95ae-3fc4-ecab" includeChildSelections="false"/>
           </constraints>
           <categoryLinks>
             <categoryLink targetId="890d-3423-e4e2-435a" id="c8ce-d1fe-a5e0-af79" primary="false" name="Strong"/>
@@ -999,6 +1000,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="978b-9bd1-2db5-4260" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -1011,13 +1015,17 @@
           <costs>
             <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="7"/>
           </costs>
-          <modifiers>
-            <modifier type="set" value="0" field="4309-ac83-af10-aaa6">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="4309-ac83-af10-aaa6"/>
+                <modifier type="set" value="true" field="hidden"/>
+              </modifiers>
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="61a9-a136-4600-5cd2" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </entryLink>
         <entryLink import="true" name="Gas Mask" hidden="false" id="0e07-fef3-880f-a2c9" type="selectionEntry" targetId="65ef-b669-c3fd-cf7e">
           <constraints>
@@ -1039,6 +1047,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="15"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Holy Relic" hidden="false" id="ee14-cb97-07a2-561c" type="selectionEntry" targetId="2c8d-319e-7be9-dedf">
           <constraints>
