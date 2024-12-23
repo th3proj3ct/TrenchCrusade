@@ -8,6 +8,8 @@
     <categoryEntry name="Strong" id="890d-3423-e4e2-435a" hidden="false"/>
     <categoryEntry name="Troops" id="5e60-cdbf-60d7-2335" hidden="false"/>
     <categoryEntry name="Configuration" id="db10-481f-b49f-27c8" hidden="false"/>
+    <categoryEntry name="Infiltrator" id="f96c-4f0c-3e49-b864" hidden="false"/>
+    <categoryEntry name="Artificial" id="d566-4d20-2c33-6db3" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Default Force" hidden="false" id="default-force">
@@ -923,6 +925,54 @@ Additionally, if the Satchel Charge lands directly on top of a model, it ignores
         <profile name="Combat Helmet" typeId="257f-5ee0-228e-abbc" typeName="Equipment" hidden="false" id="6b91-d3d8-d600-f476">
           <characteristics>
             <characteristic name="Rules" typeId="8dbe-0bb4-df0c-a34f">Ignores additional BLOOD MARKERS caused by the Keyword SHRAPNEL.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Unholy Trinket" hidden="false" id="f782-13dc-c917-876a">
+      <profiles>
+        <profile name="Unholy Trinket" typeId="257f-5ee0-228e-abbc" typeName="Equipment" hidden="false" id="96ab-3634-ed8a-5d94">
+          <characteristics>
+            <characteristic name="Rules" typeId="8dbe-0bb4-df0c-a34f">When a model equipped with an Unholy Trinket fails a RISKY ACTION, that model may use this item. If it does, its Activation is not ended. Keyword: CONSUMABLE</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Unholy Relic" hidden="false" id="639d-f8b3-7bd1-047c">
+      <profiles>
+        <profile name="Unholy Relic" typeId="257f-5ee0-228e-abbc" typeName="Equipment" hidden="false" id="175a-609f-4964-04ff">
+          <characteristics>
+            <characteristic name="Rules" typeId="8dbe-0bb4-df0c-a34f"> A model equipped with an Unholy relic radiates a truly malignant aura and causes FEAR.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hellbound Soul Contract" hidden="false" id="ec83-814a-576b-3699">
+      <profiles>
+        <profile name="Hellbound Soul Contract" typeId="257f-5ee0-228e-abbc" typeName="Equipment" hidden="false" id="e839-b646-0d0c-e539">
+          <characteristics>
+            <characteristic name="Rules" typeId="8dbe-0bb4-df0c-a34f">When this model is taken Out of Action, any model in melee combat with them immediately suffers +1 BLOOD MARKER unless the model ignores damage from sources with the Keyword FIRE</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infernal Brand Mark" hidden="false" id="c77f-b2e9-980f-5047">
+      <profiles>
+        <profile name="Infernal Brand Mark" typeId="257f-5ee0-228e-abbc" typeName="Equipment" hidden="false" id="1ffc-12ea-dfca-4ba9">
+          <characteristics>
+            <characteristic name="Rules" typeId="8dbe-0bb4-df0c-a34f">Negates the extra BLOOD MARKER from attacks with the keyword FIRE. Any such attacks suffer -1 DICE penalty to all injury rolls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shovel" hidden="false" id="8e87-8281-723e-6def">
+      <profiles>
+        <profile name="Shovel" typeId="257f-5ee0-228e-abbc" typeName="Equipment" hidden="false" id="4edc-5498-cefc-7684">
+          <characteristics>
+            <characteristic name="Rules" typeId="8dbe-0bb4-df0c-a34f">A model equipped with a shovel always starts the game in cover if deployed on ground level, even if placed
+in open terrain. As soon as the model moves, it is no longer in over. A model that is covered in this way retains the
+benefit of Cover even if the attacking model has an unobstructed view of it. If a model equipped with a shovel has
+two hands free, it can use it in Melee Combat as if it were a Trench Club.</characteristic>
           </characteristics>
         </profile>
       </profiles>

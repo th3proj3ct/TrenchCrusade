@@ -278,6 +278,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <infoLinks>
+            <infoLink name="Strong" id="181e-e8b7-2d0c-378e" hidden="false" type="rule" targetId="2a74-a16b-8caa-033b"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -348,6 +351,9 @@
           <categoryLinks>
             <categoryLink name="Strong" hidden="false" id="22af-a840-32eb-a14f" targetId="890d-3423-e4e2-435a" primary="false"/>
           </categoryLinks>
+          <infoLinks>
+            <infoLink name="Strong" id="22be-cf0f-9191-106e" hidden="false" type="rule" targetId="2a74-a16b-8caa-033b"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -824,7 +830,7 @@
         </entryLink>
         <entryLink import="true" name="Punt Gun" hidden="false" id="ae77-b682-ce2c-de4c" type="selectionEntry" targetId="7fa2-7800-ed6a-90d3">
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="b110-5dc8-7a9a-47f1" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="b110-5dc8-7a9a-47f1" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8e3-71f9-3205-9aa6" includeChildSelections="false"/>
           </constraints>
           <costs>
@@ -833,7 +839,7 @@
         </entryLink>
         <entryLink import="true" name="Automatic Pistol" hidden="false" id="a74f-883b-d14f-6cf1" type="selectionEntry" targetId="a5b3-7b2c-622e-806f">
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="6274-174c-296a-0df5" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="6274-174c-296a-0df5" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a454-fbf7-91df-b115" includeChildSelections="false"/>
           </constraints>
           <costs>
@@ -869,7 +875,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1b0c-2139-a48a-3b97" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1b0c-2139-a48a-3b97" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da22-4f1f-38f7-2f25" includeChildSelections="false"/>
           </constraints>
         </entryLink>
@@ -923,7 +929,7 @@
         </entryLink>
         <entryLink import="true" name="Misericordia" hidden="false" id="c07b-ed7d-ef24-3246" type="selectionEntry" targetId="7704-6bdc-4125-11cb">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="33a4-c8d8-606a-5336" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="33a4-c8d8-606a-5336" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dc5-9e77-3135-f23c" includeChildSelections="false"/>
           </constraints>
           <costs>
@@ -1036,7 +1042,7 @@
                 <modifier type="set" value="true" field="hidden"/>
               </modifiers>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="61a9-a136-4600-5cd2" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="61a9-a136-4600-5cd2" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifierGroup>
           </modifierGroups>
@@ -1052,7 +1058,7 @@
         <entryLink import="true" name="Musical Instrument" hidden="false" id="d335-c0c4-81c7-e3e5" type="selectionEntry" targetId="5005-557e-bb9e-896b">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6ba-80f0-75ba-3d10" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a8f1-ca7c-ed8a-596d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a8f1-ca7c-ed8a-596d" includeChildSelections="true"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -1083,7 +1089,7 @@
         <entryLink import="true" name="Troop Flag" hidden="false" id="6aeb-7fbf-50c7-dd9d" type="selectionEntry" targetId="c1fb-cb06-f34c-adc1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e8f-3ade-3282-d1d2" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2e0f-30b7-71d7-9c68" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2e0f-30b7-71d7-9c68" includeChildSelections="true"/>
           </constraints>
           <costs>
             <cost name="Glory" typeId="e932-da70-5024-636a" value="1"/>
@@ -1108,7 +1114,7 @@
         <entryLink import="true" name="Incendiary Ammunition" hidden="false" id="f9d4-c948-e267-0ea7" type="selectionEntry" targetId="bef6-8b59-a377-addc">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9401-257a-9e55-2d0b" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d688-0ba2-821d-8dcb" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d688-0ba2-821d-8dcb" includeChildSelections="true"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="15"/>
@@ -1117,7 +1123,7 @@
         <entryLink import="true" name="Martyrdom Pills" hidden="false" id="6f4a-fa10-741f-a9ba" type="selectionEntry" targetId="fc8d-9ed2-c0ca-c1be">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a76a-68ff-894a-1c31" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2d6c-7547-926b-5d19" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2d6c-7547-926b-5d19" includeChildSelections="true"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="20"/>
@@ -1126,7 +1132,7 @@
         <entryLink import="true" name="Mountaineer Kit" hidden="false" id="1e33-beda-2cd3-3d7a" type="selectionEntry" targetId="959b-5834-1c00-7360">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88b9-6421-c1eb-a41a" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bd4d-a94c-ee31-de03" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bd4d-a94c-ee31-de03" includeChildSelections="true"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="3"/>
