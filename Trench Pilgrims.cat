@@ -548,6 +548,17 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="571a-d09b-645d-8c50" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e115-4e47-91d9-4e66" includeChildSelections="false"/>
           </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="e115-4e47-91d9-4e66"/>
+                <modifier type="set" value="true" field="hidden"/>
+              </modifiers>
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="61a9-a136-4600-5cd2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </entryLink>
       </entryLinks>
       <categoryLinks>
