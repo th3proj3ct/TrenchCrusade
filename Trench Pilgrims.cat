@@ -208,7 +208,7 @@
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Martyr" id="00ec-bbf0-b945-f6f9" hidden="false" defaultSelectionEntryId="10e0-6d67-50e5-751e" sortIndex="7">
+        <selectionEntryGroup name="Martyr" id="00ec-bbf0-b945-f6f9" hidden="false" defaultSelectionEntryId="10e0-6d67-50e5-751e" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Martyr Penitent" hidden="false" id="af47-430c-1baf-f517">
               <profiles>
@@ -243,6 +243,7 @@
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="943c-3a38-7acd-a354" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aec6-04f3-af2c-7e60" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -251,7 +252,7 @@
         <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="9f6e-4e89-75cf-9c65" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="9f6e-4e89-75cf-9c65" sortIndex="3">
           <profiles>
             <profile name="Zealot Strength" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="a5a3-5ac7-3bfb-77d1">
               <characteristics>
@@ -284,11 +285,11 @@
         <categoryLink targetId="9532-1db8-4d8d-dfe4" id="72f5-9664-1c4d-8d9a" primary="false" name="Pilgrim"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Melee Weapons" hidden="false" id="f769-7531-4764-ee63" type="selectionEntryGroup" targetId="2490-01ed-0dd4-8b6e" sortIndex="3"/>
-        <entryLink import="true" name="Equipment" hidden="false" id="f00e-7a38-4aae-3589" type="selectionEntryGroup" targetId="82f1-093c-9bf0-784d" sortIndex="6"/>
-        <entryLink import="true" name="Armour" hidden="false" id="43f0-2998-5b60-8bc0" type="selectionEntryGroup" targetId="6a95-e8ed-2fbc-127b" sortIndex="5"/>
-        <entryLink import="true" name="Ranged Weapons" hidden="false" id="3f59-5c14-5eaa-fe51" type="selectionEntryGroup" targetId="ebc6-4a4c-46f1-991d" sortIndex="4"/>
-        <entryLink import="true" name="Wrath of God" hidden="false" id="62aa-9724-b319-7c2b" type="selectionEntry" targetId="7f90-86a5-1979-893e" sortIndex="1"/>
+        <entryLink import="true" name="Melee Weapons" hidden="false" id="f769-7531-4764-ee63" type="selectionEntryGroup" targetId="2490-01ed-0dd4-8b6e" sortIndex="4"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="f00e-7a38-4aae-3589" type="selectionEntryGroup" targetId="82f1-093c-9bf0-784d" sortIndex="7"/>
+        <entryLink import="true" name="Armour" hidden="false" id="43f0-2998-5b60-8bc0" type="selectionEntryGroup" targetId="6a95-e8ed-2fbc-127b" sortIndex="6"/>
+        <entryLink import="true" name="Ranged Weapons" hidden="false" id="3f59-5c14-5eaa-fe51" type="selectionEntryGroup" targetId="ebc6-4a4c-46f1-991d" sortIndex="5"/>
+        <entryLink import="true" name="Wrath of God" hidden="false" id="62aa-9724-b319-7c2b" type="selectionEntry" targetId="7f90-86a5-1979-893e" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Castigator" hidden="false" id="fd56-e5e5-6357-3636">
@@ -591,8 +592,7 @@
             <characteristic name="Ranged" typeId="b456-0a6a-7b77-edeb">N/A</characteristic>
             <characteristic name="Melee" typeId="b963-f007-690e-2ae5">+2 Dice</characteristic>
             <characteristic name="Armour" typeId="d1ae-d7f2-4c64-1fa9">-3</characteristic>
-            <characteristic name="Base" typeId="5fab-d798-2d42-57c1">60mm
-</characteristic>
+            <characteristic name="Base" typeId="5fab-d798-2d42-57c1">60mm</characteristic>
           </characteristics>
         </profile>
         <profile name="Broken on the Wheel" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="5aaf-3671-bab1-764b">
@@ -708,6 +708,9 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="db10-481f-b49f-27c8" id="d71a-0beb-a918-8384" primary="true" name="Configuration"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <categoryEntries>

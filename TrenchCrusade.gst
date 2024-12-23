@@ -12,7 +12,7 @@
   <forceEntries>
     <forceEntry name="Default Force" hidden="false" id="default-force">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="01d8-b987-e2c3-fd2d" targetId="db10-481f-b49f-27c8" type="category"/>
+        <categoryLink name="Configuration" hidden="false" id="01d8-b987-e2c3-fd2d" targetId="db10-481f-b49f-27c8"/>
         <categoryLink name="Elite" hidden="false" id="default-force-category-link" targetId="ee09-9685-c77d-6ecc"/>
         <categoryLink name="Troops" hidden="false" id="b527-fe31-56d6-4ad7" targetId="5e60-cdbf-60d7-2335"/>
       </categoryLinks>
@@ -34,177 +34,76 @@
       <description>Modifier for ACTION rolls. For each +DICE, add one dice to the dice pool of the 2D6 roll you are about to make. +1 DICE thus makes the roll a total of 3D6. Then roll all the dice and pick the two highest. If two +DICE are added, roll 4D6 and pick the two highest, and so on</description>
     </rule>
     <rule name="-DICE" id="5661-d2e4-5d1f-ca3c" hidden="false">
-      <description>Modifier for ACTION rolls. For each -DICE, add one dice to the dice pool of the 2D6 roll you are
-about to make. Thus -1 DICE makes the roll a total of 3D6. Then roll all the dice and pick the two lowest. If two -DICE are added, roll 4D6 and pick the two lowest, and so on.</description>
+      <description>Modifier for ACTION rolls. For each -DICE, add one dice to the dice pool of the 2D6 roll you are about to make. Thus -1 DICE makes the roll a total of 3D6. Then roll all the dice and pick the two lowest. If two -DICE are added, roll 4D6 and pick the two lowest, and so on.</description>
     </rule>
     <rule name="Action" id="1f5b-5405-e31e-fd4f" hidden="false">
-      <description>Covers attacking with Melee and Ranged
-Weapons, Dashing and any other activity where the
-player must roll on the Action Success Chart to make
-an Action. This roll can be modified by the opposing
-player by using BLOOD MARKERS. Each marker causes
--1 DICE penalty to the roll.</description>
+      <description>Covers attacking with Melee and Ranged Weapons, Dashing and any other activity where the player must roll on the Action Success Chart to make an Action. This roll can be modified by the opposing player by using BLOOD MARKERS. Each marker causes -1 DICE penalty to the roll.</description>
     </rule>
     <rule name="Artificial" id="6664-6cf3-779c-cc41" hidden="false">
-      <description>This model is not of natural origin but is
-instead constructed from non-organic elements</description>
+      <description>This model is not of natural origin but is instead constructed from non-organic elements</description>
     </rule>
     <rule name="Assault" id="88d3-868e-7923-e88c" hidden="false">
-      <description>Ranged attacks made with weapons that have
-this Keyword do not prevent a model from charging
-during the same activation. A charge may only be made
-if a single ranged attack is made with a weapon with this
-Keyword, regardless of any other rules that the weapon
-might have.</description>
+      <description>Ranged attacks made with weapons that have this Keyword do not prevent a model from charging during the same activation. A charge may only be made if a single ranged attack is made with a weapon with this Keyword, regardless of any other rules that the weapon might have.</description>
     </rule>
     <rule name="Blast (X)" id="6b22-7a76-5652-96d0" hidden="false">
-      <description>A weapon with BLAST (X) has an area
-of effect with a radius of inches indicated by X. If this
-weapon targets a model, this radius is measured from
-the centre of that model’s base in all directions. If this
-weapon targets a point on the ground, this radius is
-measured from that point in all directions, including
-vertically. If the Attack ACTION with this weapon is
-successful, it hits every model within this radius that the
-target (either model or point) has line of sight to (i.e. not
-completely blocked by terrain).</description>
+      <description>A weapon with BLAST (X) has an area of effect with a radius of inches indicated by X. If this weapon targets a model, this radius is measured from the centre of that model’s base in all directions. If this weapon targets a point on the ground, this radius is measured from that point in all directions, including vertically. If the Attack ACTION with this weapon is successful, it hits every model within this radius that the target (either model or point) has line of sight to (i.e. not completely blocked by terrain).</description>
     </rule>
     <rule name="Blessing Marker" id="b067-03db-23e3-377a" hidden="false">
-      <description>Supernatural or chemical
-temporary enhancement. Each marker can be converted
-into +1 DICE for any ACTION the model takes, or into
--1 DICE when rolling injuries for this model</description>
+      <description>Supernatural or chemical temporary enhancement. Each marker can be converted into +1 DICE for any ACTION the model takes, or into -1 DICE when rolling injuries for this model</description>
     </rule>
     <rule name="Blood Marker" id="3fad-ae5c-fd56-8b70" hidden="false">
-      <description>Damage inflicted by attacks. Each
-can be converted into -1 DICE for any ACTION the
-wounded model takes or into +1 DICE when rolling
-injuries for this model.</description>
+      <description>Damage inflicted by attacks. Each can be converted into -1 DICE for any ACTION the wounded model takes or into +1 DICE when rolling injuries for this model.</description>
     </rule>
     <rule name="Consumable" id="e551-4e93-e608-3c62" hidden="false">
-      <description>An item with this keyword can only be
-used once. After the battle, any items with this keyword
-that were used are lost</description>
+      <description>An item with this keyword can only be used once. After the battle, any items with this keyword that were used are lost</description>
     </rule>
     <rule name="Critical" id="df0f-6ccc-0b39-e88d" hidden="false">
-      <description>When attacking with a weapon with this
-keyword, add +2 DICE (instead of 1) to any injury rolls
-the weapon causes if you roll a Critical (i.e. 12+) on the
-Action Success Chart</description>
+      <description>When attacking with a weapon with this keyword, add +2 DICE (instead of 1) to any injury rolls the weapon causes if you roll a Critical (i.e. 12+) on the Action Success Chart</description>
     </rule>
     <rule name="Cumbersome" id="6370-1a3b-d0f3-ebfa" hidden="false">
-      <description>Model always requires two hands to
-use this weapon, even if the model has the Keyword
-STRONG. A weapon with the Keyword CUMBERSOME
-ignores this restriction when benefitting from the Shield
-Combo rule.</description>
+      <description>Model always requires two hands to use this weapon, even if the model has the Keyword STRONG. A weapon with the Keyword CUMBERSOME ignores this restriction when benefitting from the Shield Combo rule.</description>
     </rule>
     <rule name="Elite" id="f18a-3dd4-4460-42fb" hidden="false">
-      <description>The most senior and heroic models of the
-warband. They have different rules for experience and
-advancement, and often enjoy a different weapon,
-armour and equipment selection.</description>
+      <description>The most senior and heroic models of the warband. They have different rules for experience and advancement, and often enjoy a different weapon, armour and equipment selection.</description>
     </rule>
     <rule name="Fear" id="ab86-4b15-b365-a7c5" hidden="false">
       <description>Enemies of models with this Keyword suffer -1 DICE in melee combat against this model. Some units are immune to this effect. Models that cause FEAR are not affected by FEAR themselves.</description>
     </rule>
     <rule name="Fire" id="f29b-3657-5011-02ee" hidden="false">
-      <description>A model hit by a weapon with this Keyword
-suffers a BLOOD MARKER in addition to any other
-effects of the attack. The model suffers this BLOOD
-MARKER even if the attack has no other effects or is
-otherwise negated. Some equipment or abilities can
-negate the additional BLOOD MARKER caused by this
-Keyword</description>
+      <description>A model hit by a weapon with this Keyword suffers a BLOOD MARKER in addition to any other effects of the attack. The model suffers this BLOOD MARKER even if the attack has no other effects or is otherwise negated. Some equipment or abilities can negate the additional BLOOD MARKER caused by this Keyword</description>
     </rule>
     <rule name="Fireteam" id="b02a-9f07-d139-3821" hidden="false">
-      <description>This model is part of a Fireteam made up
-of two models. All models that are part of this Fireteam
-can be activated at the same time without the opponent
-getting their turn in between. They can take their
-ACTIONS in any order they wish, switching between the
-two models. Note that if the activation of either member
-of the Fireteam forcefully ends (due to a failed RISKY
-ACTION for example), it ends both Activations. Allies
-cannot be part of a Fireteam.</description>
+      <description>This model is part of a Fireteam made up of two models. All models that are part of this Fireteam can be activated at the same time without the opponent getting their turn in between. They can take their ACTIONS in any order they wish, switching between the two models. Note that if the activation of either member of the Fireteam forcefully ends (due to a failed RISKY ACTION for example), it ends both Activations. Allies cannot be part of a Fireteam.</description>
     </rule>
     <rule name="Gas" id="83f2-149e-6619-8fd6" hidden="false">
-      <description>A model hit by a weapon with this Keyword suffers
-a BLOOD MARKER, in addition to any other effects of
-the attack. The model suffers this BLOOD MARKER even
-if the attack has no other effects or is otherwise negated.
-Some equipment or abilities can negate the additional
-BLOOD MARKER caused by this Keyword</description>
+      <description>A model hit by a weapon with this Keyword suffers a BLOOD MARKER, in addition to any other effects of the attack. The model suffers this BLOOD MARKER even if the attack has no other effects or is otherwise negated. Some equipment or abilities can negate the additional BLOOD MARKER caused by this Keyword</description>
     </rule>
     <rule name="Grenade" id="7f5a-42b3-f69d-71cb" hidden="false">
-      <description>Grenade-type weapons ignore penalties for
-cover and long range. They do not count towards the
-number of ranged weapons a model can carry and do not
-have to be held in your hand at all times. A model armed
-with grenades can use them as many times as they wish.</description>
+      <description>Grenade-type weapons ignore penalties for cover and long range. They do not count towards the number of ranged weapons a model can carry and do not have to be held in your hand at all times. A model armed with grenades can use them as many times as they wish.</description>
     </rule>
     <rule name="Heavy" id="ff49-2fc9-9fd4-0e13" hidden="false">
-      <description>If carrying a weapon, armour or equipment with
-this Keyword, the model cannot move/dash and shoot
-during its Activation, and the model cannot roll D6 and
-add it to the Charge move. A model can only carry one
-item with this Keyword.</description>
+      <description>If carrying a weapon, armour or equipment with this Keyword, the model cannot move/dash and shoot during its Activation, and the model cannot roll D6 and add it to the Charge move. A model can only carry one item with this Keyword.</description>
     </rule>
     <rule name="Infiltrator" id="424d-729a-6b0f-abc3" hidden="false">
-      <description>Models with this Keyword can be
-deployed anywhere on the table out of line of sight
-of any enemies, but at least 8” away from the closest
-enemy. They are deployed after all other models without
-this Keyword. If any infiltrators cannot be deployed
-according to these restrictions then those models can
-always be placed in your deployment zone. If a scenario
-does not allow for infiltrators, deploy models with this
-Keyword during standard deployment as if they didn’t
-have this Keyword</description>
+      <description>Models with this Keyword can be deployed anywhere on the table out of line of sight of any enemies, but at least 8” away from the closest enemy. They are deployed after all other models without this Keyword. If any infiltrators cannot be deployed according to these restrictions then those models can always be placed in your deployment zone. If a scenario does not allow for infiltrators, deploy models with this Keyword during standard deployment as if they didn’t have this Keyword</description>
     </rule>
     <rule name="Limit (X)" id="1561-388f-bd26-7359" hidden="false">
-      <description>You can only purchase as many of this
-piece of equipment/weapon/armour as indicated by
-the number in parenthesis for your warband. If you find
-more via looting/exploration, you can break this limit.</description>
+      <description>You can only purchase as many of this piece of equipment/weapon/armour as indicated by the number in parenthesis for your warband. If you find more via looting/exploration, you can break this limit.</description>
     </rule>
     <rule name="Risky Action" id="e4eb-7a5d-f639-29b7" hidden="false">
       <description>If you fail your roll on the Action Success Chart when taking this ACTION, the Activation of this model ends immediately.</description>
     </rule>
     <rule name="Shrapnel" id="8115-2917-8ef2-9c68" hidden="false">
-      <description>A model hit by a weapon with this
-Keyword suffers a BLOOD MARKER, in addition to
-any other effects of the attack. The model suffers this
-BLOOD MARKER even if the attack has no other effects
-or is otherwise negated. Some equipment or abilities can
-negate the additional BLOOD MARKER caused by this
-Keyword.</description>
+      <description>A model hit by a weapon with this Keyword suffers a BLOOD MARKER, in addition to any other effects of the attack. The model suffers this BLOOD MARKER even if the attack has no other effects or is otherwise negated. Some equipment or abilities can negate the additional BLOOD MARKER caused by this Keyword.</description>
     </rule>
     <rule name="Skirmisher" id="e75a-10f1-bea2-dce6" hidden="false">
-      <description>When a model with this Keyword is
-targeted by an enemy’s Charge, it may immediately
-move D3” in any direction, except into Melee Combat.
-A Skirmisher may also make this move when a charging
-enemy model would enter Melee Combat with it during
-a Charge that is not targeting it. After either of these
-moves is resolved, the Charge continues as normal
-toward the original target. These moves can only be
-taken if the Skirmisher is not in Melee Combat and only
-one such move may be taken per Charge</description>
+      <description>When a model with this Keyword is targeted by an enemy’s Charge, it may immediately move D3” in any direction, except into Melee Combat. A Skirmisher may also make this move when a charging enemy model would enter Melee Combat with it during a Charge that is not targeting it. After either of these moves is resolved, the Charge continues as normal toward the original target. These moves can only be taken if the Skirmisher is not in Melee Combat and only one such move may be taken per Charge</description>
     </rule>
     <rule name="Strong" id="2a74-a16b-8caa-033b" hidden="false">
-      <description>A model with this Keyword ignores the rules
-for weapons/armour/equipment with Keyword HEAVY,
-including not being limited to carrying only one HEAVY
-item (though other limitations apply as normal). In
-addition, it may use a single two-handed Melee weapon
-as a one-handed weapon.</description>
+      <description>A model with this Keyword ignores the rules for weapons/armour/equipment with Keyword HEAVY, including not being limited to carrying only one HEAVY item (though other limitations apply as normal). In addition, it may use a single two-handed Melee weapon as a one-handed weapon.</description>
     </rule>
     <rule name="Tough" id="4523-b283-e929-3bca" hidden="false">
-      <description>If a TOUGH model would be taken Out Of
-Action, it is knocked Down instead. After a TOUGH
-model has been knocked Down in this way once, it can
-be taken Out of Action as normal.</description>
+      <description>If a TOUGH model would be taken Out Of Action, it is knocked Down instead. After a TOUGH model has been knocked Down in this way once, it can be taken Out of Action as normal.</description>
     </rule>
     <rule name="Shield Combo" id="cc24-1ccf-bc04-7a24" hidden="false">
       <description>For the purposes of wielding a 2-handed weapon with the ‘Shield Combo’ indicator, the Trench Shield does not take a hand to wield but still functions as normal.</description>
