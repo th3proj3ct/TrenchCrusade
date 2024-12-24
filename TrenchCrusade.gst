@@ -234,18 +234,6 @@
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Jezzail" hidden="false" id="c019-d912-467c-2a49">
-      <profiles>
-        <profile name="Jezzail" typeId="e5d0-1216-adf3-422b" typeName="Weapon" hidden="false" id="b0db-1bef-4bb5-f7c8">
-          <characteristics>
-            <characteristic name="Type" typeId="21a9-9c69-664b-6c8b">2-handed</characteristic>
-            <characteristic name="Range" typeId="c78d-f7dc-aa09-77c9">18&quot;</characteristic>
-            <characteristic name="Modifiers" typeId="03ba-cc34-df47-008a">-</characteristic>
-            <characteristic name="Keywords" typeId="fbac-111c-a4aa-d9af">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Shotgun" hidden="false" id="3c05-2569-96fa-6bfb">
       <profiles>
         <profile name="Heavy Shotgun" typeId="e5d0-1216-adf3-422b" typeName="Weapon" hidden="false" id="b093-2c73-637c-d182">
@@ -973,6 +961,15 @@ Additionally, if the Satchel Charge lands directly on top of a model, it ignores
 in open terrain. As soon as the model moves, it is no longer in over. A model that is covered in this way retains the
 benefit of Cover even if the attacking model has an unobstructed view of it. If a model equipped with a shovel has
 two hands free, it can use it in Melee Combat as if it were a Trench Club.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Binoculars" hidden="false" id="2a36-6b9f-c658-58c1">
+      <profiles>
+        <profile name="Binoculars" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="0049-2228-db4d-c093">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">Any enemy Infiltrator cannot be placed closer than 16” of this model.</characteristic>
           </characteristics>
         </profile>
       </profiles>

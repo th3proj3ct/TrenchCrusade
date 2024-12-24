@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="b923-9554-7b2e-7bd7" name="Iron Sultanate" gameSystemId="sys-6a86-15b3-8ad1-6565" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Alchemist Armour" hidden="false" id="bfe5-cf63-0fd3-d080">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7bb-81a4-7af3-3673" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5df3-325c-2d3d-d1b1" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Alchemist Armour" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="f82d-0d8e-eac4-af0a">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">Counts as Reinforced Armour and therefore grants a -2 modifier to all injury rolls made against the model wearing it. All attacks with the Keyword FIRE and/or GAS suffer a -1 DICE penalty to injure this model. Additionally, this model does not suffer additional BLOOD MARKERS caused by the Keywords FIRE and/or GAS</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ee09-9685-c77d-6ecc" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="50"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Jezzail" hidden="false" id="de10-4cc0-d4aa-5745">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2da4-622b-df4e-6b14" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Jezzail" typeId="e5d0-1216-adf3-422b" typeName="Weapon" hidden="false" id="376c-ffeb-f08b-8a25">
+          <characteristics>
+            <characteristic name="Type" typeId="21a9-9c69-664b-6c8b">2-Handed</characteristic>
+            <characteristic name="Range" typeId="c78d-f7dc-aa09-77c9">18&quot;</characteristic>
+            <characteristic name="Modifiers" typeId="03ba-cc34-df47-008a">-</characteristic>
+            <characteristic name="Keywords" typeId="fbac-111c-a4aa-d9af">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="7"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="MURAD Bombard" hidden="false" id="7186-115c-fc3e-8c07">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ba2-0d65-bb8a-9d58" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="62f4-4a9a-f89a-81d8" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="MURAD Bombard" typeId="e5d0-1216-adf3-422b" typeName="Weapon" hidden="false" id="cc14-6977-71eb-e37a">
+          <characteristics>
+            <characteristic name="Type" typeId="21a9-9c69-664b-6c8b">1-Handed</characteristic>
+            <characteristic name="Range" typeId="c78d-f7dc-aa09-77c9">36&quot;</characteristic>
+            <characteristic name="Modifiers" typeId="03ba-cc34-df47-008a">-</characteristic>
+            <characteristic name="Keywords" typeId="fbac-111c-a4aa-d9af">Blast 3&quot;, Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="b00a-351e-2f72-68d8" hidden="false" type="rule" targetId="6b22-7a76-5652-96d0"/>
+        <infoLink name="Heavy" id="423f-ff10-7d3b-109c" hidden="false" type="rule" targetId="ff49-2fc9-9fd4-0e13"/>
+      </infoLinks>
+      <rules>
+        <rule name="MURAD Bombard" id="d146-b231-9821-b0c1" hidden="false">
+          <description>Specify a point on the battlefield within 36” (must be in line of sight) that you want to target. Next, take a Ranged Attack ACTION. If the roll fails (i.e. you roll 6 or less), the bomb lands 1” away from its intended location, multiplied by the number representing the degree of failure (for example, if you rolled 5, the bombard shot lands 2” away, as 7-5=2). The direction is decided by your opponent. All models within 3” of the landing 1x1mm landing spot are hit as the bomb explodes – no roll to hit is needed. If the bomb lands directly on top of any model, roll with 3D6 on the Injury Chart and add the dice together to see what happens! Other models hit by the bombard suffer a Down result due the booming shockwave, but do not incur any BLOOD MARKERS or other effects from this attack.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="59f5-ef27-8fb6-4ac6" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="50"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flame Cannon" hidden="false" id="4b69-3857-fa56-5e2e">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aec4-f55f-a582-850e" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b12e-6106-8b2c-fd15" includeChildSelections="true"/>
+      </constraints>
+      <rules>
+        <rule name="Flame Cannon" id="3ab2-eeba-ba9e-9900" hidden="false">
+          <description>When shot in ranged combat, draw a straight 12” line that is 1mm wide from the Brazen Bull. All models along the path of the line are automatically hit – roll for their injuries immediately. Armour does not protect against the Flame Cannon. Due to the Keyword FIRE, its hits cause an additional +1 BLOOD MARKER. This is applied after rolling for injuries.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Flame Cannon" typeId="e5d0-1216-adf3-422b" typeName="Weapon" hidden="false" id="b250-5dc3-48b0-8d35">
+          <characteristics>
+            <characteristic name="Type" typeId="21a9-9c69-664b-6c8b">1-Handed</characteristic>
+            <characteristic name="Range" typeId="c78d-f7dc-aa09-77c9">12&quot;</characteristic>
+            <characteristic name="Modifiers" typeId="03ba-cc34-df47-008a">-</characteristic>
+            <characteristic name="Keywords" typeId="fbac-111c-a4aa-d9af">Fire, Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fire" id="7091-83fb-e6f4-54b0" hidden="false" type="rule" targetId="f29b-3657-5011-02ee"/>
+        <infoLink name="Heavy" id="a13b-995e-eb6c-1bcc" hidden="false" type="rule" targetId="ff49-2fc9-9fd4-0e13"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="59f5-ef27-8fb6-4ac6" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="60"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Titan Zulfiqar" hidden="false" id="278f-f784-ebc3-ce37">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a7a-55be-6ae2-67b6" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Titan Zulfiqar" typeId="e5d0-1216-adf3-422b" typeName="Weapon" hidden="false" id="7bdf-be42-83e2-2e84">
+          <characteristics>
+            <characteristic name="Type" typeId="21a9-9c69-664b-6c8b">1-Handed</characteristic>
+            <characteristic name="Range" typeId="c78d-f7dc-aa09-77c9">Melee</characteristic>
+            <characteristic name="Modifiers" typeId="03ba-cc34-df47-008a">+2 to Injury</characteristic>
+            <characteristic name="Keywords" typeId="fbac-111c-a4aa-d9af">Critical, Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Critical" id="6c74-61da-54f2-2698" hidden="false" type="rule" targetId="df0f-6ccc-0b39-e88d"/>
+        <infoLink name="Heavy" id="ce22-205c-91c6-26e6" hidden="false" type="rule" targetId="ff49-2fc9-9fd4-0e13"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="59f5-ef27-8fb6-4ac6" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="30"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Assassin&apos;s Dagger" hidden="false" id="800f-f642-f03a-3c42">
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="33c5-7e75-8dc8-4a8a" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Assassin&apos;s Dagger" id="92ea-cb7c-87dd-1e01" hidden="false">
+          <description>If the Assassin hits an enemy and causes at least one BLOOD MARKER, the Assassin can move away from combat during this Activation. Note that this move does not grant enemies free attacks. Assassins can use both normal and Dash move to do this, though this may not be used for charging.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Assassin&apos;s Dagger" typeId="e5d0-1216-adf3-422b" typeName="Weapon" hidden="false" id="2c59-6cc1-cec9-c5dc">
+          <characteristics>
+            <characteristic name="Type" typeId="21a9-9c69-664b-6c8b">1-Handed</characteristic>
+            <characteristic name="Range" typeId="c78d-f7dc-aa09-77c9">Melee</characteristic>
+            <characteristic name="Modifiers" typeId="03ba-cc34-df47-008a">+1 to Injury</characteristic>
+            <characteristic name="Keywords" typeId="fbac-111c-a4aa-d9af">Critical</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Critical" id="4ded-5de0-4b0f-b433" hidden="false" type="rule" targetId="df0f-6ccc-0b39-e88d"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6b2f-a574-80eb-876e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="15"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Halberd-Gun" hidden="false" id="7122-34d9-391d-c682">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="107f-e319-d1f2-dfc7" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Halberd-Gun" typeId="e5d0-1216-adf3-422b" typeName="Weapon" hidden="false" id="0df9-da9f-1e86-7820">
+          <characteristics>
+            <characteristic name="Type" typeId="21a9-9c69-664b-6c8b">2-Handed</characteristic>
+            <characteristic name="Range" typeId="c78d-f7dc-aa09-77c9">24&quot;/Melee</characteristic>
+            <characteristic name="Modifiers" typeId="03ba-cc34-df47-008a">-</characteristic>
+            <characteristic name="Keywords" typeId="fbac-111c-a4aa-d9af">Assault, Cumbersome</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Assault" id="6420-d57c-e54e-fc01" hidden="false" type="rule" targetId="88d3-868e-7923-e88c"/>
+        <infoLink name="Cumbersome" id="2bff-b875-0dc1-a8da" hidden="false" type="rule" targetId="6370-1a3b-d0f3-ebfa"/>
+      </infoLinks>
+      <rules>
+        <rule name="Halberd-Gun" id="4e0a-4177-04c9-3da9" hidden="false">
+          <description>Enemies charging a model equipped with a Halberd-gun add -1 DICE in melee combat when rolling to hit. This only applies when a model attacks after a charge, not on subsequent rounds of melee</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ee09-9685-c77d-6ecc" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="20"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Siege Jezzail" hidden="false" id="0c2e-8bc7-902a-3ae0">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1845-a151-e7ac-5800" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Siege Jezzail" typeId="e5d0-1216-adf3-422b" typeName="Weapon" hidden="false" id="087e-379b-c7ad-4c96">
+          <characteristics>
+            <characteristic name="Type" typeId="21a9-9c69-664b-6c8b">2-Handed</characteristic>
+            <characteristic name="Range" typeId="c78d-f7dc-aa09-77c9">30&quot;</characteristic>
+            <characteristic name="Modifiers" typeId="03ba-cc34-df47-008a">+1D to Injuries</characteristic>
+            <characteristic name="Keywords" typeId="fbac-111c-a4aa-d9af">Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy" id="6fb0-b2ce-0ad5-5b04" hidden="false" type="rule" targetId="ff49-2fc9-9fd4-0e13"/>
+      </infoLinks>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="30"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Alaybozan" hidden="false" id="66ba-5cba-d688-1422">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf1e-9e25-03b6-0960" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Alaybozan" typeId="e5d0-1216-adf3-422b" typeName="Weapon" hidden="false" id="3082-e5a1-698e-9418">
+          <characteristics>
+            <characteristic name="Type" typeId="21a9-9c69-664b-6c8b">2-Handed</characteristic>
+            <characteristic name="Range" typeId="c78d-f7dc-aa09-77c9">12&quot;</characteristic>
+            <characteristic name="Modifiers" typeId="03ba-cc34-df47-008a">-</characteristic>
+            <characteristic name="Keywords" typeId="fbac-111c-a4aa-d9af">Shield Combo, Shrapnel</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shrapnel" id="7376-fa71-40f3-c9ea" hidden="false" type="rule" targetId="8115-2917-8ef2-9c68"/>
+      </infoLinks>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="9"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="b61e-1b15-5bc9-9433" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Alchemical Ammunition" hidden="false" id="b524-1473-488a-c7ec">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6af4-5896-a8a8-dba5" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Alchemical Ammunition" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="7bde-9818-8ec8-017a">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">Adds +1 DICE to Ranged Attack rolls on the Action Success Chart. Can only be used with Jezzails, Alaybozan, Halberd-Guns and Siege Jezzails.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="3"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="de10-4cc0-d4aa-5745" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="0c2e-8bc7-902a-3ae0" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="66ba-5cba-d688-1422" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="7122-34d9-391d-c682" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cloak of Alamut" hidden="false" id="d7da-0972-7099-30bd">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce54-08a0-6609-baad" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2eda-2b80-65ea-8ca9" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Cloak of Alamut" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="dc67-9f1e-1aa7-cfde">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">All ranged attacks against a model that is in cover suffer -2 DICE penalty instead of -1 DICE. All the normal rules for cover apply otherwise.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ee09-9685-c77d-6ecc" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="25"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wind Amulet" hidden="false" id="2df1-a71d-2d46-d6cc">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="135c-d274-f23e-5c14" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Wind Amulet" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="ec31-0a19-f221-6195">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">Once per battle, you may add +3” to the Movement characteristic of this model once during the activation.
+Declare this when the model is Activated.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="10"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Marid Shovel" hidden="false" id="fdc6-6686-3a93-2ca7">
+      <profiles>
+        <profile name="Marid Shovel" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="3d79-3533-7939-ef40">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">The Marid Shovel has the Keyword HEAVY which allows a Brazen Bull to use it. Otherwise it works exactly like a normal shovel.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4256-571f-048d-645d" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="59f5-ef27-8fb6-4ac6" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="15"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Sultanate Assassin" hidden="false" id="6b2f-a574-80eb-876e">
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="85"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ee09-9685-c77d-6ecc" id="3df9-aa90-085c-ae2d" primary="true" name="Elite"/>
+        <categoryLink targetId="4096-6a21-d669-c0c7" id="30bb-125c-12ef-8bf6" primary="false" name="Sultanate"/>
+        <categoryLink targetId="f96c-4f0c-3e49-b864" id="03ef-9fdb-1b40-51c4" primary="false" name="Infiltrator"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Infiltrator" id="5d35-2191-35d0-3315" hidden="false" type="rule" targetId="424d-729a-6b0f-abc3"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Sultanate Assassin" typeId="bfae-dd5d-e01b-16d0" typeName="Warrior" hidden="false" id="4d46-0e24-dd5c-7d1a">
+          <characteristics>
+            <characteristic name="Movement" typeId="b297-a14b-7cb0-851a">6&quot;</characteristic>
+            <characteristic name="Ranged" typeId="b456-0a6a-7b77-edeb">+1 Dice</characteristic>
+            <characteristic name="Melee" typeId="b963-f007-690e-2ae5">+2 Dice</characteristic>
+            <characteristic name="Armour" typeId="d1ae-d7f2-4c64-1fa9">0</characteristic>
+            <characteristic name="Base" typeId="5fab-d798-2d42-57c1">32mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Time Slip" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="e948-fe80-a937-9806">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">If any type of attack (melee, ranged, mine etc.) misses the Assassin, they may slip into a moment in the future. The Assassin can move into any unoccupied space within 6”, though they cannot be moved within 1” of any enemy model or leave the gaming table. If moving out of melee this way, enemies do not get free attacks</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Temporal Assassin" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="5c89-1d5c-cfe6-ae23">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">After the Assassin makes a Charge Roll, but before it moves toward its target, you may instead choose to have the Assassin split itself through time if it has not already taken a Melee Attack ACTION this Activation. Choose up to two enemy models within the charging distance of the Assassin. Then, place the Assassin into base contact with each enemy model, one after the other. It may make a Melee Attack against each one with a single melee weapon that it is equipped with. After the attacks (and any resulting effects) have been resolved, place the Assassin at either location. The Assassin cannot make any further melee attacks during this Activation.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Ranged Weapon" hidden="false" id="92f3-96c3-f64d-ae69" type="selectionEntryGroup" targetId="3197-87b6-917b-bee7">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bow of Alamut" hidden="false" id="6c8b-ac5f-ba70-32a5">
+              <costs>
+                <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="50"/>
+                <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Golden Khanjar" typeId="e5d0-1216-adf3-422b" typeName="Weapon" hidden="false" id="739e-b542-5add-8a30">
+                  <characteristics>
+                    <characteristic name="Type" typeId="21a9-9c69-664b-6c8b">2-Handed</characteristic>
+                    <characteristic name="Range" typeId="c78d-f7dc-aa09-77c9">40&quot;</characteristic>
+                    <characteristic name="Modifiers" typeId="03ba-cc34-df47-008a">Ignores Armour</characteristic>
+                    <characteristic name="Keywords" typeId="fbac-111c-a4aa-d9af">Critical</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b5a1-080d-be1e-141c" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Bow of Alamut" id="744e-b855-ba0b-cc15" hidden="false">
+                  <description>If the Assassin hits a model and causes at least one BLOOD MARKER, the Assassin may instantly place itself into Melee Combat with that model if there is a legal space that the Assassin could occupy within 1” of that model, regardless of the distance to the target or any interposing models/obstacles. The Assassin is considered to have charged that model, although it does not count as a Charge ACTION and therefore the Assassin can take the Move ACTION at a later point on this turn, if it hasn’t already. Note that if the bow takes the target Out of Action, no BLOOD MARKERS are caused and this movement cannot be made</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
+        <entryLink import="true" name="Armour" hidden="false" id="9b90-723c-eeee-6331" type="selectionEntryGroup" targetId="145a-38a7-6913-4272"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="7e26-3c22-4fea-b977" type="selectionEntryGroup" targetId="3f38-1213-2b65-ab38"/>
+        <entryLink import="true" name="Melee Weapon" hidden="false" id="46b6-086f-997a-6aab" type="selectionEntryGroup" targetId="3888-9e26-b61f-d51e">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Golden Khanjar" hidden="false" id="da3b-18fc-6dc8-c307">
+              <costs>
+                <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="20"/>
+                <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Golden Khanjar" typeId="e5d0-1216-adf3-422b" typeName="Weapon" hidden="false" id="6f15-f2b4-797e-409e">
+                  <characteristics>
+                    <characteristic name="Type" typeId="21a9-9c69-664b-6c8b">1-Handed</characteristic>
+                    <characteristic name="Range" typeId="c78d-f7dc-aa09-77c9">Melee</characteristic>
+                    <characteristic name="Modifiers" typeId="03ba-cc34-df47-008a">+1 to Injury, 2 Attacks</characteristic>
+                    <characteristic name="Keywords" typeId="fbac-111c-a4aa-d9af"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="force" shared="true" id="eebd-cc08-14b5-e530" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
+        <entryLink import="true" name="Art of Assassination" hidden="false" id="92a6-d587-2429-5969" type="selectionEntryGroup" targetId="81c6-f9a0-d767-750d"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="95cd-cd1c-7276-5412" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="95cd-cd1c-7276-5412">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="d93d-1185-e796-24db" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Master Assassin" hidden="false" id="bde3-8972-7550-e286">
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="10"/>
+            <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Master Assassin" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="7634-8134-1e9b-99e7">
+              <characteristics>
+                <characteristic name="Description" typeId="896f-6fa6-64e7-5801">A Master Assassin has the Keyword TOUGH</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Tough" id="af2e-88a3-2f28-acf2" hidden="false" type="rule" targetId="4523-b283-e929-3bca"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7641-a4af-222f-addd" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="410d-c8e8-98dc-4fb0" includeChildSelections="true"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="7641-a4af-222f-addd"/>
+                <modifier type="set" value="true" field="hidden"/>
+                <modifier type="set" value="0" field="410d-c8e8-98dc-4fb0"/>
+              </modifiers>
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d93d-1185-e796-24db" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Brazen Bull" hidden="false" id="59f5-ef27-8fb6-4ac6">
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="100"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ae43-0866-e754-8d8e" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Brazen Bull" typeId="bfae-dd5d-e01b-16d0" typeName="Warrior" hidden="false" id="9c8b-ce87-6f29-e1fc">
+          <characteristics>
+            <characteristic name="Movement" typeId="b297-a14b-7cb0-851a">6&quot;</characteristic>
+            <characteristic name="Ranged" typeId="b456-0a6a-7b77-edeb">+0 Dice</characteristic>
+            <characteristic name="Melee" typeId="b963-f007-690e-2ae5">+2 Dice</characteristic>
+            <characteristic name="Armour" typeId="d1ae-d7f2-4c64-1fa9">0</characteristic>
+            <characteristic name="Base" typeId="5fab-d798-2d42-57c1">60mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Artificial Body" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="ad5e-19cc-7535-da9f">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">Created through the Jabirean alchemy, the Brazen Bulls have no vital organs and they have to be hacked apart to kill them. All attacks against the Brazen Bull roll injuries with -1 DICE</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Trample" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="7358-45bc-aa62-7aa2">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">Once during its Activation, the Brazen Bull may make an extra Melee Attack ACTION against a Downed enemy model on a 32mm or smaller base. Resolve the attack as if the Brazen Bull was armed with a Trench Club. This attack ignores armour as the Brazen Bull stomps their enemies into a pulp</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="4096-6a21-d669-c0c7" id="cb85-d589-4909-f76b" primary="false" name="Sultanate"/>
+        <categoryLink targetId="5e60-cdbf-60d7-2335" id="0a50-7788-2549-314e" primary="true" name="Troops"/>
+        <categoryLink targetId="0c16-6e43-fc52-c695" id="61bd-c093-ed03-2c31" primary="false" name="Tough"/>
+        <categoryLink targetId="ee09-9685-c77d-6ecc" id="1e77-3910-3b87-b16b" primary="false" name="Elite"/>
+        <categoryLink targetId="67ed-b441-3345-7bba" id="2e67-5895-a1c2-33b3" primary="false" name="Fear"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Strong" id="8df7-baba-1a4f-75e6" hidden="false" type="rule" targetId="2a74-a16b-8caa-033b"/>
+        <infoLink name="Fear" id="8f8f-26fb-de78-208b" hidden="false" type="rule" targetId="ab86-4b15-b365-a7c5"/>
+        <infoLink name="Tough" id="b98e-cdcc-874e-02c2" hidden="false" type="rule" targetId="4523-b283-e929-3bca"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Armour" hidden="false" id="b6e9-d66f-d396-a278" type="selectionEntryGroup" targetId="145a-38a7-6913-4272"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="83df-8d6e-900b-5a7c" type="selectionEntryGroup" targetId="3f38-1213-2b65-ab38"/>
+        <entryLink import="true" name="Trench Club" hidden="false" id="6f05-26af-e7c0-a2f1" type="selectionEntry" targetId="5859-c115-3c05-97aa">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2194-43d5-f8f3-bb49" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5846-c9ca-5207-a30c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" id="cb82-9e7a-c89b-6802" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Great Hammer/Maul" hidden="false" id="b89f-9fc5-e0ee-885b" type="selectionEntry" targetId="9f73-4f5e-2019-a392">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fb5-52e7-0bb7-2305" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Great Sword/Axe" hidden="false" id="627a-0cb7-8463-e12b" type="selectionEntry" targetId="7ca0-84ae-4cd3-2e54">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8eff-e659-478c-118a" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="12"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Titan Zulfiqar" hidden="false" id="95b8-f6c9-6e60-98b4" type="selectionEntry" targetId="278f-f784-ebc3-ce37">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf9a-0d53-a66b-8783" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Ranged Weapon" id="e8c1-fe18-1901-7c47" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Siege Jezzail" hidden="false" id="d963-fe7c-2dbc-e99b" type="selectionEntry" targetId="0c2e-8bc7-902a-3ae0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6efd-1deb-5f1e-b11d" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="MURAD Bombard" hidden="false" id="9189-9cd5-185b-93fe" type="selectionEntry" targetId="7186-115c-fc3e-8c07"/>
+            <entryLink import="true" name="Machine Gun" hidden="false" id="08f0-75a2-bad0-c182" type="selectionEntry" targetId="3921-30fe-27e1-9bd5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d76-006c-1983-930c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="39ea-e5aa-b441-38a9" includeChildSelections="true"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="50"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flame Cannon" hidden="false" id="9197-43fe-be82-36db" type="selectionEntry" targetId="4b69-3857-fa56-5e2e"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="ae43-0866-e754-8d8e"/>
+            <modifier type="set" value="true" field="hidden"/>
+          </modifiers>
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="d93d-1185-e796-24db" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sapper" hidden="false" id="b61e-1b15-5bc9-9433">
+      <entryLinks>
+        <entryLink import="true" name="Armour" hidden="false" id="f9f8-3e7e-bdbb-3d1b" type="selectionEntryGroup" targetId="145a-38a7-6913-4272"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="1ed1-f311-0305-df21" type="selectionEntryGroup" targetId="3f38-1213-2b65-ab38"/>
+        <entryLink import="true" name="Melee Weapon" hidden="false" id="e183-f83f-3c55-bf6a" type="selectionEntryGroup" targetId="3888-9e26-b61f-d51e"/>
+        <entryLink import="true" name="Ranged Weapon" hidden="false" id="cf37-5e94-c4c5-98ba" type="selectionEntryGroup" targetId="3197-87b6-917b-bee7"/>
+        <entryLink import="true" name="Shovel" hidden="false" id="6846-e4fa-4ea8-9086" type="selectionEntry" targetId="8e87-8281-723e-6def">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4aa0-42af-db47-1ecc" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16b0-acf1-5a0d-d317" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Sapper" typeId="bfae-dd5d-e01b-16d0" typeName="Warrior" hidden="false" id="c3fb-f664-9240-6242">
+          <characteristics>
+            <characteristic name="Movement" typeId="b297-a14b-7cb0-851a">6&quot;</characteristic>
+            <characteristic name="Ranged" typeId="b456-0a6a-7b77-edeb">+1 Dice</characteristic>
+            <characteristic name="Melee" typeId="b963-f007-690e-2ae5">+0 Dice</characteristic>
+            <characteristic name="Armour" typeId="d1ae-d7f2-4c64-1fa9">0</characteristic>
+            <characteristic name="Base" typeId="5fab-d798-2d42-57c1">25mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mine-setting" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="2fa3-268a-d4b7-7204">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">As an ACTION with +2 DICE, the Sapper can mine a piece of terrain they alone are touching, no bigger than 8” x 8” (an 8” section of trench, a wall, a tree, a building etc). If successful, the terrain piece is now mined. Any model (except the Sapper who set the mine) who moves into contact with the terrain piece will trigger the mine. Roll on the Injury Chart to see what happens to the model. The mine has the Keyword SHRAPNEL. After this, the terrain piece is no longer mined.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Forward Positions" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="5843-d15d-df58-fea6">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">When the Sapper is set up during standard deployment, it can be placed up to 6” away from its player’s Deployment Zone. If deployed in this way, it must be in contact with a piece of scenery. This ability cannot be used if playing a scenario that does not allow the use of INFILTRATORS.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="De-mine" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="1c64-e15a-00d0-3744">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">As a RISKY ACTION the Sapper can disable any mine (see Scenarios) they move in contact with. If they fail, the mine blows causing damage as per the rules</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fortify" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="ccd3-4cbf-5e1b-4688">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">During their Activation, a Sapper can take a RISKY ACTION with +1 DICE. If successful, the Sapper is considered to be in Cover until the model moves. This ACTION cannot be used if the model is in melee combat.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="50"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="22bb-0375-eab3-eea4" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="4096-6a21-d669-c0c7" id="bb8e-2f04-a912-4964" primary="false" name="Sultanate"/>
+        <categoryLink targetId="db10-481f-b49f-27c8" id="deda-679e-e0ec-5995" primary="false" name="Configuration"/>
+        <categoryLink targetId="5e60-cdbf-60d7-2335" id="307a-3d16-33c3-0b2c" primary="true" name="Troops"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Janissaries" hidden="false" id="bbd9-3775-31c0-56ed">
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="force" shared="true" id="e82e-1d3f-02d4-edfa" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="55"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Counter-Charge" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="c7a0-e98d-cc52-4d74">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">If the first ACTION a Janissary makes during their Activation is a Charge, they can add +1 DICE to their subsequent Melee Attack ACTIONS during this Activation</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Equipment" hidden="false" id="d5bc-1edb-0f7b-4d85" type="selectionEntryGroup" targetId="3f38-1213-2b65-ab38" sortIndex="4"/>
+        <entryLink import="true" name="Melee Weapon" hidden="false" id="0999-ff08-c892-7b99" type="selectionEntryGroup" targetId="3888-9e26-b61f-d51e" sortIndex="5"/>
+        <entryLink import="true" name="Ranged Weapon" hidden="false" id="ca3e-66b7-9f82-19f5" type="selectionEntryGroup" targetId="3197-87b6-917b-bee7" sortIndex="6"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="5e60-cdbf-60d7-2335" id="c9be-1b41-466c-d7ea" primary="true" name="Troops"/>
+        <categoryLink targetId="4096-6a21-d669-c0c7" id="b982-04a3-6f35-dd58" primary="false" name="Sultanate"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Type" id="575a-845d-b333-418e" hidden="false" defaultSelectionEntryId="840a-6cd9-f4e1-4a11" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Janissary" hidden="false" id="840a-6cd9-f4e1-4a11">
+              <profiles>
+                <profile name="Janissary" typeId="bfae-dd5d-e01b-16d0" typeName="Warrior" hidden="false" id="97fb-f21c-b49f-da1f">
+                  <characteristics>
+                    <characteristic name="Movement" typeId="b297-a14b-7cb0-851a">6&quot;</characteristic>
+                    <characteristic name="Ranged" typeId="b456-0a6a-7b77-edeb">+1 Dice</characteristic>
+                    <characteristic name="Melee" typeId="b963-f007-690e-2ae5">+1 Dice</characteristic>
+                    <characteristic name="Armour" typeId="d1ae-d7f2-4c64-1fa9">0</characteristic>
+                    <characteristic name="Base" typeId="5fab-d798-2d42-57c1">32mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d93d-1185-e796-24db" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef1a-6466-fb10-a09e" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="890d-3423-e4e2-435a" id="583d-f551-6e35-3950" primary="false" name="Strong"/>
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Strong" id="ac2d-0280-75fa-2db5" hidden="false" type="rule" targetId="2a74-a16b-8caa-033b"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Whirling Dervish" hidden="false" id="900c-2b9a-c53f-387c">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d93d-1185-e796-24db" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+              <profiles>
+                <profile name="Whirling Dervish" typeId="bfae-dd5d-e01b-16d0" typeName="Warrior" hidden="false" id="3313-e958-d551-3564">
+                  <characteristics>
+                    <characteristic name="Movement" typeId="b297-a14b-7cb0-851a">6&quot;</characteristic>
+                    <characteristic name="Ranged" typeId="b456-0a6a-7b77-edeb">+1 Dice</characteristic>
+                    <characteristic name="Melee" typeId="b963-f007-690e-2ae5">+1 Dice</characteristic>
+                    <characteristic name="Armour" typeId="d1ae-d7f2-4c64-1fa9">0</characteristic>
+                    <characteristic name="Base" typeId="5fab-d798-2d42-57c1">32mm</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Whirling Dervish" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="3e86-bec8-6c7c-5def">
+                  <characteristics>
+                    <characteristic name="Description" typeId="896f-6fa6-64e7-5801">All Ranged attacks against Dervishes suffer -1 DICE penalty. Dervishes do not suffer the normal -1 DICE to hit for fighting with an Off-Hand weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fcc5-8b60-4757-1e85" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6377-a64d-0db1-f739" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armour" id="f94f-b724-83ce-13e8" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Alchemist Armour" hidden="false" id="9fa0-e930-70f3-b659" type="selectionEntry" targetId="bfe5-cf63-0fd3-d080">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0048-4c0f-f45e-fae4" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Reinforced Armour" hidden="false" id="8a50-bf1a-d61a-7739" type="selectionEntry" targetId="c943-4bfa-49b7-9e1e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f94-3421-2f8c-fc89" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d93d-1185-e796-24db" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="40"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Standard Armour" hidden="false" id="2414-42eb-5c7d-f953" type="selectionEntry" targetId="102c-fb89-64d9-7d5a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e59-e917-618a-7b72" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Trench Shield" hidden="false" id="c0c5-5a1f-0bd1-db62" type="selectionEntry" targetId="a343-3848-fc88-3bda">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ade2-ad35-a88d-2d0f" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Yüzbaşı Captain" hidden="false" id="3ddb-da4b-504e-c401">
+      <categoryLinks>
+        <categoryLink targetId="ee09-9685-c77d-6ecc" id="6b47-c34a-5941-b9d8" primary="true" name="Elite"/>
+        <categoryLink targetId="0c16-6e43-fc52-c695" id="02c3-f554-4a83-1b12" primary="false" name="Tough"/>
+        <categoryLink targetId="4096-6a21-d669-c0c7" id="5bb0-5da9-d731-349b" primary="false" name="Sultanate"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="70"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ef93-1975-7e8b-f9d7" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="608b-fb63-98df-3bed" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Yüzbaşı Captain" typeId="bfae-dd5d-e01b-16d0" typeName="Warrior" hidden="false" id="db27-2324-5b8b-9aa5">
+          <characteristics>
+            <characteristic name="Movement" typeId="b297-a14b-7cb0-851a">6&quot;</characteristic>
+            <characteristic name="Ranged" typeId="b456-0a6a-7b77-edeb">+2 Dice</characteristic>
+            <characteristic name="Melee" typeId="b963-f007-690e-2ae5">+2 Dice</characteristic>
+            <characteristic name="Armour" typeId="d1ae-d7f2-4c64-1fa9">0</characteristic>
+            <characteristic name="Base" typeId="5fab-d798-2d42-57c1">32mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mubarizun" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="af7e-8a8b-2f4e-0382">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">Yüzbaşı is expected to face the mightiest of their enemies in personal combat, inspiring the troops to victory with their personal prowess. Yüzbaşı are immune to the effects of the Keyword FEAR and add +1 DICE to injury rolls against TOUGH opponents.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Tough" id="509a-b861-2d22-c4a5" hidden="false" type="rule" targetId="4523-b283-e929-3bca"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Armour" hidden="false" id="342f-608e-d9cd-2bb4" type="selectionEntryGroup" targetId="145a-38a7-6913-4272"/>
+        <entryLink import="true" name="Melee Weapon" hidden="false" id="e9e5-1422-7919-17a3" type="selectionEntryGroup" targetId="3888-9e26-b61f-d51e"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="0c5d-86c2-d77b-924c" type="selectionEntryGroup" targetId="3f38-1213-2b65-ab38"/>
+        <entryLink import="true" name="Ranged Weapon" hidden="false" id="e2b4-eb90-ded1-7f18" type="selectionEntryGroup" targetId="3197-87b6-917b-bee7"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="ef93-1975-7e8b-f9d7"/>
+            <modifier type="set" value="true" field="hidden"/>
+            <modifier type="set" value="0" field="608b-fb63-98df-3bed"/>
+          </modifiers>
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="d93d-1185-e796-24db" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Jabirean Alchemist" hidden="false" id="8d6e-303a-62f1-db8e">
+      <categoryLinks>
+        <categoryLink targetId="ee09-9685-c77d-6ecc" id="3c23-ee82-2c52-5311" primary="true" name="Elite"/>
+        <categoryLink targetId="4096-6a21-d669-c0c7" id="69a6-c4ed-9940-28b9" primary="false" name="Sultanate"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0570-6cfd-70ea-c458" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Jabirean Alchemist" typeId="bfae-dd5d-e01b-16d0" typeName="Warrior" hidden="false" id="2ff8-1166-74a6-8b4f">
+          <characteristics>
+            <characteristic name="Movement" typeId="b297-a14b-7cb0-851a">6&quot;</characteristic>
+            <characteristic name="Ranged" typeId="b456-0a6a-7b77-edeb">+2 Dice</characteristic>
+            <characteristic name="Melee" typeId="b963-f007-690e-2ae5">+1 Dice</characteristic>
+            <characteristic name="Armour" typeId="d1ae-d7f2-4c64-1fa9">0</characteristic>
+            <characteristic name="Base" typeId="5fab-d798-2d42-57c1">32mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mastery of the Elements" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="c059-cb25-b9d4-19d9">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">At the beginning of a battle, all ranged and melee weapons that an Alchemist has been equipped with may be assigned one of the following Keywords: SHRAPNEL, FIRE or GAS added to them. All the weapons the Alchemist has will share the same Keyword. With a RISKY ACTION with +1 DICE, the Alchemist can change this Keyword into one of the others.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Armour" hidden="false" id="fb59-6b52-f1d1-ee6e" type="selectionEntryGroup" targetId="145a-38a7-6913-4272"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="5ebb-434f-1d6d-cb7d" type="selectionEntryGroup" targetId="3f38-1213-2b65-ab38"/>
+        <entryLink import="true" name="Melee Weapon" hidden="false" id="3a3c-5b16-15f7-b9a9" type="selectionEntryGroup" targetId="3888-9e26-b61f-d51e"/>
+        <entryLink import="true" name="Ranged Weapon" hidden="false" id="34c6-1d9c-9436-1211" type="selectionEntryGroup" targetId="3197-87b6-917b-bee7"/>
+      </entryLinks>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="55"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="0570-6cfd-70ea-c458"/>
+            <modifier type="set" value="true" field="hidden"/>
+          </modifiers>
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="d93d-1185-e796-24db" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Azebs" hidden="false" id="5f99-5138-c18c-e2f6">
+      <categoryLinks>
+        <categoryLink targetId="5e60-cdbf-60d7-2335" id="69ff-cfa7-cddd-de73" primary="true" name="Troops"/>
+        <categoryLink targetId="4096-6a21-d669-c0c7" id="e9eb-aca1-6061-485e" primary="false" name="Sultanate"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="25"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Azebs" typeId="bfae-dd5d-e01b-16d0" typeName="Warrior" hidden="false" id="2052-1ea5-5501-2657">
+          <characteristics>
+            <characteristic name="Movement" typeId="b297-a14b-7cb0-851a">6&quot;</characteristic>
+            <characteristic name="Ranged" typeId="b456-0a6a-7b77-edeb">0 Dice</characteristic>
+            <characteristic name="Melee" typeId="b963-f007-690e-2ae5">-1 Dice</characteristic>
+            <characteristic name="Armour" typeId="d1ae-d7f2-4c64-1fa9">0</characteristic>
+            <characteristic name="Base" typeId="5fab-d798-2d42-57c1">25mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Ranged Weapon" hidden="false" id="6745-9045-6987-e6cc" type="selectionEntryGroup" targetId="3197-87b6-917b-bee7"/>
+        <entryLink import="true" name="Armour" hidden="false" id="9e2a-cf09-569c-3774" type="selectionEntryGroup" targetId="145a-38a7-6913-4272"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="81ac-9374-b6e7-d1eb" type="selectionEntryGroup" targetId="3f38-1213-2b65-ab38"/>
+        <entryLink import="true" name="Melee Weapon" hidden="false" id="d254-271d-c359-49fc" type="selectionEntryGroup" targetId="3888-9e26-b61f-d51e"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Skirmisher" hidden="false" id="89d2-22cc-a74a-24c7">
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="5"/>
+            <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Skirmisher" id="e8ae-979b-0f14-feab" hidden="false" type="rule" targetId="e75a-10f1-bea2-dce6"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Skirmisher" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="79cd-89e7-3b79-d48b">
+              <characteristics>
+                <characteristic name="Description" typeId="896f-6fa6-64e7-5801">Any Azebs can be converted to SKIRMISHERS at the cost of +5 ducats per model.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a47-130d-47ae-53da" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Assassin Acolytes" hidden="false" id="cdb6-2357-acec-65c1">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden"/>
+              </modifiers>
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d93d-1185-e796-24db" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+          <profiles>
+            <profile name="Assassin Acolytes" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="e18c-4671-86f8-b257">
+              <characteristics>
+                <characteristic name="Description" typeId="896f-6fa6-64e7-5801"> Up to three Azebs of the warband can have the Keyword INFILTRATOR</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Infiltrator" id="9761-887e-6e38-caad" hidden="false" type="rule" targetId="424d-729a-6b0f-abc3"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9119-529c-bc4b-1caf" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="10"/>
+            <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lions of Jabir" hidden="false" id="76f5-b805-dabd-1e01">
+      <profiles>
+        <profile name="Lions of Jabir" typeId="bfae-dd5d-e01b-16d0" typeName="Warrior" hidden="false" id="8b0d-d18f-14ff-2d43">
+          <characteristics>
+            <characteristic name="Movement" typeId="b297-a14b-7cb0-851a">8&quot;</characteristic>
+            <characteristic name="Ranged" typeId="b456-0a6a-7b77-edeb">N/A</characteristic>
+            <characteristic name="Melee" typeId="b963-f007-690e-2ae5">+1 Dice</characteristic>
+            <characteristic name="Armour" typeId="d1ae-d7f2-4c64-1fa9">0</characteristic>
+            <characteristic name="Base" typeId="5fab-d798-2d42-57c1">30x60mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Artificial Body" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="953f-25b5-5293-bd31">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">Created through the Jabirean alchemy, the Lions have no vital organs and they must be dismembered in order to kill them. All injury rolls against the Lion are made with -1 DICE.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mauling" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="945c-e38c-6f66-ee65">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801">A Downed opponent cannot stand up if it is in melee combat with a Lion of Jabir (even if the Lion is Down itself ), unless it is on a 40mm or larger base</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lion’s Grace" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="7728-e9cd-d6fb-3520">
+          <characteristics>
+            <characteristic name="Description" typeId="896f-6fa6-64e7-5801"> Lions of Jabir may take any Dash/Jump/Climb/Diving Charge ACTION with a +1 DICE bonus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Wind Amulet" hidden="false" id="fa4c-e2b2-e20b-16f4" type="selectionEntry" targetId="2df1-a71d-2d46-d6cc" sortIndex="2"/>
+        <entryLink import="true" name="Unarmed" hidden="false" id="b3e1-b131-0f1c-5129" type="selectionEntry" targetId="84b3-3d09-9f00-52b1" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5cac-bf2b-98b9-43ca" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b0e-597d-1ba1-1801" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Standard Armour" hidden="false" id="29ee-3c9a-311e-7d13" type="selectionEntry" targetId="102c-fb89-64d9-7d5a" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6771-55b0-2f50-26e9" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="15"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="60"/>
+        <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="ffee-0a47-4337-94fd" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="5e60-cdbf-60d7-2335" id="832f-250c-ec77-4b6d" primary="true" name="Troops"/>
+        <categoryLink targetId="4096-6a21-d669-c0c7" id="30d4-fb35-edf0-4d38" primary="false" name="Sultanate"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="ffee-0a47-4337-94fd"/>
+            <modifier type="set" value="true" field="hidden"/>
+          </modifiers>
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="d93d-1185-e796-24db" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Variant" hidden="false" id="f4a8-2b39-d8a1-1b5d">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="0037-3153-5ab6-ba1a" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="14a6-6127-ad52-f0bb" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Warband Variant" id="3ae3-9cf6-2351-c76a" hidden="false" defaultSelectionEntryId="02da-550b-7fec-5cd5">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Fida’i of Alamut – The Cabal of Assassins" hidden="false" id="d93d-1185-e796-24db">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="febf-35e2-e6f7-de91" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Fida’i of Alamut – The Cabal of Assassins" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="be0f-8760-e6d3-f537">
+                  <characteristics>
+                    <characteristic name="Description" typeId="896f-6fa6-64e7-5801">- Flock of Assassins: The Fida’i of Alamut can have up to three Assassins. The warband must include a Master Assassin that counts as one of the three (see below).
+- Master Assassin: A Master Assassin has the Keyword TOUGH. The Master Assassin costs 95 ducats.
+- Assassin Acolytes: Up to three Azebs of the warband can have the Keyword INFILTRATOR at the cost of +10 ducats per model.
+- Alamut Alone: The warband may not include Yüzbaşı, Alchemist, Janissaries, Lions of Jabir or Brazen Bulls.
+- Killing Squad: Your warband may have a single Fireteam. These Fireteams may consist of any two models from your warband. Models in Fireteams gain the Keyword FIRETEAM.
+- Dervishes: The warband may include up to four Dervishes (use Janissary statistics including Armoury selection, but they cannot use Reinforced Armour). These troops have the Whirling Dervishes special rule instead of the Keyword STRONG:
+- Whirling Dervishes: The ritual Dance of the Dervishes is hypnotic to witness, and it is as graceful as it is deadly. All Ranged attacks against Dervishes suffer -1 DICE penalty. Dervishes do not suffer the normal -1 DICE to hit for fighting with an Off-Hand weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The House of Wisdom" hidden="false" id="4fab-f3d7-7e4b-4f5b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfbd-c0bb-f9ff-72d2" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Iron Sultanate" hidden="false" id="02da-550b-7fec-5cd5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dbc-4d45-5a72-8669" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="320a-3160-c0dc-fc77" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="913d-b719-d5fe-2868" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="4ca9-64db-4bf5-85f9" targetId="db10-481f-b49f-27c8" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Armour" id="145a-38a7-6913-4272" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Trench Shield" hidden="false" id="d13c-7326-a38e-bb3b" type="selectionEntry" targetId="a343-3848-fc88-3bda">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e301-d970-1723-dda7" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Alchemist Armour" hidden="false" id="c476-1100-e657-2ee4" type="selectionEntry" targetId="bfe5-cf63-0fd3-d080">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6ca-4e90-d9e8-8164" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Reinforced Armour" hidden="false" id="c897-a51f-4a0f-12fc" type="selectionEntry" targetId="c943-4bfa-49b7-9e1e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6109-a8ab-9e14-5a97" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="bbd9-3775-31c0-56ed" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ee09-9685-c77d-6ecc" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="40"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Standard Armour" hidden="false" id="e0a2-9beb-a5cc-e42e" type="selectionEntry" targetId="102c-fb89-64d9-7d5a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1664-9047-ff78-cdc2" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="15"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Melee Weapon" id="3888-9e26-b61f-d51e" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Knife/Dagger" hidden="false" id="ac59-fe90-8282-a4a0" type="selectionEntry" targetId="e34a-0b6a-da2b-d877">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="759a-de08-5b16-841c" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="1"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Bayonet" hidden="false" id="ae88-b0e5-6a60-88d1" type="selectionEntry" targetId="71bd-be64-21fd-0b06">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e30f-bdab-ec91-983a" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="2"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Trench Club" hidden="false" id="ff37-a5fd-f3d9-36db" type="selectionEntry" targetId="5859-c115-3c05-97aa">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6207-6b6f-c393-273d" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="3"/>
+          </costs>
+          <modifiers>
+            <modifier type="increment" value="1" field="6207-6b6f-c393-273d"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Sword/Axe" hidden="false" id="92cc-dd35-d208-a52a" type="selectionEntry" targetId="4881-56f7-783c-0559">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="39c1-4a6b-4d6a-3430" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="4"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Trench Polearm" hidden="false" id="3e64-e99e-5a5c-67e3" type="selectionEntry" targetId="fa5a-e453-d039-7488">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa84-c70a-5253-4bd6" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="7"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Halberd-Gun" hidden="false" id="74ae-b8d9-f79a-8502" type="selectionEntry" targetId="7122-34d9-391d-c682">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57cb-c460-2176-676d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Great Hammer/Maul" hidden="false" id="edb9-7059-31da-fed0" type="selectionEntry" targetId="9f73-4f5e-2019-a392">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="306e-5c5a-81d0-e2e2" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Great Sword/Axe" hidden="false" id="e6e9-2232-4919-68df" type="selectionEntry" targetId="7ca0-84ae-4cd3-2e54">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8b0-5e34-d0c2-8e99" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="12"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Titan Zulfiqar" hidden="false" id="2a09-9d9a-c61b-cc47" type="selectionEntry" targetId="278f-f784-ebc3-ce37">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7249-a8fb-571e-2d9d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Assassin&apos;s Dagger" hidden="false" id="8738-3267-4311-98fe" type="selectionEntry" targetId="800f-f642-f03a-3c42"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Equipment" id="3f38-1213-2b65-ab38" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Gas Mask" hidden="false" id="b384-0f6d-a415-14fa" type="selectionEntry" targetId="65ef-b669-c3fd-cf7e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f0a-54bf-24b2-6091" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Shovel" hidden="false" id="d80e-c5b0-5ee0-b73f" type="selectionEntry" targetId="8e87-8281-723e-6def">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="348b-10e4-7a50-06d8" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Marid Shovel" hidden="false" id="7821-4e7d-9cb2-8caa" type="selectionEntry" targetId="fdc6-6686-3a93-2ca7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0589-4508-e68d-eb1b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mountaineer Kit" hidden="false" id="5875-beec-fadf-9376" type="selectionEntry" targetId="959b-5834-1c00-7360">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03aa-71a6-4e70-c27b" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="381f-9b83-1639-7662" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="3"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Alchemical Ammunition" hidden="false" id="43fb-b983-d772-675b" type="selectionEntry" targetId="b524-1473-488a-c7ec">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b71-98f0-39f1-c86a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Medi-kit" hidden="false" id="bfc4-80ed-31fe-d23c" type="selectionEntry" targetId="d5d8-9044-ebb7-aa41">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e134-c786-eca9-b022" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Musical Instrument" hidden="false" id="dfa0-99ab-d141-5937" type="selectionEntry" targetId="5005-557e-bb9e-896b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a73-6050-2a4c-84a4" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ee09-9685-c77d-6ecc" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Cloak of Alamut" hidden="false" id="ef99-788c-afe3-cec9" type="selectionEntry" targetId="d7da-0972-7099-30bd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7085-8f12-9f5c-15b5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4585-c2b1-09ab-e219" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Wind Amulet" hidden="false" id="e292-81a9-be17-edae" type="selectionEntry" targetId="2df1-a71d-2d46-d6cc">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="df5c-1104-19f9-6cde" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Combat Helmet" hidden="false" id="dfd6-d9c7-981e-b4e7" type="selectionEntry" targetId="9e81-f311-c084-4275">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2c1-4673-0d2d-3214" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Troop Flag" hidden="false" id="8302-0fb1-7630-6561" type="selectionEntry" targetId="c1fb-cb06-f34c-adc1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44dc-a98a-c09f-570e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="56c3-aece-d536-d25c" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Glory" typeId="e932-da70-5024-636a" value="1"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Holy Relic" hidden="false" id="8d07-ba52-e9ed-6351" type="selectionEntry" targetId="2c8d-319e-7be9-dedf">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b246-e653-70ba-a3be" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Glory" typeId="e932-da70-5024-636a" value="2"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ee09-9685-c77d-6ecc" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Binoculars" hidden="false" id="0a66-f9b9-19eb-4053" type="selectionEntry" targetId="2a36-6b9f-c658-58c1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6829-3d3e-2c2e-d082" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ee09-9685-c77d-6ecc" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hashashin Leaf" hidden="false" id="c364-0581-409f-8eaf">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="e9a7-b46e-2081-877e" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03a8-b9c3-e6b3-a330" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Hashashin Leaf" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="def1-caa8-d9a3-eb49">
+              <characteristics>
+                <characteristic name="Description" typeId="896f-6fa6-64e7-5801">Before the battle begins, a model may use this item to gain the Keyword STRONG until the end of a battle. CONSUMABLE</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="5"/>
+            <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d93d-1185-e796-24db" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ranged Weapon" id="3197-87b6-917b-bee7" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Alaybozan" hidden="false" id="1e97-161b-feaf-0c39" type="selectionEntry" targetId="66ba-5cba-d688-1422">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66a7-1392-0669-2c89" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Flame Cannon" hidden="false" id="768a-1f4e-b9dd-0399" type="selectionEntry" targetId="4b69-3857-fa56-5e2e"/>
+        <entryLink import="true" name="Flamethrower" hidden="false" id="043a-5990-95e5-fdc0" type="selectionEntry" targetId="be9a-7d8d-9f95-eb27">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5be3-da08-3258-2509" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="aef5-bbd0-d39c-a93c" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="30"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Grenades" hidden="false" id="e359-cc5e-5108-610a" type="selectionEntry" targetId="98b9-de8c-a211-5f68">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42bc-933d-6fcc-4019" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="7"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Incendiary Grenades" hidden="false" id="4f3f-d2ca-709c-0e78" type="selectionEntry" targetId="d5db-af3d-03f4-a6b2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="263f-1a4e-6189-e4ca" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Jezzail" hidden="false" id="bf69-0276-703e-3cd7" type="selectionEntry" targetId="de10-4cc0-d4aa-5745"/>
+        <entryLink import="true" name="Machine Gun" hidden="false" id="e8a6-c807-826a-ddf7" type="selectionEntry" targetId="3921-30fe-27e1-9bd5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3c3-5810-c231-d6a4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="03ad-1c90-9aca-b4b6" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="50"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="MURAD Bombard" hidden="false" id="733b-9a04-f935-f4e6" type="selectionEntry" targetId="7186-115c-fc3e-8c07"/>
+        <entryLink import="true" name="Musket" hidden="false" id="a62b-59db-5908-0542" type="selectionEntry" targetId="a1c3-b781-565c-7c50">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b5e-47f9-c730-473b" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Pistol/Revolver" hidden="false" id="ce9a-d190-d758-7f8f" type="selectionEntry" targetId="484c-810f-3aae-b10a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f452-8147-eeb1-3699" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="6"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Shotgun" hidden="false" id="4a33-0d1c-8a73-2da7" type="selectionEntry" targetId="b96b-5aa9-6296-18e0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03a8-d101-411b-2890" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Siege Jezzail" hidden="false" id="05c1-1119-ea98-6dad" type="selectionEntry" targetId="0c2e-8bc7-902a-3ae0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c2e-3a67-5f12-78a5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Sniper Rifle" hidden="false" id="054d-191f-764d-8ae5" type="selectionEntry" targetId="8811-aa7f-f9af-0a28">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aaf-fe3f-0438-ddb2" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="2604-e71f-99c8-325a" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="35"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="bbd9-3775-31c0-56ed" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ee09-9685-c77d-6ecc" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Art of Assassination" id="81c6-f9a0-d767-750d" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6a8-cc97-945d-3bd7" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hallucinogen Disguise" hidden="false" id="e790-383e-bc12-6d54">
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="20"/>
+            <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bfc4-cc8f-9c52-cdd0" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Hallucinogen Disguise" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="7013-3211-530c-36b9">
+              <characteristics>
+                <characteristic name="Description" typeId="896f-6fa6-64e7-5801">An INFILTRATOR with this ability can be deployed anywhere on the battlefield, including the enemy Deployment Zone, as long as the model is at least 8” away from any enemy models. The model does not have to be out of Line of Sight. Binoculars or Guard Dogs have no effect on this ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Thunderbolt of Alamut" hidden="false" id="dc8b-ef15-ec65-fbdc">
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="20"/>
+            <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7e57-8c13-8136-0161" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Thunderbolt of Alamut" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="f64b-51e4-2b4b-3826">
+              <characteristics>
+                <characteristic name="Description" typeId="896f-6fa6-64e7-5801">The model has +2” movement and +1 DICE on its Dash ACTIONS</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Secret Paths" hidden="false" id="b9df-a57b-c765-83da">
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="10"/>
+            <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e1f9-55c4-4cc7-7eed" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Secret Paths" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="0f0b-8487-671d-3b0e">
+              <characteristics>
+                <characteristic name="Description" typeId="896f-6fa6-64e7-5801">At the start of the battle, right before the first model is set up, declare whether or not this model will be set up by using Secret Paths. A model using the Secret Paths is not set up on the battlefield at the start of the battle and it may not be activated normally during the first turn. 
+
+
+Starting in the second turn, you may activate these models. When you do, set up the model in contact with an edge of the battlefield but more than 8” away from all enemy models at the start of its activation. If both players have such models, the starting player declares whether one of their models is deployed or not first, followed by the other player. Alternate as normal until all such models have been declared as using Secret Paths or not.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mirage of Time" hidden="false" id="b649-5e6b-ca63-7976">
+          <costs>
+            <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="15"/>
+            <cost name="Glory" typeId="e932-da70-5024-636a" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="29b7-c1bd-d39b-f337" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mirage of Time" typeId="86ac-f459-ca64-1e52" typeName="Ability" hidden="false" id="b45c-b537-c4d5-0157">
+              <characteristics>
+                <characteristic name="Description" typeId="896f-6fa6-64e7-5801">Both Ranged and Melee attacks against the Assassin suffer -1 DICE penalty when determining if they hit</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="d93d-1185-e796-24db" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <categoryEntries>
+    <categoryEntry name="Sultanate" id="4096-6a21-d669-c0c7" hidden="false"/>
+  </categoryEntries>
+</catalogue>
