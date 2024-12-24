@@ -1155,7 +1155,7 @@ Declare this when the model is Activated.</characteristic>
         </entryLink>
         <entryLink import="true" name="Trench Club" hidden="false" id="ff37-a5fd-f3d9-36db" type="selectionEntry" targetId="5859-c115-3c05-97aa">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6207-6b6f-c393-273d" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6207-6b6f-c393-273d" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="3"/>

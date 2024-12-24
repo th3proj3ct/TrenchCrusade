@@ -50,11 +50,7 @@
       </profiles>
       <rules>
         <rule name="Tartarus Claws" id="29ba-0350-12aa-4c61" hidden="false">
-          <description>Tartarus Claws always come as a pair and do not allow the use of any other melee weapons or shield. You
-can make two Attack ACTIONS with the Claws without the usual -1 DICE for the second attack. If the opponent
-is taken Down or Out of Action with either of the Claws you may immediately move the model up to 6” in any
-direction. If the move takes you into contact with another enemy model, this counts as a charge and you can make a
-second Melee Attack ACTION with both claws. You can only do this follow-up move once per Activation.</description>
+          <description>Tartarus Claws always come as a pair and do not allow the use of any other melee weapons or shield. You can make two Attack ACTIONS with the Claws without the usual -1 DICE for the second attack. If the opponent is taken Down or Out of Action with either of the Claws you may immediately move the model up to 6” in any direction. If the move takes you into contact with another enemy model, this counts as a charge and you can make a second Melee Attack ACTION with both claws. You can only do this follow-up move once per Activation.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1163,7 +1159,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="3"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc22-b991-60c1-81af" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bc22-b991-60c1-81af" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Sword/Axe" hidden="false" id="54fa-76d5-366e-5620" type="selectionEntry" targetId="4881-56f7-783c-0559">
@@ -1171,7 +1167,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="4"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f69a-dd49-329b-8f94" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f69a-dd49-329b-8f94" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Trench Polearm" hidden="false" id="9e74-68ef-f014-32fe" type="selectionEntry" targetId="fa5a-e453-d039-7488">
@@ -1211,7 +1207,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="0ba6-ef6d-9c79-8a30" includeChildSelections="true"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8800-8fc5-232b-28b1" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8800-8fc5-232b-28b1" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Hellblade" hidden="false" id="e951-e7dd-0fb4-b2d1" type="selectionEntry" targetId="e22a-a2b0-abaf-6373">
@@ -1220,7 +1216,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
           </costs>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="8183-f246-5dfb-d71c" includeChildSelections="true"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cc7-cff2-292c-ebd9" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9cc7-cff2-292c-ebd9" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Tartarus Claws" hidden="false" id="7647-4a6e-d4cc-c4bd" type="selectionEntry" targetId="ecd9-2b0a-e697-9657">
@@ -1254,7 +1250,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfa4-6907-5305-28ce" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bfa4-6907-5305-28ce" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Knife/Dagger" hidden="false" id="1faa-304c-55e3-7010" type="selectionEntry" targetId="e34a-0b6a-da2b-d877">
@@ -1262,7 +1258,7 @@ If the bomb lands exactly on top of any model, roll with 3D6 on the Injury Chart
             <cost name="Ducats" typeId="2a5e-2001-5d7b-7261" value="1"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4493-ecee-57a6-a7fb" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4493-ecee-57a6-a7fb" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Coin Hammer" hidden="false" id="d5ef-d361-b6f7-cf60" type="selectionEntry" targetId="ef72-e170-ea37-962f"/>
