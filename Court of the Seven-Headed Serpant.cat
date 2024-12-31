@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="44b9-e92b-2dc0-6820" name="Court of the Seven-Headed Serpant" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="6" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="44b9-e92b-2dc0-6820" name="Court of the Seven-Headed Serpant" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="6" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="a774-f5b9-3fd9-7a0b" hidden="false" collapsible="true">
       <constraints>
@@ -1773,9 +1773,9 @@
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Machine Armour" hidden="false" id="c2d3-0190-0a94-13bc">
                           <profiles>
-                            <profile name="Claimed: Heavy Shotgun" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ab84-6453-d13a-fe65">
+                            <profile name="Claimed: Machine Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ab84-6453-d13a-fe65">
                               <characteristics>
-                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This model can use a Heavy Shotgun as though it were from the New Antioch.</characteristic>
+                                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This model can use Machine Armour as though it were from the New Antioch.</characteristic>
                               </characteristics>
                             </profile>
                           </profiles>
@@ -2279,7 +2279,7 @@
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="1f26-828c-fd26-882e" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="c2d3-0190-0a94-13bc" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
