@@ -642,7 +642,7 @@
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="82f6-9da1-7f6f-d295" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="false" id="5d98-e97f-9486-21b7" collective="false" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="true" id="5d98-e97f-9486-21b7" collective="false" sortIndex="2">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -843,7 +843,7 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Semi-Automatic Rifle" hidden="false" id="3f0b-203c-e0b5-70bc" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Semi-Automatic Rifle" hidden="true" id="3f0b-203c-e0b5-70bc" sortIndex="5">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -883,7 +883,7 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="e366-d9c6-ce77-a783" sortIndex="16">
+        <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="true" id="e366-d9c6-ce77-a783" sortIndex="16">
           <costs>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
           </costs>
@@ -903,7 +903,7 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Punt Gun" hidden="false" id="cccc-a38f-b13e-4a4e" sortIndex="6">
+        <selectionEntry type="upgrade" import="true" name="Punt Gun" hidden="true" id="cccc-a38f-b13e-4a4e" sortIndex="6">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
