@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Anointed Heavy Infantry" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -167,7 +167,7 @@
         </profile>
         <profile name="Hide" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1191-44c6-b786-d49d">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">As a RISKY ACTION with +1 DICE the Commando can hide if any piece of scenery the model is touching can block line of sight in any direction, even partially, regardless of whether an enemy currently has a clear LOS. If successful, enemies cannot target the Commando with ranged attacks or Charges. Weapons with the Keyword BLAST affect the Commando as normal if it is in the radius of the</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">As a RISKY ACTION with +1 DICE the Commando can hide if any piece of scenery the model is touching can block line of sight in any direction, even partially, regardless of whether an enemy currently has a clear LOS. If successful, enemies cannot target the Commando with ranged attacks or Charges. Weapons with the Keyword BLAST affect the Commando as normal if it is in the radius of the weapon. This effect ends if the Commando moves from its exact position in any way, it makes a Ranged Attack or an enemy model comes within 1.5” of it.</characteristic>
           </characteristics>
         </profile>
       </profiles>
