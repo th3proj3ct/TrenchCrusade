@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="4f10-6941-6de8-d8a6" hidden="false" collapsible="true">
       <constraints>
@@ -1128,6 +1128,11 @@
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="3a3c-7f8b-4ee4-d9d7" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="Bereaved do not suffer penalties for fighting unarmed." field="6e95-3480-ad33-b345">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </profile>
         <profile name="Overwhelming Horde" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b4a6-25a1-64e7-5dae">
@@ -1266,8 +1271,15 @@
             <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
             <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-</characteristic>
             <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
-            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Hounds do not suffer penalties for fighting unarmed. This weapon causes INFECTION MARKERS instead of BLOOD MARKERS. If this attack causes an INFECTION MARKER on any enemy without the Keyword BLACK GRAIL, the Herald can remove one of their own BLOOD MARKERS.</characteristic>
+            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Heralds do not suffer penalties for fighting unarmed. This weapon causes INFECTION MARKERS instead of BLOOD MARKERS. If this attack causes an INFECTION MARKER on any enemy without the Keyword BLACK GRAIL, the Herald can remove one of their own BLOOD MARKERS.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Weepers do not suffer penalties for fighting unarmed. This weapon causes INFECTION MARKERS instead of BLOOD MARKERS. If this attack causes an INFECTION MARKER on any enemy without the Keyword BLACK GRAIL, the Weeper can remove one of their own BLOOD MARKERS." field="6e95-3480-ad33-b345">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Toxic" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="829e-2ec3-43d0-12a3">
           <characteristics>
