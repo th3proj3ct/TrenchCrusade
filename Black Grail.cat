@@ -1128,11 +1128,6 @@
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="3a3c-7f8b-4ee4-d9d7" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="Bereaved do not suffer penalties for fighting unarmed." field="6e95-3480-ad33-b345">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
           </modifiers>
         </profile>
         <profile name="Overwhelming Horde" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b4a6-25a1-64e7-5dae">
@@ -1273,13 +1268,6 @@
             <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">-</characteristic>
             <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Heralds do not suffer penalties for fighting unarmed. This weapon causes INFECTION MARKERS instead of BLOOD MARKERS. If this attack causes an INFECTION MARKER on any enemy without the Keyword BLACK GRAIL, the Herald can remove one of their own BLOOD MARKERS.</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="Weepers do not suffer penalties for fighting unarmed. This weapon causes INFECTION MARKERS instead of BLOOD MARKERS. If this attack causes an INFECTION MARKER on any enemy without the Keyword BLACK GRAIL, the Weeper can remove one of their own BLOOD MARKERS." field="6e95-3480-ad33-b345">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile name="Toxic" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="829e-2ec3-43d0-12a3">
           <characteristics>
