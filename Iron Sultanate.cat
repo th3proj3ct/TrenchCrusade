@@ -1862,7 +1862,7 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">As an ACTION with +2 DICE, the Sapper can mine a piece of terrain they alone are touching, no bigger than 8” x 8” (an 8” section of trench, a wall, a tree, a building etc). If successful, the terrain piece is now mined. Any model (except the Sapper who set the mine) who moves into contact with the terrain piece will trigger the mine. Roll on the Injury Chart to see what happens to the model. The mine has the Keyword SHRAPNEL. After this, the terrain piece is no longer mined.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Forward Positions" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2f66-3cf4-7424-cd4d">
+        <profile name="Fortify" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2f66-3cf4-7424-cd4d">
           <characteristics>
             <characteristic name="Description" typeId="4834-43a9-1c93-9062">During their Activation, a Sapper can take a RISKY ACTION with +1 DICE. If successful, the Sapper is considered to be in Cover until the model moves. This ACTION cannot be used if the model is in melee combat.</characteristic>
           </characteristics>
