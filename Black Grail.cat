@@ -372,7 +372,7 @@
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0b3d-9c8c-5946-779a" includeChildSelections="true"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="0b3d-9c8c-5946-779a" includeChildSelections="true"/>
           </constraints>
           <infoLinks>
             <infoLink name="Corruption Belcher" id="e746-f7e5-b427-0a40" hidden="false" type="profile" targetId="801f-50a4-1ea2-7b92"/>
