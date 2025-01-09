@@ -139,7 +139,7 @@
             <infoLink name="Wind Amulet" id="6f39-6e8a-c454-b100" hidden="false" type="profile" targetId="cb4d-4771-6cd2-240b"/>
           </infoLinks>
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="6686-299c-96a6-940f" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="6686-299c-96a6-940f" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Binoculars" hidden="true" id="00d1-c230-ef2d-8d48" sortIndex="11">
