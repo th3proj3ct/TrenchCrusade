@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="20" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Anointed Heavy Infantry" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -26,7 +26,6 @@
         <entryLink import="true" name="Grenades" hidden="false" id="0b18-18b1-58f2-2d15" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="3" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="8267-73be-3903-8067" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true" sortIndex="5"/>
         <entryLink import="true" name="Weapons" hidden="false" id="3104-500f-a1df-d5c0" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="2"/>
-        <entryLink import="true" name="Armour" hidden="false" id="21ef-af58-7853-3915" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a" sortIndex="4"/>
         <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="8024-508c-cad2-74e3" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="1"/>
       </entryLinks>
       <constraints>
@@ -34,6 +33,7 @@
       </constraints>
       <infoLinks>
         <infoLink name="Strong" id="d490-8c8c-0f7e-f806" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
+        <infoLink name="Reinforced Armour" id="fad8-546d-9f91-bc38" hidden="false" type="profile" targetId="f6aa-583c-a14b-0ee9"/>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="1" field="2daf-dded-85a2-f21a">
@@ -1544,7 +1544,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="41ea-0e5d-eebb-a8dc" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2515,7 +2515,7 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
           </costs>
           <profiles>
-            <profile name="Standard of Mammon" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="77d6-2ff5-90cb-b1a8">
+            <profile name="Golden Calf Altar" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="77d6-2ff5-90cb-b1a8">
               <characteristics>
                 <characteristic name="Description" typeId="4834-43a9-1c93-9062">The area within 3” of the altar is Difficult Terrain for all models in the opposing Warband. This affects even models that can Fly. The model carrying the altar may drop it at any point during their Activation. Once placed down, the Golden Calf Altar cannot be picked up again. It has a 25mm base.</characteristic>
               </characteristics>
@@ -2819,66 +2819,6 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b35-b9a2-eb1e-630c" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d01b-9560-b0ea-fdc5" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tarnished Armour" hidden="true" id="1998-b0b1-f86c-22f0" sortIndex="3">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Tarnished Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="eb5c-d8eb-af69-d3f9">
-              <characteristics>
-                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The suit counts as Reinforced Armour, a helmet and a gas mask. When an enemy declares a charge, they must charge the model wearing this armour if it is visible, not in cover and within 12” of the wearer. The charging model must be able to reach this model without climbing, leaping or crossing dangerous terrain. If the wearer of the armour is already in melee combat, this power has no effect</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0935-3a29-2fa0-36c1" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bd58-2cc1-3d51-c5c2" includeChildSelections="true"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Tarnished Armour" hidden="false" id="17cd-1ee0-2053-f1dd">
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Tarnished Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e196-ed2c-96ed-47a6">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The suit counts as Reinforced Armour, a helmet and a gas mask. When an enemy declares a charge, they must charge the model wearing this armour if it is visible, not in cover and within 12” of the wearer. The charging model must be able to reach this model without climbing, leaping or crossing dangerous terrain. If the wearer of the armour is already in melee combat, this power has no effect</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e914-c296-a49f-0734" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="80d9-e15c-3508-3d92" includeChildSelections="true"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
