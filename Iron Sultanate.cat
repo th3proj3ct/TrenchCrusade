@@ -454,15 +454,7 @@ Keywords: CONSUMABLE</characteristic>
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="62d4-d89a-f7e2-7d3b" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="e62d-c06e-ce35-428b" shared="true"/>
-              </conditions>
-            </modifier>
           </modifiers>
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="4339-521d-95fb-0995" includeChildSelections="true"/>
-          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Titan Zulfiqar" hidden="true" id="35e9-a137-73b4-c73e" sortIndex="8" collective="false">
           <costs>
