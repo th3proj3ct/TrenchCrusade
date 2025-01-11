@@ -1280,8 +1280,7 @@
                 <infoLink name="Holy Icon Shield" id="27ff-d3aa-06f2-525e" hidden="false" type="profile" targetId="c0ec-55b6-b5ef-09c3"/>
               </infoLinks>
               <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
               </costs>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -2300,6 +2299,9 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a723-514e-b81c-69f6" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedSelectionEntries>
@@ -2359,6 +2361,39 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">50mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="64ea-216e-161f-7584" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="3a50-7a68-b3d9-d61c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="247d-ad61-6d4c-1ad5" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="59c0-13d8-450a-c0b4" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="b2ad-5df0-6687-13f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f3ea-ddbb-b749-1952" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -2401,6 +2436,39 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">50mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="64ea-216e-161f-7584" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="3a50-7a68-b3d9-d61c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="247d-ad61-6d4c-1ad5" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="59c0-13d8-450a-c0b4" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="b2ad-5df0-6687-13f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f3ea-ddbb-b749-1952" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Blessing of the Serpent Moon" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1ead-a287-0d10-eac8">
           <characteristics>
@@ -2478,11 +2546,44 @@
         <profile name="Hunter of the Left-hand Path" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="f126-6f86-fb26-0f97">
           <characteristics>
             <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
-            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+2 Dice</characteristic>
             <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="64ea-216e-161f-7584" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="3a50-7a68-b3d9-d61c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="247d-ad61-6d4c-1ad5" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="59c0-13d8-450a-c0b4" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="b2ad-5df0-6687-13f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f3ea-ddbb-b749-1952" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Oracle Beast Cloak" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="562f-9fca-8141-cf16">
           <characteristics>
@@ -2552,6 +2653,13 @@ The Hunter can do this multiple times during its chosen move, though it has to p
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-2</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">40mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="64ea-216e-161f-7584" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Blood Magic" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="96cc-bbc5-3019-cf3b">
           <characteristics>
@@ -2604,6 +2712,39 @@ The Hunter can do this multiple times during its chosen move, though it has to p
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="64ea-216e-161f-7584" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="3a50-7a68-b3d9-d61c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="247d-ad61-6d4c-1ad5" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="59c0-13d8-450a-c0b4" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="b2ad-5df0-6687-13f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f3ea-ddbb-b749-1952" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Hateful" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="6196-e5a4-1978-7827">
           <characteristics>

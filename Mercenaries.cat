@@ -512,7 +512,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Demonic" id="4ddb-9c5f-3db9-33dd" hidden="false" type="rule" targetId="e1d1-9534-0d38-b1e8">
+        <infoLink name="Demonic" id="4ddb-9c5f-3db9-33dd" hidden="true" type="rule" targetId="e1d1-9534-0d38-b1e8">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -704,6 +704,13 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-2</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="68d9-a653-9765-d3e7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Sworn Sword" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ccc4-bcd4-9e37-39db">
           <characteristics>

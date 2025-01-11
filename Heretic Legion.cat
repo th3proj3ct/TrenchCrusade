@@ -17,7 +17,7 @@
             <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
             <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
             <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
-            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-2</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
         </profile>
@@ -67,6 +67,39 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4a0e-6f55-3bac-71b1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="05b8-022c-d235-e358" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a6fb-9aa2-1030-b5bf" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="6f0b-f2e8-3e60-f596" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7070-bb46-c76d-9c48" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f468-49af-8d3b-7c7b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -159,6 +192,39 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4a0e-6f55-3bac-71b1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="05b8-022c-d235-e358" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a6fb-9aa2-1030-b5bf" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="6f0b-f2e8-3e60-f596" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7070-bb46-c76d-9c48" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f468-49af-8d3b-7c7b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Stealth Generator" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1110-b5e7-9966-1383">
           <characteristics>
@@ -266,6 +332,39 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4a0e-6f55-3bac-71b1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="05b8-022c-d235-e358" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a6fb-9aa2-1030-b5bf" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="6f0b-f2e8-3e60-f596" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7070-bb46-c76d-9c48" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f468-49af-8d3b-7c7b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Unholy Hymns" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="dcb0-e7e0-84df-2871">
           <characteristics>
@@ -385,6 +484,39 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4a0e-6f55-3bac-71b1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="05b8-022c-d235-e358" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a6fb-9aa2-1030-b5bf" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="6f0b-f2e8-3e60-f596" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7070-bb46-c76d-9c48" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f468-49af-8d3b-7c7b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Levitate" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="975d-e551-7d4d-1e9b">
           <characteristics>
@@ -642,12 +774,55 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="Legionnaire" field="name">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="f606-4316-044d-4503" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="+1 Dice" field="12e8-ff8c-c933-9eb5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ba6a-355d-e37e-decf" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="+1 Dice" field="1a4f-d2cd-c405-6200">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="47e6-8d3a-8720-e02e" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4a0e-6f55-3bac-71b1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="05b8-022c-d235-e358" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a6fb-9aa2-1030-b5bf" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="6f0b-f2e8-3e60-f596" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7070-bb46-c76d-9c48" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f468-49af-8d3b-7c7b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <entryLinks>
@@ -659,42 +834,6 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Legionnaire" hidden="false" id="f606-4316-044d-4503" sortIndex="2">
-          <profiles>
-            <profile name="Legionnaire" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="9af6-f77f-326f-98ce">
-              <characteristics>
-                <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
-                <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
-                <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
-                <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
-                <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
-              </characteristics>
-              <comment>Ranged</comment>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="ba6a-355d-e37e-decf" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </profile>
-            <profile name="Legionnaire" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="true" id="cd87-836e-a30e-943f" noindex="false">
-              <characteristics>
-                <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
-                <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
-                <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
-                <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
-                <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
-              </characteristics>
-              <comment>Melee</comment>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="47e6-8d3a-8720-e02e" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </profile>
-          </profiles>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37bd-4d82-9aaf-c0ee" includeChildSelections="false"/>
             <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="085a-f187-4921-4824" includeChildSelections="true"/>
@@ -1477,7 +1616,8 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Hellblade" hidden="false" id="c2f4-409f-b6d1-5720" sortIndex="3">
           <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
           </costs>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="ae04-d3d5-cf30-f686" includeChildSelections="true"/>
@@ -2700,9 +2840,14 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               </conditionGroups>
             </modifier>
             <modifier type="add" value="Cannot combine Machine Armor and Shield" field="error">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="4a0e-6f55-3bac-71b1" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="f468-49af-8d3b-7c7b" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4a0e-6f55-3bac-71b1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -2803,37 +2948,6 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               </conditionGroups>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Tarnished Armour" hidden="false" id="a629-5c79-ef60-19fa">
-              <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
-                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Tarnished Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="4a70-92c1-610b-4d52">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The suit counts as Reinforced Armour, a helmet and a gas mask. When an enemy declares a charge, they must charge the model wearing this armour if it is visible, not in cover and within 12” of the wearer. The charging model must be able to reach this model without climbing, leaping or crossing dangerous terrain. If the wearer of the armour is already in melee combat, this power has no effect</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b35-b9a2-eb1e-630c" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d01b-9560-b0ea-fdc5" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c323-0c33-e628-56f0" shared="true" includeChildSelections="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <constraints>

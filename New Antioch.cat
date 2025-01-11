@@ -1346,6 +1346,37 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e8e7-1db2-6be3-d1b7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7ab3-49d1-4294-3f83" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e6ac-8562-3982-4bfc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <entryLinks>
@@ -1448,6 +1479,37 @@
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e8e7-1db2-6be3-d1b7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7ab3-49d1-4294-3f83" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e6ac-8562-3982-4bfc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <entryLinks>
@@ -1621,12 +1683,43 @@
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="Trench Mole" field="name">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="9886-5b15-fa46-8d84" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e8e7-1db2-6be3-d1b7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7ab3-49d1-4294-3f83" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e6ac-8562-3982-4bfc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <entryLinks>
@@ -1667,17 +1760,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="764f-d015-494e-ab99" includeChildSelections="false"/>
                 <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="c9d7-477f-d64d-c542" includeChildSelections="true"/>
               </constraints>
-              <profiles>
-                <profile name="Trench Mole" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="fe73-eda8-f031-395d">
-                  <characteristics>
-                    <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
-                    <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
-                    <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">0</characteristic>
-                    <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
-                    <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink name="Infiltrator" id="256e-3425-28c0-7549" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
               </infoLinks>
@@ -1735,6 +1817,37 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e8e7-1db2-6be3-d1b7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7ab3-49d1-4294-3f83" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e6ac-8562-3982-4bfc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Aim" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9abe-b135-9901-68d4">
           <characteristics>
@@ -1794,6 +1907,37 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e8e7-1db2-6be3-d1b7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7ab3-49d1-4294-3f83" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e6ac-8562-3982-4bfc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Shock Charge" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c258-3050-2e8f-c05a">
           <characteristics>
@@ -1910,6 +2054,37 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-2</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e8e7-1db2-6be3-d1b7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7ab3-49d1-4294-3f83" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e6ac-8562-3982-4bfc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="De-mine" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2aa0-f08e-8ff5-a137">
           <characteristics>
@@ -1977,6 +2152,18 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-1</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e4c9-f62c-0fdc-b477" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Convent Conditioning" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="6f5f-6393-4e08-500d">
           <characteristics>
@@ -2155,6 +2342,22 @@
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="c92f-74bc-9acb-69b4" shared="true" includeChildSelections="true"/>
               </conditions>
+              <comment>Abla Subfaction</comment>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e16d-0563-0aca-babe" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-3" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="6b8a-68e7-f795-ffe7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
             </modifierGroup>
           </modifierGroups>
         </profile>

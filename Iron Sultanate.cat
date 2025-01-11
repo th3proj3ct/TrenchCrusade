@@ -1841,6 +1841,33 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="99ce-8e70-94c9-35c4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f03e-c896-c2ad-c3da" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a2de-13d5-ab9c-8c93" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="c60a-0cd3-a0a3-3b3e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Mine-setting" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="5920-36e6-b95e-f0b4">
           <characteristics>
@@ -1897,6 +1924,33 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="99ce-8e70-94c9-35c4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f03e-c896-c2ad-c3da" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a2de-13d5-ab9c-8c93" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="c60a-0cd3-a0a3-3b3e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Mastery of the Elements" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="eabe-48c7-1cdc-a67d">
           <characteristics>
@@ -1997,6 +2051,33 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="99ce-8e70-94c9-35c4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f03e-c896-c2ad-c3da" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a2de-13d5-ab9c-8c93" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="c60a-0cd3-a0a3-3b3e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Counter-Charge" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="1061-0baf-c232-c9a3">
           <characteristics>
@@ -2057,6 +2138,33 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">60mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="99ce-8e70-94c9-35c4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f03e-c896-c2ad-c3da" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a2de-13d5-ab9c-8c93" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="c60a-0cd3-a0a3-3b3e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -2133,6 +2241,33 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="99ce-8e70-94c9-35c4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f03e-c896-c2ad-c3da" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a2de-13d5-ab9c-8c93" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="c60a-0cd3-a0a3-3b3e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Temporal Assassin" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="fd33-0f29-cf19-2244">
           <characteristics>
@@ -2215,6 +2350,33 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="99ce-8e70-94c9-35c4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f03e-c896-c2ad-c3da" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a2de-13d5-ab9c-8c93" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="c60a-0cd3-a0a3-3b3e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Mubarizun" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8231-771f-29d7-e9cf">
           <characteristics>
@@ -2290,6 +2452,33 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="99ce-8e70-94c9-35c4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f03e-c896-c2ad-c3da" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a2de-13d5-ab9c-8c93" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="c60a-0cd3-a0a3-3b3e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <costs>
@@ -2403,6 +2592,33 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">30x60mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="99ce-8e70-94c9-35c4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f03e-c896-c2ad-c3da" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a2de-13d5-ab9c-8c93" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="c60a-0cd3-a0a3-3b3e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Artificial Body" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c57a-8333-1d35-ae34">
           <characteristics>
@@ -2770,6 +2986,33 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="99ce-8e70-94c9-35c4" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="f03e-c896-c2ad-c3da" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="a2de-13d5-ab9c-8c93" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="c60a-0cd3-a0a3-3b3e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <comment>armour adjustments</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile name="Artificial Body" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b75e-869c-cb90-8207">
               <characteristics>

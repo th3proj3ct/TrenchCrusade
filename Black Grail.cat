@@ -847,12 +847,43 @@
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="The Executor" field="name">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="b044-cbf6-a7c5-e2b3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Lamentor" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="dc04-f8df-606f-f06c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="780c-f898-6d4b-cfe7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="e92d-31db-359c-8875" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2138-1da3-7779-d600" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <selectionEntryGroups>
@@ -898,17 +929,6 @@
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6db3-d95f-9901-2048" includeChildSelections="true"/>
                 <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="7183-a597-40be-7e13" includeChildSelections="true"/>
               </constraints>
-              <profiles>
-                <profile name="Executor" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="3685-626b-60e1-bab2" publicationId="c658-4a10-e1fe-befc" page="78">
-                  <characteristics>
-                    <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
-                    <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 Dice</characteristic>
-                    <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
-                    <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
-                    <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink name="Tough" id="459f-7da9-e4f6-fbbd" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
               </infoLinks>
@@ -929,17 +949,6 @@
                 <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="f25d-f1cc-96c2-159d" includeChildSelections="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2560-c158-103b-afe1" includeChildSelections="false"/>
               </constraints>
-              <profiles>
-                <profile name="Lamenter" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="cde7-8080-ccc6-e72a" publicationId="c658-4a10-e1fe-befc" page="78">
-                  <characteristics>
-                    <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
-                    <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
-                    <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
-                    <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
-                    <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <costs>
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -977,16 +986,6 @@
         <modifier type="set" value="3" field="f025-ee7a-4125-ce80">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="The Lamentor" field="name">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="model" childId="dc04-f8df-606f-f06c" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="The Executor" field="name">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="model" childId="b044-cbf6-a7c5-e2b3" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1158,6 +1157,11 @@
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7fb6-d318-1757-96a6" shared="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                 </profile>
                 <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="8cce-0a3c-fe8a-6cfa">
@@ -1187,6 +1191,11 @@
                     <modifier type="set" value="Winged Bereaved" field="name">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7fb6-d318-1757-96a6" shared="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1487,6 +1496,13 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">60mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="7fb6-d318-1757-96a6" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <constraints>
@@ -1517,6 +1533,32 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">50mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="780c-f898-6d4b-cfe7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="506d-40d6-b5d8-4b9a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2bff-5e25-4968-0969" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="dae4-94a1-1c22-0c9a">
           <characteristics>
@@ -1606,6 +1648,32 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="780c-f898-6d4b-cfe7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="5ef5-3d87-b8ee-c005" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="5789-b681-3e51-0c73" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
         <profile name="Undead Fortitude" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b3e7-566c-fefe-402d">
           <characteristics>
