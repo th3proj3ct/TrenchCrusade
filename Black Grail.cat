@@ -1644,7 +1644,7 @@
           <characteristics>
             <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
             <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">0</characteristic>
-            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+1 Dice</characteristic>
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
