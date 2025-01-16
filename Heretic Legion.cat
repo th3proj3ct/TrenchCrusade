@@ -780,14 +780,24 @@ If the bomb lands exactly on top of any model, roll on the Injury Chart as stand
               </conditions>
             </modifier>
             <modifier type="set" value="+1 Dice" field="12e8-ff8c-c933-9eb5">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ba6a-355d-e37e-decf" shared="true" includeChildForces="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="ba6a-355d-e37e-decf" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f606-4316-044d-4503" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="+1 Dice" field="1a4f-d2cd-c405-6200">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="47e6-8d3a-8720-e02e" shared="true" includeChildForces="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="47e6-8d3a-8720-e02e" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f606-4316-044d-4503" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <modifierGroups>
