@@ -980,19 +980,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Utility Hand" id="8b4c-c5f4-f53b-fe48" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trench Shield" hidden="false" id="e16d-0563-0aca-babe" sortIndex="1">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
-            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8edc-a7be-630b-d7e1" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Trench Shield" id="4227-1cb9-d154-7f56" hidden="false" type="profile" targetId="c2a5-72b6-355d-0356"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="b6ec-fe59-ac2a-5d00">
+        <selectionEntry type="upgrade" import="true" name="Troop Flag" hidden="false" id="b6ec-fe59-ac2a-5d00" sortIndex="5">
           <costs>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
           </costs>
@@ -1003,7 +991,7 @@
             <infoLink name="Troop Flag" id="e5af-7b63-3379-2786" hidden="false" type="profile" targetId="e86e-146a-65b7-09f2"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="a26c-4afe-ca98-962c">
+        <selectionEntry type="upgrade" import="true" name="Musical Instrument" hidden="false" id="a26c-4afe-ca98-962c" sortIndex="2">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1028,7 +1016,7 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Carnyx " hidden="true" id="2b13-5e5c-b810-c791">
+        <selectionEntry type="upgrade" import="true" name="Carnyx " hidden="true" id="2b13-5e5c-b810-c791" sortIndex="4">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1054,7 +1042,7 @@
             <infoLink name="Fear" id="6e65-5f02-af1f-bbb4" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Bagpipes" hidden="true" id="831d-0f3f-be36-9b1d">
+        <selectionEntry type="upgrade" import="true" name="Bagpipes" hidden="true" id="831d-0f3f-be36-9b1d" sortIndex="3">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -1081,6 +1069,64 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Shields" id="e16d-0563-0aca-babe" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Trench Shield" hidden="false" id="0a19-d303-536f-fc4d">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0289-4b7c-c8f4-64fa" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Trench Shield" id="fedb-075a-c4f5-adfb" hidden="false" type="profile" targetId="c2a5-72b6-355d-0356"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e6ac-8562-3982-4bfc" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6b8a-68e7-f795-ffe7" shared="true" includeChildSelections="true">
+                          <comment>for mechanized infantry</comment>
+                        </condition>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Ballistic Shield" hidden="true" id="b287-2326-e785-fe67">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8aa7-b298-20b6-4fd0" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Heavy Ballistic Shield" id="1861-a174-1d5b-d9f3" hidden="false" type="profile" targetId="adc0-8995-657b-8d4b"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e6ac-8562-3982-4bfc" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6b8a-68e7-f795-ffe7" shared="true" includeChildSelections="true">
+                          <comment>for mechanized infantry</comment>
+                        </condition>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Armour" id="8132-2c2e-56dc-14a6" hidden="false">
       <selectionEntries>

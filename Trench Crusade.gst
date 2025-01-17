@@ -376,7 +376,7 @@ They do not count towards the maximum melee weapons a model can carry.</characte
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa"/>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">FIRE, CRITICAL</characteristic>
-        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">-</characteristic>
+        <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Gives +1 DICE bonus to any other ACTION the model takes apart from Dash, Ranged Attack or Melee Attack.</characteristic>
       </characteristics>
     </profile>
     <profile name="Hellblade" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="7490-f22e-68ff-79d3" publicationId="c658-4a10-e1fe-befc" page="115">
@@ -458,7 +458,10 @@ They do not count towards the maximum melee weapons a model can carry.</characte
     </profile>
     <profile name="Machine Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2558-23f8-cfa8-40f4" publicationId="c658-4a10-e1fe-befc" page="117">
       <characteristics>
-        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Grants a -3 modifier to all injury rolls against the model wearing this armour. Due to its bulk the wearer rolls D3 for a charge extra distance instead of D6. Any Down results on the Injury Chart are converted to Minor Hit. Machine armour cannot be combined with any shield. Models wearing Machine Armour may have a Base Size of 40mm if you wish.</characteristic>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Grants a -3 modifier to all injury rolls against the model wearing this armour, and treats Down Injury results as a Minor Hit instead (note that TOUGH Keyword ability to avoid OOA with Down overrides this). Due to its bulk the wearer rolls D3 for a charge extra distance instead of D6. Machine armour cannot be combined with any shield. Models wearing Machine Armour may have Base size of 40mm if you wish unless the model wearing it already is on 50mm or bigger base.
+
+
+If worn by a model that is not part of New Antioch force/subfaction, the only bonus the armour gives is the -3 Injury modifier, as the chemical treatment that allows the wearer to withstand the rigors of the armour is a carefully guarded military secret. D3 charge distance remains in force.</characteristic>
       </characteristics>
     </profile>
     <profile name="Standard Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="6fa6-650d-4136-bc70" publicationId="c658-4a10-e1fe-befc" page="117">
@@ -881,6 +884,11 @@ Keyword: CONSUMABLE.</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">-1D to Injure, Ignore Cover, Ignore Armour</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">GAS, HEAVY, BLAST 3&quot;</characteristic>
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345"/>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Ballistic Shield" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="adc0-8995-657b-8d4b">
+      <characteristics>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Takes always one hand to use in both melee and in ranged combat and cannot be switched out. The target is always considered to be in Cover, and count as fighting behind a defended obstacle when an enemy charges them. These bonuses cannot be combined with Polearms, shovels, cover or defended obstacles.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
