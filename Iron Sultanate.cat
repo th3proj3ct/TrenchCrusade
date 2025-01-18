@@ -2794,12 +2794,12 @@ causes has the Keyword FIRE, GAS or SHRAPNEL (chosen when the obstacle is placed
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Collections" id="b4df-985c-fa1a-8c93" hidden="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Anti-Tank Hammer" hidden="false" id="c93d-5975-38a3-dc1b">
+                    <selectionEntry type="upgrade" import="true" name="Anti-Tank Hammer" hidden="false" id="c93d-5975-38a3-dc1b" defaultAmount="1">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6835-0454-802e-7609" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="false" id="08f7-546d-1546-b8a1">
+                    <selectionEntry type="upgrade" import="true" name="Automatic Pistol" hidden="false" id="08f7-546d-1546-b8a1" defaultAmount="1">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2897-e401-d02b-173b" includeChildSelections="false"/>
                       </constraints>
