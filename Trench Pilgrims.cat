@@ -1979,6 +1979,13 @@ Keywords: CONSUMABLE</characteristic>
         <entryLink import="true" name="Anchorite Weapons" hidden="false" id="9de3-782c-4b80-a313" type="selectionEntryGroup" targetId="8f22-e430-3511-a3f9" sortIndex="2"/>
         <entryLink import="true" name="Anchorite Equipment" hidden="false" id="dfd4-a553-e885-ecc0" type="selectionEntryGroup" targetId="5f36-eace-cfe2-36c0" sortIndex="3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="9509-6e8f-57f6-ac7e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warband Variant" hidden="false" id="8e94-2a41-fd86-1f0b">
       <constraints>
