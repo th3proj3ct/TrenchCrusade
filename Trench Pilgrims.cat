@@ -530,9 +530,14 @@ Keywords: CONSUMABLE</characteristic>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -563,6 +568,13 @@ Keywords: CONSUMABLE</characteristic>
           <categoryLinks>
             <categoryLink targetId="70c9-988d-71a7-7654" id="9b83-44ae-bfe6-42d0" primary="false" name="Heavy"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="106f-899c-c7c7-9d92">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Bolt Action Rifle" hidden="false" id="1b96-05e8-2c85-c3d9" sortIndex="2">
           <costs>
@@ -589,6 +601,53 @@ Keywords: CONSUMABLE</characteristic>
             <categoryLink name="Heavy" hidden="false" id="d242-7a8f-08ed-d3d2" targetId="70c9-988d-71a7-7654" primary="false"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="true" id="c759-3ebc-7675-af42" sortIndex="6">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Machine Gun" id="6baa-81dd-2fc6-48e0" hidden="false" type="profile" targetId="517c-652f-100e-71d6"/>
+            <infoLink name="Heavy" id="5dde-3955-bebb-60f3" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="7f31-f7d0-c110-314f" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="6e86-1df2-2d13-8a8c" includeChildSelections="true"/>
+          </constraints>
+          <comment>methodius</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Automatic Rifle" hidden="true" id="08a4-7ba1-10f3-a1b5" sortIndex="6">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Automatic Rifle" id="ab0f-0ff7-e649-c7da" hidden="false" type="profile" targetId="c35c-a506-683d-6c3f"/>
+            <infoLink name="Assault" id="fd14-dbe0-263d-2b77" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="eeea-ae51-8f79-edc5" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0991-fcb1-ee05-149b" includeChildSelections="true"/>
+          </constraints>
+          <comment>methodius</comment>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Shield Combos" id="5d81-b485-fd81-130c" hidden="false">
@@ -604,6 +663,13 @@ Keywords: CONSUMABLE</characteristic>
               <entryLinks>
                 <entryLink import="true" name="Bayonet Lug" hidden="false" id="5f2a-bb56-4a74-4b04" type="selectionEntry" targetId="780a-82e9-b0f2-9caf"/>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="9d61-b51a-dafb-c031">
               <costs>
@@ -615,6 +681,29 @@ Keywords: CONSUMABLE</characteristic>
               <infoLinks>
                 <infoLink name="Shotgun" id="5088-97f5-95a0-2187" hidden="false" type="profile" targetId="0924-0647-1366-9d85"/>
               </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sub-Machine Gun" hidden="true" id="6012-79c2-36b7-b158">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Submachine Gun" id="4211-7747-f6c6-7c4c" hidden="false" type="profile" targetId="f366-4889-0ac5-375d"/>
+                <infoLink name="Assault" id="ee21-8bec-7350-df2e" hidden="false" type="rule" targetId="3136-7aab-4bde-9583"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Bayonet Lug" hidden="false" id="8282-971f-06f1-5d60" type="selectionEntry" targetId="780a-82e9-b0f2-9caf"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f0d8-9279-33db-d24b" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>methodius</comment>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -759,7 +848,20 @@ Keywords: CONSUMABLE</characteristic>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3121-fcd9-5e26-54a0" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dd89-bc10-afb5-488a" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="dd89-bc10-afb5-488a">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="caa2-22ce-1bc5-4d51" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Reinforced Armour" hidden="true" id="0e4c-78a2-26bf-6e0e" sortIndex="3">
           <costs>
@@ -808,6 +910,318 @@ Keywords: CONSUMABLE</characteristic>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="1a8c-d998-b42b-9e8b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Anchorite Weapons" id="8f22-e430-3511-a3f9" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="true" id="3c0f-765d-6559-cf35" sortIndex="2">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Heavy Flamethrower" id="89f0-f120-7d13-08bd" hidden="false" type="profile" targetId="2fc0-bc43-b366-5b95"/>
+            <infoLink name="Fire" id="f495-3544-1991-c335" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
+            <infoLink name="Heavy" id="db27-22f0-7a65-8a2c" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ce1-ac72-5d3d-3893" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="6b1a-74eb-dc0f-8de1" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Catherine Wheel" hidden="false" id="cd00-6765-b503-60b5" sortIndex="1">
+          <profiles>
+            <profile name="Catherine Wheel" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="a915-3cb5-2de7-9338">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Hit</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">RISKY, HEAVY</characteristic>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Because of the enormous weight and the skill of the Anchorite Shrine in inflicting maximum pain, the Catherine Wheel rolls 3D6 on the Injury Chart, adding the results together.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c14f-3932-400b-0152" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Punt Gun" hidden="true" id="9dc9-c266-d6a3-37cf" sortIndex="4">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Punt Gun" id="b2c7-362f-2fb9-2db2" hidden="false" type="profile" targetId="77ea-665d-7ac6-58ef"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0819-d5e1-5bcb-4e52" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="1e84-8b32-a74b-79a3" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Trench Mortar" hidden="true" id="e943-b0b0-7790-fb15" sortIndex="5">
+          <profiles>
+            <profile name="Trench Mortar" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="5cef-9bbb-5aa1-f6f9">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">48&quot;</characteristic>
+                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">Ignore Cover, +1D Injuries</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">FIRE, HEAVY, BLAST 3”</characteristic>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345"> Specify a point on the battlefield within 36” (must be in line of sight) that you want to target. Next, take a Ranged Attack ACTION. If the roll fails (i.e. you roll 6 or less), the bomb lands 1” away from its intended location, multiplied by the number representing the degree of failure (for example, if you rolled 5, the bombard shot lands 2” away, as 7 – 5 = 2). The direction is decided by your opponent. All models within 3” of the 1 x 1 mm landing spot are hit as the shell explodes – no roll to hit is needed. This weapon has a BLAST radius of 3” – all models within this range are hit. Add +1 DICE to all injury rolls.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f052-148d-e3fa-21cb" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Fire" id="b586-79c9-b58d-e935" hidden="false" type="rule" targetId="3f12-9eb3-07f7-03bb"/>
+            <infoLink name="Blast" id="a9d8-c06f-bde8-533c" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
+            <infoLink name="Heavy" id="8a47-6cc7-317f-046c" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gas Censer" hidden="true" id="bf35-3729-df69-7562">
+          <profiles>
+            <profile name="Gas Censer" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="ca96-4933-b496-593f">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Special</characteristic>
+                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">Ignore Armour</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">GAS, BLAST 6&quot;</characteristic>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">The Anchorite may make an injury roll against all models within 6” except the Anchorite itself. Note that all models within range, friend or foe, are hit if the weapon is used. No Line of Sight is needed. The attack has the Keyword GAS and Ignores Armour, unless the models are in Cover in which case armour works as normal. The use of the Gas Censer always ends the Activation of this model.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="447c-fe10-a7ce-b7a8" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="50"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Gas" id="bee6-3d7f-cbf4-d9e3" hidden="false" type="rule" targetId="2c6e-81c8-6c20-b5b7"/>
+            <infoLink name="Blast" id="7fc8-586c-a763-f46e" hidden="false" type="rule" targetId="263d-6520-5629-c027"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="true" id="844d-8df1-2006-2cf7" sortIndex="6">
+          <profiles>
+            <profile name="Autocannon" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="e37a-b7ce-312c-3242">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">48&quot;</characteristic>
+                <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">3 Attacks, +1D to injuries</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY</characteristic>
+                <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Rules: Autocannons can make three Attack ACTIONS instead of one. They can target separate models with each attack, as long as all targets are within 6” of each other. After taking all three attacks the Activation of the model is over regardless of any remaining ACTIONS the model might have. Add +1 DICE to all injury rolls. They can shoot up to five times instead of three if they take ALL the attacks as RISKY ACTIONS.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f88a-b6cf-7189-081a" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="55"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Heavy" id="1f6b-0179-a28f-e3fb" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Anti-Material Rifle" hidden="true" id="8ece-f70d-905f-dbf9" sortIndex="3">
+          <costs>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Anti-Material Rifle" id="2128-7403-24da-e52f" hidden="false" type="profile" targetId="50ec-f075-494f-9dc5"/>
+            <infoLink name="Critical" id="b489-0805-418c-66a3" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+            <infoLink name="Heavy" id="29b3-7eef-b527-456f" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f02-fa98-a411-f2c6" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="8267-2dff-81d9-56c1" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="feed-75ec-d0ed-56a2-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="feed-75ec-d0ed-56a2-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Anchorite Equipment" id="5f36-eace-cfe2-36c0" hidden="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Gas Filters" hidden="false" id="01ce-2f99-f398-1a50" sortIndex="1">
+          <profiles>
+            <profile name="Gas Filters" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="69ba-974b-0e6f-7391">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This upgrade counts as a gas mask.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02c5-e8be-9826-4be6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Holy Diesel Engine" hidden="false" id="1298-0ecd-ca20-0e16" sortIndex="2">
+          <profiles>
+            <profile name="Holy Diesel Engine" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e6ee-0b99-239f-7120">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Anchorite can add +2 DICE to its Dash ACTIONS, but it automatically gains one BLOOD MARKER if it succeeds in a Dash ACTION.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b3d-a902-53a6-73fe" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sacred Geometry" hidden="false" id="4863-d3e6-bda5-f230" sortIndex="3">
+          <profiles>
+            <profile name="Sacred Geometry" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="3869-f6f2-7f5a-92af">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This upgrade increases its Ranged Characteristic to +1 DICE.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8182-6e8e-4415-1edb" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e80d-0422-fcd5-5415" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Grand Anchorite" hidden="false" id="a9cd-89ba-ea71-c282" sortIndex="4">
+          <profiles>
+            <profile name="Grand Anchorite" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="828c-64ab-63e9-051b">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Anchorite Shrine can always move out of Melee combat with any enemy without the enemy having a chance to attack it. Additionally, it can move out of Melee combat as part of a Standard Move, Charge or Dash. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c883-1915-5a8c-b372" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbc7-bb2e-3cc2-b5dd" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wrathful Cherub Face" hidden="false" id="d93a-6190-7c98-1e4c" sortIndex="7">
+          <profiles>
+            <profile name="Wrathful Cherub Face" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2359-5cf1-b45c-b058">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">If the model fighting the Shrine Anchorite in Melee is affected by the Keyword FEAR, one of the ACTIONS it has to take when it is activated must be Retreat from Melee Combat.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbf6-5c16-1990-3d6e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hallowed Anchorite" hidden="false" id="07cd-fdf6-9ff2-7873" sortIndex="6">
+          <profiles>
+            <profile name="Hallowed Anchorite" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ef56-de02-03da-7fd7">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">This Anchorite can be promoted to ELITE during campaigns.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="51a8-f97c-9d12-2c03" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5455-094a-ef77-44b2" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Piston Legs" hidden="false" id="82a8-f3ae-7726-1b79" sortIndex="5">
+          <profiles>
+            <profile name="Piston Legs" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="bd5a-aaba-367a-8f09">
+              <characteristics>
+                <characteristic name="Description" typeId="4834-43a9-1c93-9062">Once during its Activation, the Anchorite Shrine may make an extra Melee Attack ACTION against a Downed enemy model on a 32mm or smaller base. Resolve the attack as if the Anchorite Shrine was armed with a Trench Club.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2a4-1bf2-37ff-dad6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -998,13 +1412,18 @@ Keywords: CONSUMABLE</characteristic>
         </profile>
         <profile name="Resurrection" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="87c7-8ddb-b2bb-5b27">
           <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When a Trench Pilgrim dies, you may elect to re-buy them after the battle as a Martyr-Penitent resurrected by a Meta-Christ for a cost of 45 ducats. When hit, any attacks against a Martyr-Penitent add -1 DICE when rolling on the Injury Table. Their Melee bonus is increased to +1 DICE (reflected on the profile above). Martyr-Penitents retain any possessions they had before dying and being resurrected</characteristic>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">When a Trench Pilgrim dies, you may elect to re-buy them as a Martyr-Penitent resurrected by a Meta-Christ for a cost of 45 Ducats after battle. When hit, any attacks against a Martyr-Penitent add -1 DICE when rolling on the Injury Table. Their Melee bonus is increased to +1 DICE (reflected on the profile above). Martyr-Penitents retain any possessions they had before dying and being resurrected, but lose any Scars and advancements they had if they were ELITE via Campaign promotion.</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="b32b-6d55-9163-8486" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="b32b-6d55-9163-8486" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </profile>
@@ -1183,6 +1602,13 @@ Keywords: CONSUMABLE</characteristic>
           </conditions>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="War Prophet" hidden="false" id="3d5c-4325-5a12-5010">
       <profiles>
@@ -1329,6 +1755,13 @@ Keywords: CONSUMABLE</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1369,11 +1802,6 @@ Keywords: CONSUMABLE</characteristic>
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
-        </profile>
-        <profile name="Blessed Stigmata" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="39e0-2444-2fb0-c9ae">
-          <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">At the start of each of their Activations, any Stigmatic Nun can remove one BLOOD MARKER (but not an INFECTION MARKER) from themselves and convert it into a BLESSING MARKER.</characteristic>
-          </characteristics>
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
@@ -1405,6 +1833,11 @@ Keywords: CONSUMABLE</characteristic>
               <comment>armour adjustments</comment>
             </modifierGroup>
           </modifierGroups>
+        </profile>
+        <profile name="Blessed Stigmata" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="39e0-2444-2fb0-c9ae">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">At the start of each of their Activations, any Stigmatic Nun can remove one BLOOD MARKER (but not an INFECTION MARKER) from themselves and convert it into a BLESSING MARKER.</characteristic>
+          </characteristics>
         </profile>
         <profile name="Agile" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="c190-c883-b2da-b8b6">
           <characteristics>
@@ -1469,31 +1902,36 @@ Keywords: CONSUMABLE</characteristic>
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="decrement" value="1" field="40e9-292f-3ade-d4f5">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Anchorite Shrine" hidden="false" id="f2e8-cc7b-df49-4819">
       <profiles>
         <profile name="Anchorite" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="3d17-425a-2ba2-daf2">
           <characteristics>
-            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">8&quot;/Infantry</characteristic>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
             <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">N/A</characteristic>
             <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 Dice</characteristic>
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">-3</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">60mm</characteristic>
           </characteristics>
-        </profile>
-        <profile name="Broken on the Wheel" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="7e43-58b3-c0c2-b854">
-          <characteristics>
-            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Before the start of the battle, one Trench Pilgrim or Ecclesiastic Prisoner may voluntarily be broken on the wheel to show their piety and devotion (permanently remove all weapons, armour and equipment from the victim and use/store them as you wish). The Anchorite Shrine will then shatter the bones of the volunteer and carry the broken victim to the battle on its Wheel. As long as the volunteer is not taken Out of Action, any Attacks against the Anchorite are redirected to the volunteer. The volunteer cannot be independently targeted by any abilities or attacks (including BLAST weapons). For all rules purposes and attack effects (such as forced movement), the two models are treated as a single model, including sharing BLOOD, INFECTION and BLESSING MARKERS. Treat Down results against the volunteer as a Minor Hit. The volunteer cannot take any ACTIONS, be Activated separately or move – for obvious reasons. At the end of the battle, even if the volunteer may have survived, the model dies and is removed from your warband.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Catherine Wheel" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="4672-453c-7e9d-a0d1">
-          <characteristics>
-            <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
-            <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
-            <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to Hit</characteristic>
-            <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">RISKY, HEAVY</characteristic>
-            <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Because of the enormous weight and the skill of the Anchorite Shrine in inflicting maximum pain, the Catherine Wheel rolls 3D6 on the Injury Chart, adding the results together.</characteristic>
-          </characteristics>
+          <modifiers>
+            <modifier type="set" value="0D" field="1a4f-d2cd-c405-6200">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="+1 Dice" field="1a4f-d2cd-c405-6200">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="4863-d3e6-bda5-f230" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Bonebreaker Mace" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="981d-f6b6-849a-b225">
           <characteristics>
@@ -1503,6 +1941,18 @@ Keywords: CONSUMABLE</characteristic>
             <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">RISKY</characteristic>
             <characteristic name="Rules" typeId="6e95-3480-ad33-b345"/>
           </characteristics>
+        </profile>
+        <profile name="Broken on the Wheel" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="ca00-3c87-ba97-103d">
+          <characteristics>
+            <characteristic name="Description" typeId="4834-43a9-1c93-9062">Before the start of the battle, one Trench Pilgrim or Ecclesiastic Prisoner may voluntarily be broken on the wheel to show their piety and devotion (permanently remove all weapons, armour and equipment from the victim and use/store them as you wish). The Anchorite Shrine will then shatter the bones of the volunteer and carry the broken victim to the battle on its Wheel. As long as the volunteer is not taken Out of Action, any Attacks against the Anchorite are redirected to the volunteer. The volunteer cannot be independently targeted by any abilities or attacks (including BLAST weapons). For all rules purposes and attack effects (such as forced movement), the two models are treated as a single model, including sharing BLOOD, INFECTION and BLESSING MARKERS. Treat Down results against the volunteer as a Minor Hit. The volunteer cannot take any ACTIONS, be Activated separately or move – for obvious reasons. At the end of the battle, even if the volunteer may have survived, the model dies and is removed from your warband.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <constraints>
@@ -1525,7 +1975,9 @@ Keywords: CONSUMABLE</characteristic>
         <infoLink name="Risky" id="ee6e-981b-19ef-ebd4" hidden="false" type="rule" targetId="df23-62bc-775e-fca1"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Sacrificial Lamb" hidden="false" id="2563-e20f-3b22-8e09" type="selectionEntry" targetId="4c11-ec67-eaa0-fbdd"/>
+        <entryLink import="true" name="Sacrificial Lamb" hidden="false" id="2563-e20f-3b22-8e09" type="selectionEntry" targetId="4c11-ec67-eaa0-fbdd" sortIndex="1"/>
+        <entryLink import="true" name="Anchorite Weapons" hidden="false" id="9de3-782c-4b80-a313" type="selectionEntryGroup" targetId="8f22-e430-3511-a3f9" sortIndex="2"/>
+        <entryLink import="true" name="Anchorite Equipment" hidden="false" id="dfd4-a553-e885-ecc0" type="selectionEntryGroup" targetId="5f36-eace-cfe2-36c0" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warband Variant" hidden="false" id="8e94-2a41-fd86-1f0b">
@@ -1608,6 +2060,50 @@ Keywords: CONSUMABLE</characteristic>
                 <profile name="Favour of the Lord" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="28fc-4d05-7a78-80a3">
                   <characteristics>
                     <characteristic name="Description" typeId="4834-43a9-1c93-9062">At the start of each turn, you can give any one model in the warband a BLESSING MARKER</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="War Pilgrimage of Saint Methodius" hidden="false" id="52bc-6b21-136a-608d">
+              <profiles>
+                <profile name="Chaste Order" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="cdda-3af7-349f-a8c7">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">While they revere the holy stigmata of the nuns of the order, the fathers of the monasteries shun the ecstatic revelry of many Trench Pilgrims and insist on modest dress. All Stigmatic Nuns of the warband must wear Standard Armour. In addition, the warband may only have a maximum of three Stigmatic Nuns.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Anchorite Cloister" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="9f25-99b2-4762-022e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">This warband may buy up to two Anchorite Shrines.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Communicant Heresy" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="992f-94f7-30a3-0b0b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Pilgrims of St. Methodius oppose the creation of Communicants and therefore cannot include them in their warbands. This includes Mercenaries.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Anchorite Armoury" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="2287-33e5-5788-b99c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">This warband may alter the weaponry and equipment of their Anchorites as indicated below. Anchorites of St. Methodius have +0 DICE to their Ranged Characteristic.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Followers of St. Methodius" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="b02a-d2c2-0e43-04dc">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Patron of the warband is always a Learned Saint.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Treasure in Heaven" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="81e7-1ec9-3936-33a3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The Trench Pilgrims of this warband cannot be resurrected as Martyr Penintents.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Mortal Sin" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="954f-fd6b-c4fd-2585">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">No Ecclesiastic Prisoner of the warband may be equipped with a Martyrdom Device and no member of the warband can be Broken on the Wheel.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Gunsmith Monks" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="73cd-43a3-2889-3ce1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4834-43a9-1c93-9062">The warband can buy Machine Guns (LIMIT: 2) at a cost of 50 ducats each, an Automatic Rifle (LIMIT: 1) for 40 ducats and a Submachine Gun (LIMIT: 1) for 30 ducats.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
