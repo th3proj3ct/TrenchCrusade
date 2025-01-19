@@ -1129,7 +1129,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
         <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
       </costs>
       <selectionEntryGroups>

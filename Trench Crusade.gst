@@ -566,7 +566,7 @@ Keyword: CONSUMABLE.</characteristic>
     </profile>
     <profile name="Infernal Iron Armour" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="38b3-22f4-f484-61dc" publicationId="c658-4a10-e1fe-befc" page="120">
       <characteristics>
-        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Injuries against this model are rolled with a flat -2 penalty. This penalty applies against injuries that ignore armour.</characteristic>
+        <characteristic name="Description" typeId="4834-43a9-1c93-9062">Injuries against this model are rolled with a flat -2 penalty. This penalty applies even against injuries that ignore armour.</characteristic>
       </characteristics>
     </profile>
     <profile name="Infernal Brand Mark" typeId="7079-589c-df69-fa7e" typeName="Ability" hidden="false" id="e973-f445-e1c5-92ec" publicationId="c658-4a10-e1fe-befc" page="120">
@@ -765,7 +765,7 @@ Keyword: CONSUMABLE.</characteristic>
     <profile name="Punt Gun" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="77ea-665d-7ac6-58ef" publicationId="c658-4a10-e1fe-befc" page="109">
       <characteristics>
         <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
-        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;/Melee</characteristic>
+        <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">18&quot;</characteristic>
         <characteristic name="Modifiers" typeId="6977-37be-e105-b5aa">+1D to hit and to injure</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">HEAVY, SHRAPNEL</characteristic>
         <characteristic name="Rules" typeId="6e95-3480-ad33-b345">Before a model shoots with the punt gun, you can overcharge it with a shot, giving the weapon BLAST 3” radius. If you do this, the shooting ACTION with the Punt Gun always ends the shooter’s Activation and causes one BLOOD MARKER on the shooter. A model cannot make a ranged attack with the punt gun unless it is either STRONG or another friendly model is in base contact with it.</characteristic>
